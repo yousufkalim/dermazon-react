@@ -1,11 +1,17 @@
 /* Importing all CSS files */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500;600;700&display=swap');
 @import url('./Header.css');
+@import url('./Footer');
+@import url('./ContactUs.css');
+@import url('./HeroSection.css');
+@import url('./Testimonials.css');
 
 /* Defaults */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 /* Primary Variables */
