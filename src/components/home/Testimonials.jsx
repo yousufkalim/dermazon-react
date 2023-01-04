@@ -2,6 +2,8 @@ import React from 'react';
 import ellipse1 from '../../assets/ellipse1.svg';
 import ellipse2 from '../../assets/ellipse2.svg';
 import profile from '../../assets/profile.svg';
+import leftArrow from '../../assets/leftArrow.svg';
+import rightArrow from '../../assets/rightArrow.svg';
 
 export default function Testimonials() {
   return (
@@ -9,11 +11,30 @@ export default function Testimonials() {
       <h1 className="testimonials_heading">Client Testimonials</h1>
       <div className="testimonials">
         <div className="testimonials_left">
-          <img src={ellipse1} alt="Ellipse" />
+          <img className="ellipse" src={ellipse1} alt="Ellipse" />
         </div>
         <div className="testimonials_right">
-          <img src={ellipse2} alt="Ellipse" />
-          <div className="small_arrow" />
+          <img className="ellipse" src={ellipse2} alt="Ellipse" />
+          <div className="arrows">
+            <div className="left_arrow">
+              <img
+                style={{
+                  cursor: 'pointer',
+                }}
+                src={leftArrow}
+                alt="Left Arrow"
+              />
+            </div>
+            <div className="right_arrow">
+              <img
+                style={{
+                  cursor: 'pointer',
+                }}
+                src={rightArrow}
+                alt="Right Arrow"
+              />
+            </div>
+          </div>
         </div>
         <div className="testimonials_card">
           <p className="card_description">

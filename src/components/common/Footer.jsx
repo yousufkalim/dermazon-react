@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../assets/logo.svg';
-import facebook from '../assets/facebook.svg';
-import instagram from '../assets/instagram.svg';
-import linkedIn from '../assets/linkedIn.svg';
+import logo from '../../assets/logo.svg';
+import facebook from '../../assets/facebook.svg';
+import instagram from '../../assets/instagram.svg';
+import linkedIn from '../../assets/linkedIn.svg';
 
 export default function Footer() {
   return (
@@ -55,7 +55,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="footer_bottom">
-        <p className="footer_text">
+        <p className="footer_text_p">
           © 2023 <span className="footer_span">DERMAZON LASER</span>, All Rights Reserved.
         </p>
       </div>

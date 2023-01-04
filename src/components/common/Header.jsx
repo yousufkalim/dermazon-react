@@ -1,12 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../assets/logo.svg';
-import facebook from '../assets/facebook.svg';
-import instagram from '../assets/instagram.svg';
-import linkedIn from '../assets/linkedIn.svg';
-import search from '../assets/search.svg';
+import MenuIcon from '@mui/icons-material/Menu';
+import logo from '../../assets/logo.svg';
+import facebook from '../../assets/facebook.svg';
+import instagram from '../../assets/instagram.svg';
+import linkedIn from '../../assets/linkedIn.svg';
+import headerSearch from '../../assets/headerSearch.svg';
 
 export default function Header() {
+  const [showNavbar, setShowNavbar] = useState(false);
+
+  const handleShowNavbar = () => {
+    setShowNavbar(!showNavbar);
+  };
   return (
     <div className="header">
       <div className="header_top">
@@ -31,7 +37,10 @@ export default function Header() {
             <img src={logo} alt="logo" />
           </div>
         </div>
-        <div className="header_bottom_center">
+        <div className="menu-icon" onClick={handleShowNavbar} role="presentation">
+          <MenuIcon />
+        </div>
+        <div className={`header_bottom_center ${showNavbar && 'active'}`}>
           <ul>
             <li>
               <Link to="/">Home</Link>
@@ -53,7 +62,7 @@ export default function Header() {
         <div className="header_bottom_right">
           <div className="header_bottom_search">
             <input type="text" placeholder="Search" />
-            <img src={search} alt="search" />
+            <img src={headerSearch} alt="search" />
           </div>
         </div>
       </div>

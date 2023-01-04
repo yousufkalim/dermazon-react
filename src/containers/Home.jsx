@@ -1,10 +1,11 @@
 // Init
 import React from 'react';
-import Footer from '../common/Footer';
-import Header from '../common/Header';
-import ContactUs from '../components/contact us/ContactUs';
-import HeroSection from '../components/heroSection/HeroSection';
-import Testimonials from '../components/testimonials/Testimonials';
+import Header from '../components/common/Header';
+import Footer from '../components/common/Footer';
+import HeroSection from '../components/home/HomeSection';
+import ContactUs from '../components/home/ContactSection';
+import Testimonials from '../components/home/Testimonials';
+import ServicesSection from '../components/home/ServicesSection/ServicesSection';
 
 // Importing Components
 
@@ -15,6 +16,7 @@ export default function Home() {
       <Header />
       <HeroSection />
       <Testimonials />
+      <ServicesSection />
       <ContactUs />
       <Footer />
     </div>

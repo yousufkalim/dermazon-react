@@ -32,7 +32,6 @@ const useOutlinedInputStyles = makeStyles({
 
 const BootstrapInput = styled(InputBase)(({ theme }) => ({
   '& .MuiInputBase-input': {
-    position: 'relative',
     backgroundColor: '#02225E',
     borderRadius: '100px',
     border: '1.5px solid #ffffff',
@@ -47,7 +46,7 @@ const BootstrapInput = styled(InputBase)(({ theme }) => ({
     },
   },
 }));
-export default function ContactUs() {
+export default function ContactSection() {
   const outlinedInputStyles = useOutlinedInputStyles();
 
   return (
@@ -63,7 +62,7 @@ export default function ContactUs() {
             Us
           </span>
         </h1>
-        <p className="contact_top_text">
+        <p className="contact_top_text_p">
           A technical sales representative will be happy to <br /> discuss your project with you.
         </p>
       </div>
@@ -71,7 +70,7 @@ export default function ContactUs() {
         <div className="contact_bottom_left">
           <div className="contact_icons">
             <div className="contact_icon">
-              <img src={phone} alt="phone" />
+              <img className="contact_icon_img" src={phone} alt="phone" />
             </div>
             <div className="contact_info_text">
               <span className="contact_info">Call us</span>
@@ -80,7 +79,7 @@ export default function ContactUs() {
           </div>
           <div className="contact_icons">
             <div className="contact_icon">
-              <img src={whatsApp} alt="phone" />
+              <img className="contact_icon_img" src={whatsApp} alt="phone" />
             </div>
             <div className="contact_info_text">
               <span className="contact_info">On WhatsApp</span>
@@ -89,7 +88,7 @@ export default function ContactUs() {
           </div>
           <div className="contact_icons">
             <div className="contact_icon">
-              <img src={email} alt="phone" />
+              <img className="contact_icon_img" src={email} alt="phone" />
             </div>
             <div className="contact_info_text">
               <span className="contact_info">Email</span>
@@ -114,12 +113,13 @@ export default function ContactUs() {
                         },
                       },
                     }}
-                    className="emailField"
-                    id="outlined-email"
+                    autoComplete="off"
+                    className="nameField"
+                    id="outlined-name"
                     classes={outlinedInputStyles}
                     size="small"
                     placeholder="Name"
-                    name="email"
+                    name="name"
                     InputProps={{ sx: { padding: 0.4 } }}
                   />
                 </FormControl>
@@ -138,12 +138,13 @@ export default function ContactUs() {
                         },
                       },
                     }}
-                    className="emailField"
-                    id="outlined-email"
+                    autoComplete="off"
+                    className="companyField"
+                    id="outlined-company"
                     classes={outlinedInputStyles}
                     size="small"
                     placeholder="Company Name"
-                    name="email"
+                    name="company"
                     InputProps={{ sx: { padding: 0.4 } }}
                   />
                 </FormControl>
@@ -162,6 +163,7 @@ export default function ContactUs() {
                         },
                       },
                     }}
+                    autoComplete="off"
                     className="emailField"
                     id="outlined-email"
                     classes={outlinedInputStyles}
@@ -186,12 +188,13 @@ export default function ContactUs() {
                         },
                       },
                     }}
-                    className="emailField"
-                    id="outlined-email"
+                    autoComplete="off"
+                    className="phoneField"
+                    id="outlined-phone"
                     classes={outlinedInputStyles}
                     size="small"
                     placeholder="Telephone"
-                    name="email"
+                    name="phone"
                     InputProps={{ sx: { padding: 0.4 } }}
                   />
                 </FormControl>
@@ -205,10 +208,8 @@ export default function ContactUs() {
                     label="Your Request"
                     input={<BootstrapInput />}
                     displayEmpty
-                    inputProps={{ 'aria-label': 'Without label' }}
                   >
                     <MenuItem
-                      value=""
                       style={{
                         color: '#B3881D',
                       }}
@@ -235,14 +236,14 @@ export default function ContactUs() {
                         },
                       },
                     }}
-                    className="emailField"
+                    autoComplete="off"
+                    className="messageField"
                     multiline
                     rows={4}
-                    maxRows={4}
                     id="outlined-message"
                     size="small"
                     placeholder="Your Message"
-                    name="email"
+                    name="message"
                     InputProps={{
                       sx: {
                         padding: 1,

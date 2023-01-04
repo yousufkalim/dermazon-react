@@ -43,7 +43,7 @@
   gap: 10px;
 }
 
-.footer_text {
+.footer_text_p {
   font-size: 18px;
   font-weight: 500;
   color: #919b9b;
@@ -53,4 +53,32 @@
   font-size: 18px;
   font-weight: 700;
   color: #2b2926;
+}
+
+/* MEDIA QUERY FOR FOOTER */
+@media screen and (max-width: 992px) {
+  .footer_top {
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 50px;
+  }
+
+  .footer_top_center ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .footer_bottom {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+}
+
+/* MEDIA QUERY FOR LARGE SCREEN */
+@media screen and (min-width: 1450px) {
+  .footer {
+    padding: 4% 11%;
+    margin: 30px 0px;
+  }
 }
