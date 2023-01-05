@@ -1,0 +1,37 @@
+.button_outer {
+  display: flex;
+  width: 100%;
+  /* background-color: aqua; */
+  justify-content: center;
+}
+.laser_Loadmore_button {
+  margin: 10% 0 10% 0;
+  /* Button */
+  cursor: pointer;
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 17px 32px;
+  gap: 10px;
+
+  /* position: absolute; */
+  width: 180px;
+  height: 58px;
+  left: 870px;
+  bottom: 87px;
+  border: none;
+  /* Primary */
+
+  background: #02225e;
+  color: white;
+  border-radius: 100px;
+}
+.laser_loading_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: rgb(138, 175, 175); */
+}

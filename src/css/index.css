@@ -1,6 +1,11 @@
 /* Importing all CSS files */
 @import url('./Header.css');
 
+@import url('../css/laser/LaserHeroSection.css');
+@import url('../css/laser/LaserItemsCard.css');
+@import url('../css/laser/LoadMoreButton.css');
+@import url('../css/laser/LaserComponents.css');
+
 /* Defaults */
 * {
   padding: 0;

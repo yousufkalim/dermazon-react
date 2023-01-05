@@ -1,0 +1,424 @@
+.laser_outer_main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 10%;
+  margin-bottom: 2%;
+  /* background: red; */
+}
+.laser_hero_section_header {
+  width: 100%;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: none;
+  flex-grow: 0;
+  z-index: 1;
+  /* border: 10px rgb(92, 58, 34); */
+}
+.laser_hero_section_heading_text {
+  width: 100%;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #b3881d;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.laser_hero_section_heading {
+  width: 100%;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 72px;
+  text-align: center;
+  color: #454238;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.laser_hero_section_text_paragraph {
+  /* background-color: #b3881d; */
+  width: 48%;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 31px;
+  text-align: center;
+  color: #919b9b;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+.laser_search_button_div {
+  margin: 2% 0 2% 0;
+  width: 100%;
+  /* background: green; */
+  display: flex;
+  justify-content: center;
+}
+.laser_hero_section_header_search {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0.1% 0.5% 0.1% 2%;
+
+  width: 29%;
+  /* height: 100%; */
+  /* left: 181px;
+  top: 240px; */
+  background: #fdfcfc;
+
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.12);
+  border-radius: 100px;
+}
+.laser_hero_section_header_search_inner_div {
+  width: 100%;
+  display: flex;
+  /* background-color: #9aa5b9; */
+}
+.laser_search_icon {
+  display: flex;
+  width: 50%;
+  /* background-color: #c99e13; */
+}
+.search_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  align-items: center;
+  color: #6a6a6a;
+  /* background-color: aqua; */
+}
+.laser_hero_section_header_search_text {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  color: #6a6a6a;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  /* background-color: #ebc973; */
+}
+.laser_button_div {
+  display: flex;
+  width: 50%;
+  /* background-color: #054242; */
+  height: auto;
+  justify-content: flex-end;
+}
+.laser_hero_section_header_search_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 17px 32px; */
+
+  /* gap: 10px; */
+  width: 60%;
+  height: 48px;
+  border: none;
+  background: #02225e;
+  border-radius: 100px;
+  color: #ffffff;
+}
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .laser_outer_main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+  .laser_hero_section_header {
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: none;
+    flex-grow: 0;
+    z-index: 1;
+    border: 10px rgb(92, 58, 34);
+  }
+  .laser_hero_section_heading_text {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #b3881d;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+  .laser_hero_section_heading {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 72px;
+    text-align: center;
+    color: #454238;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+  .laser_hero_section_text_paragraph {
+    width: 100%;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 31px;
+    text-align: center;
+    color: #919b9b;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+  }
+  .laser_search_button_div {
+    margin: 5% 0 2% 0;
+    width: 75%;
+    height: auto;
+  }
+  .laser_hero_section_header_search {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 20px 10px 20px 32px;
+    /* gap: 10px; */
+    width: 100%;
+    height: 64px;
+    /* left: 181px;
+    top: 240px; */
+    background: #fdfcfc;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.12);
+    border-radius: 100px;
+  }
+  .laser_hero_section_header_search_inner_div {
+    width: 100%;
+    display: flex;
+  }
+  .laser_search_icon {
+    display: flex;
+    width: 50%;
+  }
+  .search_icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    align-items: center;
+    color: #6a6a6a;
+  }
+  .laser_hero_section_header_search_text {
+    display: flex;
+    align-items: center;
+    width: 30%;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    color: #6a6a6a;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+  .laser_button_div {
+    display: flex;
+    width: 50%;
+    height: auto;
+    /* justify-content: flex-end; */
+  }
+  .laser_hero_section_header_search_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 17px 32px; */
+    /* gap: 10px; */
+    width: 70%;
+    /* height: 40px; */
+    border: none;
+    background: #02225e;
+    border-radius: 100px;
+    color: #ffffff;
+  }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1000px) {
+  .laser_outer_main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 10%;
+    margin-bottom: 2%;
+    /* background: red; */
+  }
+  .laser_hero_section_header {
+    width: 100%;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: none;
+    flex-grow: 0;
+    z-index: 1;
+    border: 10px rgb(92, 58, 34);
+  }
+  .laser_hero_section_heading_text {
+    width: 100%;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #b3881d;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+  .laser_hero_section_heading {
+    width: 100%;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 72px;
+    text-align: center;
+    color: #454238;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+  .laser_hero_section_text_paragraph {
+    /* background-color: #523e0b; */
+    width: 64%;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 31px;
+    text-align: center;
+    color: #919b9b;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+  }
+  .laser_search_button_div {
+    margin: 2% 0 2% 0;
+    width: 100%;
+    /* background: green; */
+    display: flex;
+    justify-content: center;
+  }
+  .laser_hero_section_header_search {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0.1% 0.5% 0.1% 2%;
+
+    width: 43%;
+    /* height: 100%; */
+    /* left: 181px;
+  top: 240px; */
+    background: #fdfcfc;
+
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.12);
+    border-radius: 100px;
+  }
+  .laser_hero_section_header_search_inner_div {
+    width: 100%;
+    display: flex;
+    /* background-color: #9aa5b9; */
+  }
+  .laser_search_icon {
+    display: flex;
+    width: 50%;
+    /* background-color: #c99e13; */
+  }
+  .search_icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    align-items: center;
+    color: #6a6a6a;
+    /* background-color: aqua; */
+  }
+  .laser_hero_section_header_search_text {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    color: #6a6a6a;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    /* background-color: #ebc973; */
+  }
+  .laser_button_div {
+    display: flex;
+    width: 50%;
+    /* background-color: #054242; */
+    height: auto;
+    justify-content: flex-end;
+  }
+  .laser_hero_section_header_search_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 17px 32px; */
+
+    /* gap: 10px; */
+    width: 70%;
+    height: 55px;
+    border: none;
+    background: #02225e;
+    border-radius: 100px;
+    color: #ffffff;
+  }
+}

@@ -2,13 +2,13 @@
 import React from 'react';
 
 // Importing Components
-import Header from '../components/Header';
 
+import LaserComponents from '../components/laser/LaserComponents';
 // Home Component
 export default function Home() {
   return (
     <div>
-      <Header />
+      <LaserComponents />
     </div>
   );
 }
