@@ -61,21 +61,23 @@
 .items_card_image img {
   width: 100%;
   height: 100%;
-  border-radius: 20px;
-  object-fit: contain;
+  /* border-radius: 20px; */
+  object-fit: cover;
 }
 .items_card_text {
+  /* display: flex;
+  flex-direction: column; */
   width: 65%;
-  /* background-color: #6a6a6a; */
+  /* background-color: #cc7373; */
 }
 .items_card_text_price {
   width: 100%;
-  height: 30px;
+  /* height: 30px; */
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
-  line-height: 30px;
+  /* line-height: 30px; */
   display: flex;
   align-items: center;
   color: #b3881d;
@@ -83,10 +85,11 @@
   order: 0;
   align-self: stretch;
   flex-grow: 0;
+  margin: 2% 0 3% 0;
 }
 .items_card_text_heading {
   width: 100%;
-  height: 30px;
+  /* height: 30px; */
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
@@ -100,6 +103,7 @@
   order: 1;
   align-self: stretch;
   flex-grow: 0;
+  margin: 2% 0 3% 0;
 }
 .items_card_text_description {
   width: 100%;
@@ -109,6 +113,8 @@
   font-weight: 500;
   font-size: 16px;
   /* line-height: 0%; */
+  /* background-color: #b3881d; */
+  margin: 0 0 0.5% 0;
   color: #6a6a6a;
   flex: none;
   order: 2;
@@ -117,18 +123,29 @@
 }
 .items_card_text_date {
   width: 100%;
-  height: 21px;
+  /* height: 21px; */
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 21px;
+  /* line-height: 21px; */
   display: flex;
   align-items: center;
+  /* justify-content: flex-start; */
   color: #02225e;
   flex: none;
-  order: 1;
+  /* order: 1; */
   flex-grow: 0;
+  margin: 0 0 2% 0%;
+  /* background-color: #02225e; */
+}
+.items_card_text_date_icon {
+  /* margin: 0 0.8% 0 -0.4%; */
+  /* background-color: #02225e; */
+}
+.date_format {
+  /* background-color: #02225e; */
+  margin-bottom: 0.5%;
 }
 .items_card_share_icon {
   display: flex;
@@ -168,7 +185,7 @@
   flex-grow: 0;
 }
 .laser_collapse {
-  margin-bottom: 15%;
+  margin-bottom: 8%;
 }
 .items_card_telephone {
   color: #b3881d;
@@ -179,7 +196,7 @@
 .items_card_description p {
   margin-left: 1%;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 700px) {
   /* For mobile phones: */
   .Laser_items_card_outer {
     display: flex;
@@ -255,7 +272,8 @@
   .items_card_text {
     /* transition: 5.5s; */
     width: 55%;
-    /* background-color: #02225e; */
+    height: auto;
+    background-color: #8ea1c4;
     margin: 0%;
   }
   .items_card_text_price {
@@ -292,7 +310,7 @@
   }
   .items_card_text_description {
     width: 100%;
-    height: 19px;
+    /* height: 19px; */
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
@@ -301,7 +319,7 @@
     color: #6a6a6a;
     flex: none;
     order: 2;
-    /* background-color: #b3881d; */
+    background-color: #b3881d;
     margin: 1% 0 2% 0;
     flex-grow: 0;
   }
@@ -319,7 +337,7 @@
     flex: none;
     order: 1;
     flex-grow: 0;
-    margin-top: 15%;
+    margin-top: 5%;
     /* display: none; */
   }
   .items_card_share_icon {
@@ -366,11 +384,7 @@
     flex-grow: 0;
     /* background-color: #b3881d; */
   }
-  .laser_collapse {
-    /* margin: 1% 0 2% 0; */
-    /* transition: 6.5s; */
-    /* background-color: #b3881d; */
-  }
+
   .items_card_telephone {
     color: #b3881d;
   }
