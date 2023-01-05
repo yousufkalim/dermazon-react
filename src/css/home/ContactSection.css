@@ -2,6 +2,7 @@
   height: 100%;
   width: 100%;
   background: #02225e;
+  overflow-x: hidden;
 }
 
 .contact_top {
@@ -107,6 +108,7 @@
   position: absolute;
   z-index: 1000;
   opacity: 0;
+  width: 100%;
   cursor: pointer;
   font-size: 24px;
   padding: 20px;
@@ -168,6 +170,10 @@
 
   .contact_top_text_p {
     font-size: 18px;
+  }
+
+  .attachment {
+    width: max-content;
   }
 }
 

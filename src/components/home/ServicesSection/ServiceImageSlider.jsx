@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import service1 from '../../../assets/service1.svg';
-import service2 from '../../../assets/service2.svg';
-import service3 from '../../../assets/service3.svg';
-import service4 from '../../../assets/service4.svg';
-import service5 from '../../../assets/service5.svg';
+import service1 from '../../../assets/images/service1.svg';
+import service2 from '../../../assets/images/service2.svg';
+import service3 from '../../../assets/images/service3.svg';
+import service4 from '../../../assets/images/service4.svg';
+import service5 from '../../../assets/images/service5.svg';
 
 const servicesImages = [service1, service2, service3, service4, service5];
 const delay = 2500;

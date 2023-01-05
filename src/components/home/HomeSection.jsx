@@ -1,5 +1,5 @@
 import React from 'react';
-import herosearch from '../../assets/herosearch.svg';
+import herosearch from '../../assets/images/herosearch.svg';
 
 export default function HomeSection() {
   return (

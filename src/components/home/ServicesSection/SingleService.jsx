@@ -4,6 +4,15 @@ import ServiceImageSlider from './ServiceImageSlider';
 
 export default function SingleService(props) {
   const { reverse, bgColor, icon, title, btnBg, btnText, serviceDescription, sectionId } = props;
+  const firstWord = title.split(' ')[0];
+  function removeFirstWord() {
+    const indexOfSpace = title.indexOf(' ');
+    if (indexOfSpace === -1) {
+      return '';
+    }
+    return title.slice(indexOfSpace + 1);
+  }
+
   return (
     <div
       className={reverse ? 'single_service_container_reverse' : 'single_service_container'}
@@ -11,13 +20,6 @@ export default function SingleService(props) {
     >
       <div className={reverse ? 'single_service_left_reverse' : 'single_service_left'}>
         <ServiceImageSlider />
-        {/* <img
-          style={{
-            display: `${window.innerWidth < 992 ? 'none' : ''}`,
-          }}
-          src={line}
-          alt="Line"
-        /> */}
       </div>
       <div className="single_service_right">
         <div
@@ -28,7 +30,16 @@ export default function SingleService(props) {
         >
           <img className="service_icons_img" src={icon} alt="Service Icon" />
         </div>
-        <h1 className="single_service_title">{title}</h1>
+        <h1 className="single_service_title">
+          <span
+            style={{
+              color: btnBg,
+            }}
+          >
+            {`${firstWord} ${' '}`}
+          </span>
+          {removeFirstWord(title)}
+        </h1>
         <p className="single_service_text_p">{serviceDescription}</p>
         <button
           style={{

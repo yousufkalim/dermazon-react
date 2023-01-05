@@ -87,7 +87,7 @@
 }
 
 .hero_img1 {
-  background: url('../../assets//hero1.svg');
+  background: url('../../assets/images/hero1.svg');
   height: 520px;
   width: 360px;
   opacity: 0.5;
@@ -98,7 +98,7 @@
 }
 
 .hero_img2 {
-  background: url('../../assets/hero2.svg');
+  background: url('../../assets/images/hero2.svg');
   height: 560px;
   width: 280px;
   opacity: 0.5;

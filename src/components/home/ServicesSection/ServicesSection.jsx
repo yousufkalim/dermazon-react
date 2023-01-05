@@ -1,12 +1,12 @@
 import React from 'react';
 import ServicesList from './ServicesList';
 import SingleService from './SingleService';
-import icon1 from '../../../assets/icon1.svg';
-import icon2 from '../../../assets/icon2.svg';
-import icon3 from '../../../assets/icon3.svg';
-import icon4 from '../../../assets/icon4.svg';
-import icon5 from '../../../assets/icon5.svg';
-import serviceBG from '../../../assets/serviceBG.svg';
+import icon1 from '../../../assets/images/icon1.svg';
+import icon2 from '../../../assets/images/icon2.svg';
+import icon3 from '../../../assets/images/icon3.svg';
+import icon4 from '../../../assets/images/icon4.svg';
+import icon5 from '../../../assets/images/icon5.svg';
+import serviceBG from '../../../assets/images/serviceBG.svg';
 
 export default function ServicesSection() {
   return (
@@ -65,7 +65,7 @@ export default function ServicesSection() {
         sectionId="DeliveryAndMove"
         bgColor="rgba(253, 136, 51, 0.1)"
         icon={icon5}
-        title="Delivery and move"
+        title="Pick-up and Delivery"
         btnBg="#FD8833"
         btnText="Deliver your laser"
         serviceDescription="All equipment with an optical system needs a special care during transport because of the optical beam alignments, this is why we pick-up and deliver it ourselves in safe and good conditions. All international transport we provide packaging with appropriate pallet. Dermazon is also available for all manufacturers for their equipment transportation needs."

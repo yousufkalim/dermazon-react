@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import MenuIcon from '@mui/icons-material/Menu';
-import logo from '../../assets/logo.svg';
-import facebook from '../../assets/facebook.svg';
-import instagram from '../../assets/instagram.svg';
-import linkedIn from '../../assets/linkedIn.svg';
-import headerSearch from '../../assets/headerSearch.svg';
+import logo from '../../assets/images/logo.svg';
+import facebook from '../../assets/images/facebook.svg';
+import instagram from '../../assets/images/instagram.svg';
+import linkedIn from '../../assets/images/linkedIn.svg';
+import headerSearch from '../../assets/images/headerSearch.svg';
 
 export default function Header() {
   const [showNavbar, setShowNavbar] = useState(false);

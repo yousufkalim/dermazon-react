@@ -1,9 +1,9 @@
 import React from 'react';
-import ellipse1 from '../../assets/ellipse1.svg';
-import ellipse2 from '../../assets/ellipse2.svg';
-import profile from '../../assets/profile.svg';
-import leftArrow from '../../assets/leftArrow.svg';
-import rightArrow from '../../assets/rightArrow.svg';
+import ellipse1 from '../../assets/images/ellipse1.svg';
+import ellipse2 from '../../assets/images/ellipse2.svg';
+import profile from '../../assets/images/profile.svg';
+import leftArrow from '../../assets/images/leftArrow.svg';
+import rightArrow from '../../assets/images/rightArrow.svg';
 
 export default function Testimonials() {
   return (

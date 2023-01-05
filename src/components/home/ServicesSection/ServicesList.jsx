@@ -1,10 +1,10 @@
 import React from 'react';
 import List from './List';
-import icon1 from '../../../assets/icon1.svg';
-import icon2 from '../../../assets/icon2.svg';
-import icon3 from '../../../assets/icon3.svg';
-import icon4 from '../../../assets/icon4.svg';
-import icon5 from '../../../assets/icon5.svg';
+import icon1 from '../../../assets/images/icon1.svg';
+import icon2 from '../../../assets/images/icon2.svg';
+import icon3 from '../../../assets/images/icon3.svg';
+import icon4 from '../../../assets/images/icon4.svg';
+import icon5 from '../../../assets/images/icon5.svg';
 
 export default function ServicesList() {
   return (

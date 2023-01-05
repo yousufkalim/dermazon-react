@@ -6,11 +6,11 @@ import TextField from '@mui/material/TextField';
 import { makeStyles } from '@mui/styles';
 import { InputBase, MenuItem, Select } from '@mui/material';
 import { styled } from '@mui/material/styles';
-import phone from '../../assets/phone.svg';
-import whatsApp from '../../assets/whatsApp.svg';
-import email from '../../assets/email.svg';
-import send from '../../assets/send.svg';
-import attachment from '../../assets/attachment.svg';
+import phone from '../../assets/images/phone.svg';
+import whatsApp from '../../assets/images/whatsApp.svg';
+import email from '../../assets/images/email.svg';
+import send from '../../assets/images/send.svg';
+import attachment from '../../assets/images/attachment.svg';
 
 const useOutlinedInputStyles = makeStyles({
   root: {

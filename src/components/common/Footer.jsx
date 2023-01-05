@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../../assets/logo.svg';
-import facebook from '../../assets/facebook.svg';
-import instagram from '../../assets/instagram.svg';
-import linkedIn from '../../assets/linkedIn.svg';
+import logo from '../../assets/images/logo.svg';
+import facebook from '../../assets/images/facebook.svg';
+import instagram from '../../assets/images/instagram.svg';
+import linkedIn from '../../assets/images/linkedIn.svg';
 
 export default function Footer() {
   return (
