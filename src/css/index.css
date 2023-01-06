@@ -1,12 +1,11 @@
 /* Importing all CSS files */
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500;600;700&display=swap');
 @import url('./common/Header.css');
 @import url('./common/Footer.css');
 @import url('./home/ContactSection.css');
-@import url('./home/HomeSection.css');
+@import url('./home/HeroSection.css');
 @import url('./home/Testimonials.css');
 @import url('./home/ServicesSection/ServicesList.css');
-@import url('./home/ServicesSection/ServicesSection.css');
+@import url('./home/ServicesSection/Index.css');
 @import url('./home/ServicesSection/SingleService.css');
 @import url('./home/ServicesSection/ServiceImageSlider.css');
 
@@ -15,7 +14,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Poppins', 'Josefin Sans', sans-serif;
 }
 
 /* Primary Variables */

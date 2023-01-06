@@ -1,5 +1,6 @@
+// import components and libraries
+
 import React from 'react';
-// import line from '../../../assets/line.svg';
 import ServiceImageSlider from './ServiceImageSlider';
 
 export default function SingleService(props) {

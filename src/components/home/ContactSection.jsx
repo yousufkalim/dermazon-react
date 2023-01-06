@@ -1,22 +1,27 @@
+// import components and libraries
+
 import React from 'react';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import FormControl from '@mui/material/FormControl';
 import TextField from '@mui/material/TextField';
 import { makeStyles } from '@mui/styles';
+import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import { InputBase, MenuItem, Select } from '@mui/material';
 import { styled } from '@mui/material/styles';
-import phone from '../../assets/images/phone.svg';
-import whatsApp from '../../assets/images/whatsApp.svg';
-import email from '../../assets/images/email.svg';
-import send from '../../assets/images/send.svg';
-import attachment from '../../assets/images/attachment.svg';
+
+// import icons and images
+
+import phone from '../../assets/home/phone.svg';
+import whatsApp from '../../assets/home/whatsApp.svg';
+import email from '../../assets/home/email.svg';
+import attachment from '../../assets/home/attachment.svg';
 
 const useOutlinedInputStyles = makeStyles({
   root: {
     '& .MuiOutlinedInput-root': {
       '& fieldset': {
-        border: '1.5px solid #ffffff ',
+        border: '1.1px solid #ffffff ',
         borderRadius: '100px',
       },
       '&:hover fieldset': {
@@ -24,7 +29,7 @@ const useOutlinedInputStyles = makeStyles({
       },
       '&.Mui-focused fieldset': {
         borderColor: '#ffffff',
-        border: '1.5px solid #ffffff ',
+        border: '1.1px solid #ffffff ',
       },
     },
   },
@@ -34,7 +39,7 @@ const BootstrapInput = styled(InputBase)(({ theme }) => ({
   '& .MuiInputBase-input': {
     backgroundColor: '#02225E',
     borderRadius: '100px',
-    border: '1.5px solid #ffffff',
+    border: '1.1px solid #ffffff',
     fontSize: 16,
     color: 'white',
     padding: '1.3% 4%',
@@ -246,9 +251,10 @@ export default function ContactSection() {
                     name="message"
                     InputProps={{
                       sx: {
-                        padding: 1,
-                        border: '2px solid white',
+                        padding: 2,
+                        border: '1px solid white',
                         borderRadius: '14px',
+                        color: 'white',
                       },
                     }}
                   />
@@ -271,12 +277,10 @@ export default function ContactSection() {
             </div>
             <button className="contact-btn" type="submit">
               Send{' '}
-              <img
+              <ArrowRightAltIcon
                 style={{
-                  marginLeft: '10px',
+                  marginLeft: '5px',
                 }}
-                src={send}
-                alt="send"
               />
             </button>
           </div>

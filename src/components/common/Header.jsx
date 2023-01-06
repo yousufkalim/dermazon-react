@@ -1,11 +1,16 @@
+// import components and libraries
+
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import MenuIcon from '@mui/icons-material/Menu';
-import logo from '../../assets/images/logo.svg';
-import facebook from '../../assets/images/facebook.svg';
-import instagram from '../../assets/images/instagram.svg';
-import linkedIn from '../../assets/images/linkedIn.svg';
-import headerSearch from '../../assets/images/headerSearch.svg';
+import SearchIcon from '@mui/icons-material/Search';
+
+// import icons and images
+
+import logo from '../../assets/home/logo.svg';
+import facebook from '../../assets/home/facebook.svg';
+import instagram from '../../assets/home/instagram.svg';
+import linkedIn from '../../assets/home/linkedIn.svg';
 
 export default function Header() {
   const [showNavbar, setShowNavbar] = useState(false);
@@ -17,7 +22,11 @@ export default function Header() {
     <div className="header">
       <div className="header_top">
         <div className="header_top_left">
-          <p>
+          <p
+            style={{
+              color: '#6A6A6A',
+            }}
+          >
             <span className="header_top_span">Dermazon France</span>
             (Used laser for All)
           </p>
@@ -48,21 +57,16 @@ export default function Header() {
             <li>
               <Link to="/">Buy Laser</Link>
             </li>
-            <li>
-              <Link to="/">Sell Laser</Link>
-            </li>
-            <li>
-              <Link to="/">Maintain</Link>
-            </li>
-            <li>
-              <Link to="/">Contact us</Link>
-            </li>
           </ul>
         </div>
         <div className="header_bottom_right">
           <div className="header_bottom_search">
             <input type="text" placeholder="Search" />
-            <img src={headerSearch} alt="search" />
+            <SearchIcon
+              sx={{
+                color: '#02225E',
+              }}
+            />
           </div>
         </div>
       </div>

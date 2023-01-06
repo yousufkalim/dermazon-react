@@ -86,6 +86,19 @@
   width: fit-content;
 }
 
+/* MEDIA QUERY FOR LARGE SCREEN */
+
+@media screen and (min-width: 1450px) {
+  .services_container {
+    padding: 0% 1% 0% 11%;
+  }
+
+  .list {
+    background: rgba(2, 34, 94, 0.05);
+    padding: 1% 0%;
+  }
+}
+
 /* MEDIA QUERY FOR SMALL SCREEN */
 @media screen and (max-width: 992px) {
   .service_details_div {
@@ -107,18 +120,5 @@
 
   .services_list_main {
     gap: 60px;
-  }
-}
-
-/* MEDIA QUERY FOR LARGE SCREEN */
-
-@media screen and (min-width: 1450px) {
-  .services_container {
-    padding: 0% 1% 0% 11%;
-  }
-
-  .list {
-    background: rgba(2, 34, 94, 0.05);
-    padding: 1% 0%;
   }
 }

@@ -1,11 +1,17 @@
-import React from 'react';
-import herosearch from '../../assets/images/herosearch.svg';
+// import components and libraries
 
-export default function HomeSection() {
+import React from 'react';
+
+// import icons and images
+
+import herosearch from '../../assets/home/herosearch.svg';
+import heroSection from '../../assets/home/heroSection.svg';
+
+export default function HeroSection() {
   return (
     <div className="home_main">
       <div className="home_left">
-        <span className="home_span">used laser for all</span>
+        <span className="home_span">USED LASER FOR ALL</span>
         <h1 className="home_heading">
           <span
             style={{
@@ -31,9 +37,7 @@ export default function HomeSection() {
         </div>
       </div>
       <div className="home_right">
-        <div className="hero_img1" />
-        <div className="hero_img2" />
-        <div className="transparent_div" />
+        <img className="heroBG" src={heroSection} alt="" />
       </div>
     </div>
   );

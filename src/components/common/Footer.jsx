@@ -1,9 +1,13 @@
+// import components and libraries
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../../assets/images/logo.svg';
-import facebook from '../../assets/images/facebook.svg';
-import instagram from '../../assets/images/instagram.svg';
-import linkedIn from '../../assets/images/linkedIn.svg';
+
+// import icons and images
+
+import logo from '../../assets/home/logo.svg';
+import facebook from '../../assets/home/facebook.svg';
+import instagram from '../../assets/home/instagram.svg';
+import linkedIn from '../../assets/home/linkedIn.svg';
 
 export default function Footer() {
   return (

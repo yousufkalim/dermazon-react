@@ -1,19 +1,23 @@
+// import components and libraries
+
 import React, { useState, useEffect } from 'react';
-import service1 from '../../../assets/images/service1.svg';
-import service2 from '../../../assets/images/service2.svg';
-import service3 from '../../../assets/images/service3.svg';
-import service4 from '../../../assets/images/service4.svg';
-import service5 from '../../../assets/images/service5.svg';
+
+// import icons and images
+
+import service1 from '../../../assets/home/service1.svg';
+import service2 from '../../../assets/home/service2.svg';
+import service3 from '../../../assets/home/service3.svg';
+import service4 from '../../../assets/home/service4.svg';
+import service5 from '../../../assets/home/service5.svg';
 
 const servicesImages = [service1, service2, service3, service4, service5];
-const delay = 2500;
 export default function ServiceImageSlider() {
   const [slide, setSlide] = useState(0);
 
   useEffect(() => {
     setTimeout(
       () => setSlide((prevIndex) => (prevIndex === servicesImages.length - 1 ? 0 : prevIndex + 1)),
-      delay,
+      2500,
     );
 
     return () => {};

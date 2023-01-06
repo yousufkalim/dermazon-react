@@ -17,13 +17,11 @@
   font-weight: 600;
   margin-top: 50px;
   color: #fdfcfc;
-  font-family: 'Poppins';
 }
 
 .contact_top_text_p {
   font-size: 20px;
   color: #fdfcfc;
-  font-family: 'DM Sans';
   text-align: center;
   margin: 10px 0px;
   line-height: 26px;
@@ -67,16 +65,12 @@
 }
 
 .contact_info {
-  font-family: 'Raleway';
-  font-style: normal;
   font-weight: 600;
   font-size: 21.3034px;
   color: #fdfcfc;
 }
 
 .phone {
-  font-family: 'Roboto';
-  font-style: normal;
   font-weight: 600;
   font-size: 16px;
   color: #fdfcfc;
@@ -130,6 +124,13 @@
   cursor: pointer;
 }
 
+/* MEDIA QUERY FOR LARGE SCREEN */
+@media screen and (min-width: 1450px) {
+  .contact_bottom {
+    padding: 4% 16%;
+  }
+}
+
 /* MEDIA QUERY FOR SMALL SCREEN */
 @media screen and (max-width: 992px) {
   .contact {
@@ -174,12 +175,5 @@
 
   .attachment {
     width: max-content;
-  }
-}
-
-/* MEDIA QUERY FOR LARGE SCREEN */
-@media screen and (min-width: 1450px) {
-  .contact_bottom {
-    padding: 4% 16%;
   }
 }

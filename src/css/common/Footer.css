@@ -13,6 +13,10 @@
   align-items: center;
 }
 
+.footer_top_center {
+  margin-right: 50px;
+}
+
 .footer_top_center ul {
   display: flex;
   list-style: none;
@@ -55,6 +59,14 @@
   color: #2b2926;
 }
 
+/* MEDIA QUERY FOR LARGE SCREEN */
+@media screen and (min-width: 1450px) {
+  .footer {
+    padding: 4% 11%;
+    margin: 30px 0px;
+  }
+}
+
 /* MEDIA QUERY FOR FOOTER */
 @media screen and (max-width: 992px) {
   .footer_top {
@@ -72,13 +84,5 @@
   .footer_bottom {
     text-align: center;
     padding-bottom: 30px;
-  }
-}
-
-/* MEDIA QUERY FOR LARGE SCREEN */
-@media screen and (min-width: 1450px) {
-  .footer {
-    padding: 4% 11%;
-    margin: 30px 0px;
   }
 }

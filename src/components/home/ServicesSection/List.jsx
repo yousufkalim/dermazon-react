@@ -1,3 +1,5 @@
+// import component and libraries
+
 import React, { useState } from 'react';
 
 export default function List(props) {

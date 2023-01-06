@@ -9,7 +9,6 @@
     "ecmaVersion": 12
   },
   "rules": {
-    "jsx-a11y/click-events-have-key-events": "off",
     "no-duplicate-imports": "error",
     "no-self-compare": "error",
     "no-plusplus": "off",

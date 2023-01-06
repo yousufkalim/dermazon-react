@@ -13,14 +13,14 @@
   gap: 26px;
   justify-content: center;
   align-items: left;
-  flex: 1;
+  flex: 2;
+  margin-top: 10%;
 }
 
 .home_span {
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
-  text-transform: uppercase;
   color: #b3881d;
 }
 
@@ -82,40 +82,29 @@
   display: flex;
   align-items: center;
   flex: 1;
+  height: 500px;
   justify-content: center;
-  position: relative;
 }
 
-.hero_img1 {
-  background: url('../../assets/images/hero1.svg');
-  height: 520px;
-  width: 360px;
-  opacity: 0.5;
-  position: absolute;
-  background-size: contain;
-  background-repeat: no-repeat;
-  left: 30px;
+.heroBG {
+  height: 600px;
+  width: 600px;
+  margin-top: 30%;
 }
 
-.hero_img2 {
-  background: url('../../assets/images/hero2.svg');
-  height: 560px;
-  width: 280px;
-  opacity: 0.5;
-  background-size: contain;
-  position: absolute;
-  background-repeat: no-repeat;
-  right: 40px;
-}
+/* MEDIA QUERY FOR LARGE DEVICES */
+@media screen and (min-width: 1450px) {
+  .home_main {
+    padding: 0% 0% 0% 10.6%;
+  }
 
-.transparent_div {
-  position: absolute;
-  height: 470px;
-  width: 100%;
-  background-color: rgba(241, 242, 254, 0.7);
-  z-index: 2;
-  cursor: pointer;
-  border-radius: 20px;
+  .home_right {
+    margin-left: 150px;
+  }
+
+  .heroBG {
+    margin-top: 60%;
+  }
 }
 
 /* MEDIA QUERY FOR Small DEVICES */
@@ -123,13 +112,11 @@
 @media screen and (max-width: 992px) {
   .home_main {
     flex-direction: column;
-    margin: 100px 0px;
     padding: 0;
   }
 
   .home_left {
     align-items: center;
-    margin-bottom: 150px;
   }
 
   .home_right {
@@ -152,33 +139,5 @@
   .home_btn {
     position: absolute;
     right: 10px;
-  }
-}
-
-/* MEDIA QUERY FOR LARGE DEVICES */
-@media screen and (min-width: 1450px) {
-  .home_main {
-    padding: 0% 0% 0% 10.6%;
-  }
-
-  .hero_img1 {
-    height: 620px;
-    width: 430px;
-    left: 5px;
-  }
-
-  .hero_img2 {
-    height: 680px;
-    width: 350px;
-    right: 100px;
-  }
-
-  .transparent_div {
-    height: 550px;
-    width: 100%;
-  }
-
-  .home_right {
-    margin-left: 150px;
   }
 }

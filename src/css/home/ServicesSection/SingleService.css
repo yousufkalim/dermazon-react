@@ -43,8 +43,8 @@
 }
 
 .single_service_icon_div {
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -80,6 +80,17 @@
   color: #fdfcfc;
   cursor: pointer;
   margin-top: 34px;
+}
+
+/* MEDIA QUERY FOR LARGE SCREEN */
+@media screen and (min-width: 1450px) {
+  .single_service_text_p {
+    width: 60%;
+  }
+
+  .single_service_container_reverse {
+    padding: 1% 11% 1% 11%;
+  }
 }
 
 /* MEDIA QUERY FOR SMALL DEVICES */
@@ -126,16 +137,5 @@
 
   .single_service_title {
     font-size: 30px;
-  }
-}
-
-/* MEDIA QUERY FOR LARGE SCREEN */
-@media screen and (min-width: 1450px) {
-  .single_service_text_p {
-    width: 60%;
-  }
-
-  .single_service_container_reverse {
-    padding: 1% 11% 1% 11%;
   }
 }

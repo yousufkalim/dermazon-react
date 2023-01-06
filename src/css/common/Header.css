@@ -65,6 +65,10 @@
   gap: 20px !important;
 }
 
+.header_bottom_center ul li a:hover {
+  color: #b3881d;
+}
+
 .header_bottom_search {
   display: flex;
   align-items: center;
@@ -89,10 +93,14 @@
   color: #02225e;
 }
 
-/* MEDIA QUERY FOR SMALL SCREEN */
-@media screen and (max-width: 768px) {
+/* MEDIA QUERY FOR LARGE DEVICES */
+@media screen and (min-width: 1450px) {
+  .header {
+    padding: 0 14% 0 6%;
+  }
 }
 
+/* MEDIA QUERY FOR SMALL SCREEN */
 @media screen and (max-width: 992px) {
   .header_top {
     margin-top: 20px;
@@ -161,12 +169,5 @@
 
   .header_bottom_search {
     display: none;
-  }
-}
-
-/* MEDIA QUERY FOR LARGE DEVICES */
-@media screen and (min-width: 1450px) {
-  .header {
-    padding: 0 6%;
   }
 }

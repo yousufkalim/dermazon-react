@@ -1,21 +1,26 @@
+// import components and libraries
+
 import React from 'react';
 import ServicesList from './ServicesList';
 import SingleService from './SingleService';
-import icon1 from '../../../assets/images/icon1.svg';
-import icon2 from '../../../assets/images/icon2.svg';
-import icon3 from '../../../assets/images/icon3.svg';
-import icon4 from '../../../assets/images/icon4.svg';
-import icon5 from '../../../assets/images/icon5.svg';
-import serviceBG from '../../../assets/images/serviceBG.svg';
 
-export default function ServicesSection() {
+// import icons and home
+
+import icon1 from '../../../assets/home/icon1.svg';
+import icon2 from '../../../assets/home/icon2.svg';
+import icon3 from '../../../assets/home/icon3.svg';
+import icon4 from '../../../assets/home/icon4.svg';
+import icon5 from '../../../assets/home/icon5.svg';
+import serviceBG from '../../../assets/home/serviceBG.svg';
+
+export default function Index() {
   return (
     <div className="services_section_main">
       <div className="services_section_bg">
         <img className="services_section_bg_img" src={serviceBG} alt="Service" />
       </div>
       <div className="services_section">
-        <span className="services_section_span">used laser for all</span>
+        <span className="services_section_span">USED USER FOR ALL</span>
         <h1 className="services_section_heading">Our Services</h1>
         <p className="services_section_text_p">
           based in the Paris region, and is specialized in lasers <br /> and energy-based device
