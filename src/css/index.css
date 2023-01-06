@@ -12,7 +12,7 @@
 /* Defaults */
 * {
   padding: 0;
-  margin: 0;
+  margin: 0 0 0 0.5%;
   box-sizing: border-box;
   font-family: 'Poppins', 'Josefin Sans', sans-serif;
 }
