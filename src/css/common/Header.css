@@ -31,6 +31,7 @@
   font-weight: 700;
   cursor: pointer;
   color: #2b2926;
+  white-space: nowrap;
 }
 
 .header_top_span:hover {
@@ -58,7 +59,7 @@
   text-decoration: none;
   font-size: 16px;
   font-weight: 600;
-  color: #2b2926;
+  color: #6a6a6a;
 }
 
 .header_bottom_center ul li {
