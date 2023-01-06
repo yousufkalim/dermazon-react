@@ -5,9 +5,9 @@
   position: relative;
 }
 
-.testimonials_heading {
+/* .testimonials_heading {
   margin-top: 100px;
-}
+} */
 
 .testimonials {
   display: flex;
@@ -98,7 +98,7 @@
 @media screen and (min-width: 1450px) {
   .client_testimonials {
     padding: 1% 6% 12% 11%;
-    margin-top: -14%;
+    /* margin-top: -14%; */
   }
 
   .testimonials_left {

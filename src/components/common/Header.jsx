@@ -27,16 +27,16 @@ export default function Header() {
               color: '#6A6A6A',
             }}
           >
-            <span className="header_top_span">Dermazon France</span>
-            (Used laser for All)
+            <span className="header_top_span">Dermazon France </span>
+            (used laser for All)
           </p>
         </div>
         <div className="header_top_right">
           <span className="header_top_span">Follow us</span>
           <div className="icons">
-            <img src={facebook} alt="logo" />
             <img src={instagram} alt="instagram" />
             <img src={linkedIn} alt="linkedIn" />
+            <img src={facebook} alt="logo" />
           </div>
         </div>
       </div>
@@ -55,7 +55,7 @@ export default function Header() {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/">Buy Laser</Link>
+              <Link to="/buy-laser">Buy Laser</Link>
             </li>
           </ul>
         </div>

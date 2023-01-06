@@ -3,6 +3,9 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+  position: fixed;
+  z-index: 2;
+  background: #fff;
 }
 
 .header_top {
