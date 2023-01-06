@@ -83,6 +83,10 @@
   flex: 2;
 }
 
+.css-1d3z3hw-MuiOutlinedInput-notchedOutline::placeholder {
+  color: #fff !important;
+}
+
 .contact_bottom_right_btn {
   display: flex;
   justify-content: space-between;

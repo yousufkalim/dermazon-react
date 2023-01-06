@@ -269,7 +269,7 @@ export default function ContactSection() {
               <span
                 style={{
                   fontSize: '18px',
-                  fontWeight: 600,
+                  fontWeight: 500,
                 }}
               >
                 Add Any Attachment
