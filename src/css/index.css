@@ -16,7 +16,7 @@
 /* Defaults */
 * {
   padding: 0;
-  margin: 0 0 0 0.5%;
+  margin: 0;
   box-sizing: border-box;
   font-family: 'Poppins', 'Josefin Sans', sans-serif;
 }
