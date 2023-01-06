@@ -3,12 +3,13 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 
 // Routes
-import Home from '../containers/Home';
+import ByLaserComponent from '../containers/ByLaserComponent';
 
 function Index() {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
+      <Route path="/" element={<ByLaserComponent />} />
+      {/* <Route path="/" element={<Home />} /> */}
     </Routes>
   );
 }

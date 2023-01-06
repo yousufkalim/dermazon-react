@@ -1,0 +1,27 @@
+.button_outer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.laser_Loadmore_button {
+  margin: 10% 0 10% 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 17px 32px;
+  gap: 10px;
+  width: 13%;
+  height: 58px;
+  border: none;
+  background: #02225e;
+
+  color: white;
+  border-radius: 100px;
+}
+.laser_loading_icon {
+  width: 50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
