@@ -1,0 +1,137 @@
+.client_testimonials {
+  height: 100%;
+  width: 100%;
+  padding: 1% 6% 12% 6%;
+  position: relative;
+}
+
+.testimonials_heading {
+  margin-top: 100px;
+}
+
+.testimonials {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.testimonials_left {
+  margin-top: 300px;
+}
+
+.testimonials_right {
+  margin-top: 110px;
+  position: relative;
+}
+
+.arrows {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  gap: 20px;
+  right: 170px;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonials_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  gap: 30px;
+  top: 36%;
+  position: absolute;
+  width: 705px;
+  height: 268.02px;
+  background: #fdfcfc;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.12);
+  border-radius: 15px;
+  transition: ease 1000ms;
+}
+
+.card_description {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+  color: #2b2926;
+}
+
+.profile {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile_img {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #02225e;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile_info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.name {
+  font-weight: 600;
+  font-size: 18px;
+  color: #2b2926;
+}
+
+.designation {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #02225e;
+}
+
+/* MEDIA QUERY FOR LARGE DEVICES */
+@media screen and (min-width: 1450px) {
+  .client_testimonials {
+    padding: 1% 6% 12% 11%;
+    margin-top: -14%;
+  }
+
+  .testimonials_left {
+    margin-left: 250px;
+  }
+
+  .testimonials_right {
+    margin-right: 200px;
+  }
+}
+
+/* MEDIA QUERY FOR Small DEVICES */
+
+@media screen and (max-width: 992px) {
+  .client_testimonials {
+    text-align: center;
+  }
+
+  .testimonials_left {
+    margin-top: 360px;
+  }
+
+  .ellipse {
+    width: 100%;
+  }
+
+  .testimonials_card {
+    top: 44%;
+    width: 80%;
+    padding: 10px;
+  }
+
+  .arrows {
+    right: 50px;
+  }
+}

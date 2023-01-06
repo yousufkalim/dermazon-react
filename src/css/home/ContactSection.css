@@ -1,0 +1,179 @@
+.contact {
+  height: 100%;
+  width: 100%;
+  background: #02225e;
+  overflow-x: hidden;
+}
+
+.contact_top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact_top_heading {
+  font-size: 36px;
+  font-weight: 600;
+  margin-top: 50px;
+  color: #fdfcfc;
+}
+
+.contact_top_text_p {
+  font-size: 20px;
+  color: #fdfcfc;
+  text-align: center;
+  margin: 10px 0px;
+  line-height: 26px;
+}
+
+.contact_bottom {
+  display: flex;
+  padding: 4% 10%;
+  gap: 20px;
+}
+
+.contact_bottom_left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+  flex: 1;
+}
+
+.contact_icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.contact_icon {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.contact_info_text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.contact_info {
+  font-weight: 600;
+  font-size: 21.3034px;
+  color: #fdfcfc;
+}
+
+.phone {
+  font-weight: 600;
+  font-size: 16px;
+  color: #fdfcfc;
+}
+
+.contact_bottom_right {
+  width: 100%;
+  flex: 2;
+}
+
+.contact_bottom_right_btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 6% 0;
+}
+
+.attachment {
+  position: relative;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.hide_file {
+  position: absolute;
+  z-index: 1000;
+  opacity: 0;
+  width: 100%;
+  cursor: pointer;
+  font-size: 24px;
+  padding: 20px;
+}
+
+.contact-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 17px 32px;
+  width: 200px;
+  height: 58px;
+  border: none;
+  color: #02225e;
+  background: #fdfcfc;
+  border-radius: 100px;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* MEDIA QUERY FOR LARGE SCREEN */
+@media screen and (min-width: 1450px) {
+  .contact_bottom {
+    padding: 4% 16%;
+  }
+}
+
+/* MEDIA QUERY FOR SMALL SCREEN */
+@media screen and (max-width: 992px) {
+  .contact {
+    margin-top: 10%;
+  }
+
+  .contact_bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact_icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .contact_icon_img {
+    width: 26px;
+    height: 26px;
+  }
+
+  .contact_info {
+    font-size: 18px;
+  }
+
+  .phone {
+    font-size: 14px;
+  }
+
+  .contact-btn {
+    width: 150px;
+    font-size: 16px;
+  }
+
+  .contact_bottom_right_btn {
+    gap: 50px;
+  }
+
+  .contact_top_text_p {
+    font-size: 18px;
+  }
+
+  .attachment {
+    width: max-content;
+  }
+}

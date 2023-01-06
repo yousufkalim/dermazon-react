@@ -1,14 +1,20 @@
 /* Importing all CSS files */
-
-@import url('../css/laser/LaserHeroSection.css');
-@import url('../css/laser/LaserItemsCard.css');
-@import url('../css/laser/LoadMoreButton.css');
+@import url('./common/Header.css');
+@import url('./common/Footer.css');
+@import url('./home/ContactSection.css');
+@import url('./home/HeroSection.css');
+@import url('./home/Testimonials.css');
+@import url('./home/ServicesSection/ServicesList.css');
+@import url('./home/ServicesSection/Index.css');
+@import url('./home/ServicesSection/SingleService.css');
+@import url('./home/ServicesSection/ServiceImageSlider.css');
 
 /* Defaults */
 * {
   padding: 0;
   margin: 0 0 0 0.5%;
   box-sizing: border-box;
+  font-family: 'Poppins', 'Josefin Sans', sans-serif;
 }
 
 /* Primary Variables */
