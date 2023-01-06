@@ -53,9 +53,9 @@ export default function Footer() {
       </div>
       <div className="footer_middle">
         <div className="footer-icons">
-          <img src={facebook} alt="logo" />
           <img src={instagram} alt="instagram" />
           <img src={linkedIn} alt="linkedIn" />
+          <img src={facebook} alt="logo" />
         </div>
       </div>
       <div className="footer_bottom">
