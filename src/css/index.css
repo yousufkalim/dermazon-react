@@ -9,6 +9,10 @@
 @import url('./home/ServicesSection/SingleService.css');
 @import url('./home/ServicesSection/ServiceImageSlider.css');
 
+@import url('../css/laser/LaserHeroSection.css');
+@import url('../css/laser/LaserItemsCard.css');
+@import url('../css/laser/LoadMoreButton.css');
+
 /* Defaults */
 * {
   padding: 0;
