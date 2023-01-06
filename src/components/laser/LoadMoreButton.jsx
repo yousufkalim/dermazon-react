@@ -1,5 +1,5 @@
 import React from 'react';
-import loadingIcon from '../../assets/Vector (1).png';
+import RefreshIcon from '@mui/icons-material/Refresh';
 
 export default function LoadMoreButton() {
   return (
@@ -7,7 +7,7 @@ export default function LoadMoreButton() {
       <div className="laser_Loadmore_button">
         <div type="submit">Load more</div>
         <div className="laser_loading_icon">
-          <img src={loadingIcon} alt="home page" />
+          <RefreshIcon />
         </div>
       </div>
     </div>

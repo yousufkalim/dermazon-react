@@ -1,18 +1,13 @@
-// Init
 import React, { useEffect, useState } from 'react';
+import API from '../../api';
+import LaserHeroSection from './LaserHeroSection';
+import LaserItemsCard from './LaserItemsCard';
+import LoadMoreButton from './LoadMoreButton';
 
-// Importing Components
-
-import LaserComponents from '../components/laser/LaserComponents';
-import API from '../api';
-// Home Component
-export default function Home() {
+export default function LaserComponents() {
   const [products, setProducts] = useState([]);
 
-  console.log('Products page ===>');
-
   const getProducts = async () => {
-    console.log('Get products run');
     await API('get', '/products')
       .then((res) => {
         setProducts(res?.data?.data?.products);
@@ -26,8 +21,12 @@ export default function Home() {
   }, []);
 
   return (
-    <div>
-      <LaserComponents products={products} />
+    <div className="Laser_components">
+      <LaserHeroSection />
+      {products?.map((product) => (
+        <LaserItemsCard product={product} />
+      ))}
+      <LoadMoreButton />
     </div>
   );
 }

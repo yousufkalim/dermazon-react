@@ -1,32 +1,26 @@
 .Laser_items_card_outer {
   display: flex;
-
   justify-content: center;
   margin: 2% 0 2% 0;
-  border-radius: 20px;
-  width: 80%;
+  width: 100%;
   height: 100%;
   overflow: hidden;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
-  border-radius: 20px;
 }
 
 .Laser_items_card {
   transition: 0.5s;
   display: flex;
-  flex-direction: row;
   align-items: center;
   gap: 5%;
-  width: 100%;
+  width: 73%;
   height: 30vh;
-  background: #fffdfd;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
   border-radius: 20px;
   cursor: pointer;
   flex: none;
   order: 0;
   align-self: stretch;
-  flex-grow: 0;
+  overflow: hidden;
 }
 .Laser_items_card:hover {
   background-color: rgb(255, 245, 220);
@@ -34,10 +28,10 @@
 .Laser_items_card_expand {
   transition: 0.5s;
   display: flex;
-  flex-direction: row;
   align-items: center;
+  overflow: hidden;
   gap: 5%;
-  width: 100%;
+  width: 73%;
   height: 50vh;
   background: #fffdfd;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
@@ -46,56 +40,47 @@
   flex: none;
   order: 0;
   align-self: stretch;
-  flex-grow: 0;
 }
 .Laser_items_card_expand:hover {
   background-color: rgb(255, 245, 220);
 }
 
 .items_card_image {
-  /* background-color: #b3881d; */
-  /* margin-left: 2%; */
   width: 15%;
   height: 100%;
+  margin: 0;
 }
 .items_card_image img {
   width: 100%;
   height: 100%;
-  /* border-radius: 20px; */
   object-fit: cover;
 }
 .items_card_text {
-  /* display: flex;
-  flex-direction: column; */
   width: 65%;
-  /* background-color: #cc7373; */
+  align-self: center;
 }
+
 .items_card_text_price {
   width: 100%;
-  /* height: 30px; */
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
-  /* line-height: 30px; */
   display: flex;
   align-items: center;
   color: #b3881d;
-  flex: none;
   order: 0;
   align-self: stretch;
   flex-grow: 0;
-  margin: 2% 0 3% 0;
+  margin: 5% 0 3% 0;
 }
 .items_card_text_heading {
   width: 100%;
-  /* height: 30px; */
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
   line-height: 0;
-  /* background-color: #6a6a6a; */
   display: flex;
   align-items: center;
   color: #2b2926;
@@ -107,45 +92,32 @@
 }
 .items_card_text_description {
   width: 100%;
-  /* height: 19px; */
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  /* line-height: 0%; */
-  /* background-color: #b3881d; */
   margin: 0 0 0.5% 0;
   color: #6a6a6a;
-  flex: none;
   order: 2;
   align-self: stretch;
-  flex-grow: 0;
 }
 .items_card_text_date {
   width: 100%;
-  /* height: 21px; */
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  /* line-height: 21px; */
   display: flex;
   align-items: center;
-  /* justify-content: flex-start; */
   color: #02225e;
   flex: none;
-  /* order: 1; */
+  order: 1;
   flex-grow: 0;
-  margin: 0 0 2% 0%;
-  /* background-color: #02225e; */
+  margin: 0 0 2% -0.5%;
 }
-.items_card_text_date_icon {
-  /* margin: 0 0.8% 0 -0.4%; */
-  /* background-color: #02225e; */
-}
+
 .date_format {
-  /* background-color: #02225e; */
-  margin-bottom: 0.5%;
+  margin: 0 1% 0.5% 1%;
 }
 .items_card_share_icon {
   display: flex;
@@ -155,14 +127,10 @@
   height: 100%;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
-  flex: none;
   order: 0;
-  flex-grow: 0;
+  color: #b3881d;
 }
-.items_card_share_icon img {
-  width: 20%;
-  object-fit: cover;
-}
+
 .items_card_share_icon img:hover {
   background: #ffefcb;
 }
@@ -171,8 +139,7 @@
   transition: 0.5s;
 }
 .items_card_description {
-  width: 738px;
-  height: 72px;
+  width: 100%;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
@@ -182,7 +149,7 @@
   flex: none;
   order: 0;
   align-self: stretch;
-  flex-grow: 0;
+  margin: 0 0 2% -1.5%;
 }
 .laser_collapse {
   margin-bottom: 8%;
@@ -196,6 +163,7 @@
 .items_card_description p {
   margin-left: 1%;
 }
+
 @media only screen and (max-width: 700px) {
   /* For mobile phones: */
   .Laser_items_card_outer {
@@ -209,26 +177,20 @@
     overflow: hidden;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
     border-radius: 20px;
-    /* padding: 5% 0 5% 0; */
-    padding: 0;
   }
 
   .Laser_items_card {
     transition: 0.5s;
     display: flex;
-    /* padding: 5% 0 5% 0; */
     align-items: center;
-    /* gap: 2.5%; */
     width: 100%;
-    height: 20vh;
+    height: 25vh;
     background: #fffdfd;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
     border-radius: 20px;
     cursor: pointer;
-    flex: none;
     order: 0;
     align-self: stretch;
-    flex-grow: 0;
   }
   .Laser_items_card:hover {
     background-color: rgb(255, 245, 220);
@@ -236,19 +198,15 @@
   .Laser_items_card_expand {
     transition: 0.5s;
     display: flex;
-
     align-items: center;
-    /* gap: 2.5%; */
     width: 100%;
     height: 35vh;
     background: #fffdfd;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
     border-radius: 20px;
     cursor: pointer;
-    flex: none;
     order: 0;
     align-self: stretch;
-    flex-grow: 0;
   }
   .Laser_items_card_expand:hover {
     background-color: rgb(255, 245, 220);
@@ -258,59 +216,45 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 0%;
-    /* background-color: #b3881d; */
     width: 30%;
     height: 100%;
   }
   .items_card_image img {
     width: 100%;
     height: 100%;
-    /* border-radius: 20px; */
-    /* object-fit: contain; */
   }
   .items_card_text {
-    /* transition: 5.5s; */
     width: 55%;
-    height: auto;
-    background-color: #8ea1c4;
-    margin: 0%;
   }
   .items_card_text_price {
     width: 60%;
-    /* background-color: #919b9b; */
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
-    /* font-size: 4vw; */
-    /* margin: 0 0 4% 0; */
+    font-size: 17px;
     display: flex;
     align-items: center;
     color: #b3881d;
-    flex: none;
     order: 0;
     align-self: stretch;
-    flex-grow: 0;
+    margin-bottom: 5%;
   }
   .items_card_text_heading {
     width: 100%;
-
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
-    font-size: 18px;
-    /* line-height: 30px; */
+    font-size: 16px;
     display: flex;
     align-items: center;
     color: #2b2926;
     flex: none;
-    /* order: 1; */
+    order: 1;
     align-self: stretch;
-    flex-grow: 0;
+    margin-bottom: 5%;
   }
   .items_card_text_description {
     width: 100%;
-    /* height: 19px; */
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
@@ -319,13 +263,10 @@
     color: #6a6a6a;
     flex: none;
     order: 2;
-    background-color: #b3881d;
-    margin: 1% 0 2% 0;
-    flex-grow: 0;
+    margin: 5% 0 5% 0;
   }
   .items_card_text_date {
     width: 100%;
-    /* height: 21px; */
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
@@ -336,9 +277,7 @@
     color: #02225e;
     flex: none;
     order: 1;
-    flex-grow: 0;
     margin-top: 5%;
-    /* display: none; */
   }
   .items_card_share_icon {
     display: flex;
@@ -346,21 +285,7 @@
     align-items: center;
     width: 15%;
     height: 100%;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    flex: none;
     order: 0;
-    flex-grow: 0;
-    transition: 0.5s;
-    /* background-color: aqua; */
-  }
-  .items_card_share_icon img {
-    width: 30%;
-    object-fit: cover;
-    transition: 0.5s;
-  }
-  .items_card_share_icon img:hover {
-    background: #ffefcb;
     transition: 0.5s;
   }
   .items_card_share_icon:hover {
@@ -369,20 +294,15 @@
   }
   .items_card_description {
     width: 45vw;
-    /* height: 100%; */
     margin: 10% 0 2% 0;
-    /* margin: 1% 0 2% 0; */
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
     font-size: 10px;
     line-height: 1.5vh;
     color: #919b9b;
-    flex: none;
     order: 0;
     align-self: stretch;
-    flex-grow: 0;
-    /* background-color: #b3881d; */
   }
 
   .items_card_telephone {
@@ -393,196 +313,5 @@
   }
   .items_card_description p {
     margin-left: 1%;
-  }
-}
-
-@media only screen and (min-width: 700px) and (max-width: 1000px) {
-  .Laser_items_card_outer {
-    display: flex;
-
-    justify-content: center;
-    margin: 2% 0 2% 0;
-    border-radius: 20px;
-    width: 80%;
-    height: 100%;
-    overflow: hidden;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
-    border-radius: 20px;
-  }
-
-  .Laser_items_card {
-    transition: 0.5s;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 4%;
-    width: 100%;
-    height: 30vh;
-    background: #fffdfd;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
-    border-radius: 20px;
-    cursor: pointer;
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
-  }
-  .Laser_items_card:hover {
-    background-color: rgb(255, 245, 220);
-  }
-  .Laser_items_card_expand {
-    transition: 0.5s;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 4%;
-    width: 100%;
-    height: 50vh;
-    background: #fffdfd;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
-    border-radius: 20px;
-    cursor: pointer;
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
-  }
-  .Laser_items_card_expand:hover {
-    background-color: rgb(255, 245, 220);
-  }
-
-  .items_card_image {
-    width: 15%;
-    height: 100%;
-  }
-  .items_card_image img {
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
-  }
-  .items_card_text {
-    width: 60%;
-    /* background-color: #b3881d; */
-  }
-  .items_card_text_price {
-    width: 100%;
-    /* height: 30px; */
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 30px;
-    display: flex;
-    align-items: center;
-    color: #b3881d;
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
-  }
-  .items_card_text_heading {
-    width: 100%;
-    /* height: 30px; */
-    /* margin: 2% 0 0 0; */
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 30px;
-    display: flex;
-    align-items: center;
-    color: #2b2926;
-    flex: none;
-    order: 1;
-    align-self: stretch;
-    flex-grow: 0;
-    /* background-color: aqua; */
-  }
-  .items_card_text_description {
-    margin: 2% 0 0 0;
-    width: 100%;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 2vw;
-    /* background-color: aliceblue; */
-    color: #6a6a6a;
-    flex: none;
-    word-wrap: none;
-    order: 2;
-    align-self: stretch;
-    flex-grow: 0;
-  }
-  .items_card_text_date {
-    /* margin: 2% 0 0 0; */
-    width: 100%;
-    display: flex;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
-    display: flex;
-    align-items: center;
-    color: #02225e;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-  }
-  .items_card_text_date div {
-    margin: 0 1% 0 0;
-  }
-  .items_card_share_icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 17%;
-    height: 100%;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    transition: 0.5s;
-  }
-  .items_card_share_icon img {
-    width: 20%;
-    object-fit: cover;
-    transition: 0.5s;
-  }
-  .items_card_share_icon img:hover {
-    background: #ffefcb;
-    transition: 0.5s;
-  }
-  .items_card_share_icon:hover {
-    background: #ffefcb;
-    transition: 0.5s;
-  }
-  .items_card_description {
-    width: 738px;
-    height: 72px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: #919b9b;
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
-  }
-  .laser_collapse {
-    margin-bottom: 15%;
-  }
-  .items_card_telephone {
-    color: #b3881d;
-  }
-  .items_card_description div {
-    display: flex;
-  }
-  .items_card_description p {
-    margin-left: 1%;
-    font-weight: bold;
   }
 }

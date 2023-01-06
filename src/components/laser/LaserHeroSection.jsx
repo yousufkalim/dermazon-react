@@ -1,5 +1,5 @@
 import React from 'react';
-import SearchIcon from '../../assets/icon.png';
+import SearchIcon from '@mui/icons-material/Search';
 
 export default function LaserHeroSection() {
   return (
@@ -13,20 +13,18 @@ export default function LaserHeroSection() {
         </div>
       </div>
       <div className="laser_search_button_div">
-        <div className="laser_hero_section_header_search">
-          <div className="laser_hero_section_header_search_inner_div">
-            <div className="laser_search_icon">
-              <div className="search_icon">
-                <img src={SearchIcon} alt="search" />
-              </div>
-              <div className="laser_hero_section_header_search_text">Example</div>
-            </div>
-            <div className="laser_button_div">
-              <button className="laser_hero_section_header_search_button" type="button">
-                Search
-              </button>
-            </div>
+        <div className="laser_search_icon">
+          <div className="search_icon">
+            <SearchIcon />
           </div>
+          <div className="laser_hero_section_header_search_input">
+            <input placeholder="Example" />
+          </div>
+        </div>
+        <div className="laser_button_div">
+          <button className="laser_hero_section_header_search_button" type="button">
+            Search
+          </button>
         </div>
       </div>
     </div>
