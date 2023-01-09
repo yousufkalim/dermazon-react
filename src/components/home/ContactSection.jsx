@@ -8,8 +8,7 @@ import TextField from '@mui/material/TextField';
 import { makeStyles } from '@mui/styles';
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import { InputBase, MenuItem, Select } from '@mui/material';
-import { styled } from '@mui/material/styles';
-
+import styled from '@emotion/styled';
 // import icons and images
 
 import phone from '../../assets/home/phone.svg';
@@ -35,7 +34,7 @@ const useOutlinedInputStyles = makeStyles({
   },
 });
 
-const BootstrapInput = styled(InputBase)(({ theme }) => ({
+const BootstrapInput = styled(InputBase)(() => ({
   '& .MuiInputBase-input': {
     backgroundColor: '#02225E',
     borderRadius: '100px',
@@ -43,8 +42,6 @@ const BootstrapInput = styled(InputBase)(({ theme }) => ({
     fontSize: 16,
     color: 'white',
     padding: '1.3% 4%',
-    transition: theme.transitions.create(['border-color', 'box-shadow']),
-    // Use the system font instead of the default Roboto font.
     '&:focus': {
       borderRadius: '100px',
       borderColor: '#ffffff',
