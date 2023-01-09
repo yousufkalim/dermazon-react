@@ -1,7 +1,7 @@
 .Laser_items_card_outer {
   display: flex;
   justify-content: center;
-  margin: 2% 0 2% 0;
+  margin: 2% 0 0% 0;
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -12,7 +12,7 @@
   display: flex;
   align-items: center;
   gap: 5%;
-  width: 73%;
+  width: 80%;
   height: 30vh;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
   border-radius: 20px;
@@ -21,6 +21,7 @@
   order: 0;
   align-self: stretch;
   overflow: hidden;
+  margin-bottom: 2%;
 }
 .Laser_items_card:hover {
   background-color: rgb(255, 245, 220);
@@ -72,7 +73,6 @@
   order: 0;
   align-self: stretch;
   flex-grow: 0;
-  margin: 5% 0 3% 0;
 }
 .items_card_text_heading {
   width: 100%;
@@ -113,7 +113,7 @@
   flex: none;
   order: 1;
   flex-grow: 0;
-  margin: 0 0 2% -0.5%;
+  margin: 0 0 2% 0%;
 }
 
 .date_format {
@@ -149,11 +149,8 @@
   flex: none;
   order: 0;
   align-self: stretch;
-  margin: 0 0 2% -1.5%;
 }
-.laser_collapse {
-  margin-bottom: 8%;
-}
+
 .items_card_telephone {
   color: #b3881d;
 }
@@ -167,46 +164,27 @@
 @media only screen and (max-width: 700px) {
   /* For mobile phones: */
   .Laser_items_card_outer {
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin: 2% 0 2% 0;
     border-radius: 20px;
-    width: 95%;
-    height: 100%;
-    overflow: hidden;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
-    border-radius: 20px;
+    width: 100%;
+    padding: 1%;
   }
 
   .Laser_items_card {
-    transition: 0.5s;
-    display: flex;
-    align-items: center;
     width: 100%;
     height: 25vh;
+
     background: #fffdfd;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
-    border-radius: 20px;
-    cursor: pointer;
-    order: 0;
-    align-self: stretch;
   }
   .Laser_items_card:hover {
     background-color: rgb(255, 245, 220);
   }
   .Laser_items_card_expand {
-    transition: 0.5s;
-    display: flex;
-    align-items: center;
     width: 100%;
     height: 35vh;
     background: #fffdfd;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
     border-radius: 20px;
-    cursor: pointer;
-    order: 0;
-    align-self: stretch;
   }
   .Laser_items_card_expand:hover {
     background-color: rgb(255, 245, 220);
@@ -219,73 +197,36 @@
     width: 30%;
     height: 100%;
   }
-  .items_card_image img {
-    width: 100%;
-    height: 100%;
-  }
+
   .items_card_text {
     width: 55%;
   }
   .items_card_text_price {
     width: 60%;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
     font-size: 17px;
-    display: flex;
-    align-items: center;
-    color: #b3881d;
-    order: 0;
-    align-self: stretch;
     margin-bottom: 5%;
   }
   .items_card_text_heading {
-    width: 100%;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
     font-size: 16px;
-    display: flex;
-    align-items: center;
-    color: #2b2926;
-    flex: none;
-    order: 1;
-    align-self: stretch;
     margin-bottom: 5%;
   }
   .items_card_text_description {
-    width: 100%;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
     font-size: 15px;
     line-height: 15px;
-    color: #6a6a6a;
+
     flex: none;
     order: 2;
     margin: 5% 0 5% 0;
   }
   .items_card_text_date {
-    width: 100%;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
     line-height: 21px;
     display: flex;
     align-items: center;
-    color: #02225e;
-    flex: none;
-    order: 1;
     margin-top: 5%;
   }
   .items_card_share_icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 15%;
     height: 100%;
-    order: 0;
     transition: 0.5s;
   }
   .items_card_share_icon:hover {
@@ -295,23 +236,7 @@
   .items_card_description {
     width: 45vw;
     margin: 10% 0 2% 0;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
     font-size: 10px;
     line-height: 1.5vh;
-    color: #919b9b;
-    order: 0;
-    align-self: stretch;
-  }
-
-  .items_card_telephone {
-    color: #b3881d;
-  }
-  .items_card_description div {
-    display: flex;
-  }
-  .items_card_description p {
-    margin-left: 1%;
   }
 }
