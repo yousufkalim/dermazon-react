@@ -113,12 +113,19 @@
 /* MEDIA QUERY FOR Small DEVICES */
 
 @media screen and (max-width: 992px) {
+  .testimonials {
+    margin-top: 20%;
+  }
   .client_testimonials {
     text-align: center;
+    padding-top: 20%;
   }
 
   .testimonials_left {
     margin-top: 360px;
+  }
+  .testimonials_card {
+    height: fit-content;
   }
 
   .ellipse {
