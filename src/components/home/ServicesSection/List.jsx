@@ -1,13 +1,12 @@
 // import component and libraries
 
 import React, { useState } from 'react';
+import Tooltip from '@mui/material/Tooltip';
 
 export default function List(props) {
   const { title, description, icon, number, background, titleColor, sectionId } = props;
 
   const [isHover, setIsHover] = useState(false);
-  const [isHovered, setIsHovered] = useState(true);
-
   const handleMouseEnter = () => {
     setIsHover(true);
   };
@@ -56,13 +55,11 @@ export default function List(props) {
               >
                 {title}
               </span>
-              <span
-                className="service_description"
-                onMouseEnter={() => setIsHovered(false)}
-                onMouseLeave={() => setIsHovered(true)}
-              >
-                {isHovered ? <p>{`${description.substring(0, 100)}...`}</p> : <p>{description}</p>}
-              </span>
+              <Tooltip title={description}>
+                <span className="service_description">
+                  <p>{`${description.substring(0, 100)}...`}</p>
+                </span>
+              </Tooltip>
             </div>
           </div>
         </div>

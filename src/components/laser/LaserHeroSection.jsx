@@ -13,17 +13,6 @@ export default function LaserHeroSection() {
         </div>
       </div>
       <InputSearch />
-      {/* <div className="laser_search_button_div">
-        <div className="laser_search_icon">
-          <div className="search_icon">
-            <SearchIcon />
-          </div>
-          <div className="laser_hero_section_header_search_input">
-            <input placeholder="Example" />
-          </div>
-        </div>
-        
-      </div> */}
     </div>
   );
 }

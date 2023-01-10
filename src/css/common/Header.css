@@ -6,7 +6,7 @@
   position: fixed;
   z-index: 2;
   background: #fff;
-  padding: 2% 10%;
+  padding: 1% 10%;
   /* background-color: #02225e; */
 }
 
@@ -102,7 +102,7 @@
 /* MEDIA QUERY FOR LARGE DEVICES */
 @media screen and (min-width: 1450px) {
   .header {
-    padding: 2% 10%;
+    padding: 1% 10%;
   }
 }
 
@@ -177,6 +177,7 @@
     display: none;
   }
 }
+
 @media only screen and (max-width: 700px) {
   .header {
     width: 100%;

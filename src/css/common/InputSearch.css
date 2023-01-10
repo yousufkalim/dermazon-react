@@ -11,6 +11,7 @@
   border-radius: 100px;
   position: relative;
 }
+
 .home_btn {
   flex-direction: row;
   justify-content: center;
@@ -21,7 +22,7 @@
   height: 55px;
   background: #02225e;
   border-radius: 100px;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 16px;
   color: #ffffff;
   border: none;
@@ -44,6 +45,7 @@
   .home_btn_div {
     width: 100%;
   }
+
   .home_btn {
     position: absolute;
     right: 10px;
