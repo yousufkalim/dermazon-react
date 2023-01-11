@@ -1,10 +1,9 @@
 // import components and libraries
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
-
 // import icons and images
 
 import logo from '../../assets/home/logo.svg';
@@ -18,9 +17,29 @@ export default function Header() {
   const handleShowNavbar = () => {
     setShowNavbar(!showNavbar);
   };
+  const [showTopNavbar, setShowTopNavbar] = useState(false);
+  const controlTopNavbar = () => {
+    if (window.scrollY > 150) {
+      setShowTopNavbar(true);
+    } else {
+      setShowTopNavbar(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', controlTopNavbar);
+    return () => {
+      window.removeEventListener('scroll', controlTopNavbar);
+    };
+  }, []);
   return (
     <div className="header">
-      <div className="header_top">
+      <div
+        className="header_top"
+        style={{
+          display: `${showTopNavbar ? 'none' : ''}`,
+        }}
+      >
         <div className="header_top_left">
           <p
             style={{
@@ -35,7 +54,14 @@ export default function Header() {
           <span className="header_top_span">Follow us</span>
           <div className="icons">
             <img src={instagram} alt="instagram" />
-            <img src={linkedIn} alt="linkedIn" />
+            <a
+              style={{
+                marginBottom: '-7px',
+              }}
+              href="https://www.linkedin.com/company/dermazon-france/"
+            >
+              <img src={linkedIn} alt="linkedIn" />
+            </a>
             <img src={facebook} alt="logo" />
           </div>
         </div>
@@ -43,7 +69,9 @@ export default function Header() {
       <div className="header_bottom">
         <div className="header_bottom_left">
           <div className="logo">
-            <img src={logo} alt="logo" />
+            <Link to="/">
+              <img src={logo} alt="logo" />
+            </Link>
           </div>
         </div>
         <div className="menu-icon" onClick={handleShowNavbar} role="presentation">

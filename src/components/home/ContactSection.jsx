@@ -1,6 +1,6 @@
 // import components and libraries
 
-import React from 'react';
+import React, { useState } from 'react';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import FormControl from '@mui/material/FormControl';
@@ -9,6 +9,9 @@ import { makeStyles } from '@mui/styles';
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import { InputBase, MenuItem, Select } from '@mui/material';
 import styled from '@emotion/styled';
+import { toast } from 'react-toastify';
+import emailjs from '@emailjs/browser';
+
 // import icons and images
 
 import phone from '../../assets/home/phone.svg';
@@ -50,6 +53,27 @@ const BootstrapInput = styled(InputBase)(() => ({
 }));
 export default function ContactSection() {
   const outlinedInputStyles = useOutlinedInputStyles();
+  const [input, setInput] = useState({});
+
+  const handleChange = (e) => {
+    setInput({ ...input, [e.target.name]: e.target.value });
+  };
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    const body = {
+      ...input,
+    };
+    emailjs
+      .send('service_atan74l', 'template_yr12h2h', body, 'EyhGbZpt9YbWWZt09')
+      .then(() => {
+        toast.success('Thanks For Contacting!');
+        setInput({ name: '', company: '', email: '', phone: '', request: '', message: '' });
+      })
+      .catch((err) => {
+        toast.error(err);
+      });
+  }
 
   return (
     <div className="contact">
@@ -118,6 +142,7 @@ export default function ContactSection() {
                     autoComplete="off"
                     className="nameField"
                     id="outlined-name"
+                    onChange={handleChange}
                     classes={outlinedInputStyles}
                     size="small"
                     placeholder="Name"
@@ -143,6 +168,7 @@ export default function ContactSection() {
                     autoComplete="off"
                     className="companyField"
                     id="outlined-company"
+                    onChange={handleChange}
                     classes={outlinedInputStyles}
                     size="small"
                     placeholder="Company Name"
@@ -168,6 +194,7 @@ export default function ContactSection() {
                     autoComplete="off"
                     className="emailField"
                     id="outlined-email"
+                    onChange={handleChange}
                     classes={outlinedInputStyles}
                     size="small"
                     placeholder="Email"
@@ -193,6 +220,7 @@ export default function ContactSection() {
                     autoComplete="off"
                     className="phoneField"
                     id="outlined-phone"
+                    onChange={handleChange}
                     classes={outlinedInputStyles}
                     size="small"
                     placeholder="Telephone"
@@ -209,6 +237,7 @@ export default function ContactSection() {
                     name="request"
                     label="Your Request"
                     input={<BootstrapInput />}
+                    onChange={handleChange}
                     displayEmpty
                   >
                     <MenuItem
@@ -242,6 +271,7 @@ export default function ContactSection() {
                     className="messageField"
                     multiline
                     rows={4}
+                    onChange={handleChange}
                     id="outlined-message"
                     size="small"
                     placeholder="Your Message"
@@ -272,7 +302,7 @@ export default function ContactSection() {
                 Add Any Attachment
               </span>
             </div>
-            <button className="contact-btn" type="submit">
+            <button className="contact-btn" type="submit" onClick={handleSubmit}>
               Send{' '}
               <ArrowRightAltIcon
                 style={{

@@ -1,10 +1,12 @@
 // import components and libraries
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 import ServiceImageSlider from './ServiceImageSlider';
 
 export default function SingleService(props) {
-  const { reverse, bgColor, icon, title, btnBg, btnText, serviceDescription, sectionId } = props;
+  const { reverse, bgColor, icon, title, btnBg, btnText, serviceDescription, sectionId, Path } =
+    props;
   const firstWord = title.split(' ')[0];
   function removeFirstWord() {
     const indexOfSpace = title.indexOf(' ');
@@ -42,15 +44,22 @@ export default function SingleService(props) {
           {removeFirstWord(title)}
         </h1>
         <p className="single_service_text_p">{serviceDescription}</p>
-        <button
+        <Link
+          to={Path}
           style={{
-            background: btnBg,
+            textDecoration: 'none',
           }}
-          className="single_service_btn"
-          type="button"
         >
-          {btnText}
-        </button>
+          <button
+            style={{
+              background: btnBg,
+            }}
+            className="single_service_btn"
+            type="button"
+          >
+            {btnText}
+          </button>
+        </Link>
       </div>
     </div>
   );

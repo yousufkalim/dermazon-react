@@ -36,6 +36,7 @@ export default function Index() {
         btnBg="#02225E"
         btnText="Buy a laser"
         serviceDescription="We sell high quality and brand premium pre-owned laser, they are checked and revised by independent and experienced service engineers, it is a cost effective option to buy the right used laser, you can save on average of 40% compared to new."
+        Path="/buy-laser"
       />
       <SingleService
         sectionId="SellYourLaser"
