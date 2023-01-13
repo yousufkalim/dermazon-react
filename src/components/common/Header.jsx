@@ -8,7 +8,6 @@ import SearchIcon from '@mui/icons-material/Search';
 
 import logo from '../../assets/home/logo.svg';
 import facebook from '../../assets/home/facebook.svg';
-import instagram from '../../assets/home/instagram.svg';
 import linkedIn from '../../assets/home/linkedIn.svg';
 
 export default function Header() {
@@ -53,16 +52,17 @@ export default function Header() {
         <div className="header_top_right">
           <span className="header_top_span">Follow us</span>
           <div className="icons">
-            <img src={instagram} alt="instagram" />
+            <img src={facebook} alt="logo" />
             <a
               style={{
                 marginBottom: '-7px',
               }}
               href="https://www.linkedin.com/company/dermazon-france/"
+              target="_blank"
+              rel="noreferrer"
             >
               <img src={linkedIn} alt="linkedIn" />
             </a>
-            <img src={facebook} alt="logo" />
           </div>
         </div>
       </div>

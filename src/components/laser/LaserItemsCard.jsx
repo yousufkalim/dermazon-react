@@ -23,14 +23,11 @@ export default function LaserItemsCard({ product }) {
         </div>
         <div className="items_card_text">
           <div className="items_card_text_price">
-            {product?.price}
-            <div>
-              {' '}
-              <EuroIcon fontSize="small" />
-            </div>
+            {product?.price}&nbsp;
+            <EuroIcon fontSize="small" />
           </div>
           <div className="items_card_text_heading">
-            {product?.name} {product?.brand ? '-' : ''} {product?.brand}{' '}
+            {product?.name} {product?.brand ? '-' : ''} {product?.brand}
           </div>
 
           <div className="items_card_text_description">{product?.description}</div>
@@ -44,12 +41,15 @@ export default function LaserItemsCard({ product }) {
 
           <Collapse in={expanded} timeout="auto" unmountOnExit className="laser_collapse">
             <div className="items_card_description">
-              <div>{product?.technical_description}</div>
-
-              <div className="items_card_Year">
-                Year <p>{moment(product.createdAt).format('YYYY')}</p>
+              <div>
+                {product?.technical_description
+                  ? product?.technical_description
+                  : '2020 handpiece Perfect condition BTL emtone with afordable price 2020 handpiece Perfect condition BTL emtone with afordable price'}
               </div>
 
+              <div className="items_card_Year">
+                Year <p>{moment(product.createdAt).format('YYYY')} </p>
+              </div>
               <div className="items_card_telephone">
                 {' '}
                 Telephone <p> +33 695 12 03 33</p>
