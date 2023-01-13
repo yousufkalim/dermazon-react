@@ -118,7 +118,7 @@ export default function ContactSection() {
             </div>
             <div className="contact_info_text">
               <span className="contact_info">Email</span>
-              <span className="phone">contact@Dermazon.fr</span>
+              <span className="phone">contact@dermazon.fr</span>
             </div>
           </div>
         </div>

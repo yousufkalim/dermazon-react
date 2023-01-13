@@ -5,8 +5,19 @@ import { Link } from 'react-router-dom';
 import ServiceImageSlider from './ServiceImageSlider';
 
 export default function SingleService(props) {
-  const { reverse, bgColor, icon, title, btnBg, btnText, serviceDescription, sectionId, Path } =
-    props;
+  const {
+    reverse,
+    bgColor,
+    icon,
+    title,
+    btnBg,
+    btnText,
+    serviceDescription,
+    sectionId,
+    Path,
+    image,
+    showImage,
+  } = props;
   const firstWord = title.split(' ')[0];
   function removeFirstWord() {
     const indexOfSpace = title.indexOf(' ');
@@ -22,7 +33,18 @@ export default function SingleService(props) {
       id={sectionId}
     >
       <div className={reverse ? 'single_service_left_reverse' : 'single_service_left'}>
-        <ServiceImageSlider />
+        {reverse || showImage ? (
+          <img
+            src={image}
+            alt="Single Service"
+            style={{
+              height: '450px',
+              width: '450px',
+            }}
+          />
+        ) : (
+          <ServiceImageSlider />
+        )}
       </div>
       <div className="single_service_right">
         <div
