@@ -54,52 +54,45 @@
   height: 100%;
   object-fit: cover;
 }
+
 .items_card_text {
   width: 65%;
   padding: 3% 0 3% 0;
 }
 
 .items_card_text_price {
+  display: flex;
+  line-height: 30px;
+  align-items: center;
+  word-wrap: break-word;
   width: 100%;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
-  display: flex;
-  align-items: center;
   color: #b3881d;
-  order: 0;
-  align-self: stretch;
-  flex-grow: 0;
 }
-.items_card_text_price div {
-  display: flex;
-  align-items: center;
-  padding-left: 0.5%;
-}
+
 .items_card_text_heading {
   width: 100%;
+  word-wrap: break-word;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
-  line-height: 0;
-  display: flex;
-  align-items: center;
+  line-height: 30px;
   color: #2b2926;
-  flex: none;
-  order: 1;
-  align-self: stretch;
-  flex-grow: 0;
-  padding: 4% 0 3% 0;
+  padding: 1% 0 0.5% 0;
 }
 .items_card_text_description {
   width: 100%;
+  word-wrap: break-word;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  margin: 0 0 1% 0;
+  line-height: 120%;
+  padding: 0.5% 0 1% 0;
   color: #6a6a6a;
   order: 2;
   align-self: stretch;
@@ -142,11 +135,11 @@
 }
 .items_card_description {
   width: 100%;
+  word-wrap: break-word;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
   color: #919b9b;
   flex: none;
   order: 0;
@@ -156,12 +149,14 @@
 
 .items_card_telephone {
   padding-top: 2%;
+  display: flex;
 }
 .items_card_Year {
   padding-top: 2%;
+  display: flex;
 }
 .items_card_description div {
-  display: flex;
+  word-wrap: break-word;
 }
 .items_card_description p {
   margin-left: 1%;
@@ -170,80 +165,55 @@
 
 @media only screen and (max-width: 700px) {
   /* For mobile phones: */
-  .Laser_items_card_outer {
-    flex-direction: column;
-    border-radius: 20px;
-    width: 100%;
-    padding: 1%;
-  }
-
   .Laser_items_card {
-    width: 100%;
-    height: 25vh;
-
-    background: #fffdfd;
-  }
-  .Laser_items_card:hover {
-    background-color: rgb(255, 245, 220);
-  }
-  .Laser_items_card_expand {
-    width: 100%;
-    height: 35vh;
-    background: #fffdfd;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
+    width: 90%;
     border-radius: 20px;
   }
-  .Laser_items_card_expand:hover {
-    background-color: rgb(255, 245, 220);
+
+  .Laser_items_card_expand {
+    border-radius: 20px;
+    width: 90%;
   }
 
-  .items_card_image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30%;
-    height: 100%;
-  }
-
-  .items_card_text {
-    width: 55%;
-  }
   .items_card_text_price {
-    width: 60%;
-    font-size: 17px;
-    margin-bottom: 5%;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 30px;
   }
+
   .items_card_text_heading {
-    font-size: 16px;
-    margin-bottom: 5%;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
   }
   .items_card_text_description {
-    font-size: 15px;
-    line-height: 15px;
-
-    flex: none;
-    order: 2;
-    margin: 5% 0 5% 0;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 120%;
   }
   .items_card_text_date {
-    line-height: 21px;
-    display: flex;
-    align-items: center;
-    margin-top: 5%;
+    font-size: 12px;
   }
-  .items_card_share_icon {
-    width: 15%;
-    height: 100%;
-    transition: 0.5s;
+
+  .date_format {
+    margin: 0 1% 0.5% 1%;
   }
-  .items_card_share_icon:hover {
-    background: #ffefcb;
-    transition: 0.5s;
-  }
+
   .items_card_description {
-    width: 45vw;
-    margin: 10% 0 2% 0;
-    font-size: 10px;
-    line-height: 1.5vh;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+  }
+
+  .items_card_telephone {
+    padding-top: 2%;
+    display: flex;
+  }
+  .items_card_Year {
+    padding-top: 2%;
+    display: flex;
+  }
+  .items_card_description div {
+    word-wrap: break-word;
   }
 }

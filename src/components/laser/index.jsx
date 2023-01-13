@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { toast } from 'react-toastify';
 import API from '../../api';
 import LaserHeroSection from './LaserHeroSection';
 import LaserItemsCard from './LaserItemsCard';
@@ -6,14 +7,16 @@ import LoadMoreButton from './LoadMoreButton';
 
 export default function LaserComponents() {
   const [products, setProducts] = useState([]);
-
+  const [showmore, setShowmore] = useState(5);
   const getProducts = async () => {
     await API('get', '/products')
       .then((res) => {
         setProducts(res?.data?.data?.products);
-        // console.log('Products ', res);
       })
-      .catch((err) => console.log('ERROR ', err));
+
+      .catch((err) => {
+        toast.error(err);
+      });
   };
 
   useEffect(() => {
@@ -23,10 +26,18 @@ export default function LaserComponents() {
   return (
     <div className="Laser_components">
       <LaserHeroSection />
-      {products?.map((product) => (
+
+      {products?.slice(0, showmore).map((product) => (
         <LaserItemsCard product={product} />
       ))}
-      <LoadMoreButton />
+
+      <div>
+        <LoadMoreButton
+          onPress={() => {
+            setShowmore((prev) => prev + 5);
+          }}
+        />
+      </div>
     </div>
   );
 }

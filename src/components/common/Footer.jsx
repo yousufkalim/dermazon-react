@@ -6,7 +6,6 @@ import { Link } from 'react-router-dom';
 
 import logo from '../../assets/home/logo.svg';
 import facebook from '../../assets/home/facebook.svg';
-import instagram from '../../assets/home/instagram.svg';
 import linkedIn from '../../assets/home/linkedIn.svg';
 
 export default function Footer() {
@@ -53,9 +52,17 @@ export default function Footer() {
       </div>
       <div className="footer_middle">
         <div className="footer-icons">
-          <img src={instagram} alt="instagram" />
-          <img src={linkedIn} alt="linkedIn" />
           <img src={facebook} alt="logo" />
+          <a
+            style={{
+              marginBottom: '-7px',
+            }}
+            href="https://www.linkedin.com/company/dermazon-france/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src={linkedIn} alt="linkedIn" />
+          </a>
         </div>
       </div>
       <div className="footer_bottom">
