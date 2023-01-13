@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
+import EuroIcon from '@mui/icons-material/Euro';
 import moment from 'moment';
 import Collapse from '@mui/material/Collapse';
 import ShareIcon from '@mui/icons-material/Share';
@@ -18,11 +19,20 @@ export default function LaserItemsCard({ product }) {
     <div className="Laser_items_card_outer" onClick={handleExpandClick} role="presentation">
       <div className={expanded ? 'Laser_items_card_expand' : 'Laser_items_card'}>
         <div className="items_card_image">
-          <img src={`${mediaUrl}/${product?.images?.[1]}`} alt="product" />
+          <img src={`${mediaUrl}/${product?.images[1]}`} alt="product" />
         </div>
         <div className="items_card_text">
-          <div className="items_card_text_price">{product?.price}</div>
-          <div className="items_card_text_heading">{product?.name}</div>
+          <div className="items_card_text_price">
+            {product?.price}
+            <div>
+              {' '}
+              <EuroIcon fontSize="small" />
+            </div>
+          </div>
+          <div className="items_card_text_heading">
+            {product?.name} {product?.brand ? '-' : ''} {product?.brand}{' '}
+          </div>
+
           <div className="items_card_text_description">{product?.description}</div>
 
           <div className="items_card_text_date">
@@ -35,15 +45,14 @@ export default function LaserItemsCard({ product }) {
           <Collapse in={expanded} timeout="auto" unmountOnExit className="laser_collapse">
             <div className="items_card_description">
               <div>{product?.technical_description}</div>
-              <br />
-              <div>
-                Year{' '}
-                <p className="items_card_telephone">{moment(product.createdAt).format('YYYY')}</p>
+
+              <div className="items_card_Year">
+                Year <p>{moment(product.createdAt).format('YYYY')}</p>
               </div>
-              <br />
-              <div>
+
+              <div className="items_card_telephone">
                 {' '}
-                Telephone <p className="items_card_telephone"> +33 695 12 03 33</p>
+                Telephone <p> +33 695 12 03 33</p>
               </div>
             </div>
           </Collapse>

@@ -11,7 +11,7 @@ export default function LaserComponents() {
     await API('get', '/products')
       .then((res) => {
         setProducts(res?.data?.data?.products);
-        console.log('Products ', res);
+        // console.log('Products ', res);
       })
       .catch((err) => console.log('ERROR ', err));
   };
