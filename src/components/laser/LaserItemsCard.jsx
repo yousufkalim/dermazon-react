@@ -19,7 +19,7 @@ export default function LaserItemsCard({ product }) {
     <div className="Laser_items_card_outer" onClick={handleExpandClick} role="presentation">
       <div className={expanded ? 'Laser_items_card_expand' : 'Laser_items_card'}>
         <div className="items_card_image">
-          <img src={`${mediaUrl}/${product?.images[1]}`} alt="product" />
+          <img src={`${mediaUrl}/${product?.images[0]}`} alt="product" />
         </div>
         <div className="items_card_text">
           <div className="items_card_text_price">
