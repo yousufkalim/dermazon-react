@@ -1,7 +1,7 @@
 import React from 'react';
 import InputSearch from '../common/InputSearch';
 
-export default function LaserHeroSection() {
+export default function LaserHeroSection({ handleChange, searchQuery }) {
   return (
     <div className="laser_outer_main">
       <div className="laser_hero_section_header">
@@ -12,7 +12,7 @@ export default function LaserHeroSection() {
           below list, get in touch with us and we will find it for you.
         </div>
       </div>
-      <InputSearch />
+      <InputSearch searchQuery={searchQuery} handleChange={handleChange} />
     </div>
   );
 }
