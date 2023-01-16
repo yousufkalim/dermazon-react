@@ -44,7 +44,7 @@ const BootstrapInput = styled(InputBase)(() => ({
     border: '1.1px solid #ffffff',
     fontSize: 16,
     color: 'white',
-    padding: '1.3% 4%',
+    padding: '1.3% 2%',
     '&:focus': {
       borderRadius: '100px',
       borderColor: '#ffffff',
@@ -135,7 +135,6 @@ export default function ContactSection() {
                         fontWeight: 400,
                         '&::placeholder': {
                           opacity: 1,
-                          paddingLeft: '10px',
                         },
                       },
                     }}
@@ -161,7 +160,6 @@ export default function ContactSection() {
                         fontWeight: 400,
                         '&::placeholder': {
                           opacity: 1,
-                          paddingLeft: '10px',
                         },
                       },
                     }}
@@ -187,7 +185,6 @@ export default function ContactSection() {
                         fontWeight: 400,
                         '&::placeholder': {
                           opacity: 1,
-                          paddingLeft: '10px',
                         },
                       },
                     }}
@@ -213,7 +210,6 @@ export default function ContactSection() {
                         fontWeight: 400,
                         '&::placeholder': {
                           opacity: 1,
-                          paddingLeft: '10px',
                         },
                       },
                     }}
@@ -263,7 +259,6 @@ export default function ContactSection() {
                         fontWeight: 400,
                         '&::placeholder': {
                           opacity: 1,
-                          paddingLeft: '10px',
                         },
                       },
                     }}

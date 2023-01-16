@@ -20,7 +20,7 @@ import SingleService5 from '../../../assets/home/SingleService5.svg';
 
 export default function Index() {
   return (
-    <div className="services_section_main">
+    <div className="services_section_main" id="services_sectionid">
       <div className="services_section_bg">
         <img className="services_section_bg_img" src={serviceBG} alt="Service" />
       </div>

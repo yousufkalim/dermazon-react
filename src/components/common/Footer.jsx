@@ -8,6 +8,10 @@ import logo from '../../assets/home/logo.svg';
 import facebook from '../../assets/home/facebook.svg';
 import linkedIn from '../../assets/home/linkedIn.svg';
 
+const handleServiceScroll = () => {
+  const section = document.querySelector('#services_sectionid');
+  section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+};
 export default function Footer() {
   return (
     <div className="footer">
@@ -22,7 +26,7 @@ export default function Footer() {
             <li>
               <Link to="/">Home</Link>
             </li>
-            <li>
+            <li onClick={handleServiceScroll} role="presentation">
               <Link to="/">Services</Link>
             </li>
           </ul>
