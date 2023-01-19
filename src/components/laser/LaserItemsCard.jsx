@@ -40,7 +40,7 @@ export default function LaserItemsCard({ product }) {
             <div>
               <CalendarMonthIcon />
             </div>
-            <div className="date_format"> {moment(product.createdAt).format('DD/mm/YYYY')}</div>
+            <div className="date_format"> {moment(product.createdAt).format('DD/MM/YYYY')}</div>
           </div>
 
           <Collapse in={expanded} timeout="auto" unmountOnExit className="laser_collapse">
