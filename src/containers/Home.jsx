@@ -18,7 +18,7 @@ export default function Home() {
     });
   }, [pathname]);
   return (
-    <div>
+    <div style={{ overflow: 'hidden' }}>
       <Header />
       <HeroSection />
       <Testimonials />

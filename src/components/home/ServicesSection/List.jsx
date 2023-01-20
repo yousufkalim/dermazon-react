@@ -39,14 +39,8 @@ export default function List(props) {
           </div>
 
           <div className="service_details_div">
-            <img className="service_icon" src={icon} alt="" />
-            <div
-              className="service_details"
-              onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}
-              role="presentation"
-              onClick={() => scroll(sectionId)}
-            >
+            <div className="service_details_control">
+              <img className="service_icon" src={icon} alt="" />
               <span
                 className="service_title"
                 style={{
@@ -55,6 +49,14 @@ export default function List(props) {
               >
                 {title}
               </span>
+            </div>
+            <div
+              className="service_details"
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+              role="presentation"
+              onClick={() => scroll(sectionId)}
+            >
               <Tooltip title={description}>
                 <span className="service_description">
                   <p>{`${description.substring(0, 100)}...`}</p>

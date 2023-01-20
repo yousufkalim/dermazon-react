@@ -4,8 +4,8 @@ import React, { useLayoutEffect, useState } from 'react';
 import TestimonialCard from './TestimonialCard';
 // import icons and images
 
-import ellipse1 from '../../../assets/home/ellipse1.svg';
-import ellipse2 from '../../../assets/home/ellipse2.svg';
+// import ellipse1 from '../../../assets/home/ellipse1.svg';
+// import ellipse2 from '../../../assets/home/ellipse2.svg';
 import leftArrow from '../../../assets/home/leftArrow.svg';
 import rightArrow from '../../../assets/home/rightArrow.svg';
 import profile from '../../../assets/home/profile.svg';
@@ -67,11 +67,13 @@ export default function Testimonials() {
     <div className="client_testimonials">
       <h1 className="testimonials_heading">Client Testimonials</h1>
       <div className="testimonials">
-        <div className="testimonials_left">
-          <img className="ellipse" src={ellipse1} alt="Ellipse" />
-        </div>
-        <div className="testimonials_right">
-          <img className="ellipse" src={ellipse2} alt="Ellipse" />
+        <div className="testimonials_card_container">
+          <TestimonialCard
+            description={activeTestimonial?.description}
+            image={activeTestimonial?.image}
+            name={activeTestimonial?.name}
+            designation={activeTestimonial?.designation}
+          />
           <div className="arrows">
             <div className="left_arrow">
               <img
@@ -97,12 +99,6 @@ export default function Testimonials() {
             </div>
           </div>
         </div>
-        <TestimonialCard
-          description={activeTestimonial?.description}
-          image={activeTestimonial?.image}
-          name={activeTestimonial?.name}
-          designation={activeTestimonial?.designation}
-        />
       </div>
     </div>
   );

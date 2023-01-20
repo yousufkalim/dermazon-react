@@ -146,7 +146,7 @@ export default function ContactSection() {
                     size="small"
                     placeholder="Name"
                     name="name"
-                    InputProps={{ sx: { padding: 0.4 } }}
+                    InputProps={{ sx: { padding: 0.7 } }}
                   />
                 </FormControl>
               </Grid>
@@ -171,7 +171,7 @@ export default function ContactSection() {
                     size="small"
                     placeholder="Company Name"
                     name="company"
-                    InputProps={{ sx: { padding: 0.4 } }}
+                    InputProps={{ sx: { padding: 0.7 } }}
                   />
                 </FormControl>
               </Grid>
@@ -196,7 +196,7 @@ export default function ContactSection() {
                     size="small"
                     placeholder="Email"
                     name="email"
-                    InputProps={{ sx: { padding: 0.4 } }}
+                    InputProps={{ sx: { padding: 0.7 } }}
                   />
                 </FormControl>
               </Grid>
@@ -221,7 +221,7 @@ export default function ContactSection() {
                     size="small"
                     placeholder="Telephone"
                     name="phone"
-                    InputProps={{ sx: { padding: 0.4 } }}
+                    InputProps={{ sx: { padding: 0.7 } }}
                   />
                 </FormControl>
               </Grid>
@@ -237,7 +237,7 @@ export default function ContactSection() {
                     displayEmpty
                   >
                     <MenuItem
-                      style={{
+                      sx={{
                         color: '#B3881D',
                       }}
                     >
