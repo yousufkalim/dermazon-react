@@ -13,16 +13,7 @@ export default function HeroSection() {
       <div className="home_left">
         <span className="home_span">USED LASER FOR ALL</span>
         <h1 className="home_heading">
-          <span
-            style={{
-              color: '#02225E',
-              fontWeight: 600,
-              fontSize: '48px',
-            }}
-          >
-            DERMAZON
-          </span>{' '}
-          is a worldwide marketplace
+          <span>DERMAZON</span> is a worldwide marketplace
         </h1>
         <p className="home_text_p">
           for the sale and purchase of pre-owned laser and energy-based devices, used in dermatology

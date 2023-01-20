@@ -184,3 +184,14 @@
     padding: 0 1%;
   }
 }
+@media only screen and (max-width: 480px) {
+  .header_bottom {
+    margin-top: 5px;
+  }
+  .header_top_left {
+    font-size: 12px;
+  }
+  .header_top_span {
+    font-size: 14px;
+  }
+}

@@ -55,7 +55,10 @@
   align-items: center;
   gap: 10px;
 }
-
+.service_details_div img {
+  transform: rotate(45deg);
+  height: 100%;
+}
 .service_icon {
   height: 40px;
   width: 40px;
@@ -120,5 +123,35 @@
 
   .services_list_main {
     gap: 60px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .services_container {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    /* background-color: brown; */
+  }
+  .services_list_main {
+    /* background-color: #2b2926; */
+  }
+  .services {
+    /* background-color: aquamarine; */
+  }
+  .number_div {
+    display: none;
+  }
+  .service_details_control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 2%;
+    /* background-color: #02225e; */
+  }
+  .service_details {
+    width: 90%;
+    text-align: center;
   }
 }

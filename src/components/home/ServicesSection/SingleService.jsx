@@ -47,24 +47,28 @@ export default function SingleService(props) {
         )}
       </div>
       <div className="single_service_right">
-        <div
-          className="single_service_icon_div"
-          style={{
-            backgroundColor: bgColor && bgColor,
-          }}
-        >
-          <img className="service_icons_img" src={icon} alt="Service Icon" />
+        <div className="single_servise_controler">
+          <div className="single_servise_controler_div">
+            <div
+              className="single_service_icon_div"
+              style={{
+                backgroundColor: bgColor && bgColor,
+              }}
+            >
+              <img className="service_icons_img" src={icon} alt="Service Icon" />
+            </div>
+            <h1 className="single_service_title">
+              <span
+                style={{
+                  color: btnBg,
+                }}
+              >
+                {`${firstWord} ${' '}`}
+              </span>
+              {removeFirstWord(title)}
+            </h1>
+          </div>
         </div>
-        <h1 className="single_service_title">
-          <span
-            style={{
-              color: btnBg,
-            }}
-          >
-            {`${firstWord} ${' '}`}
-          </span>
-          {removeFirstWord(title)}
-        </h1>
         <p className="single_service_text_p">{serviceDescription}</p>
         <Link
           to={Path}

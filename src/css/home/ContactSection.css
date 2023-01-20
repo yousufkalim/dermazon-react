@@ -168,6 +168,8 @@
 
   .contact-btn {
     width: 150px;
+    height: 45px;
+
     font-size: 16px;
   }
 
@@ -180,6 +182,34 @@
   }
 
   .attachment {
-    width: max-content;
+    width: fit-content;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contact_bottom_right_btn {
+    gap: 20px;
+  }
+  .contact-btn {
+    width: 120px;
+
+    font-size: 14px;
+    padding: 5px 16px;
+  }
+  .attachment span {
+    font-size: 14px !important;
+  }
+}
+@media screen and (max-width: 480px) {
+  .contact_bottom_right_btn {
+    gap: 10px;
+  }
+  .attachment span {
+    font-size: 12px !important;
+  }
+  .contact_top_text_p {
+    width: 90%;
+    font-size: 14px;
+    text-align: center;
   }
 }
