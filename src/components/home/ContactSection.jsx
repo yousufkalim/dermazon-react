@@ -18,6 +18,7 @@ import phone from '../../assets/home/phone.svg';
 import whatsApp from '../../assets/home/whatsApp.svg';
 import email from '../../assets/home/email.svg';
 import attachment from '../../assets/home/attachment.svg';
+// import { red } from '@mui/material/colors';
 
 const useOutlinedInputStyles = makeStyles({
   root: {
@@ -89,7 +90,7 @@ export default function ContactSection() {
           </span>
         </h1>
         <p className="contact_top_text_p">
-          A technical sales representative will be happy to <br /> discuss your project with you.
+          A technical sales representative will be happy to discuss your project with you.
         </p>
       </div>
       <div className="contact_bottom">
@@ -146,7 +147,7 @@ export default function ContactSection() {
                     size="small"
                     placeholder="Name"
                     name="name"
-                    InputProps={{ sx: { padding: 0.7 } }}
+                    InputProps={{ sx: { padding: 0.3 } }}
                   />
                 </FormControl>
               </Grid>
@@ -171,7 +172,7 @@ export default function ContactSection() {
                     size="small"
                     placeholder="Company Name"
                     name="company"
-                    InputProps={{ sx: { padding: 0.7 } }}
+                    InputProps={{ sx: { padding: 0.3 } }}
                   />
                 </FormControl>
               </Grid>
@@ -196,7 +197,7 @@ export default function ContactSection() {
                     size="small"
                     placeholder="Email"
                     name="email"
-                    InputProps={{ sx: { padding: 0.7 } }}
+                    InputProps={{ sx: { padding: 0.3 } }}
                   />
                 </FormControl>
               </Grid>
@@ -221,7 +222,7 @@ export default function ContactSection() {
                     size="small"
                     placeholder="Telephone"
                     name="phone"
-                    InputProps={{ sx: { padding: 0.7 } }}
+                    InputProps={{ sx: { padding: 0.3 } }}
                   />
                 </FormControl>
               </Grid>
@@ -252,16 +253,6 @@ export default function ContactSection() {
               <Grid item xs={12} lg={12}>
                 <FormControl sx={{ mb: 1, width: '100%' }} variant="outlined">
                   <TextField
-                    sx={{
-                      input: {
-                        color: 'white',
-                        fontSize: '14px',
-                        fontWeight: 400,
-                        '&::placeholder': {
-                          opacity: 1,
-                        },
-                      },
-                    }}
                     autoComplete="off"
                     className="messageField"
                     multiline
@@ -277,6 +268,7 @@ export default function ContactSection() {
                         border: '1px solid white',
                         borderRadius: '14px',
                         color: 'white',
+                        opacity: '1',
                       },
                     }}
                   />

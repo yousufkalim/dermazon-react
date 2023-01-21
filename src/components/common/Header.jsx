@@ -50,7 +50,7 @@ export default function Header() {
           </p>
         </div>
         <div className="header_top_right">
-          <span className="header_top_span">Follow us</span>
+          <span className="header_top_spa">Follow us</span>
           <div className="icons">
             <img src={facebook} alt="logo" />
             <a

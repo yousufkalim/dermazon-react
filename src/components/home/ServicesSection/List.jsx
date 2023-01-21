@@ -33,35 +33,35 @@ export default function List(props) {
             <hr
               className="service_list_line"
               style={{
-                display: `${window.innerWidth < 992 ? 'none' : 'block'}`,
+                display: `${window.innerWidth < 992 ? 'none' : ''}`,
               }}
             />
-          </div>
-
-          <div className="service_details_div">
             <div className="service_details_control">
               <img className="service_icon" src={icon} alt="" />
-              <span
-                className="service_title"
-                style={{
-                  color: isHover ? titleColor : '',
-                }}
-              >
-                {title}
-              </span>
-            </div>
-            <div
-              className="service_details"
-              onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}
-              role="presentation"
-              onClick={() => scroll(sectionId)}
-            >
-              <Tooltip title={description}>
-                <span className="service_description">
-                  <p>{`${description.substring(0, 100)}...`}</p>
+              <div className="service_details_div">
+                <span
+                  className="service_title"
+                  style={{
+                    color: isHover ? titleColor : '',
+                  }}
+                >
+                  {title}
                 </span>
-              </Tooltip>
+
+                <div
+                  className="service_details"
+                  onMouseEnter={handleMouseEnter}
+                  onMouseLeave={handleMouseLeave}
+                  role="presentation"
+                  onClick={() => scroll(sectionId)}
+                >
+                  <Tooltip title={description}>
+                    <span className="service_description">
+                      <p>{`${description.substring(0, 100)}...`}</p>
+                    </span>
+                  </Tooltip>
+                </div>
+              </div>
             </div>
           </div>
         </div>
