@@ -113,7 +113,7 @@
   /* For mobile phones: */
   .laser_outer_main {
     padding: 5%;
-    padding-top: 30%;
+    padding-top: 40%;
     margin-bottom: 10%;
   }
   .laser_hero_section_header {
@@ -129,6 +129,85 @@
   }
   .laser_hero_section_text_paragraph {
     width: 100%;
+    font-size: 17px;
+    flex: none;
+  }
+  .laser_search_button_div {
+    width: 45%;
+  }
+
+  .laser_search_icon {
+    width: 60%;
+  }
+  .search_icon {
+    width: 20%;
+  }
+  .laser_hero_section_header_search_input {
+    flex: none;
+    order: 1;
+  }
+
+  .laser_button_div {
+    width: 40%;
+  }
+}
+
+@media only screen and (min-width: 701px) {
+  /* For mobile phones: */
+
+  .laser_hero_section_header {
+    background: #ffffff;
+    z-index: 1;
+    border: 10px rgb(92, 58, 34);
+  }
+
+  .laser_hero_section_heading {
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+  .laser_hero_section_text_paragraph {
+    width: 39%;
+    font-size: 17px;
+    flex: none;
+  }
+  .laser_search_button_div {
+    width: 45%;
+  }
+
+  .laser_search_icon {
+    width: 60%;
+  }
+  .search_icon {
+    width: 20%;
+  }
+  .laser_hero_section_header_search_input {
+    flex: none;
+    order: 1;
+  }
+
+  .laser_button_div {
+    width: 40%;
+  }
+}
+@media only screen and (min-width: 1366px) {
+  /* For mobile phones: */
+  .laser_outer_main {
+    padding-top: 17%;
+  }
+  .laser_hero_section_header {
+    background: #ffffff;
+    z-index: 1;
+    border: 10px rgb(92, 58, 34);
+  }
+
+  .laser_hero_section_heading {
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+  .laser_hero_section_text_paragraph {
+    width: 39%;
     font-size: 17px;
     flex: none;
   }

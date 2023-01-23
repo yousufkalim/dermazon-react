@@ -40,6 +40,7 @@ export default function SingleService(props) {
             style={{
               height: '450px',
               width: '450px',
+              marginRight: '20%',
             }}
           />
         ) : (

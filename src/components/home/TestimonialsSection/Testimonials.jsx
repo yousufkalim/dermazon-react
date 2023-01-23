@@ -6,8 +6,6 @@ import TestimonialCard from './TestimonialCard';
 
 // import ellipse1 from '../../../assets/home/ellipse1.svg';
 // import ellipse2 from '../../../assets/home/ellipse2.svg';
-import leftArrow from '../../../assets/home/leftArrow.svg';
-import rightArrow from '../../../assets/home/rightArrow.svg';
 import profile from '../../../assets/home/profile.svg';
 
 const TestimonialData = [
@@ -35,33 +33,10 @@ const TestimonialData = [
 ];
 export default function Testimonials() {
   const [activeTestimonial, setActiveTestimonial] = useState(null);
-  const [currentPosition, setCurrentPosition] = useState(1);
 
   useLayoutEffect(() => {
     setActiveTestimonial(TestimonialData[0]);
-    setCurrentPosition(1);
   }, []);
-
-  const handleNext = () => {
-    if (currentPosition === TestimonialData?.length) {
-      setCurrentPosition(1);
-      setActiveTestimonial(TestimonialData[0]);
-    } else {
-      setActiveTestimonial(TestimonialData[currentPosition]);
-      setCurrentPosition((prevState) => prevState + 1);
-    }
-  };
-
-  const handlePrevious = () => {
-    if (currentPosition === 1) {
-      setCurrentPosition(TestimonialData.length);
-      const testimonialLength = TestimonialData.length - 1;
-      setActiveTestimonial(TestimonialData[testimonialLength]);
-    } else {
-      setActiveTestimonial(TestimonialData[currentPosition - 2]);
-      setCurrentPosition((prevState) => prevState - 1);
-    }
-  };
 
   return (
     <div className="client_testimonials">
@@ -74,30 +49,6 @@ export default function Testimonials() {
             name={activeTestimonial?.name}
             designation={activeTestimonial?.designation}
           />
-          <div className="arrows">
-            <div className="left_arrow">
-              <img
-                style={{
-                  cursor: 'pointer',
-                }}
-                role="presentation"
-                onClick={handlePrevious}
-                src={leftArrow}
-                alt="Left Arrow"
-              />
-            </div>
-            <div className="right_arrow">
-              <img
-                style={{
-                  cursor: 'pointer',
-                }}
-                role="presentation"
-                onClick={handleNext}
-                src={rightArrow}
-                alt="Right Arrow"
-              />
-            </div>
-          </div>
         </div>
       </div>
     </div>

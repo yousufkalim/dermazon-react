@@ -3,7 +3,7 @@
 @import url('./common/Footer.css');
 @import url('./home/ContactSection.css');
 @import url('./home/HeroSection.css');
-@import url('./home/Testimonials.css');
+@import url('./home/TestimonialsSection/Testimonials.css');
 @import url('./home/ServicesSection/ServicesList.css');
 @import url('./home/ServicesSection/Index.css');
 @import url('./home/ServicesSection/SingleService.css');
