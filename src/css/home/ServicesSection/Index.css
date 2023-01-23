@@ -17,9 +17,9 @@
 }
 
 .services_section_bg_img {
-  width: 70%;
-
-  left: 40%;
+  width: 52%;
+  left: 50%;
+  top: 0.3%;
   position: absolute;
   opacity: 0.4;
 }
@@ -35,22 +35,35 @@
 }
 
 .services_section_span {
+  font-family: 'Poppins';
+  font-style: normal;
   font-weight: 500;
   font-size: 18px;
+  line-height: 27px;
+  /* identical to box height */
+
+  text-transform: uppercase;
+
+  /* Secondary */
+
   color: #b3881d;
-  /* background-color: rgb(49, 136, 136); */
 }
 
 .services_section_heading {
+  font-family: 'Poppins';
+  font-style: normal;
   font-weight: 600;
   font-size: 36px;
+  line-height: 54px;
   color: #2b2926;
 }
-
+.services_section_heading span {
+  color: #02225e;
+}
 .services_section_text_p {
   font-weight: 400;
   font-size: 20px;
-  line-height: 26px;
+  line-height: 30px;
   color: #919b9b;
   margin-bottom: 40px;
 }

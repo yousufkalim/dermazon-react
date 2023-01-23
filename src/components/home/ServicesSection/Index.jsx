@@ -26,7 +26,9 @@ export default function Index() {
       </div>
       <div className="services_section">
         <span className="services_section_span">USED USER FOR ALL</span>
-        <h1 className="services_section_heading">Our Services</h1>
+        <h1 className="services_section_heading">
+          Our <span>Services</span>
+        </h1>
         <p className="services_section_text_p">
           based in the Paris region, and is specialized in lasers <br /> and energy-based device
           used in dermatology{' '}

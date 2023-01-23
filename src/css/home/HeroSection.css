@@ -22,7 +22,7 @@
 }
 .home_left_inner {
   /* background-color: rgb(78, 126, 126); */
-  width: 100%;
+  width: 75%;
 }
 .home_span_text {
   /* background-color: aqua; */
@@ -30,14 +30,22 @@
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 500;
-  /* font-size: 24px;
-  line-height: 36px; */
+  font-size: 24px;
+  line-height: 36px;
   text-transform: uppercase;
   color: #b3881d;
 }
 .home_heading {
   width: 70%;
   color: #41392b;
+}
+.home_heading h1 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 72px;
+  color: #02225e;
 }
 .home_heading span {
   font-family: 'Poppins';
@@ -49,12 +57,11 @@
 }
 .home_text_p {
   /* text-align: center; */
-  width: 90%;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 24px;
+  line-height: 36px;
 
   /* Lite */
 

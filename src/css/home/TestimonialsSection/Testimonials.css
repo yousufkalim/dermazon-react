@@ -48,7 +48,7 @@
   padding: 50px;
   gap: 30px;
   text-align: center;
-  width: 53%;
+  width: 36%;
   margin-right: 6%;
   background: #fdfcfc;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.12);
@@ -57,11 +57,16 @@
 }
 
 .card_description {
+  font-family: 'Poppins';
+  font-style: normal;
   font-weight: 500;
   font-size: 18px;
-  line-height: 23px;
+  line-height: 27px;
   text-align: center;
-  color: #2b2926;
+
+  /* Lite */
+
+  color: #6a6a6a;
 }
 
 .profile {
