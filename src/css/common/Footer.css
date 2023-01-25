@@ -99,9 +99,14 @@
     text-align: center;
     padding-bottom: 30px;
   }
+  .footer_top_left {
+    text-align: center;
+    /* background-color: aqua; */
+  }
 }
 @media screen and (max-width: 600px) {
-  .footer_top_center {
+  .footer_top_left {
+    text-align: center;
     /* background-color: aqua; */
   }
 }

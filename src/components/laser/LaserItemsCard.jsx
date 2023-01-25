@@ -62,7 +62,7 @@ export default function LaserItemsCard({ product }) {
           </Collapse>
         </div>
         <div className="items_card_share_icon">
-          <ShareIcon />
+          <ShareIcon className="items_card_share_icon_mui" />
         </div>
       </div>
     </div>

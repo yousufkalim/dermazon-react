@@ -54,6 +54,7 @@ const BootstrapInput = styled(InputBase)(() => ({
 export default function ContactSection() {
   const outlinedInputStyles = useOutlinedInputStyles();
   const [input, setInput] = useState({});
+  const screenWidth = window.innerWidth;
 
   const handleChange = (e) => {
     setInput({ ...input, [e.target.name]: e.target.value });
@@ -89,7 +90,7 @@ export default function ContactSection() {
           </span>
         </h1>
         <p className="contact_top_text_p">
-          A technical sales representative will be happy to <br /> discuss your project with you.
+          A technical sales representative will be happy to discuss your project with you.
         </p>
       </div>
       <div className="contact_bottom">
@@ -128,6 +129,9 @@ export default function ContactSection() {
               <Grid item xs={12} lg={6}>
                 <FormControl sx={{ mb: 1, mt: 0.5, width: '100%' }} variant="outlined">
                   <TextField
+                    // md={{
+                    //   padding: 0.1,
+                    // }}
                     sx={{
                       input: {
                         color: 'white',
@@ -146,7 +150,7 @@ export default function ContactSection() {
                     size="small"
                     placeholder="Name"
                     name="name"
-                    InputProps={{ sx: { padding: 0.7 } }}
+                    InputProps={{ sx: { padding: screenWidth > 600 ? 0.7 : 0.1 } }}
                   />
                 </FormControl>
               </Grid>
@@ -171,7 +175,7 @@ export default function ContactSection() {
                     size="small"
                     placeholder="Company Name"
                     name="company"
-                    InputProps={{ sx: { padding: 0.7 } }}
+                    InputProps={{ sx: { padding: screenWidth > 600 ? 0.7 : 0.1 } }}
                   />
                 </FormControl>
               </Grid>
@@ -196,10 +200,11 @@ export default function ContactSection() {
                     size="small"
                     placeholder="Email"
                     name="email"
-                    InputProps={{ sx: { padding: 0.7 } }}
+                    InputProps={{ sx: { padding: screenWidth > 600 ? 0.7 : 0.1 } }}
                   />
                 </FormControl>
               </Grid>
+
               <Grid item xs={12} lg={6}>
                 <FormControl sx={{ mb: 1, width: '100%' }} variant="outlined">
                   <TextField
@@ -221,13 +226,14 @@ export default function ContactSection() {
                     size="small"
                     placeholder="Telephone"
                     name="phone"
-                    InputProps={{ sx: { padding: 0.7 } }}
+                    InputProps={{ sx: { padding: screenWidth > 600 ? 0.7 : 0.1 } }}
                   />
                 </FormControl>
               </Grid>
               <Grid item xs={12} lg={12}>
                 <FormControl sx={{ mb: 1, width: '100%' }}>
                   <Select
+                    InputProps={{ sx: { padding: screenWidth > 600 ? 0.7 : 0.1 } }}
                     labelId="demo-simple-select-label"
                     id="demo-simple-select"
                     name="request"

@@ -2,7 +2,8 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import ServiceImageSlider from './ServiceImageSlider';
+// import ServiceImageSlider from './ServiceImageSlider';
+// import laserMachineHome from '../../../assets/home/laserMachineHome.png';
 
 export default function SingleService(props) {
   const {
@@ -44,7 +45,18 @@ export default function SingleService(props) {
             }}
           />
         ) : (
-          <ServiceImageSlider />
+          <img
+            alt="Single Service"
+            className="laserMachineHomeImg"
+            src={image}
+            style={{
+              // background: 'red',
+              height: '450px',
+              width: '450px',
+              marginRight: '20%',
+            }}
+          />
+          // <ServiceImageSlider />
         )}
       </div>
       <div className="single_service_right">
@@ -70,6 +82,7 @@ export default function SingleService(props) {
             </h1>
           </div>
         </div>
+
         <p className="single_service_text_p">{serviceDescription}</p>
         <Link
           to={Path}

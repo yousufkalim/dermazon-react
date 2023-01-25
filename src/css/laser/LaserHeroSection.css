@@ -40,15 +40,17 @@
   order: 1;
 }
 .laser_hero_section_text_paragraph {
-  width: 38%;
-  font-family: 'DM Sans';
+  width: 44%;
+  font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
-  line-height: 31px;
+  line-height: 36px;
   text-align: center;
   color: #919b9b;
+  /* background-color: #02225e; */
   order: 2;
+  margin-bottom: 2%;
 }
 .laser_search_button_div {
   display: flex;
@@ -108,125 +110,90 @@
   border-radius: 100px;
   color: #ffffff;
 }
+.LaserInputSearch_component {
+  width: 30%;
+}
 
-@media only screen and (max-width: 700px) {
-  /* For mobile phones: */
+@media only screen and (min-width: 320px) and (max-width: 500px) {
   .laser_outer_main {
-    padding: 5%;
-    padding-top: 40%;
-    margin-bottom: 10%;
-  }
-  .laser_hero_section_header {
-    background: #ffffff;
-    z-index: 1;
-    border: 10px rgb(92, 58, 34);
-  }
-
-  .laser_hero_section_heading {
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-  }
-  .laser_hero_section_text_paragraph {
     width: 100%;
-    font-size: 17px;
-    flex: none;
-  }
-  .laser_search_button_div {
-    width: 45%;
+    padding-top: 40%;
   }
 
-  .laser_search_icon {
-    width: 60%;
+  .laser_hero_section_heading_text {
+    font-size: medium;
+    width: 100%;
   }
-  .search_icon {
-    width: 20%;
-  }
-  .laser_hero_section_header_search_input {
-    flex: none;
-    order: 1;
-  }
-
-  .laser_button_div {
-    width: 40%;
-  }
-}
-
-@media only screen and (min-width: 701px) {
-  /* For mobile phones: */
-
-  .laser_hero_section_header {
-    background: #ffffff;
-    z-index: 1;
-    border: 10px rgb(92, 58, 34);
-  }
-
   .laser_hero_section_heading {
-    flex: none;
-    order: 1;
-    flex-grow: 0;
+    width: 100%;
+    /* background-color: #919b9b; */
+    font-size: 35px;
   }
   .laser_hero_section_text_paragraph {
-    width: 39%;
-    font-size: 17px;
-    flex: none;
+    padding: 0 5%;
+    width: 100%;
+    text-align: justify;
+    font-size: smaller;
+    line-height: normal;
+    /* background-color: #02225e; */
   }
-  .laser_search_button_div {
-    width: 45%;
-  }
-
-  .laser_search_icon {
-    width: 60%;
-  }
-  .search_icon {
-    width: 20%;
-  }
-  .laser_hero_section_header_search_input {
-    flex: none;
-    order: 1;
-  }
-
-  .laser_button_div {
-    width: 40%;
+  .LaserInputSearch_component {
+    width: 100%;
+    padding: 0 5%;
   }
 }
-@media only screen and (min-width: 1366px) {
-  /* For mobile phones: */
+@media only screen and (min-width: 501px) and (max-width: 1000px) {
   .laser_outer_main {
-    padding-top: 17%;
-  }
-  .laser_hero_section_header {
-    background: #ffffff;
-    z-index: 1;
-    border: 10px rgb(92, 58, 34);
+    width: 100%;
+    padding-top: 30%;
   }
 
+  .laser_hero_section_heading_text {
+    font-size: medium;
+    width: 100%;
+  }
   .laser_hero_section_heading {
-    flex: none;
-    order: 1;
-    flex-grow: 0;
+    width: 100%;
+    /* background-color: #919b9b; */
+    font-size: 35px;
   }
   .laser_hero_section_text_paragraph {
-    width: 39%;
-    font-size: 17px;
-    flex: none;
-  }
-  .laser_search_button_div {
-    width: 45%;
-  }
+    padding: 0 5%;
+    width: 70%;
 
-  .laser_search_icon {
+    font-size: smaller;
+    line-height: normal;
+    /* background-color: #02225e; */
+  }
+  .LaserInputSearch_component {
     width: 60%;
+    padding: 0 5%;
   }
-  .search_icon {
-    width: 20%;
-  }
-  .laser_hero_section_header_search_input {
-    flex: none;
-    order: 1;
+}
+@media only screen and (min-width: 1001px) and (max-width: 1400px) {
+  .laser_outer_main {
+    width: 100%;
   }
 
-  .laser_button_div {
+  .laser_hero_section_heading_text {
+    font-size: medium;
+    width: 100%;
+  }
+  .laser_hero_section_heading {
+    width: 100%;
+    /* background-color: #919b9b; */
+    font-size: 35px;
+  }
+  .laser_hero_section_text_paragraph {
+    padding: 0 5%;
+    width: 52%;
+
+    font-size: medium;
+    line-height: normal;
+    /* background-color: #02225e; */
+  }
+  .LaserInputSearch_component {
     width: 40%;
+    padding: 0 5%;
   }
 }

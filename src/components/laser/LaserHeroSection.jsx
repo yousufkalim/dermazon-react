@@ -12,7 +12,9 @@ export default function LaserHeroSection({ handleChange, searchQuery }) {
           below list, get in touch with us and we will find it for you.
         </div>
       </div>
-      <InputSearch searchQuery={searchQuery} handleChange={handleChange} />
+      <div className="LaserInputSearch_component">
+        <InputSearch searchQuery={searchQuery} handleChange={handleChange} />
+      </div>
     </div>
   );
 }

@@ -121,7 +121,7 @@
 /* MEDIA QUERY FOR LARGE DEVICES */
 
 /* MEDIA QUERY FOR SMALL SCREEN */
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1000px) {
   .header {
     margin: 0;
     padding: 0% 5%;
@@ -200,9 +200,6 @@
   }
 }
 @media screen and (max-width: 607px) {
-  .header_top_left {
-    /* background-color: #6e8dc5; */
-  }
   .header_top_left p {
     font-size: 10px;
   }
@@ -285,9 +282,7 @@
     justify-content: center;
     /* background-color: #6e8dc5; */
   }
-  .icons {
-    /* background-color: #582828; */
-  }
+
   .logo img {
     width: 70%;
     /* background-color: #6a6a6a; */
