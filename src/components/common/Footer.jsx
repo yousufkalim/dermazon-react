@@ -5,7 +5,8 @@ import { Link } from 'react-router-dom';
 // import icons and images
 
 import logo from '../../assets/home/logo.svg';
-import facebook from '../../assets/home/facebook.svg';
+import FacebookIcon from '../../assets/home/facebook.svg';
+import instragram from '../../assets/home/instragram.svg';
 import linkedIn from '../../assets/home/linkedIn.svg';
 
 const handleServiceScroll = () => {
@@ -56,7 +57,8 @@ export default function Footer() {
       </div>
       <div className="footer_middle">
         <div className="footer-icons">
-          <img src={facebook} alt="logo" />
+          <img src={FacebookIcon} alt="logo" />
+          <img src={instragram} alt="logo" />
           <a
             style={{
               marginBottom: '-7px',

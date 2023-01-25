@@ -4,8 +4,9 @@ import React from 'react';
 
 // import icons and images
 
-import herosearch from '../../assets/home/herosearch.svg';
+// import herosearch from '../../assets/home/herosearch.svg';
 import heroSection from '../../assets/home/heroSection.svg';
+import InputSearch from '../common/InputSearch';
 
 export default function HeroSection() {
   return (
@@ -22,12 +23,8 @@ export default function HeroSection() {
               dermatology and aesthetic medicine field.
             </p>
           </div>
-          <div className="home_btn_div">
-            <img src={herosearch} alt="Home Search Icon" />
-            <input type="text" name="" placeholder="Example" />
-            <button className="home_btn" type="submit">
-              Search
-            </button>
+          <div className="input_component">
+            <InputSearch />
           </div>
         </div>
         <div className="home_right">

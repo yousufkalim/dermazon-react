@@ -8,7 +8,7 @@
 @import url('./home/ServicesSection/Index.css');
 @import url('./home/ServicesSection/SingleService.css');
 @import url('./home/ServicesSection/ServiceImageSlider.css');
-
+@import url('../css/home/ServicesSection/List.css');
 @import url('../css/laser/LaserHeroSection.css');
 @import url('../css/laser/LaserItemsCard.css');
 @import url('../css/laser/LoadMoreButton.css');

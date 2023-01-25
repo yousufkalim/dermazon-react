@@ -30,8 +30,8 @@ export default function Index() {
           Our <span>Services</span>
         </h1>
         <p className="services_section_text_p">
-          based in the Paris region, and is specialized in lasers <br /> and energy-based device
-          used in dermatology{' '}
+          based in the Paris region, and is specialized in lasers and energy-based device used in
+          dermatology{' '}
         </p>
       </div>
       <ServicesList />

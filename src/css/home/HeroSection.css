@@ -62,7 +62,7 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 36px;
-
+  /* background-color: #02225e; */
   /* Lite */
 
   color: #919b9b;
@@ -75,7 +75,58 @@
 .home_right img {
   width: 100%;
 }
+.input_component {
+  width: 50%;
+}
+@media only screen and (max-width: 1621px) {
+  .home_main {
+    /* background-color: #b3881d; */
+    padding-top: 10%;
+  }
+  .home_left_inner {
+    width: 77%;
+    /* background-color: #dad3c7; */
+  }
+  .home_span_text {
+    font-size: medium;
+  }
+  .home_heading {
+    width: 100%;
 
+    /* background-color: #8b9bbb; */
+  }
+  .home_text_p {
+    width: 100%;
+    font-size: 17px;
+    line-height: 28px;
+    /* background-color: #02225e; */
+  }
+  .input_component {
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 1070px) {
+  .home_left_inner {
+    margin-top: 15%;
+    /* background-color: #8b9bbb; */
+    width: 100%;
+  }
+  .home_heading {
+    width: 100%;
+    /* background-color: #8b9bbb; */
+  }
+  .home_text_p {
+    /* background-color: #02225e; */
+    width: 100%;
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .input_component {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+  }
+}
 @media only screen and (min-width: 320px) and (max-width: 500px) {
   .home_main {
     display: flex;
@@ -83,19 +134,24 @@
     align-items: center;
     justify-content: center;
     margin: 0;
-    padding: 50% 0% 40% 0%;
+    padding: 35% 0% 40% 0%;
     /* background-color: #b9a769; */
   }
   .home_left {
     /* margin-bottom: 5%; */
     display: flex;
-    width: 100vw;
+    width: 100%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     /* background-color: antiquewhite; */
   }
-
+  .home_left_inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
   .home_span_text {
     width: 100%;
     font-size: 18px;
@@ -108,16 +164,18 @@
   .home_main_inner h1 {
     line-height: 1px;
     margin-bottom: 5%;
+    justify-content: center;
+    align-items: center;
   }
   .home_heading {
     font-size: 16px;
     text-align: center;
-    width: 100%;
+    width: 80%;
 
     /* background-color: #b3881d; */
   }
   .home_text_p {
-    text-align: center;
+    text-align: justify;
     width: 100%;
     line-height: 25px;
     /* background-color: #02225e; */
@@ -132,14 +190,17 @@
     /* margin-right: 10%; */
     display: none;
   }
+  .input_component {
+    width: 80%;
+  }
 }
-@media only screen and (min-width: 501px) and (max-width: 800px) {
+@media only screen and (min-width: 501px) and (max-width: 1000px) {
   .home_main {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 30% 0% 10% 0%;
+    padding: 20% 0% 1% 0%;
     /* background-color: rgb(83, 119, 79); */
   }
   .home_main_inner {
@@ -159,6 +220,9 @@
     /* background-color: rgb(206, 165, 165); */
   }
   .home_left_inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     /* background-color: rgb(78, 126, 126); */
     width: 100%;
   }
@@ -166,19 +230,20 @@
     display: flex;
     justify-content: center;
     /* background-color: aqua; */
-    width: 100%;
+    width: 70%;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
 
-    font-size: 18px;
+    font-size: 16px;
     line-height: 36px;
     text-transform: uppercase;
     color: #b3881d;
   }
   .home_heading {
     text-align: center;
-    width: 100%;
+    width: 70%;
+    font-size: 25px;
     color: #41392b;
     /* background-color: #919b9b; */
   }
@@ -186,13 +251,13 @@
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 25px;
     line-height: 40px;
     color: #02225e;
   }
   .home_text_p {
     text-align: center;
-    width: 100%;
+    width: 70%;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
@@ -212,15 +277,18 @@
   .home_right img {
     width: 100%;
   }
+  .input_component {
+    width: 60%;
+  }
 }
 
-@media only screen and (min-width: 801px) and (max-width: 1000px) {
+@media only screen and (min-width: px) and (max-width: px) {
   .home_main {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 25% 0% 0% 0%;
+    padding: 20% 0% 0% 0%;
     /* background-color: rgb(83, 119, 79); */
   }
   .home_main_inner {
@@ -292,5 +360,8 @@
   }
   .home_right img {
     width: 100%;
+  }
+  .input_component {
+    width: 60%;
   }
 }

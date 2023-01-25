@@ -163,7 +163,74 @@
   color: #b3881d;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 500px) {
+  /* For mobile phones: */
+
+  .Laser_items_card {
+    /* background-color: #2b2926; */
+    gap: 2%;
+    width: 90%;
+    border-radius: 20px;
+  }
+
+  .Laser_items_card_expand {
+    gap: 2%;
+    border-radius: 20px;
+    width: 90%;
+  }
+
+  .items_card_text_price {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  .items_card_text_heading {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+  }
+  .items_card_text_description {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 120%;
+  }
+  .items_card_text_date {
+    font-size: 12px;
+  }
+
+  .date_format {
+    margin: 0 1% 0.5% 1%;
+  }
+
+  .items_card_description {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+  }
+
+  .items_card_telephone {
+    padding-top: 2%;
+    display: flex;
+  }
+  .items_card_Year {
+    padding-top: 2%;
+    display: flex;
+  }
+  .items_card_description div {
+    word-wrap: break-word;
+  }
+  .items_card_image {
+    width: 25%;
+    /* background-color: #b3881d; */
+  }
+
+  .items_card_share_icon_mui {
+    margin-right: 5%;
+  }
+}
+
+@media only screen and (min-width: 501px) and (max-width: 1000px) {
   /* For mobile phones: */
   .Laser_items_card {
     width: 90%;
