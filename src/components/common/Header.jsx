@@ -19,7 +19,7 @@ export default function Header() {
   };
   const [showTopNavbar, setShowTopNavbar] = useState(false);
   const controlTopNavbar = () => {
-    if (window.scrollY > 150) {
+    if (window.scrollY > 100) {
       setShowTopNavbar(true);
     } else {
       setShowTopNavbar(false);
@@ -73,7 +73,10 @@ export default function Header() {
         <div className="menu-icon" onClick={handleShowNavbar} role="presentation">
           <MenuIcon />
         </div>
-        <div className={`header_bottom_center ${showNavbar && 'active'}`}>
+        <div
+          className={`header_bottom_center ${showNavbar && 'active'} `}
+          style={{ top: showTopNavbar ? '60%' : '75%' }}
+        >
           <ul>
             <li>
               <Link to="/">Home</Link>

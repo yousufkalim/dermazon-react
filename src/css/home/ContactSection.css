@@ -22,16 +22,20 @@
 }
 
 .contact_top_text_p {
+  width: 27%;
   font-size: 20px;
   color: #fdfcfc;
   text-align: center;
   margin: 10px 0px;
   line-height: 26px;
+  /* background-color: #fdfcfc; */
 }
 
 .contact_bottom {
   display: flex;
   padding: 4% 10%;
+  margin-left: 10%;
+  margin-right: 10%;
   gap: 20px;
 }
 
@@ -40,11 +44,10 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 40px;
-  flex: 1;
+  width: 30%;
 }
 
 .contact_icons {
-  /* background-color: aqua; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -52,8 +55,8 @@
 }
 
 .contact_icon {
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -120,7 +123,7 @@
   justify-content: center;
   align-items: center;
   padding: 17px 32px;
-  width: 30%;
+  width: 25%;
   height: 58px;
   border: none;
   color: #02225e;
@@ -131,10 +134,6 @@
   cursor: pointer;
 }
 
-/* .phoneField {
-  padding: 20px !important;
-  background: red !important;
-} */
 @media only screen and (min-width: 320px) and (max-width: 500px) {
   .contact {
     width: 100%;
@@ -144,7 +143,6 @@
   }
 
   .contact_top {
-    /* background-color: aqua; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -152,7 +150,6 @@
   }
 
   .contact_top_heading {
-    /* background-color: black; */
     font-size: 36px;
     display: flex;
     gap: 10px;
@@ -164,40 +161,30 @@
   .contact_top_text_p {
     font-size: 14px;
     color: #fdfcfc;
-    /* text-align: ; */
-    /* margin: 10px 0px; */
     line-height: 26px;
     width: 85%;
-    /* background-color: bisque; */
   }
 
   .contact_bottom {
     display: flex;
-    padding: 4% 10%;
-    /* background-color: aquamarine; */
+    padding: 4% 0%;
     display: flex;
     flex-direction: column-reverse;
-    /* gap: 20px; */
   }
 
   .contact_bottom_left {
-    /* background-color: rgb(45, 79, 109); */
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 80%;
     align-self: center;
-    /* gap: 40px; */
     flex: 1;
   }
 
   .contact_icons {
-    /* background-color: aqua; */
     display: flex;
-    /* justify-content: space-evenly; */
     align-items: center;
     width: 100%;
-    /* gap: 20px; */
   }
 
   .contact_icon {
@@ -210,14 +197,12 @@
     background: rgba(255, 255, 255, 0.1);
   }
   .contact_icon_img {
-    /* background-color: #d33838; */
     width: 45%;
   }
   .contact_info_text {
     display: flex;
     width: 60%;
     flex-direction: column;
-    /* background-color: aliceblue; */
     gap: 5px;
   }
 
@@ -247,9 +232,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    /* margin: 10% 0; */
     padding: 5% 0 5% 0;
-    /* background-color: aquamarine; */
   }
 
   .attachment {
@@ -261,6 +244,7 @@
     gap: 10px;
     cursor: pointer;
     margin-bottom: 5%;
+    background-color: #02225e;
   }
 
   .hide_file {
@@ -275,19 +259,8 @@
   }
 
   .contact-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 17px 32px;
     width: 50%;
     height: 38px;
-    border: none;
-    color: #02225e;
-    background: #fdfcfc;
-    border-radius: 100px;
-    font-weight: 700;
-    font-size: 16px;
-    cursor: pointer;
   }
 }
 @media only screen and (min-width: 501px) and (max-width: 1000px) {
@@ -302,37 +275,29 @@
     font-size: 14px;
     line-height: 26px;
     width: 75%;
-    /* background-color: bisque; */
   }
 
   .contact_bottom {
     width: 80%;
     display: flex;
     padding: 4% 0%;
-    /* background-color: aquamarine; */
     display: flex;
     flex-direction: column-reverse;
-    /* gap: 20px; */
   }
 
   .contact_bottom_left {
-    /* background-color: rgb(45, 79, 109); */
     display: flex;
     flex-direction: column;
-    /* align-items: flex-start; */
     width: 100%;
     justify-content: flex-start;
-    /* gap: 40px; */
     flex: 1;
   }
 
   .contact_icons {
-    /* background-color: aqua; */
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     width: 100%;
-    /* gap: 20px; */
   }
 
   .contact_icon {
@@ -345,14 +310,12 @@
     background: rgba(255, 255, 255, 0.1);
   }
   .contact_icon_img {
-    /* background-color: #d33838; */
     width: 45%;
   }
   .contact_info_text {
     display: flex;
     width: 60%;
     flex-direction: column;
-    /* background-color: aliceblue; */
     gap: 5px;
   }
 
@@ -379,16 +342,12 @@
 
   .contact_bottom_right_btn {
     display: flex;
-    /* flex-direction: column; */
     justify-content: space-between;
     align-items: center;
-    /* margin: 10% 0; */
     padding: 5% 0 5% 0;
-    /* background-color: rgb(12, 88, 63); */
   }
   .contact_bottom_right_btn button {
     width: 30%;
-    /* background-color: rgb(128, 78, 78); */
   }
   .attachment {
     position: relative;
@@ -396,10 +355,7 @@
     text-align: center;
     display: flex;
     align-items: center;
-    /* gap: 10px; */
-
     cursor: pointer;
-    /* margin-bottom: 5%; */
   }
 
   .hide_file {
@@ -414,27 +370,24 @@
   }
 
   .contact-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 17px 32px;
-    width: 50%;
-    height: 38px;
-    border: none;
-    color: #02225e;
-    background: #fdfcfc;
-    border-radius: 100px;
-    font-weight: 700;
-    font-size: 16px;
-    cursor: pointer;
+    width: 30% !important;
   }
 }
-@media only screen and (min-width: 1000px) and (max-width: 1199px) {
+@media only screen and (min-width: 1000px) and (max-width: 1400px) {
+  .contact_bottom {
+    margin: 0;
+  }
   .contact_bottom_left {
     justify-content: space-evenly;
-    height: 400px;
-    /* background-color: #abb5c7; */
+    height: 300px;
+  }
+  .contact-btn {
+    width: 30%;
+  }
+  .contact_top_text_p {
+    font-size: 14px;
+    color: #fdfcfc;
+    line-height: 26px;
+    width: 32%;
   }
 }
-
-/* MEDIA QUERY FOR LARGE SCREEN */
