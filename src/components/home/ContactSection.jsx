@@ -36,6 +36,30 @@ const useOutlinedInputStyles = makeStyles({
     },
   },
 });
+const useOutlinedTextAreaStyles = makeStyles({
+  root: {
+    '& .MuiOutlinedInput-root': {
+      '& fieldset': {
+        border: '1.1px solid #ffffff ',
+        borderRadius: '10px',
+        color: 'white',
+        placeholderColor: 'white',
+      },
+      '&:hover fieldset': {
+        borderColor: '#ffffff',
+        color: 'white',
+        placeholderColor: 'white',
+      },
+      '&.Mui-focused fieldset': {
+        placeholderColor: 'white',
+        borderColor: '#ffffff',
+        color: 'white',
+
+        border: '1.1px solid #ffffff ',
+      },
+    },
+  },
+});
 
 const BootstrapInput = styled(InputBase)(() => ({
   '& .MuiInputBase-input': {
@@ -43,7 +67,7 @@ const BootstrapInput = styled(InputBase)(() => ({
     borderRadius: '100px',
     border: '1.1px solid #ffffff',
     fontSize: 16,
-    color: 'white',
+    color: 'grey',
     padding: '1.3% 2%',
     '&:focus': {
       borderRadius: '100px',
@@ -53,6 +77,8 @@ const BootstrapInput = styled(InputBase)(() => ({
 }));
 export default function ContactSection() {
   const outlinedInputStyles = useOutlinedInputStyles();
+  const outlinedTextAreaStyles = useOutlinedTextAreaStyles();
+
   const [input, setInput] = useState({});
   const screenWidth = window.innerWidth;
 
@@ -136,6 +162,7 @@ export default function ContactSection() {
                         fontWeight: 400,
                         '&::placeholder': {
                           opacity: 1,
+                          color: 'grey',
                         },
                       },
                     }}
@@ -158,9 +185,10 @@ export default function ContactSection() {
                       input: {
                         color: 'white',
                         fontSize: '14px',
-                        fontWeight: 400,
+                        fontWeight: 500,
                         '&::placeholder': {
                           opacity: 1,
+                          color: 'grey',
                         },
                       },
                     }}
@@ -186,6 +214,7 @@ export default function ContactSection() {
                         fontWeight: 400,
                         '&::placeholder': {
                           opacity: 1,
+                          color: 'grey',
                         },
                       },
                     }}
@@ -212,6 +241,7 @@ export default function ContactSection() {
                         fontWeight: 400,
                         '&::placeholder': {
                           opacity: 1,
+                          color: 'grey',
                         },
                       },
                     }}
@@ -262,6 +292,7 @@ export default function ContactSection() {
                         fontWeight: 400,
                         '&::placeholder': {
                           opacity: 1,
+                          color: 'white',
                         },
                       },
                     }}
@@ -272,14 +303,17 @@ export default function ContactSection() {
                     onChange={handleChange}
                     id="outlined-message"
                     size="small"
+                    classes={outlinedTextAreaStyles}
                     placeholder="Your Message"
                     name="message"
                     InputProps={{
                       sx: {
-                        padding: 2,
-                        border: '1px solid white',
-                        borderRadius: '14px',
                         color: 'white',
+                        outline: 'none',
+                        '&::placeholder': {
+                          // opacity: 1,
+                          color: 'white',
+                        },
                       },
                     }}
                   />
