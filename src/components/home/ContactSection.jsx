@@ -129,9 +129,6 @@ export default function ContactSection() {
               <Grid item xs={12} lg={6}>
                 <FormControl sx={{ mb: 1, mt: 0.5, width: '100%' }} variant="outlined">
                   <TextField
-                    // md={{
-                    //   padding: 0.1,
-                    // }}
                     sx={{
                       input: {
                         color: 'white',
