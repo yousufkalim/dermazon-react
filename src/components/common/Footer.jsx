@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 // import icons and images
 
 import logo from '../../assets/home/logo.svg';
-import FacebookIcon from '../../assets/home/facebook.svg';
+// import FacebookIcon from '../../assets/home/facebook.svg';
 import instragram from '../../assets/home/instragram.svg';
 import linkedIn from '../../assets/home/linkedIn.svg';
 
@@ -14,6 +14,7 @@ const handleServiceScroll = () => {
   section.scrollIntoView({ behavior: 'smooth', block: 'start' });
 };
 export default function Footer() {
+  const screenWidth = window.innerWidth;
   return (
     <div className="footer">
       <div className="footer_top">
@@ -54,10 +55,36 @@ export default function Footer() {
             +33 695 12 03 33
           </span>
         </div>
+        {screenWidth < 1000 ? (
+          <div className="footer_top_right">
+            <span
+              style={{
+                fontSize: '16px',
+                fontWeight: '500',
+                color: '#919B9B',
+              }}
+            >
+              Email
+            </span>
+
+            <span
+              style={{
+                fontSize: '16px',
+                fontWeight: '600',
+                color: '#2B2926',
+                marginLeft: '10px',
+              }}
+            >
+              contact@dermazon.fr
+            </span>
+          </div>
+        ) : (
+          ''
+        )}
       </div>
       <div className="footer_middle">
         <div className="footer-icons">
-          <img src={FacebookIcon} alt="logo" />
+          {/* <img src={FacebookIcon} alt="logo" /> */}
           <img src={instragram} alt="logo" />
           <a
             style={{

@@ -3,17 +3,15 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import MenuIcon from '@mui/icons-material/Menu';
-import SearchIcon from '@mui/icons-material/Search';
+// import SearchIcon from '@mui/icons-material/Search';
 // import icons and images
 
 import logo from '../../assets/home/logo.svg';
-import FacebookIcon from '../../assets/home/facebook.svg';
 import facebook from '../../assets/home/instragram.svg';
 import linkedIn from '../../assets/home/linkedIn.svg';
 
 export default function Header() {
   const [showNavbar, setShowNavbar] = useState(false);
-
   const handleShowNavbar = () => {
     setShowNavbar(!showNavbar);
   };
@@ -40,14 +38,10 @@ export default function Header() {
           display: `${showTopNavbar ? 'none' : ''}`,
         }}
       >
-        <div className="header_top_left">
-          <span>Dermazon France </span>
-          <p> (used laser for All)</p>
-        </div>
+        <div className="header_top_left">{/* <span>Dermazon France </span> */}</div>
         <div className="header_top_right">
           <span className="header_top_span">Follow us</span>
           <div className="icons">
-            <img src={FacebookIcon} alt="logo" />
             <img src={facebook} alt="logo" />
             <a
               style={{
@@ -69,24 +63,23 @@ export default function Header() {
               <img src={logo} alt="logo" />
             </Link>
           </div>
+          <p> PRE-OWNED LASER</p>
         </div>
         <div className="menu-icon" onClick={handleShowNavbar} role="presentation">
           <MenuIcon />
         </div>
-        <div
-          className={`header_bottom_center ${showNavbar && 'active'} `}
-          style={{ top: showTopNavbar ? '60%' : '75%' }}
-        >
+
+        <div className={showNavbar ? 'header_bottom_center_button' : 'header_bottom_center'}>
           <ul>
             <li>
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/buy-laser">Buy Laser</Link>
+              <Link to="/buy-laser">Buy A Pre-Owned Laser</Link>
             </li>
           </ul>
         </div>
-        <div className="header_bottom_right">
+        {/* <div className="header_bottom_right">
           <div className="header_bottom_search">
             <input type="text" placeholder="Search" />
             <SearchIcon
@@ -95,7 +88,7 @@ export default function Header() {
               }}
             />
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

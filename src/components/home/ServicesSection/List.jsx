@@ -1,7 +1,7 @@
 // import component and libraries
 
 import React, { useState } from 'react';
-import Tooltip from '@mui/material/Tooltip';
+// import Tooltip from '@mui/material/Tooltip';
 
 export default function List(props) {
   const { title, description, icon, number, background, titleColor, sectionId } = props;
@@ -44,6 +44,8 @@ export default function List(props) {
                   style={{
                     color: isHover ? titleColor : '',
                   }}
+                  onClick={() => scroll(sectionId)}
+                  role="presentation"
                 >
                   {title}
                 </span>
@@ -53,13 +55,12 @@ export default function List(props) {
                   onMouseEnter={handleMouseEnter}
                   onMouseLeave={handleMouseLeave}
                   role="presentation"
-                  onClick={() => scroll(sectionId)}
                 >
-                  <Tooltip title={description}>
-                    <span className="service_description">
-                      <p>{`${description.substring(0, 100)}...`}</p>
-                    </span>
-                  </Tooltip>
+                  {/* <Tooltip title={description}> */}
+                  <span className="service_description">
+                    <p>{`${description.substring(0, 100)}...`}</p>
+                  </span>
+                  {/* </Tooltip> */}
                 </div>
               </div>
             </div>

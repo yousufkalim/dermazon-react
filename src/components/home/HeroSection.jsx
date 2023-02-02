@@ -6,29 +6,32 @@ import React from 'react';
 
 // import herosearch from '../../assets/home/herosearch.svg';
 import heroSection from '../../assets/home/heroSection.svg';
+import heroSectionImg from '../../assets/home/MainHeroSectionImg.png';
 import InputSearch from '../common/InputSearch';
 
 export default function HeroSection() {
+  const scr = window.innerWidth;
   return (
     <div className="home_main">
       <div className="home_main_inner">
         <div className="home_left">
           <div className="home_left_inner">
-            <span className="home_span_text">USED LASER FOR ALL</span>
+            {/* <span className="home_span_text">USED LASER FOR ALL</span> */}
             <h1 className="home_heading">
               <span>DERMAZON</span> is a worldwide marketplace
             </h1>
             <p className="home_text_p">
-              for the sale and purchase of pre-owned laser and energy-based devices, used in
-              dermatology and aesthetic medicine field.
+              Based in Paris, for the sale and purchase of pre-owned laser and energy-based devices,
+              used in dermatology and aesthetic medicine field.
             </p>
           </div>
           <div className="input_component">
             <InputSearch />
           </div>
         </div>
+
         <div className="home_right">
-          <img className="heroBG" src={heroSection} alt="" />
+          <img className="heroBG" src={scr > 1000 ? heroSection : heroSectionImg} alt="" />
         </div>
       </div>
     </div>

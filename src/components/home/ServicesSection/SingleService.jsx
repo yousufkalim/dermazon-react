@@ -84,8 +84,37 @@ export default function SingleService(props) {
         </div>
 
         <p className="single_service_text_p">{serviceDescription}</p>
+        <div
+          className={reverse ? 'single_service_left_reverse_mobile' : 'single_service_left_mobile'}
+        >
+          {reverse || showImage ? (
+            <img
+              src={image}
+              alt="Single Service"
+              style={{
+                height: '450px',
+                width: '450px',
+                marginRight: '20%',
+              }}
+            />
+          ) : (
+            <img
+              alt="Single Service"
+              className="laserMachineHomeImg"
+              src={image}
+              style={{
+                // background: 'red',
+                height: '450px',
+                width: '450px',
+                marginRight: '20%',
+              }}
+            />
+            // <ServiceImageSlider />
+          )}
+        </div>
         <Link
           to={Path}
+          // href="#ContactUs"
           style={{
             textDecoration: 'none',
           }}
