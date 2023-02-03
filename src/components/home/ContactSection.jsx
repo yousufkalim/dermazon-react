@@ -76,7 +76,7 @@ export default function ContactSection() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (input.name === '') {
-      toast.error('Please enter your name');
+      toast.error('Please Enter Your Name');
       return;
     }
     if (input.company === '') {
@@ -99,6 +99,11 @@ export default function ContactSection() {
       toast.error('Please enter your message');
       return;
     }
+    if (attachmentfile === null) {
+      toast.error('Please select a file');
+      return;
+    }
+    console.log('attachmentfile', attachmentfile);
 
     const formdata = new FormData();
     formdata.append('attachmentfile', attachmentfile);
@@ -112,26 +117,15 @@ export default function ContactSection() {
     const res = await API('post', '/contactus', formdata);
     if (res) {
       toast.success('Thanks For Contacting!');
-      setInput({ name: '', company: '', email: '', phone: '', request: '', message: '' });
+      setInput({ name: '', company: '', email: '', phone: '', request: 'request', message: '' });
       setAttachment(null);
     }
-    // setInput({ name: '', company: '', email: '', phone: '', request: 'request', message: '' });
-    // emailjs
-    //   .send('service_atan74l', 'template_yr12h2h', body, 'EyhGbZpt9YbWWZt09')
-    //   .then(() => {
-    //     toast.success('Thanks For Contacting!');
-    //     setInput({ name: '', company: '', email: '', phone: '', request: '', message: '' });
-    //   })
-    //   .catch((err) => {
-    //     toast.error(err);
-    //   });
   };
 
   const handleImageSelect = (event) => {
     const file = event.target.files[0];
     setAttachment(file);
   };
-
 
   return (
     <div className="contact" id="about">
@@ -349,19 +343,7 @@ export default function ContactSection() {
                     rows="10"
                     placeholder="Your Message"
                     onChange={handleChange}
-
                     value={input.message}
-                    InputProps={{
-                      sx: {
-                        color: 'white',
-                        outline: 'none',
-                        '&::placeholder': {
-                          // opacity: 1,
-                          color: 'white',
-                        },
-                      },
-                    }}
-
                   />
                 </FormControl>
               </Grid>
@@ -373,12 +355,11 @@ export default function ContactSection() {
               <input
                 className="hide_file"
                 type="file"
-
+                accept="image/*"
                 name="attachment"
-                // value={input.attachments}
-                // onChange={handleSelectFile}
+                onChange={handleImageSelect}
               />
-           
+
               {attachmentfile ? (
                 <span>{attachmentfile.name}</span>
               ) : (
@@ -391,7 +372,6 @@ export default function ContactSection() {
                   Add Any Attachment
                 </span>
               )}
-
             </div>
             <button className="contact-btn" type="submit" onClick={handleSubmit}>
               Send{' '}
