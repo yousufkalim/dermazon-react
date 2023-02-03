@@ -69,7 +69,8 @@ export default function Header() {
           <MenuIcon />
         </div>
 
-        <div className={showNavbar ? 'header_bottom_center_button' : 'header_bottom_center'}>
+        {/* <div className={showNavbar ? 'header_bottom_center_button' : 'header_bottom_center'}> */}
+        <div className={`header_bottom_center ${showNavbar && 'active'}`}>
           <ul>
             <li>
               <Link to="/">Home</Link>

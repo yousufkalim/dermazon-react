@@ -34,7 +34,6 @@ export default function LaserComponents() {
   return (
     <div className="Laser_components">
       <LaserHeroSection searchQuery={searchQuery} handleChange={handleChange} />
-
       {filteredData?.slice(0, showmore).map((product) => (
         <LaserItemsCard product={product} />
       ))}

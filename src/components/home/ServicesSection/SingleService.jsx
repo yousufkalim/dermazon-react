@@ -1,7 +1,7 @@
 // import components and libraries
 
 import React from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 // import ServiceImageSlider from './ServiceImageSlider';
 // import laserMachineHome from '../../../assets/home/laserMachineHome.png';
 
@@ -15,7 +15,7 @@ export default function SingleService(props) {
     btnText,
     serviceDescription,
     sectionId,
-    Path,
+    // Path,
     image,
     showImage,
   } = props;
@@ -27,7 +27,10 @@ export default function SingleService(props) {
     }
     return title.slice(indexOfSpace + 1);
   }
-
+  const scroll = () => {
+    const section = document.querySelector(`#${'about'}`);
+    section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
   return (
     <div
       className={reverse ? 'single_service_container_reverse' : 'single_service_container'}
@@ -112,23 +115,17 @@ export default function SingleService(props) {
             // <ServiceImageSlider />
           )}
         </div>
-        <Link
-          to={Path}
-          // href="#ContactUs"
+
+        <button
           style={{
-            textDecoration: 'none',
+            background: btnBg,
           }}
+          className="single_service_btn"
+          type="button"
+          onClick={() => scroll()}
         >
-          <button
-            style={{
-              background: btnBg,
-            }}
-            className="single_service_btn"
-            type="button"
-          >
-            {btnText}
-          </button>
-        </Link>
+          {btnText}
+        </button>
       </div>
     </div>
   );

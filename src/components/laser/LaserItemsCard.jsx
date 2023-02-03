@@ -5,16 +5,16 @@ import EuroIcon from '@mui/icons-material/Euro';
 import moment from 'moment';
 import Collapse from '@mui/material/Collapse';
 import ShareIcon from '@mui/icons-material/Share';
-
+import { EmailShareButton } from 'react-share';
+import vender from '../../assets/home/vender.png';
 import { mediaUrl } from '../../config';
 
 export default function LaserItemsCard({ product }) {
   const [expanded, setExpanded] = useState(false);
-
+  const url = 'https://dermazon-dev.falconweb.app/';
   const handleExpandClick = () => {
     setExpanded(!expanded);
   };
-
   return (
     <div className="Laser_items_card_outer">
       <div
@@ -23,7 +23,13 @@ export default function LaserItemsCard({ product }) {
         role="presentation"
       >
         <div className="items_card_image">
-          <img src={`${mediaUrl}/${product?.images[0]}`} alt="product" />
+          <img className="product_img" src={`${mediaUrl}/${product?.images[0]}`} alt="product" />
+          {product?.availability === false ? (
+            <img className="vendu" src={vender} alt="product" />
+          ) : (
+            // <p className="vendu">vendu</p>
+            ''
+          )}
         </div>
         <div className="items_card_text">
           <div className="items_card_text_price">
@@ -51,9 +57,9 @@ export default function LaserItemsCard({ product }) {
                   : '2020 handpiece Perfect condition BTL emtone with afordable price 2020 handpiece Perfect condition BTL emtone with afordable price'}
               </div>
 
-              <div className="items_card_Year">
+              {/* <div className="items_card_Year">
                 Year <p>{moment(product.createdAt).format('YYYY')} </p>
-              </div>
+              </div> */}
               <div className="items_card_telephone">
                 {' '}
                 Telephone <p> +33 695 12 03 33</p>
@@ -62,7 +68,20 @@ export default function LaserItemsCard({ product }) {
           </Collapse>
         </div>
         <div className="items_card_share_icon">
-          <ShareIcon className="items_card_share_icon_mui" />
+          <EmailShareButton
+            url={url}
+            target="_blank"
+            subject="Dermazon Product"
+            body={product?.name}
+            quote="Dermazone"
+          >
+            {/* <MailOutlineIcon round={true} className="socialIcons mail" /> */}
+            <ShareIcon className="items_card_share_icon_mui" />
+          </EmailShareButton>
+
+          {/* <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank" rel="noreferrer">
+            
+          </a> */}
         </div>
       </div>
     </div>

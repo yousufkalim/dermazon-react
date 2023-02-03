@@ -122,7 +122,7 @@ export default function ContactSection() {
       });
   }
   return (
-    <div className="contact" id="ContactUs">
+    <div className="contact" id="about">
       <div className="contact_top">
         <h1 className="contact_top_heading">
           Contact{' '}

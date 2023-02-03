@@ -123,9 +123,11 @@
   color: #02225e;
 }
 
-/* MEDIA QUERY FOR LARGE DEVICES */
-
-/* MEDIA QUERY FOR SMALL SCREEN */
+@media screen and (min-width: 1000px) and (max-width: 1600px) {
+  .logo img {
+    width: 85%;
+  }
+}
 @media screen and (max-width: 1000px) {
   .header {
     padding: 0% 5%;
@@ -145,7 +147,7 @@
     width: 90%;
   }
 
-  .header_bottom_center {
+  /* .header_bottom_center {
     position: absolute;
     margin-top: 13%;
     background-color: #19386e;
@@ -168,12 +170,35 @@
     justify-content: center;
     align-items: center;
     display: flex;
+  } */
+
+  .header_bottom_center {
+    position: absolute;
+    right: 0;
+    top: 120px;
+    background-color: #02225e;
+    width: 0px;
+    height: calc(100vh - 60px);
+    transition: all 0.3s ease-in;
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  .header_bottom_center.active {
+    /* background-color: #574c4c; */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    width: 270px;
+    border-radius: 10px;
   }
 
   .header_bottom_center ul {
     width: 90%;
     /* background-color: #574c4c; */
-    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 10%;
+    /* justify-content: center; */
     align-items: center;
   }
 
@@ -213,15 +238,11 @@
     display: none;
   }
 }
-@media screen and (max-width: 730px) {
-  .header_bottom_center {
-    margin-top: 15%;
-  }
+/* @media screen and (max-width: 730px) {
+ 
 
-  .header_bottom_center.active {
-    margin-top: 15%;
-  }
-}
+ 
+} */
 
 @media screen and (max-width: 607px) {
   .header_top_left p {
@@ -247,14 +268,6 @@
   .menu-icon {
     right: 5%;
     /* background-color: #582828; */
-  }
-
-  .header_bottom_center {
-    margin-top: 20%;
-  }
-
-  .header_bottom_center.active {
-    margin-top: 18%;
   }
 }
 @media only screen and (max-width: 500px) {
@@ -287,23 +300,10 @@
     right: 5%;
     /* background-color: #582828; */
   }
-  .header_bottom_center {
-    margin-top: 22%;
-  }
-
-  .header_bottom_center.active {
-    margin-top: 15%;
-  }
 }
-@media screen and (max-width: 450px) {
-  .header_bottom_center {
-    margin-top: 25%;
-  }
-
-  .header_bottom_center.active {
-    margin-top: 16%;
-  }
-}
+/* @media screen and (max-width: 450px) {
+ 
+} */
 @media screen and (max-width: 400px) {
   .header_top {
     padding: 0%;
@@ -344,13 +344,6 @@
     /* background-color: #6a6a6a; */
   }
 
-  .header_bottom_center {
-    margin-top: 28%;
-  }
-
-  .header_bottom_center.active {
-    margin-top: 20%;
-  }
   .header_bottom_center ul a {
     font-size: smaller;
   }

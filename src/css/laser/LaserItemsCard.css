@@ -39,6 +39,7 @@
   order: 0;
   align-self: stretch;
   margin-bottom: 2%;
+  /* background-color: yellowgreen; */
 }
 .Laser_items_card_expand:hover {
   background-color: rgb(255, 245, 220);
@@ -48,13 +49,25 @@
   width: 15%;
   /* height: 100%; */
   margin: 0;
+  padding: 0;
+  position: relative;
+  /* background-color: #6a6a6a; */
 }
-.items_card_image img {
+.product_img {
   width: 100%;
   height: 100%;
-  /* object-fit: cover; */
 }
-
+.vendu {
+  left: 10%;
+  /* right: 25%; */
+  top: 30%;
+  width: 90%;
+  /* height: 10px; */
+  /* background: white transparent; */
+  position: absolute;
+  /* rotate: 350deg; */
+  /* border-radius: 15px; */
+}
 .items_card_text {
   width: 65%;
   padding: 3% 0 3% 0;
@@ -151,10 +164,10 @@
   padding-top: 2%;
   display: flex;
 }
-.items_card_Year {
+/* .items_card_Year {
   padding-top: 2%;
   display: flex;
-}
+} */
 .items_card_description div {
   word-wrap: break-word;
 }
@@ -162,7 +175,9 @@
   margin-left: 1%;
   color: #b3881d;
 }
-
+a {
+  color: #b3881d;
+}
 @media only screen and (max-width: 500px) {
   /* For mobile phones: */
 
@@ -187,12 +202,12 @@
 
   .items_card_text_heading {
     font-weight: 600;
-    font-size: 15px;
+    font-size: 13px;
     line-height: 22px;
   }
   .items_card_text_description {
     font-weight: 500;
-    font-size: 12px;
+    font-size: 11px;
     line-height: 120%;
   }
   .items_card_text_date {
@@ -205,7 +220,7 @@
 
   .items_card_description {
     font-weight: 400;
-    font-size: 13px;
+    font-size: 11px;
     line-height: 18px;
   }
 
@@ -213,10 +228,7 @@
     padding-top: 2%;
     display: flex;
   }
-  .items_card_Year {
-    padding-top: 2%;
-    display: flex;
-  }
+
   .items_card_description div {
     word-wrap: break-word;
   }
@@ -276,10 +288,72 @@
     padding-top: 2%;
     display: flex;
   }
-  .items_card_Year {
+  /* .items_card_Year {
+    padding-top: 2%;
+    display: flex;
+  } */
+  .items_card_description div {
+    word-wrap: break-word;
+  }
+}
+
+@media only screen and (min-width: 1001px) and (max-width: 1600px) {
+  .Laser_items_card_outer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .Laser_items_card {
+    width: 80%;
+    border-radius: 20px;
+  }
+
+  .Laser_items_card_expand {
+    border-radius: 20px;
+    width: 80%;
+  }
+
+  .items_card_text_price {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  .items_card_text_heading {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+  }
+  .items_card_text_description {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 120%;
+  }
+  .items_card_text_date {
+    font-size: 12px;
+  }
+
+  .date_format {
+    margin: 0 1% 0.5% 1%;
+  }
+
+  .items_card_description {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  .items_card_telephone {
     padding-top: 2%;
     display: flex;
   }
+  /* .items_card_Year {
+      padding-top: 2%;
+      display: flex;
+    } */
   .items_card_description div {
     word-wrap: break-word;
   }
