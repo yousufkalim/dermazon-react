@@ -16,7 +16,7 @@ export default function ServicesList() {
     <div className="list">
       <List
         sectionId="BuyALaser"
-        title="Buy a laser"
+        title="Buy A Pre-Owned Laser"
         description="We sell high quality and brand premium pre-owned laser, they are checked and revised by independent and experienced service engineers, it is a cost effective option to buy the right used laser, you can save on average of 40% compared to new."
         icon={ListIconNo1}
         number="1"

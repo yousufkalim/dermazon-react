@@ -36,38 +36,18 @@ const useOutlinedInputStyles = makeStyles({
     },
   },
 });
-const useOutlinedTextAreaStyles = makeStyles({
-  root: {
-    '& .MuiOutlinedInput-root': {
-      '& fieldset': {
-        border: '1.1px solid #ffffff ',
-        borderRadius: '10px',
-        color: 'white',
-        placeholderColor: 'white',
-      },
-      '&:hover fieldset': {
-        borderColor: '#ffffff',
-        color: 'white',
-        placeholderColor: 'white',
-      },
-      '&.Mui-focused fieldset': {
-        placeholderColor: 'white',
-        borderColor: '#ffffff',
-        color: 'white',
-
-        border: '1.1px solid #ffffff ',
-      },
-    },
-  },
-});
 
 const BootstrapInput = styled(InputBase)(() => ({
   '& .MuiInputBase-input': {
     backgroundColor: '#02225E',
     borderRadius: '100px',
     border: '1.1px solid #ffffff',
-    fontSize: 16,
-    color: 'grey',
+
+    fontFamily: 'Poppins',
+    fontStyle: 'normal',
+    fontWeight: 400,
+    fontSize: 14,
+    color: 'white',
     padding: '1.3% 2%',
     '&:focus': {
       borderRadius: '100px',
@@ -77,7 +57,6 @@ const BootstrapInput = styled(InputBase)(() => ({
 }));
 export default function ContactSection() {
   const outlinedInputStyles = useOutlinedInputStyles();
-  const outlinedTextAreaStyles = useOutlinedTextAreaStyles();
 
   const [attachmentfile, setAttachment] = useState(null);
   const [input, setInput] = useState({
@@ -153,8 +132,9 @@ export default function ContactSection() {
     setAttachment(file);
   };
 
+
   return (
-    <div className="contact">
+    <div className="contact" id="about">
       <div className="contact_top">
         <h1 className="contact_top_heading">
           Contact{' '}
@@ -200,7 +180,7 @@ export default function ContactSection() {
             </div>
           </div>
         </div>
-        <div className="contact_bottom_right">
+        <form id="myform" className="contact_bottom_right">
           <Box sx={{ flexGrow: 1 }}>
             <Grid container spacing={2}>
               <Grid item xs={12} lg={6}>
@@ -209,11 +189,13 @@ export default function ContactSection() {
                     sx={{
                       input: {
                         color: 'white',
-                        fontSize: '14px',
+                        fontFamily: 'Poppins',
+                        fontStyle: 'normal',
                         fontWeight: 400,
+                        fontSize: 14,
                         '&::placeholder': {
                           opacity: 1,
-                          color: 'grey',
+                          color: 'white',
                         },
                       },
                     }}
@@ -236,11 +218,13 @@ export default function ContactSection() {
                     sx={{
                       input: {
                         color: 'white',
-                        fontSize: '14px',
-                        fontWeight: 500,
+                        fontFamily: 'Poppins',
+                        fontStyle: 'normal',
+                        fontWeight: 400,
+                        fontSize: 14,
                         '&::placeholder': {
                           opacity: 1,
-                          color: 'grey',
+                          color: 'white',
                         },
                       },
                     }}
@@ -263,11 +247,13 @@ export default function ContactSection() {
                     sx={{
                       input: {
                         color: 'white',
-                        fontSize: '14px',
+                        fontFamily: 'Poppins',
+                        fontStyle: 'normal',
                         fontWeight: 400,
+                        fontSize: 14,
                         '&::placeholder': {
                           opacity: 1,
-                          color: 'grey',
+                          color: 'white',
                         },
                       },
                     }}
@@ -291,11 +277,13 @@ export default function ContactSection() {
                     sx={{
                       input: {
                         color: 'white',
-                        fontSize: '14px',
+                        fontFamily: 'Poppins',
+                        fontStyle: 'normal',
                         fontWeight: 400,
+                        fontSize: 14,
                         '&::placeholder': {
                           opacity: 1,
-                          color: 'grey',
+                          color: 'white',
                         },
                       },
                     }}
@@ -327,7 +315,7 @@ export default function ContactSection() {
                   >
                     <MenuItem
                       sx={{
-                        color: '#B3881D',
+                        color: '',
                       }}
                       value="request"
                     >
@@ -341,18 +329,7 @@ export default function ContactSection() {
               </Grid>
               <Grid item xs={12} lg={12}>
                 <FormControl sx={{ mb: 1, width: '100%' }} variant="outlined">
-                  <TextField
-                    sx={{
-                      input: {
-                        color: 'white',
-                        fontSize: '14px',
-                        fontWeight: 400,
-                        '&::placeholder': {
-                          opacity: 1,
-                          color: 'white',
-                        },
-                      },
-                    }}
+                  {/* <TextField
                     autoComplete="off"
                     className="messageField"
                     multiline
@@ -363,6 +340,16 @@ export default function ContactSection() {
                     classes={outlinedTextAreaStyles}
                     placeholder="Your Message"
                     name="message"
+
+                  /> */}
+                  <textarea
+                    name="message"
+                    id=""
+                    cols="30"
+                    rows="10"
+                    placeholder="Your Message"
+                    onChange={handleChange}
+
                     value={input.message}
                     InputProps={{
                       sx: {
@@ -374,6 +361,7 @@ export default function ContactSection() {
                         },
                       },
                     }}
+
                   />
                 </FormControl>
               </Grid>
@@ -385,9 +373,12 @@ export default function ContactSection() {
               <input
                 className="hide_file"
                 type="file"
-                accept="image/*"
-                onChange={handleImageSelect}
+
+                name="attachment"
+                // value={input.attachments}
+                // onChange={handleSelectFile}
               />
+           
               {attachmentfile ? (
                 <span>{attachmentfile.name}</span>
               ) : (
@@ -400,6 +391,7 @@ export default function ContactSection() {
                   Add Any Attachment
                 </span>
               )}
+
             </div>
             <button className="contact-btn" type="submit" onClick={handleSubmit}>
               Send{' '}
@@ -410,7 +402,7 @@ export default function ContactSection() {
               />
             </button>
           </div>
-        </div>
+        </form>
       </div>
     </div>
   );

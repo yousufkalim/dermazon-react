@@ -14,7 +14,7 @@ import icon5 from '../../../assets/home/icon5.svg';
 import serviceBG from '../../../assets/home/serviceBG.svg';
 import service1 from '../../../assets/home/service1.svg';
 import service2 from '../../../assets/home/service2.svg';
-import SingleService3 from '../../../assets/home/SingleService3.svg';
+import SingleService3 from '../../../assets/home/LaserMachineImg.svg';
 import SingleService4 from '../../../assets/home/SingleService4.svg';
 import SingleService5 from '../../../assets/home/SingleService5.svg';
 
@@ -25,25 +25,24 @@ export default function Index() {
         <img className="services_section_bg_img" src={serviceBG} alt="Service" />
       </div>
       <div className="services_section">
-        <span className="services_section_span">USED USER FOR ALL</span>
+        {/* <span className="services_section_span">USED USER FOR ALL</span> */}
         <h1 className="services_section_heading">
           Our <span>Services</span>
         </h1>
-        <p className="services_section_text_p">
+        {/* <p className="services_section_text_p">
           based in the Paris region, and is specialized in lasers and energy-based device used in
           dermatology{' '}
-        </p>
+        </p> */}
       </div>
       <ServicesList />
       <SingleService
         sectionId="BuyALaser"
         bgColor="rgba(66, 85, 255, 0.1)"
         icon={icon1}
-        title="Buy A Laser"
+        title="Buy A Pre-Owned Laser"
         btnBg="#02225E"
-        btnText="Buy a laser"
+        btnText="Contact us"
         serviceDescription="We sell high quality and brand premium pre-owned laser, they are checked and revised by independent and experienced service engineers, it is a cost effective option to buy the right used laser, you can save on average of 40% compared to new."
-        Path="/buy-laser"
         image={service1}
       />
       <SingleService
@@ -53,7 +52,7 @@ export default function Index() {
         icon={icon2}
         title="Sell Your Laser"
         btnBg="#B3881D"
-        btnText="Sell Your Laser"
+        btnText="Contact us"
         serviceDescription="The process of selling your used medical laser is very easy. Fill the form below, and after review of your machine, we will either purpose you a purchase offer within 48 hours or we will list it on our marketplace and actively sell it with our partners and clients."
         image={service2}
       />
@@ -63,7 +62,7 @@ export default function Index() {
         icon={icon3}
         title="Maintain Your Laser"
         btnBg="#75CB41"
-        btnText="Maintain Your Laser"
+        btnText="Contact us"
         serviceDescription="All cosmetic and medical laser equipment requires a periodical preventive maintenance at least once a year, and this to avoid costly breakdowns and to guarantee good clinical functioning. For the moment we service some brands and working with others with independent field service engineers. Contact us for a quote."
         image={SingleService3}
       />
@@ -74,7 +73,7 @@ export default function Index() {
         icon={icon4}
         title="Rent a Laser"
         btnBg="#42C6FF"
-        btnText="Rent your laser"
+        btnText="Contact us"
         serviceDescription="Renting an equipment is a step before committing to buying one in the future, it is also a way to avoid committing to a costly investment without having visibility of your aesthetic medicine activity. Contact us for a quote and availability of the technology you are looking for."
         image={SingleService4}
       />
@@ -84,7 +83,7 @@ export default function Index() {
         icon={icon5}
         title="Pick-up and Delivery"
         btnBg="#FD8833"
-        btnText="Deliver your laser"
+        btnText="Contact us"
         serviceDescription="All equipment with an optical system needs a special care during transport because of the optical beam alignments, this is why we pick-up and deliver it ourselves in safe and good conditions. All international transport we provide packaging with appropriate pallet. Dermazon is also available for all manufacturers for their equipment transportation needs."
         image={SingleService5}
         showImage

@@ -4,7 +4,6 @@
 @import url('./home/ContactSection.css');
 @import url('./home/HeroSection.css');
 @import url('./home/TestimonialsSection/Testimonials.css');
-@import url('./home/ServicesSection/ServicesList.css');
 @import url('./home/ServicesSection/Index.css');
 @import url('./home/ServicesSection/SingleService.css');
 @import url('./home/ServicesSection/ServiceImageSlider.css');
@@ -30,4 +29,11 @@
 /* Primary Variables */
 :root {
   --primary: 'green';
+}
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: transparent;
 }

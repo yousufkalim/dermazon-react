@@ -71,6 +71,7 @@
   }
   .home_btn {
     padding: 3%;
+    font-weight: 400;
     font-size: 14px;
   }
 }
@@ -88,13 +89,13 @@
   }
 
   .home_btn {
-    width: 27%;
+    width: 30%;
     padding: 3%;
-    /* font-weight: 300;   */
+    font-weight: 400;
     font-size: 16px;
   }
 }
-@media only screen and (min-width: 1001px) and (max-width: 1366px) {
+@media only screen and (min-width: 1001px) and (max-width: 1600px) {
   .home_btn_div {
     padding: 1% 0;
   }
@@ -104,6 +105,7 @@
   }
   .home_btn {
     font-size: medium;
+    width: 30%;
     /* padding: 3%; */
   }
   .home_btn_div_inner img {

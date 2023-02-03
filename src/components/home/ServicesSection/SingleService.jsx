@@ -1,7 +1,7 @@
 // import components and libraries
 
 import React from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 // import ServiceImageSlider from './ServiceImageSlider';
 // import laserMachineHome from '../../../assets/home/laserMachineHome.png';
 
@@ -15,7 +15,7 @@ export default function SingleService(props) {
     btnText,
     serviceDescription,
     sectionId,
-    Path,
+    // Path,
     image,
     showImage,
   } = props;
@@ -27,7 +27,10 @@ export default function SingleService(props) {
     }
     return title.slice(indexOfSpace + 1);
   }
-
+  const scroll = () => {
+    const section = document.querySelector(`#${'about'}`);
+    section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
   return (
     <div
       className={reverse ? 'single_service_container_reverse' : 'single_service_container'}
@@ -84,22 +87,45 @@ export default function SingleService(props) {
         </div>
 
         <p className="single_service_text_p">{serviceDescription}</p>
-        <Link
-          to={Path}
-          style={{
-            textDecoration: 'none',
-          }}
+        <div
+          className={reverse ? 'single_service_left_reverse_mobile' : 'single_service_left_mobile'}
         >
-          <button
-            style={{
-              background: btnBg,
-            }}
-            className="single_service_btn"
-            type="button"
-          >
-            {btnText}
-          </button>
-        </Link>
+          {reverse || showImage ? (
+            <img
+              src={image}
+              alt="Single Service"
+              style={{
+                height: '450px',
+                width: '450px',
+                marginRight: '20%',
+              }}
+            />
+          ) : (
+            <img
+              alt="Single Service"
+              className="laserMachineHomeImg"
+              src={image}
+              style={{
+                // background: 'red',
+                height: '450px',
+                width: '450px',
+                marginRight: '20%',
+              }}
+            />
+            // <ServiceImageSlider />
+          )}
+        </div>
+
+        <button
+          style={{
+            background: btnBg,
+          }}
+          className="single_service_btn"
+          type="button"
+          onClick={() => scroll()}
+        >
+          {btnText}
+        </button>
       </div>
     </div>
   );
