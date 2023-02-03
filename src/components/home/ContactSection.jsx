@@ -10,7 +10,7 @@ import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import { InputBase, MenuItem, Select } from '@mui/material';
 import styled from '@emotion/styled';
 import { toast } from 'react-toastify';
-import emailjs from '@emailjs/browser';
+import API from '../../api';
 
 // import icons and images
 
@@ -79,28 +79,79 @@ export default function ContactSection() {
   const outlinedInputStyles = useOutlinedInputStyles();
   const outlinedTextAreaStyles = useOutlinedTextAreaStyles();
 
-  const [input, setInput] = useState({});
+  const [attachmentfile, setAttachment] = useState(null);
+  const [input, setInput] = useState({
+    name: '',
+    company: '',
+    email: '',
+    phone: '',
+    request: 'request',
+    message: '',
+  });
   const screenWidth = window.innerWidth;
 
   const handleChange = (e) => {
     setInput({ ...input, [e.target.name]: e.target.value });
   };
 
-  function handleSubmit(e) {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    const body = {
-      ...input,
-    };
-    emailjs
-      .send('service_atan74l', 'template_yr12h2h', body, 'EyhGbZpt9YbWWZt09')
-      .then(() => {
-        toast.success('Thanks For Contacting!');
-        setInput({ name: '', company: '', email: '', phone: '', request: '', message: '' });
-      })
-      .catch((err) => {
-        toast.error(err);
-      });
-  }
+    if (input.name === '') {
+      toast.error('Please enter your name');
+      return;
+    }
+    if (input.company === '') {
+      toast.error('Please enter your company');
+      return;
+    }
+    if (input.email === '') {
+      toast.error('Please enter your email');
+      return;
+    }
+    if (input.phone === '') {
+      toast.error('Please enter your phone');
+      return;
+    }
+    if (input.request === '') {
+      toast.error('Please enter your request');
+      return;
+    }
+    if (input.message === '') {
+      toast.error('Please enter your message');
+      return;
+    }
+
+    const formdata = new FormData();
+    formdata.append('attachmentfile', attachmentfile);
+    formdata.append('name', input.name);
+    formdata.append('company', input.company);
+    formdata.append('email', input.email);
+    formdata.append('phone', input.phone);
+    formdata.append('request', input.request);
+    formdata.append('message', input.message);
+
+    const res = await API('post', '/contactus', formdata);
+    if (res) {
+      toast.success('Thanks For Contacting!');
+      setInput({ name: '', company: '', email: '', phone: '', request: '', message: '' });
+      setAttachment(null);
+    }
+    // setInput({ name: '', company: '', email: '', phone: '', request: 'request', message: '' });
+    // emailjs
+    //   .send('service_atan74l', 'template_yr12h2h', body, 'EyhGbZpt9YbWWZt09')
+    //   .then(() => {
+    //     toast.success('Thanks For Contacting!');
+    //     setInput({ name: '', company: '', email: '', phone: '', request: '', message: '' });
+    //   })
+    //   .catch((err) => {
+    //     toast.error(err);
+    //   });
+  };
+
+  const handleImageSelect = (event) => {
+    const file = event.target.files[0];
+    setAttachment(file);
+  };
 
   return (
     <div className="contact">
@@ -174,6 +225,7 @@ export default function ContactSection() {
                     size="small"
                     placeholder="Name"
                     name="name"
+                    value={input.name}
                     InputProps={{ sx: { padding: screenWidth > 600 ? 0.7 : 0.1 } }}
                   />
                 </FormControl>
@@ -200,6 +252,7 @@ export default function ContactSection() {
                     size="small"
                     placeholder="Company Name"
                     name="company"
+                    value={input.company}
                     InputProps={{ sx: { padding: screenWidth > 600 ? 0.7 : 0.1 } }}
                   />
                 </FormControl>
@@ -226,6 +279,7 @@ export default function ContactSection() {
                     size="small"
                     placeholder="Email"
                     name="email"
+                    value={input.email}
                     InputProps={{ sx: { padding: screenWidth > 600 ? 0.7 : 0.1 } }}
                   />
                 </FormControl>
@@ -253,6 +307,7 @@ export default function ContactSection() {
                     size="small"
                     placeholder="Telephone"
                     name="phone"
+                    value={input.phone}
                     InputProps={{ sx: { padding: screenWidth > 600 ? 0.7 : 0.1 } }}
                   />
                 </FormControl>
@@ -264,6 +319,7 @@ export default function ContactSection() {
                     labelId="demo-simple-select-label"
                     id="demo-simple-select"
                     name="request"
+                    value={input.request}
                     label="Your Request"
                     input={<BootstrapInput />}
                     onChange={handleChange}
@@ -273,6 +329,7 @@ export default function ContactSection() {
                       sx={{
                         color: '#B3881D',
                       }}
+                      value="request"
                     >
                       Your Request
                     </MenuItem>
@@ -306,6 +363,7 @@ export default function ContactSection() {
                     classes={outlinedTextAreaStyles}
                     placeholder="Your Message"
                     name="message"
+                    value={input.message}
                     InputProps={{
                       sx: {
                         color: 'white',
@@ -324,15 +382,24 @@ export default function ContactSection() {
           <div className="contact_bottom_right_btn">
             <div className="attachment">
               <img src={attachment} alt="attachment" />
-              <input className="hide_file" type="file" />
-              <span
-                style={{
-                  fontSize: '18px',
-                  fontWeight: 500,
-                }}
-              >
-                Add Any Attachment
-              </span>
+              <input
+                className="hide_file"
+                type="file"
+                accept="image/*"
+                onChange={handleImageSelect}
+              />
+              {attachmentfile ? (
+                <span>{attachmentfile.name}</span>
+              ) : (
+                <span
+                  style={{
+                    fontSize: '18px',
+                    fontWeight: 500,
+                  }}
+                >
+                  Add Any Attachment
+                </span>
+              )}
             </div>
             <button className="contact-btn" type="submit" onClick={handleSubmit}>
               Send{' '}
