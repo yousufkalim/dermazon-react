@@ -145,7 +145,7 @@
 @media only screen and (min-width: 501px) and (max-width: 1000px) {
   .laser_outer_main {
     width: 100%;
-    padding-top: 30%;
+    padding-top: 23%;
   }
 
   .laser_hero_section_heading_text {
@@ -173,6 +173,8 @@
 @media only screen and (min-width: 1001px) and (max-width: 1600px) {
   .laser_outer_main {
     width: 100%;
+    padding: 13% 0 0 0;
+    /* background-color: #6a6a6a; */
   }
 
   .laser_hero_section_heading_text {

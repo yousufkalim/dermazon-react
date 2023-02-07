@@ -300,6 +300,10 @@
     right: 5%;
     /* background-color: #582828; */
   }
+  .header_bottom_left P {
+    font-size: small;
+    /* background-color: #b3881d; */
+  }
 }
 /* @media screen and (max-width: 450px) {
  

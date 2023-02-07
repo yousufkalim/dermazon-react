@@ -7,7 +7,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 // import icons and images
 
 import logo from '../../assets/home/logo.svg';
-import facebook from '../../assets/home/instragram.svg';
+import instragram from '../../assets/home/instragram.svg';
 import linkedIn from '../../assets/home/linkedIn.svg';
 
 export default function Header() {
@@ -42,7 +42,16 @@ export default function Header() {
         <div className="header_top_right">
           <span className="header_top_span">Follow us</span>
           <div className="icons">
-            <img src={facebook} alt="logo" />
+            <a
+              style={{
+                marginBottom: '-7px',
+              }}
+              href="https://instagram.com/dermazon.fr?igshid=YmMyMTA2M2Y="
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={instragram} alt="logo" />
+            </a>
             <a
               style={{
                 marginBottom: '-7px',

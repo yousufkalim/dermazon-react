@@ -7,7 +7,7 @@ import React from 'react';
 // import herosearch from '../../assets/home/herosearch.svg';
 import heroSection from '../../assets/home/heroSection.svg';
 import heroSectionImg from '../../assets/home/MainHeroSectionImg.png';
-import InputSearch from '../common/InputSearch';
+// import InputSearch from '../common/InputSearch';
 
 export default function HeroSection() {
   const scr = window.innerWidth;
@@ -25,9 +25,9 @@ export default function HeroSection() {
               used in dermatology and aesthetic medicine field.
             </p>
           </div>
-          <div className="input_component">
+          {/* <div className="input_component">
             <InputSearch />
-          </div>
+          </div> */}
         </div>
 
         <div className="home_right">
