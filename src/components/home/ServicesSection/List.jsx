@@ -44,18 +44,15 @@ export default function List(props) {
                   style={{
                     color: isHover ? titleColor : '',
                   }}
+                  onMouseEnter={handleMouseEnter}
+                  onMouseLeave={handleMouseLeave}
                   onClick={() => scroll(sectionId)}
                   role="presentation"
                 >
                   {title}
                 </span>
 
-                <div
-                  className="service_details"
-                  onMouseEnter={handleMouseEnter}
-                  onMouseLeave={handleMouseLeave}
-                  role="presentation"
-                >
+                <div className="service_details" role="presentation">
                   {/* <Tooltip title={description}> */}
                   <span className="service_description">
                     <p>{`${description.substring(0, 100)}...`}</p>

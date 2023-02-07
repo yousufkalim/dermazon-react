@@ -81,11 +81,17 @@
 @media only screen and (max-width: 1621px) {
   .home_main {
     /* background-color: #b3881d; */
-    padding-top: 10%;
+    padding-top: 0%;
   }
+  .home_main_inner {
+    margin: 0;
+    padding: 0;
+    /* background-color: #41392b; */
+  }
+
   .home_left_inner {
     width: 77%;
-    /* background-color: #dad3c7; */
+    /* background-color: #9c6d1b; */
   }
   .home_span_text {
     font-size: medium;
@@ -103,6 +109,9 @@
   }
   .input_component {
     width: 60%;
+  }
+  .home_right img {
+    margin-top: 25%;
   }
 }
 @media only screen and (max-width: 1070px) {

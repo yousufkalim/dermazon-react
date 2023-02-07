@@ -23,6 +23,7 @@ export default function Home() {
       <HeroSection />
       <Testimonials />
       <Index />
+      <div id="about" style={{ position: 'absolute', marginTop: '-80px' }} />
       <ContactUs />
       <Footer />
     </div>
