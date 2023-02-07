@@ -101,6 +101,12 @@
   .testimonials_card {
     width: 50%;
   }
+  .profile_info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -7%;
+  }
 }
 @media screen and (max-width: 1130px) {
   .testimonials_card {
@@ -156,6 +162,13 @@
     justify-content: center;
     align-items: center;
   }
+  .profile_info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -10%;
+    margin-bottom: 5%;
+  }
 }
 @media only screen and (min-width: 501px) and (max-width: 1000px) {
   .client_testimonials {
@@ -204,5 +217,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .profile_info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -10%;
+    margin-bottom: 5%;
   }
 }
