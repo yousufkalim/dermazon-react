@@ -31,6 +31,9 @@ export default function Footer() {
             <li onClick={handleServiceScroll} role="presentation">
               <Link to="/">Services</Link>
             </li>
+            <li>
+              <Link to="/terms">Terms & Conditions</Link>
+            </li>
           </ul>
         </div>
         <div className="footer_top_right">
