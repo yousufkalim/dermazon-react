@@ -37,7 +37,6 @@ export default function LaserComponents() {
   const handleChangepage = (event, value) => {
     setCurrentPage(value);
   };
-  // const numberOfPages = Math.ceil(filteredData?.length / 10);
   let numberOfPages;
   if (filteredData) {
     numberOfPages = Math.ceil(filteredData.length / 10);
