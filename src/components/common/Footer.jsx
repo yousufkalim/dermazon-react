@@ -13,6 +13,7 @@ const handleServiceScroll = () => {
   const section = document.querySelector('#services_sectionid');
   section.scrollIntoView({ behavior: 'smooth', block: 'start' });
 };
+
 export default function Footer() {
   const screenWidth = window.innerWidth;
   return (
@@ -96,7 +97,6 @@ export default function Footer() {
           >
             <img src={instragram} alt="logo" />
           </a>
-
           <a
             style={{
               marginBottom: '-7px',

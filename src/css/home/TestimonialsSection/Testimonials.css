@@ -3,6 +3,10 @@
   width: 100%;
   position: relative;
 }
+.arrowButton {
+  background: transparent;
+  border: none;
+}
 
 .testimonials_heading {
   margin-top: 5%;

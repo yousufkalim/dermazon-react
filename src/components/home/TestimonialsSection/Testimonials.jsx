@@ -1,41 +1,54 @@
 // import components and libraries
 
-import React, { useLayoutEffect, useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { toast } from 'react-toastify';
 import TestimonialCard from './TestimonialCard';
+import API from '../../../api';
+import ActivArrow from '../../../assets/Union.svg';
+import NonActivearrow from '../../../assets/Union1.svg';
 // import icons and images
 
-// import ellipse1 from '../../../assets/home/ellipse1.svg';
-// import ellipse2 from '../../../assets/home/ellipse2.svg';
-import profile from '../../../assets/home/profile.svg';
-
-const TestimonialData = [
-  {
-    description:
-      'No other eCommerce platform allows people to start for free and grow their store as their business grows. More importantly, WooCommerce does not charge you a portion of your profits as your business grows',
-    image: profile,
-    name: 'David Joe',
-    designation: 'CEO Creative Studio',
-  },
-  {
-    description:
-      'No other eCommerce platform allows people to start for free and grow their store as their business grows. More importantly, WooCommerce does not charge you a portion of your profits as your business grows',
-    image: profile,
-    name: 'Zohaib',
-    designation: 'CEO Creative Studio',
-  },
-  {
-    description:
-      'No other eCommerce platform allows people to start for free and grow their store as their business grows. More importantly, WooCommerce does not charge you a portion of your profits as your business grows',
-    image: profile,
-    name: 'Azeem',
-    designation: 'Software Engineer',
-  },
-];
 export default function Testimonials() {
-  const [activeTestimonial, setActiveTestimonial] = useState(null);
+  const [testimonials, setTestimonials] = useState([]);
+  const [loading, setLoading] = useState(false);
 
-  useLayoutEffect(() => {
-    setActiveTestimonial(TestimonialData[0]);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [arrowstate, setarrowstate] = useState(false);
+
+  const handleBackwardClick = () => {
+    setarrowstate(true);
+
+    setCurrentImageIndex(
+      currentImageIndex === 0 && testimonials && testimonials.length > 0
+        ? testimonials.length - 1
+        : currentImageIndex - 1,
+    );
+  };
+
+  const handleForwardClick = () => {
+    setarrowstate(false);
+
+    setCurrentImageIndex(
+      currentImageIndex === (testimonials && testimonials.length - 1) || testimonials?.length === 0
+        ? 0
+        : currentImageIndex + 1,
+    );
+  };
+
+  const getTestimonial = async () => {
+    setLoading(true);
+    await API('get', '/comments')
+      .then((res) => {
+        setTestimonials(res?.data?.data?.comments);
+      })
+
+      .catch((err) => {
+        toast.error(err);
+      });
+    setLoading(false);
+  };
+  useEffect(() => {
+    getTestimonial();
   }, []);
 
   return (
@@ -43,12 +56,35 @@ export default function Testimonials() {
       <h1 className="testimonials_heading">Client Testimonials</h1>
       <div className="testimonials">
         <div className="testimonials_card_container">
-          <TestimonialCard
-            description={activeTestimonial?.description}
-            image={activeTestimonial?.image}
-            name={activeTestimonial?.name}
-            designation={activeTestimonial?.designation}
-          />
+          {loading ? (
+            <div className="loader">Loading</div>
+          ) : (
+            <>
+              {testimonials[currentImageIndex] && (
+                <TestimonialCard
+                  description={testimonials[currentImageIndex]?.comment}
+                  name={testimonials[currentImageIndex]?.userName}
+                  designation={testimonials[currentImageIndex]?.companyName}
+                />
+              )}
+              <div style={{ width: '41%', marginLeft: 'auto', padding: '3px' }}>
+                <button onClick={handleBackwardClick} type="button" className="arrowButton">
+                  <img
+                    src={!arrowstate ? NonActivearrow : NonActivearrow}
+                    alt="arrow"
+                    style={{ margin: '0 8px 3px 8px', cursor: 'pointer' }}
+                  />
+                </button>
+                <button onClick={handleForwardClick} type="button" className="arrowButton">
+                  <img
+                    src={arrowstate ? ActivArrow : ActivArrow}
+                    alt="arrow"
+                    style={{ cursor: 'pointer' }}
+                  />
+                </button>
+              </div>
+            </>
+          )}
         </div>
       </div>
     </div>
