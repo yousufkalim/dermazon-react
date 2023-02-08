@@ -68,14 +68,14 @@ export default function Testimonials() {
                 />
               )}
               <div style={{ width: '41%', marginLeft: 'auto', padding: '3px' }}>
-                <button onClick={handleBackwardClick} type="button">
+                <button onClick={handleBackwardClick} type="button" className="arrowButton">
                   <img
                     src={!arrowstate ? NonActivearrow : NonActivearrow}
                     alt="arrow"
                     style={{ margin: '0 8px 3px 8px', cursor: 'pointer' }}
                   />
                 </button>
-                <button onClick={handleForwardClick} type="button">
+                <button onClick={handleForwardClick} type="button" className="arrowButton">
                   <img
                     src={arrowstate ? ActivArrow : ActivArrow}
                     alt="arrow"
