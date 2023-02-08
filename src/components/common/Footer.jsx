@@ -86,11 +86,12 @@ export default function Footer() {
       <div className="footer_middle">
         <div className="footer-icons">
           {/* <img src={FacebookIcon} alt="logo" /> */}
+
           <a
             style={{
               marginBottom: '-7px',
             }}
-            href="https://instagram.com/dermazon.fr?igshid=YmMyMTA2M2Y="
+            href=" https://instagram.com/dermazon.fr?igshid=YmMyMTA2M2Y="
             target="_blank"
             rel="noreferrer"
           >

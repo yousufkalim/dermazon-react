@@ -103,7 +103,6 @@ export default function ContactSection() {
       toast.error('Please select a file');
       return;
     }
-    console.log('attachmentfile', attachmentfile);
 
     const formdata = new FormData();
     formdata.append('attachmentfile', attachmentfile);
@@ -128,7 +127,7 @@ export default function ContactSection() {
   };
 
   return (
-    <div className="contact" id="about">
+    <div className="contact">
       <div className="contact_top">
         <h1 className="contact_top_heading">
           Contact{' '}
