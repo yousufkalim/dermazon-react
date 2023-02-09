@@ -41,9 +41,10 @@ export default function Index() {
         icon={icon1}
         title="Buy A Pre-Owned Laser"
         btnBg="#02225E"
-        btnText="Contact us"
+        btnText="Buy A Laser"
         serviceDescription="We sell high quality and brand premium pre-owned laser, they are checked and revised by independent and experienced service engineers, it is a cost effective option to buy the right used laser, you can save on average of 40% compared to new."
         image={service1}
+        Path="/buy-laser"
       />
       <SingleService
         sectionId="SellYourLaser"

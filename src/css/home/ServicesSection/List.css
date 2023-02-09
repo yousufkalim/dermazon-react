@@ -192,6 +192,7 @@
   .services_container {
     width: 100%;
     padding: 0 5%;
+    display: none;
     /* background-color: aquamarine; */
   }
   .services_list_main {
