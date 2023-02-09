@@ -8,6 +8,9 @@ import logo from '../../assets/home/logo.svg';
 // import FacebookIcon from '../../assets/home/facebook.svg';
 import instragram from '../../assets/home/instragram.svg';
 import linkedIn from '../../assets/home/linkedIn.svg';
+import phone from '../../assets/home/phone.svg';
+// import whatsApp from '../../assets/home/whatsApp.svg';
+import email from '../../assets/home/email.svg';
 
 const handleServiceScroll = () => {
   const section = document.querySelector('#services_sectionid');
@@ -15,7 +18,7 @@ const handleServiceScroll = () => {
 };
 
 export default function Footer() {
-  const screenWidth = window.innerWidth;
+  // const screenWidth = window.innerWidth;
   return (
     <div className="footer">
       <div className="footer_top">
@@ -35,20 +38,55 @@ export default function Footer() {
             <li>
               <Link to="/terms">Terms & Conditions</Link>
             </li>
+            <li>
+              <Link to="/LegalNotices">Mentions légales</Link>
+            </li>
           </ul>
         </div>
         <div className="footer_top_right">
           <span
+            className="footer_span"
             style={{
               fontSize: '16px',
               fontWeight: '500',
               color: '#919B9B',
+              // display: 'flex',
             }}
           >
+            <img src={phone} alt="" className="footer_img" />
             Contact
           </span>
 
           <span
+            className="footer_span"
+            style={{
+              fontSize: '16px',
+              fontWeight: '600',
+              color: '#2B2926',
+              marginLeft: '10px',
+
+              // display: 'flex',
+            }}
+          >
+            +33 695 12 03 33
+          </span>
+        </div>
+        {/* {screenWidth < 1000 ? ( */}
+        <div className="footer_top_right footer_email">
+          <span
+            className="footer_span"
+            style={{
+              fontSize: '16px',
+              fontWeight: '500',
+              color: '#919B9B',
+              // display: 'flex',
+            }}
+          >
+            <img src={email} alt="" className="footer_img" /> Email
+          </span>
+
+          <span
+            className="footer_span"
             style={{
               fontSize: '16px',
               fontWeight: '600',
@@ -56,35 +94,14 @@ export default function Footer() {
               marginLeft: '10px',
             }}
           >
-            +33 695 12 03 33
+            contact@dermazon.fr
           </span>
         </div>
-        {screenWidth < 1000 ? (
-          <div className="footer_top_right">
-            <span
-              style={{
-                fontSize: '16px',
-                fontWeight: '500',
-                color: '#919B9B',
-              }}
-            >
-              Email
-            </span>
-
-            <span
-              style={{
-                fontSize: '16px',
-                fontWeight: '600',
-                color: '#2B2926',
-                marginLeft: '10px',
-              }}
-            >
-              contact@dermazon.fr
-            </span>
-          </div>
-        ) : (
+        {/* ) : (
           ''
-        )}
+        )} */}
+
+        {/* {screenWidth < 1000 ? '' : ''} */}
       </div>
       <div className="footer_middle">
         <div className="footer-icons">
@@ -114,7 +131,7 @@ export default function Footer() {
       </div>
       <div className="footer_bottom">
         <p className="footer_text_p">
-          © 2023 <span className="footer_span">DERMAZON LASER</span>, All Rights Reserved.
+          © 2023 <span className="footer_span2">DERMAZON LASER</span>, All Rights Reserved.
         </p>
       </div>
     </div>
