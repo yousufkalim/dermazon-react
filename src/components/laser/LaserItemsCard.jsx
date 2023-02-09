@@ -6,7 +6,7 @@ import moment from 'moment';
 import Collapse from '@mui/material/Collapse';
 import ShareIcon from '@mui/icons-material/Share';
 import { EmailShareButton } from 'react-share';
-import vender from '../../assets/home/vender.png';
+// import vender from '../../assets/home/vender.png';
 import { mediaUrl } from '../../config';
 
 export default function LaserItemsCard({ product }) {
@@ -25,7 +25,8 @@ export default function LaserItemsCard({ product }) {
         <div className="items_card_image">
           <img className="product_img" src={`${mediaUrl}/${product?.images[0]}`} alt="product" />
           {product?.availability === false ? (
-            <img className="vendu" src={vender} alt="product" />
+            // <img className="vendu" src={vender} alt="product" />
+            <p className="vendu">VENDU</p>
           ) : (
             // <p className="vendu">vendu</p>
             ''

@@ -1,7 +1,7 @@
 // import components and libraries
 
 import React from 'react';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 // import ServiceImageSlider from './ServiceImageSlider';
 // import laserMachineHome from '../../../assets/home/laserMachineHome.png';
 
@@ -15,7 +15,7 @@ export default function SingleService(props) {
     btnText,
     serviceDescription,
     sectionId,
-    // Path,
+    Path,
     image,
     showImage,
   } = props;
@@ -115,17 +115,25 @@ export default function SingleService(props) {
             // <ServiceImageSlider />
           )}
         </div>
-
-        <button
+        <Link
+          to={Path}
+          className="link"
           style={{
-            background: btnBg,
+            textDecoration: 'none',
+            // margin: 'auto',
           }}
-          className="single_service_btn"
-          type="button"
-          onClick={() => scroll()}
         >
-          {btnText}
-        </button>
+          <button
+            style={{
+              background: btnBg,
+            }}
+            className="single_service_btn"
+            type="button"
+            onClick={() => scroll()}
+          >
+            {btnText}
+          </button>
+        </Link>
       </div>
     </div>
   );
