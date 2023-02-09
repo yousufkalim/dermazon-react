@@ -19,6 +19,10 @@
   display: flex;
   /* background-color: #c22727; */
 }
+.header_bottom_left p {
+  font-weight: 700;
+  color: #02225e;
+}
 .header_top_left p {
   align-self: center;
   /* background-color: #574c4c; */
