@@ -6,8 +6,8 @@ import { Link } from 'react-router-dom';
 
 import logo from '../../assets/home/logo.svg';
 // import FacebookIcon from '../../assets/home/facebook.svg';
-import instragram from '../../assets/home/instragram.svg';
-import linkedIn from '../../assets/home/linkedIn.svg';
+import instragram from '../../assets/home/icons8-instagram.svg';
+import linkedIn from '../../assets/home/icons8-linkedin.svg';
 import phone from '../../assets/home/phone.svg';
 // import whatsApp from '../../assets/home/whatsApp.svg';
 import email from '../../assets/home/email.svg';

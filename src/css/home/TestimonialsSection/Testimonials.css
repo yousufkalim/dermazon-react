@@ -7,7 +7,9 @@
   background: transparent;
   border: none;
 }
-
+.arrowBtn {
+  margin: 0 auto;
+}
 .testimonials_heading {
   margin-top: 2%;
   margin-left: 10%;
@@ -46,6 +48,7 @@
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.12);
   border-radius: 15px;
   transition: ease 1000ms;
+  margin: 0 auto;
 }
 
 .card_description {
@@ -177,9 +180,9 @@
     margin-top: -10%;
     margin-bottom: 5%;
   }
-  .arrowBtn {
-    margin: auto;
-  }
+  /* .arrowBtn {
+    margin: 0 auto;
+  } */
 }
 @media only screen and (min-width: 501px) and (max-width: 1000px) {
   .client_testimonials {
