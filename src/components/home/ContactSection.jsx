@@ -147,14 +147,14 @@ export default function ContactSection() {
         <div className="contact_bottom_left">
           <div className="contact_icons">
             <div className="contact_icon">
-              <img className="contact_icon_img" src={phone} alt="phone" />
+              <a href="tel:+33695120333" target="_blank" rel="noreferrer">
+                <img className="contact_icon_img" src={phone} alt="phone" />
+              </a>
             </div>
-            <a href="tel:+33695120333" target="_blank" rel="noreferrer">
-              <div className="contact_info_text">
-                <span className="contact_info">Call us</span>
-                <span className="phone">+33 695 12 03 33</span>
-              </div>
-            </a>
+            <div className="contact_info_text">
+              <span className="contact_info">Call us</span>
+              <span className="phone">+33 695 12 03 33</span>
+            </div>
           </div>
           <div className="contact_icons">
             <a href="https://wa.me/+33695120333" target="_blank" rel="noreferrer">
