@@ -9,7 +9,7 @@ import logo from '../../assets/home/logo.svg';
 import instragram from '../../assets/home/icons8-instagram.svg';
 import linkedIn from '../../assets/home/icons8-linkedin.svg';
 import phone from '../../assets/home/phone.svg';
-// import whatsApp from '../../assets/home/whatsApp.svg';
+import whatsApp from '../../assets/home/whatsApp.svg';
 import email from '../../assets/home/email.svg';
 
 const handleServiceScroll = () => {
@@ -72,18 +72,19 @@ export default function Footer() {
               </div>
             </div>
             <div className="footer_top_right">
-              <span
-                className="footer_span"
-                style={{
-                  fontSize: '16px',
-                  fontWeight: '500',
-                  color: '#919B9B',
-                  // display: 'flex',
-                }}
-              >
-                <img src={phone} alt="" className="footer_img" />
-                Contact
-              </span>
+              <a href="tel:+33695120333" target="_blank" rel="noreferrer">
+                <span
+                  className="footer_span"
+                  style={{
+                    fontSize: '16px',
+                    fontWeight: '500',
+                    color: '#919B9B',
+                    // display: 'flex',
+                  }}
+                >
+                  <img src={phone} alt="" className="footer_img " />
+                </span>
+              </a>
 
               <span
                 className="footer_span"
@@ -96,7 +97,7 @@ export default function Footer() {
                   // display: 'flex',
                 }}
               >
-                +33 695 12 03 33
+                <span className="lo">Contact:</span> +33 695 12 03 33
               </span>
             </div>
           </div>
@@ -104,18 +105,45 @@ export default function Footer() {
 
         {/* {screenWidth < 1000 ? ( */}
         <div className="footer_top_right footer_email">
+          <a href="https://wa.me/+33695120333" target="_blank" rel="noreferrer">
+            <span
+              className="footer_span"
+              style={{
+                fontSize: '16px',
+                fontWeight: '500',
+                color: '#919B9B',
+                // display: 'flex',
+              }}
+            >
+              <img src={whatsApp} alt="" className="footer_img " />
+            </span>
+          </a>
           <span
             className="footer_span"
             style={{
               fontSize: '16px',
-              fontWeight: '500',
-              color: '#919B9B',
-              // display: 'flex',
+              fontWeight: '600',
+              color: '#2B2926',
+              marginLeft: '10px',
             }}
           >
-            <img src={email} alt="" className="footer_img" /> Email
+            +33 695 12 03 33
           </span>
-
+        </div>
+        <div className="footer_top_right footer_email">
+          <a href="mailto:contact@dermazon.fr" target="_blank" rel="noreferrer">
+            <span
+              className="footer_span"
+              style={{
+                fontSize: '16px',
+                fontWeight: '500',
+                color: '#919B9B',
+                // display: 'flex',
+              }}
+            >
+              <img src={email} alt="" className="footer_img footer_img2 " />
+            </span>
+          </a>
           <span
             className="footer_span"
             style={{

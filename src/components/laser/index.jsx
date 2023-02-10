@@ -15,6 +15,12 @@ export default function LaserComponents() {
   const getProducts = async () => {
     await API('get', '/products')
       .then((res) => {
+        res?.data?.data?.products.sort((a, b) => {
+          const dateA = new Date(a.createdAt);
+          const dateB = new Date(b.createdAt);
+          return dateB - dateA;
+        });
+
         setProducts(res?.data?.data?.products);
       })
 
