@@ -74,7 +74,7 @@ export default function Header() {
               <img src={logo} alt="logo" />
             </Link>
           </div>
-          <p>Les lasers d&apos;occasion</p>
+          <p>PRE-OWNER &apos;LASERS</p>
         </div>
         <div className="menu-icon" onClick={handleShowNavbar} role="presentation">
           <MenuIcon />

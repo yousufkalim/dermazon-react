@@ -24,6 +24,7 @@ export default function Index() {
       <div className="services_section_bg">
         <img className="services_section_bg_img" src={serviceBG} alt="Service" />
       </div>
+      <ServicesList />
       <div className="services_section">
         {/* <span className="services_section_span">USED USER FOR ALL</span> */}
         <h1 className="services_section_heading">
@@ -34,7 +35,6 @@ export default function Index() {
           dermatology{' '}
         </p> */}
       </div>
-      <ServicesList />
       <SingleService
         sectionId="BuyALaser"
         bgColor="rgba(66, 85, 255, 0.1)"
