@@ -1,7 +1,17 @@
 /* eslint-disable react/no-unescaped-entities */
-import React from 'react';
+import React, { useEffect } from 'react';
 
 function Notice() {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 11,
+      behavior: 'smooth',
+    });
+  };
+  useEffect(() => {
+    scrollToTop();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
   return (
     <div>
       <div className="notices">

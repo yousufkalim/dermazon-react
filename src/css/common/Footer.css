@@ -67,7 +67,11 @@
   display: none;
 }
 .footer_img {
-  display: none;
+  display: inline;
+}
+.lo {
+  display: inline;
+  margin-left: -40px;
 }
 .footer_top_center_outer {
   width: 70%;
@@ -110,6 +114,9 @@
   .footer_top_left {
     text-align: center;
   }
+  .lo {
+    display: none;
+  }
   .footer_img {
     display: flex !important;
     align-items: center !important;
@@ -120,6 +127,9 @@
     width: 25px;
     height: 25px;
     display: block;
+  }
+  .footer_img2 {
+    margin-left: 50px;
   }
   .footer_top_right {
     display: flex !important;
