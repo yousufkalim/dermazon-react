@@ -1,20 +1,20 @@
 // import components and libraries
 
 import React from 'react';
-import List from './List';
+// import List from './List';
 
 // import icons and images
 
-import ListIconNo1 from '../../../assets/home/ListIconNo1.svg';
-import ListIconNo2 from '../../../assets/home/ListIconNo2.svg';
-import ListIconNo3 from '../../../assets/home/ListIconNo3.svg';
-import ListIconNo4 from '../../../assets/home/ListIconNo4.svg';
-import ListIconNo5 from '../../../assets/home/ListIconNo5.svg';
+// import ListIconNo1 from '../../../assets/home/ListIconNo1.svg';
+// import ListIconNo2 from '../../../assets/home/ListIconNo2.svg';
+// import ListIconNo3 from '../../../assets/home/ListIconNo3.svg';
+// import ListIconNo4 from '../../../assets/home/ListIconNo4.svg';
+// import ListIconNo5 from '../../../assets/home/ListIconNo5.svg';
 
 export default function ServicesList() {
   return (
     <div className="list">
-      <List
+      {/* <List
         sectionId="BuyALaser"
         title="Buy A Pre-Owned Laser"
         description="We sell high quality and brand premium pre-owned laser, they are checked and revised by independent and experienced service engineers, it is a cost effective option to buy the right used laser, you can save on average of 40% compared to new."
@@ -59,7 +59,7 @@ export default function ServicesList() {
         number="5"
         background="#FD8833"
         titleColor="#FD8833"
-      />
+      /> */}
     </div>
   );
 }

@@ -35,9 +35,9 @@ export default function Footer() {
             <li onClick={handleServiceScroll} role="presentation">
               <Link to="/">Services</Link>
             </li>
-            <li>
+            {/* <li>
               <Link to="/terms">Terms & Conditions</Link>
-            </li>
+            </li> */}
             <li>
               <Link to="/LegalNotices">Mentions légales</Link>
             </li>
