@@ -67,10 +67,7 @@ export default function Testimonials() {
                   designation={testimonials[currentImageIndex]?.companyName}
                 />
               )}
-              <div
-                className="arrowBtn"
-                style={{ width: '41%', marginLeft: 'auto', padding: '3px' }}
-              >
+              <div className="arrowBtn" style={{ marginLeft: 'auto', padding: '3px' }}>
                 <button onClick={handleBackwardClick} type="button" className="arrowButton">
                   <img
                     src={!arrowstate ? NonActivearrow : NonActivearrow}

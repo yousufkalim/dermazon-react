@@ -35,7 +35,7 @@ function Notice() {
               Adresse e-mail : contact@dermazon.fr. <br />
               N° de TVA intracommunautaire : 123456789 <br />
               Le Directeur de la publication est M RAZZAQ Burhan <br />
-              ci-après l'"Editeur"
+              ci-après l'"<b>Editeur</b>"
             </p>
           </div>
           <div className="article_div">
@@ -43,9 +43,11 @@ function Notice() {
             <p className="art_p">
               L'hébergeur du Site est la société OVH Cloud, dont le siège social est situé au
               société immatriculée <br />
-              au RCS de Lille sous le numéro 537 407 926 sise 2, rue Kellermann, 59100 Roubaix. ,
-              avec le <br />
-              numéro de téléphone : 0972101007 + adresse mail de contact
+              au RCS de Lille sous le numéro 537 407 926 sise 2, rue Kellermann, 59100 Roubaix. , av
+              <b>
+                ec le <br />
+                numéro de téléphone : 0972101007 + adresse mail de contact
+              </b>
             </p>
           </div>
           <div className="article_div">

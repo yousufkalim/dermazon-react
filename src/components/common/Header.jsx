@@ -7,8 +7,10 @@ import MenuIcon from '@mui/icons-material/Menu';
 // import icons and images
 
 import logo from '../../assets/home/logo.svg';
-import instragram from '../../assets/home/instragram.svg';
-import linkedIn from '../../assets/home/linkedIn.svg';
+// import instragram from '../../assets/home/instragram.svg';
+import icons8instagram from '../../assets/home/icons8-instagram.svg';
+
+import icons8linkedin from '../../assets/home/icons8-linkedin.svg';
 
 export default function Header() {
   const [showNavbar, setShowNavbar] = useState(false);
@@ -50,7 +52,7 @@ export default function Header() {
               target="_blank"
               rel="noreferrer"
             >
-              <img src={instragram} alt="logo" />
+              <img src={icons8instagram} alt="logo" />
             </a>
             <a
               style={{
@@ -60,7 +62,7 @@ export default function Header() {
               target="_blank"
               rel="noreferrer"
             >
-              <img src={linkedIn} alt="linkedIn" />
+              <img src={icons8linkedin} alt="linkedIn" />
             </a>
           </div>
         </div>
