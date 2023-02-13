@@ -81,7 +81,7 @@ export default function SingleService(props) {
               >
                 {`${firstWord} ${' '}`}
               </span>
-              {removeFirstWord(title)}
+              <p style={{ color: 'black', display: 'inline' }}>{removeFirstWord(title)}</p>
             </h1>
           </div>
         </div>

@@ -17,7 +17,9 @@ export default function ServicesList() {
       {/* <List
         sectionId="BuyALaser"
         title="Buy A Pre-Owned Laser"
-        description="We sell high quality and brand premium pre-owned laser, they are checked and revised by independent and experienced service engineers, it is a cost effective option to buy the right used laser, you can save on average of 40% compared to new."
+        description="We sell high quality and brand premium pre-owned laser, they are 
+checked and revised by independent and experienced service engineers. 
+Find the right laser with us and save 50% on average compared to new. "
         icon={ListIconNo1}
         number="1"
         background="#02225E"
@@ -35,7 +37,13 @@ export default function ServicesList() {
       <List
         sectionId="MaintainYourLaser"
         title="Maintain Your Laser"
-        description="All cosmetic and medical laser equipment requires a periodical preventive maintenance at least once a year, and this to avoid costly breakdowns and to guarantee good clinical functioning. For the moment we service some brands and working with others with independent field service engineers. Contact us for a quote."
+        description="All medical laser equipment require a periodical preventive maintenance 
+at least once a year, and this to avoid costly breakdowns and to 
+guarantee good clinical functioning. For the moment we offer a laser 
+repair and preventive maintenance with flashlamp change and 
+handpieces refurbishment of certain brands. Do not hesitate to contact us
+for a quote or for more information
+"
         icon={ListIconNo3}
         number="3"
         background="#75CB41"
@@ -44,7 +52,12 @@ export default function ServicesList() {
       <List
         sectionId="RentALaser"
         title="Rent a Laser"
-        description="Renting an equipment is a step before committing to buying one in the future, it is also a way to avoid committing to a costly investment without having visibility of your aesthetic medicine activity. Contact us for a quote and availability of the technology you are looking for."
+        description="Renting an equipment is an ideal step before buying one, it's also a way 
+to avoid committing to an expensive investment without having visibility 
+on your activity of aesthetic medicine. You can rent according to your 
+needs with an option to buy. Contact us for a quote and to know the 
+availability of the technology you are looking for.
+"
         icon={ListIconNo4}
         number="4"
         background="#42C6FF"
@@ -54,7 +67,10 @@ export default function ServicesList() {
       <List
         sectionId="DeliveryAndMove"
         title="Delivery and move"
-        description="All equipment with an optical system needs a special care during transport because of the optical beam alignments, this is why we pick-up and deliver it ourselves in safe and good conditions. All international transport we provide packaging with appropriate pallet. Dermazon is also available for all manufacturers for their equipment transportation needs. "
+        description="The transport of lasers requires special attention due to the optical 
+alignment of the laser beams, which is why we take care of the transport 
+ourselves under the right conditions. We are also available to 
+manufacturers as a subcontractor "
         icon={ListIconNo5}
         number="5"
         background="#FD8833"

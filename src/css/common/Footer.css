@@ -58,7 +58,14 @@
   color: #919b9b;
   font-family: 'Raleway', 'Josefin Sans', sans-serif;
 }
-
+.translate_btn {
+  background: #02225e;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
 .footer_span2 {
   font-size: 18px;
   color: #2b2926;

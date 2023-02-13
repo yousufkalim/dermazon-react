@@ -1,6 +1,8 @@
+/* eslint-disable react/button-has-type */
 // import components and libraries
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 // import icons and images
 
@@ -11,6 +13,7 @@ import linkedIn from '../../assets/home/icons8-linkedin.svg';
 import phone from '../../assets/home/phone.svg';
 import whatsApp from '../../assets/home/whatsApp.svg';
 import email from '../../assets/home/email.svg';
+// import i18n from '../../utils/i18n';
 
 const handleServiceScroll = () => {
   const section = document.querySelector('#services_sectionid');
@@ -18,6 +21,14 @@ const handleServiceScroll = () => {
 };
 
 export default function Footer() {
+  const [showBtn, setShowBtn] = useState(false);
+  const { i18n, t } = useTranslation();
+
+  const changeLanguage = (lang) => {
+    i18n.changeLanguage(lang);
+    localStorage.setItem('language', lang);
+    setShowBtn(!showBtn);
+  };
   // const screenWidth = window.innerWidth;
   return (
     <div className="footer">
@@ -31,16 +42,16 @@ export default function Footer() {
           <div className="footer_top_center">
             <ul>
               <li>
-                <Link to="/">Home</Link>
+                <Link to="/">{t('Home')}</Link>
               </li>
               <li onClick={handleServiceScroll} role="presentation">
-                <Link to="/">Services</Link>
+                <Link to="/">{t('Services')}</Link>
               </li>
               {/* <li>
               <Link to="/terms">Terms & Conditions</Link>
             </li> */}
               <li>
-                <Link to="/LegalNotices">Mentions légales</Link>
+                <Link to="/LegalNotices">{t('Legal Notice')}</Link>
               </li>
             </ul>
           </div>
@@ -97,7 +108,7 @@ export default function Footer() {
                   // display: 'flex',
                 }}
               >
-                <span className="lo">Contact:</span> +33 695 12 03 33
+                <span className="lo">{t('Contact')}:</span> +33 695 12 03 33
               </span>
             </div>
           </div>
@@ -165,8 +176,20 @@ export default function Footer() {
 
       <div className="footer_bottom">
         <p className="footer_text_p">
-          © 2023 <span className="footer_span2">DERMAZON LASER</span>, All Rights Reserved.
+          © 2023 <span className="footer_span2">{t('DERMAZON LASER')}</span>,{' '}
+          {t('All Rights Reserved.')}
         </p>
+        <div style={{ position: 'absolute', right: '50px' }}>
+          {showBtn ? (
+            <button className="translate_btn" onClick={() => changeLanguage('fr')}>
+              French
+            </button>
+          ) : (
+            <button className="translate_btn" onClick={() => changeLanguage('en')}>
+              Eng
+            </button>
+          )}
+        </div>
       </div>
     </div>
   );
