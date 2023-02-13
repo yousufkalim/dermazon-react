@@ -2,13 +2,17 @@
 
 import React, { useState, useEffect } from 'react';
 import { toast } from 'react-toastify';
+import { useTranslation } from 'react-i18next';
 import TestimonialCard from './TestimonialCard';
 import API from '../../../api';
 import ActivArrow from '../../../assets/Union.svg';
 import NonActivearrow from '../../../assets/Union1.svg';
+
 // import icons and images
 
 export default function Testimonials() {
+  const { t } = useTranslation();
+
   const [testimonials, setTestimonials] = useState([]);
   const [loading, setLoading] = useState(false);
 
@@ -53,7 +57,7 @@ export default function Testimonials() {
 
   return (
     <div className="client_testimonials">
-      <h1 className="testimonials_heading">Client Testimonials</h1>
+      <h1 className="testimonials_heading">{t('Client Testimonials')}</h1>
       <div className="testimonials">
         <div className="testimonials_card_container">
           {loading ? (
