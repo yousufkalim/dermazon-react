@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import MenuIcon from '@mui/icons-material/Menu';
 // import SearchIcon from '@mui/icons-material/Search';
 // import icons and images
+import { useTranslation } from 'react-i18next';
 
 import logo from '../../assets/home/logo.svg';
 // import instragram from '../../assets/home/instragram.svg';
@@ -14,6 +15,7 @@ import FrFlag from '../../assets/home/fran_flag.png';
 import icons8linkedin from '../../assets/home/icons8-linkedin.svg';
 
 export default function Header() {
+  const { t } = useTranslation();
   const [showNavbar, setShowNavbar] = useState(false);
   const handleShowNavbar = () => {
     setShowNavbar(!showNavbar);
@@ -33,6 +35,7 @@ export default function Header() {
       window.removeEventListener('scroll', controlTopNavbar);
     };
   }, []);
+
   return (
     <div className="header">
       <div
@@ -43,7 +46,7 @@ export default function Header() {
       >
         <div className="header_top_left">{/* <span>Dermazon France </span> */}</div>
         <div className="header_top_right">
-          <span className="header_top_span">Follow us</span>
+          <span className="header_top_span">{t('Follow us')}</span>
           <div className="icons">
             <a
               style={{
@@ -75,7 +78,7 @@ export default function Header() {
               <img src={logo} alt="logo" />
             </Link>
           </div>
-          <p>Les lasers d&apos;occasion</p>
+          <p>{t('PRE-OWNED LASERS')}</p>
         </div>
         <div className="menu-icon" onClick={handleShowNavbar} role="presentation">
           <MenuIcon />
@@ -85,10 +88,10 @@ export default function Header() {
         <div className={`header_bottom_center ${showNavbar && 'active'}`}>
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/">{t('Home')}</Link>
             </li>
             <li>
-              <Link to="/buy-laser">Buy A Pre-Owned Laser</Link>
+              <Link to="/buy-laser">{t('Buy A Pre-Owned Laser')}</Link>
             </li>
             <button className="trans_btn" type="button">
               <img src={Flag} alt="Flag" />

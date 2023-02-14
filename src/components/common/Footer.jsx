@@ -1,6 +1,8 @@
+/* eslint-disable react/button-has-type */
 // import components and libraries
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 // import icons and images
 
@@ -9,8 +11,9 @@ import logo from '../../assets/home/logo.svg';
 import instragram from '../../assets/home/icons8-instagram.svg';
 import linkedIn from '../../assets/home/icons8-linkedin.svg';
 import phone from '../../assets/home/phone.svg';
-// import whatsApp from '../../assets/home/whatsApp.svg';
+import whatsApp from '../../assets/home/whatsApp.svg';
 import email from '../../assets/home/email.svg';
+// import i18n from '../../utils/i18n';
 
 const handleServiceScroll = () => {
   const section = document.querySelector('#services_sectionid');
@@ -18,6 +21,14 @@ const handleServiceScroll = () => {
 };
 
 export default function Footer() {
+  const [showBtn, setShowBtn] = useState(false);
+  const { i18n, t } = useTranslation();
+
+  const changeLanguage = (lang) => {
+    i18n.changeLanguage(lang);
+    localStorage.setItem('language', lang);
+    setShowBtn(!showBtn);
+  };
   // const screenWidth = window.innerWidth;
   return (
     <div className="footer">
@@ -31,16 +42,16 @@ export default function Footer() {
           <div className="footer_top_center">
             <ul>
               <li>
-                <Link to="/">Home</Link>
+                <Link to="/">{t('Home')}</Link>
               </li>
               <li onClick={handleServiceScroll} role="presentation">
-                <Link to="/">Services</Link>
+                <Link to="/">{t('Services')}</Link>
               </li>
               {/* <li>
               <Link to="/terms">Terms & Conditions</Link>
             </li> */}
               <li>
-                <Link to="/LegalNotices">Mentions légales</Link>
+                <Link to="/LegalNotices">{t('Legal Notice')}</Link>
               </li>
             </ul>
           </div>
@@ -72,18 +83,19 @@ export default function Footer() {
               </div>
             </div>
             <div className="footer_top_right">
-              <span
-                className="footer_span"
-                style={{
-                  fontSize: '16px',
-                  fontWeight: '500',
-                  color: '#919B9B',
-                  // display: 'flex',
-                }}
-              >
-                <img src={phone} alt="" className="footer_img" />
-                Contact
-              </span>
+              <a href="tel:+33695120333" target="_blank" rel="noreferrer">
+                <span
+                  className="footer_span"
+                  style={{
+                    fontSize: '16px',
+                    fontWeight: '500',
+                    color: '#919B9B',
+                    // display: 'flex',
+                  }}
+                >
+                  <img src={phone} alt="" className="footer_img " />
+                </span>
+              </a>
 
               <span
                 className="footer_span"
@@ -96,7 +108,7 @@ export default function Footer() {
                   // display: 'flex',
                 }}
               >
-                +33 695 12 03 33
+                <span className="lo">{t('Contact')}:</span> +33 695 12 03 33
               </span>
             </div>
           </div>
@@ -104,18 +116,45 @@ export default function Footer() {
 
         {/* {screenWidth < 1000 ? ( */}
         <div className="footer_top_right footer_email">
+          <a href="https://wa.me/+33695120333" target="_blank" rel="noreferrer">
+            <span
+              className="footer_span"
+              style={{
+                fontSize: '16px',
+                fontWeight: '500',
+                color: '#919B9B',
+                // display: 'flex',
+              }}
+            >
+              <img src={whatsApp} alt="" className="footer_img " />
+            </span>
+          </a>
           <span
             className="footer_span"
             style={{
               fontSize: '16px',
-              fontWeight: '500',
-              color: '#919B9B',
-              // display: 'flex',
+              fontWeight: '600',
+              color: '#2B2926',
+              marginLeft: '10px',
             }}
           >
-            <img src={email} alt="" className="footer_img" /> Email
+            +33 695 12 03 33
           </span>
-
+        </div>
+        <div className="footer_top_right footer_email">
+          <a href="mailto:contact@dermazon.fr" target="_blank" rel="noreferrer">
+            <span
+              className="footer_span"
+              style={{
+                fontSize: '16px',
+                fontWeight: '500',
+                color: '#919B9B',
+                // display: 'flex',
+              }}
+            >
+              <img src={email} alt="" className="footer_img footer_img2 " />
+            </span>
+          </a>
           <span
             className="footer_span"
             style={{
@@ -137,8 +176,20 @@ export default function Footer() {
 
       <div className="footer_bottom">
         <p className="footer_text_p">
-          © 2023 <span className="footer_span2">DERMAZON LASER</span>, All Rights Reserved.
+          © 2023 <span className="footer_span2">{t('DERMAZON LASER')}</span>,{' '}
+          {t('All Rights Reserved.')}
         </p>
+        <div style={{ position: 'absolute', right: '50px' }}>
+          {showBtn ? (
+            <button className="translate_btn" onClick={() => changeLanguage('fr')}>
+              French
+            </button>
+          ) : (
+            <button className="translate_btn" onClick={() => changeLanguage('en')}>
+              Eng
+            </button>
+          )}
+        </div>
       </div>
     </div>
   );
