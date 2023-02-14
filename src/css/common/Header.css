@@ -132,13 +132,14 @@
   align-items: center;
   position: absolute;
   right: 20px;
-  top: 18px;
+  top: 20px;
   outline: none;
   cursor: pointer;
   padding: 0.1% 1%;
   border-radius: 20px;
   color: rgb(0, 59, 126);
   font-size: 20px;
+
   border: none;
   font-weight: 600;
 }
