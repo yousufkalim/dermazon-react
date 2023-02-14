@@ -321,7 +321,7 @@ export default function ContactSection() {
                     <MenuItem value="request">{t('Your Request')}</MenuItem>
                     <MenuItem value="Sell my Laser">{t('Sell my Laser')}</MenuItem>
                     <MenuItem value="Maintain my Laser">{t('Maintain my Laser')}</MenuItem>
-                    <MenuItem value="Other">Other</MenuItem>
+                    <MenuItem value="Other">{t('Other')}</MenuItem>
                   </Select>
                 </FormControl>
               </Grid>
