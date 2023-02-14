@@ -10,6 +10,8 @@ import { useTranslation } from 'react-i18next';
 import logo from '../../assets/home/logo.svg';
 // import instragram from '../../assets/home/instragram.svg';
 import icons8instagram from '../../assets/home/icons8-instagram.svg';
+import Flag from '../../assets/home/flag.png';
+import FrFlag from '../../assets/home/fran_flag.png';
 import icons8linkedin from '../../assets/home/icons8-linkedin.svg';
 
 export default function Header() {
@@ -91,6 +93,14 @@ export default function Header() {
             <li>
               <Link to="/buy-laser">{t('Buy A Pre-Owned Laser')}</Link>
             </li>
+            <button className="trans_btn" type="button">
+              <img src={Flag} alt="Flag" />
+              EN
+            </button>
+            <button className="trans_btn" type="button">
+              <img src={FrFlag} alt="Flag" />
+              FR
+            </button>
           </ul>
         </div>
         {/* <div className="header_bottom_right">
