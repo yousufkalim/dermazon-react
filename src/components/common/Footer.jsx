@@ -1,6 +1,6 @@
 /* eslint-disable react/button-has-type */
 // import components and libraries
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
@@ -21,20 +21,14 @@ const handleServiceScroll = () => {
 };
 
 export default function Footer() {
-  const [showBtn, setShowBtn] = useState(false);
-  const { i18n, t } = useTranslation();
+  const { t } = useTranslation();
 
-  const changeLanguage = (lang) => {
-    i18n.changeLanguage(lang);
-    localStorage.setItem('language', lang);
-    setShowBtn(!showBtn);
-  };
   // const screenWidth = window.innerWidth;
   return (
     <div className="footer">
       <div className="footer_top">
         <div className="footer_top_left">
-          <div className="logo">
+          <div className="logo_footer">
             <img src={logo} alt="footer logo" />
           </div>
         </div>
@@ -123,7 +117,6 @@ export default function Footer() {
                 fontSize: '16px',
                 fontWeight: '500',
                 color: '#919B9B',
-                // display: 'flex',
               }}
             >
               <img src={whatsApp} alt="" className="footer_img " />
@@ -149,7 +142,6 @@ export default function Footer() {
                 fontSize: '16px',
                 fontWeight: '500',
                 color: '#919B9B',
-                // display: 'flex',
               }}
             >
               <img src={email} alt="" className="footer_img footer_img2 " />
@@ -179,17 +171,6 @@ export default function Footer() {
           © 2023 <span className="footer_span2">{t('DERMAZON LASER')}</span>,{' '}
           {t('All Rights Reserved.')}
         </p>
-        <div style={{ position: 'absolute', right: '50px' }}>
-          {showBtn ? (
-            <button className="translate_btn" onClick={() => changeLanguage('fr')}>
-              French
-            </button>
-          ) : (
-            <button className="translate_btn" onClick={() => changeLanguage('en')}>
-              Eng
-            </button>
-          )}
-        </div>
       </div>
     </div>
   );

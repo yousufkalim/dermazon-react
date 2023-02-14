@@ -46,8 +46,8 @@ i18n
           // contact
           Contact: 'Contact',
           Us: 'Us',
-          'A technical sales representative will be happy to discuss your project with you.':
-            'A technical sales representative will be happy to discuss your project with you.',
+          'Fill the form below and a technical sales representative will be happy to call you back to discuss your project with you.':
+            'Fill the form below and a technical sales representative will be happy to call you back to discuss your project with you.',
           'Call us': 'Call us',
           'On WhatsApp': 'On WhatsApp',
           Email: 'Email',
@@ -68,6 +68,11 @@ i18n
             'We are also laser hunters, you are looking for a particular laser which is not in the below list, get in touch with us and we will find it for you.',
           Example: 'Example',
           Search: 'Search',
+          Other: 'Other',
+          'Maintain my Laser': 'Maintain my Laser',
+          'Sell my Laser': 'Sell my Laser',
+          '': '',
+          '': '',
           '': '',
         },
       },
@@ -106,8 +111,8 @@ i18n
           // contact
           Contact: 'Contact',
           Us: 'Nous',
-          'A technical sales representative will be happy to discuss your project with you.':
-            'Un technico-commercial se fera un plaisir de discuter avec vous de votre projet.',
+          'Fill the form below and a technical sales representative will be happy to call you back to discuss your project with you.':
+            'Remplissez le formulaire ci-dessous et un technico-commercial sera heureux de vous rappeler pour discuter de votre projet.',
           'Call us': 'Appelez-nous',
           'On WhatsApp': 'Sur Whatsapp',
           Email: 'E-mail',
@@ -128,6 +133,12 @@ i18n
           Example: 'Exemple',
           Search: 'Recherche',
 
+          Other: 'Autre',
+          'Maintain my Laser': 'Entretenir mon Laser',
+          'Sell my Laser': 'Vendre mon Laser',
+          '': '',
+          '': '',
+          '': '',
           '': '',
         },
       },

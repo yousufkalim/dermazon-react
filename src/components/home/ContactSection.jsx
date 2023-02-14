@@ -144,7 +144,9 @@ export default function ContactSection() {
           </span>
         </h1>
         <p className="contact_top_text_p">
-          {t('A technical sales representative will be happy to discuss your project with you.')}
+          {t(
+            'Fill the form below and a technical sales representative will be happy to call you back to discuss your project with you.',
+          )}
         </p>
       </div>
       <div className="contact_bottom">
@@ -319,7 +321,7 @@ export default function ContactSection() {
                     <MenuItem value="request">{t('Your Request')}</MenuItem>
                     <MenuItem value="Sell my Laser">{t('Sell my Laser')}</MenuItem>
                     <MenuItem value="Maintain my Laser">{t('Maintain my Laser')}</MenuItem>
-                    <MenuItem value="Other">Other</MenuItem>
+                    <MenuItem value="Other">{t('Other')}</MenuItem>
                   </Select>
                 </FormControl>
               </Grid>

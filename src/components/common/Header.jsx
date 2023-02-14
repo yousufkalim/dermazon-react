@@ -15,7 +15,8 @@ import FrFlag from '../../assets/home/fran_flag.png';
 import icons8linkedin from '../../assets/home/icons8-linkedin.svg';
 
 export default function Header() {
-  const { t } = useTranslation();
+  const [showBtn, setShowBtn] = useState(false);
+  const { i18n, t } = useTranslation();
   const [showNavbar, setShowNavbar] = useState(false);
   const handleShowNavbar = () => {
     setShowNavbar(!showNavbar);
@@ -27,6 +28,12 @@ export default function Header() {
     } else {
       setShowTopNavbar(false);
     }
+  };
+
+  const changeLanguage = (lang) => {
+    i18n.changeLanguage(lang);
+    localStorage.setItem('language', lang);
+    setShowBtn(!showBtn);
   };
 
   useEffect(() => {
@@ -47,6 +54,7 @@ export default function Header() {
         <div className="header_top_left">{/* <span>Dermazon France </span> */}</div>
         <div className="header_top_right">
           <span className="header_top_span">{t('Follow us')}</span>
+
           <div className="icons">
             <a
               style={{
@@ -93,16 +101,19 @@ export default function Header() {
             <li>
               <Link to="/buy-laser">{t('Buy A Pre-Owned Laser')}</Link>
             </li>
-            <button className="trans_btn" type="button">
-              <img src={Flag} alt="Flag" />
-              EN
-            </button>
-            <button className="trans_btn" type="button">
-              <img src={FrFlag} alt="Flag" />
-              FR
-            </button>
           </ul>
         </div>
+        {showBtn ? (
+          <button className="trans_btn" type="button" onClick={() => changeLanguage('fr')}>
+            <img src={FrFlag} alt="Flag" />
+            FR
+          </button>
+        ) : (
+          <button className="trans_btn" type="button" onClick={() => changeLanguage('en')}>
+            <img src={Flag} alt="Flag" />
+            EN
+          </button>
+        )}
         {/* <div className="header_bottom_right">
           <div className="header_bottom_search">
             <input type="text" placeholder="Search" />

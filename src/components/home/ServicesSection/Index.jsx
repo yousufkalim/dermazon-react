@@ -72,7 +72,7 @@ export default function Index() {
         btnBg="#75CB41"
         btnText={t('Contact us')}
         serviceDescription={t(
-          'All medical laser equipment require a periodical preventive maintenance at least once a year, and this to avoid costly breakdowns and to guarantee good clinical functioning. For the moment we offer a laser repair and preventive maintenance with flashlamp change and handpieces refurbishment of certain brands. Do not hesitate to contact usfor a quote or for more information',
+          'All medical laser equipment require a periodical preventive maintenance at least once a year, and this to avoid costly breakdowns and to guarantee good clinical functioning. For the moment we offer a laser repair and preventive maintenance with flashlamp change and handpieces refurbishment of certain brands. Do not hesitate to contact us for a quote or for more information',
         )}
         image={SingleService3}
       />
