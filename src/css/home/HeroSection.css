@@ -178,21 +178,16 @@
     text-align: center;
     /* background-color: aqua; */
   }
-  .home_main_inner h1 {
-    line-height: 1px;
-    margin-bottom: 5%;
-    justify-content: center;
-    align-items: center;
-  }
+
   .home_heading {
     font-size: 16px;
-    text-align: center;
-    width: 80%;
+    text-align: left;
+    width: 90%;
 
     /* background-color: #b3881d; */
   }
   .home_text_p {
-    text-align: justify;
+    text-align: left;
     width: 100%;
     line-height: 25px;
     padding: 0 5%;
@@ -201,7 +196,7 @@
   }
   .home_heading span {
     font-size: 24px;
-
+    line-height: 20px;
     color: #02225e;
   }
   .home_right {
@@ -361,7 +356,7 @@
     font-style: normal;
     font-weight: 700;
     font-size: 25px;
-    line-height: 40px;
+    line-height: 20px;
     color: #02225e;
   }
   .home_text_p {

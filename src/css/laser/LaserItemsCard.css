@@ -83,6 +83,7 @@
   font-size: 32px;
   line-height: 48px;
   color: #fe0000;
+  padding: 0px !important;
 }
 .items_card_text {
   width: 65%;

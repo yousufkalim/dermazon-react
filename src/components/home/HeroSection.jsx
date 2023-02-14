@@ -3,6 +3,7 @@
 import React from 'react';
 
 // import icons and images
+import { useTranslation } from 'react-i18next';
 
 // import herosearch from '../../assets/home/herosearch.svg';
 import heroSection from '../../assets/home/heroSection.svg';
@@ -10,6 +11,8 @@ import heroSectionImg from '../../assets/home/MainHeroSectionImg.png';
 // import InputSearch from '../common/InputSearch';
 
 export default function HeroSection() {
+  const { t } = useTranslation();
+
   const scr = window.innerWidth;
   return (
     <div className="home_main">
@@ -18,11 +21,12 @@ export default function HeroSection() {
           <div className="home_left_inner">
             {/* <span className="home_span_text">USED LASER FOR ALL</span> */}
             <h1 className="home_heading">
-              <span>DERMAZON</span> is a worldwide marketplace
+              <span>DERMAZON</span> {t('is a worldwide marketplace')}
             </h1>
             <p className="home_text_p">
-              Based in Paris, for the sale and purchase of pre-owned laser and energy-based devices,
-              used in dermatology and aesthetic medicine field.
+              {t(
+                'Based in Paris, for the sale and purchase of pre-owned laser and energy-based devices, used in dermatology and aesthetic medicine field.',
+              )}
             </p>
           </div>
           {/* <div className="input_component">

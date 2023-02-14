@@ -1,6 +1,7 @@
 // import components and libraries
 
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import FormControl from '@mui/material/FormControl';
@@ -10,6 +11,7 @@ import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import { InputBase, MenuItem, Select } from '@mui/material';
 import styled from '@emotion/styled';
 import { toast } from 'react-toastify';
+
 import API from '../../api';
 
 // import icons and images
@@ -56,6 +58,8 @@ const BootstrapInput = styled(InputBase)(() => ({
   },
 }));
 export default function ContactSection() {
+  const { t } = useTranslation();
+
   const outlinedInputStyles = useOutlinedInputStyles();
 
   const [attachmentfile, setAttachment] = useState(null);
@@ -130,17 +134,19 @@ export default function ContactSection() {
     <div className="contact">
       <div className="contact_top">
         <h1 className="contact_top_heading">
-          Contact{' '}
+          {t('Contact')}
           <span
             style={{
               color: '#B3881D',
             }}
           >
-            Us
+            {t('Us')}
           </span>
         </h1>
         <p className="contact_top_text_p">
-          A technical sales representative will be happy to discuss your project with you.
+          {t(
+            'Fill the form below and a technical sales representative will be happy to call you back to discuss your project with you.',
+          )}
         </p>
       </div>
       <div className="contact_bottom">
@@ -152,7 +158,7 @@ export default function ContactSection() {
               </a>
             </div>
             <div className="contact_info_text">
-              <span className="contact_info">Call us</span>
+              <span className="contact_info">{t('Call us')}</span>
               <span className="phone">+33 695 12 03 33</span>
             </div>
           </div>
@@ -163,7 +169,7 @@ export default function ContactSection() {
               </div>
             </a>
             <div className="contact_info_text">
-              <span className="contact_info">On WhatsApp</span>
+              <span className="contact_info">{t('On WhatsApp')}</span>
               <span className="phone">+33 695 12 03 33</span>
             </div>
           </div>
@@ -174,7 +180,7 @@ export default function ContactSection() {
               </div>
             </a>
             <div className="contact_info_text">
-              <span className="contact_info">Email</span>
+              <span className="contact_info">{t('Email')}</span>
               <span className="phone">contact@dermazon.fr</span>
             </div>
           </div>
@@ -204,7 +210,7 @@ export default function ContactSection() {
                     onChange={handleChange}
                     classes={outlinedInputStyles}
                     size="small"
-                    placeholder="Name"
+                    placeholder={t('Name')}
                     name="name"
                     value={input.name}
                     InputProps={{ sx: { padding: screenWidth > 600 ? 0.7 : 0.1 } }}
@@ -233,7 +239,7 @@ export default function ContactSection() {
                     onChange={handleChange}
                     classes={outlinedInputStyles}
                     size="small"
-                    placeholder="Company Name"
+                    placeholder={t('Company Name')}
                     name="company"
                     value={input.company}
                     InputProps={{ sx: { padding: screenWidth > 600 ? 0.7 : 0.1 } }}
@@ -262,7 +268,7 @@ export default function ContactSection() {
                     onChange={handleChange}
                     classes={outlinedInputStyles}
                     size="small"
-                    placeholder="Email"
+                    placeholder={t('Email')}
                     name="email"
                     value={input.email}
                     InputProps={{ sx: { padding: screenWidth > 600 ? 0.7 : 0.1 } }}
@@ -292,7 +298,7 @@ export default function ContactSection() {
                     onChange={handleChange}
                     classes={outlinedInputStyles}
                     size="small"
-                    placeholder="Telephone"
+                    placeholder={t('Telephone')}
                     name="phone"
                     value={input.phone}
                     InputProps={{ sx: { padding: screenWidth > 600 ? 0.7 : 0.1 } }}
@@ -312,16 +318,9 @@ export default function ContactSection() {
                     onChange={handleChange}
                     displayEmpty
                   >
-                    <MenuItem
-                      sx={{
-                        color: '',
-                      }}
-                      value="request"
-                    >
-                      Your Request
-                    </MenuItem>
-                    <MenuItem value="Sell my Laser">Sell my Laser</MenuItem>
-                    <MenuItem value="Maintain my Laser">Maintain my Laser</MenuItem>
+                    <MenuItem value="request">{t('Your Request')}</MenuItem>
+                    <MenuItem value="Sell my Laser">{t('Sell my Laser')}</MenuItem>
+                    <MenuItem value="Maintain my Laser">{t('Maintain my Laser')}</MenuItem>
                     <MenuItem value="Other">Other</MenuItem>
                   </Select>
                 </FormControl>
@@ -346,7 +345,7 @@ export default function ContactSection() {
                     id=""
                     cols="30"
                     rows="10"
-                    placeholder="Your Message"
+                    placeholder={t('Your Message')}
                     onChange={handleChange}
                     value={input.message}
                   />
@@ -374,12 +373,12 @@ export default function ContactSection() {
                     fontWeight: 500,
                   }}
                 >
-                  Add Any Attachment
+                  {t('Add attachment')}
                 </span>
               )}
             </div>
             <button className="contact-btn" type="submit" onClick={handleSubmit}>
-              Send{' '}
+              {t('Send')}
               <ArrowRightAltIcon
                 style={{
                   marginLeft: '5px',

@@ -15,6 +15,12 @@ export default function LaserComponents() {
   const getProducts = async () => {
     await API('get', '/products')
       .then((res) => {
+        res?.data?.data?.products.sort((a, b) => {
+          const dateA = new Date(a.createdAt);
+          const dateB = new Date(b.createdAt);
+          return dateB - dateA;
+        });
+
         setProducts(res?.data?.data?.products);
       })
 
@@ -50,7 +56,7 @@ export default function LaserComponents() {
       {currentCards.map((product) => (
         <LaserItemsCard product={product} />
       ))}
-      <div style={{ display: 'flex', justifyContent: 'end', width: '90%' }}>
+      <div style={{ display: 'flex', justifyContent: 'center', width: '90%' }}>
         <div>
           <Pagination count={numberOfPages} page={currentPage} onChange={handleChangepage} />
         </div>
