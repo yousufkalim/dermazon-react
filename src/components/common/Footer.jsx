@@ -39,7 +39,7 @@ export default function Footer() {
                 <Link to="/">{t('Home')}</Link>
               </li>
               <li onClick={handleServiceScroll} role="presentation">
-                <Link to="/">{t('Services')}</Link>
+                <Link to="/buy-laser">{t('Buy A Pre-Owned Laser')}</Link>
               </li>
               {/* <li>
               <Link to="/terms">Terms & Conditions</Link>
@@ -50,6 +50,7 @@ export default function Footer() {
             </ul>
           </div>
           <div className="footer_middle_outer">
+            <p className="social_media">Follow us on social media</p>
             <div className="footer_middle">
               <div className="footer-icons">
                 {/* <img src={FacebookIcon} alt="logo" /> */}
@@ -134,7 +135,7 @@ export default function Footer() {
             +33 695 12 03 33
           </span>
         </div>
-        <div className="footer_top_right footer_email">
+        <div className="footer_top_right ">
           <a href="mailto:contact@dermazon.fr" target="_blank" rel="noreferrer">
             <span
               className="footer_span"
