@@ -71,6 +71,68 @@ i18n
           Other: 'Other',
           'Maintain my Laser': 'Maintain my Laser',
           'Sell my Laser': 'Sell my Laser',
+          // legel notice
+
+          'Legal Notice': 'Legal Notice',
+          'Effective as of 03/02/2023': 'Effective as of 03/02/2023',
+          'In accordance with the provisions of Articles 6-III and 19 of Law No. 2004-575 of June 21, 2004 on Confidence in the digital economy, known as LCEN, it is brought to the attention of users and visitors, hereinafter the':
+            'In accordance with the provisions of Articles 6-III and 19 of Law No. 2004-575 of June 21, 2004 on Confidence in the digital economy, known as LCEN, it is brought to the attention of users and visitors, hereinafter the',
+
+          User: 'User',
+          'of the site https://dermazon.fr, hereinafter the':
+            'of the site https://dermazon.fr, hereinafter the',
+
+          Site: 'Site',
+          'these legal notices': 'these legal notices',
+          'The connection and navigation on the Site by the User implies full and unreserved acceptance of these legal notices.':
+            'The connection and navigation on the Site by the User implies full and unreserved acceptance of these legal notices.',
+          'These are accessible on the Site under the heading':
+            'These are accessible on the Site under the heading',
+          'Legal notices': 'Legal notices',
+          'ARTICLE 1 - THE EDITOR': 'ARTICLE 1 - THE EDITOR',
+          'The edition of the Site is provided by DERMAZON (SASU) with a capital of 5000 euros, registered in the':
+            'The edition of the Site is provided by DERMAZON (SASU) with a capital of 5000 euros, registered in the',
+          'Trade and Companies Register of 123456789 under the number 123456789 whose head office ':
+            'Trade and Companies Register of 123456789 under the number 123456789 whose head office ',
+
+          'is located at 11 RUE DU BOIS DE PARIS 77700 CHESSY':
+            'is located at 11 RUE DU BOIS DE PARIS 77700 CHESSY',
+
+          'Phone number 0695120333': 'Phone number 0695120333',
+          'Email address: contact@dermazon.fr': 'Email address: contact@dermazon.fr',
+          'Intra-community VAT number: 123456789': 'Intra-community VAT number: 123456789',
+          'The Director of publication is Mr. RAZZAQ Burhan':
+            'The Director of publication is Mr. RAZZAQ Burhan',
+          'below the': 'below the',
+          Editor: 'Editor',
+          'ARTICLE 2 - THE HOST': 'ARTICLE 2 - THE HOST',
+          'The host of the Site is the company OVH Cloud, whose head office is located at the registered company':
+            'The host of the Site is the company OVH Cloud, whose head office is located at the registered company',
+          'at the Lille RCS under number 537 407 926 located at 2, rue Kellermann, 59100 Roubaix. ,before':
+            'at the Lille RCS under number 537 407 926 located at 2, rue Kellermann, 59100 Roubaix. ,before',
+          'and the': 'and the',
+          'telephone number: 0972101007 + contact email address':
+            'telephone number: 0972101007 + contact email address',
+          'ARTICLE 3 - ACCESS TO THE SITE': 'ARTICLE 3 - ACCESS TO THE SITE',
+          'The Site is accessible anywhere, 7 days a week, 24 hours a day, except in cases of force majeure, scheduled or unscheduled interruption and possibly resulting from a need for maintenance.':
+            'The Site is accessible anywhere, 7 days a week, 24 hours a day, except in cases of force majeure, scheduled or unscheduled interruption and possibly resulting from a need for maintenance.',
+          'In the event of modification, interruption or suspension of the Site, the Publisher cannot be held responsible.':
+            'In the event of modification, interruption or suspension of the Site, the Publisher cannot be held responsible.',
+          'ARTICLE 4 - DATA COLLECTION': 'ARTICLE 4 - DATA COLLECTION',
+          'The Site provides the User with the collection and processing of personal information with respect for privacy in accordance with Law No. 78-17 of January 6, 1978 relating to data processing, files and freedoms. 1 Under the Data Protection Act, dated January 6, 1978, the User has a right to access, rectify, delete and oppose his personal data. The User exercises this right: via a contact form':
+            'The Site provides the User with the collection and processing of personal information with respect for privacy in accordance with Law No. 78-17 of January 6, 1978 relating to data processing, files and freedoms. 1 Under the Data Protection Act, dated January 6, 1978, the User has a right to access, rectify, delete and oppose his personal data. The User exercises this right: via a contact form',
+          "Any use, reproduction, distribution, marketing, modification of all or part of the Site, without the Publisher's authorization is prohibited and may result in legal action and prosecution as provided for in particular by the Intellectual Property Code and the Civil Code.":
+            "Any use, reproduction, distribution, marketing, modification of all or part of the Site, without the Publisher's authorization is prohibited and may result in legal action and prosecution as provided for in particular by the Intellectual Property Code and the Civil Code.",
+          'Written on http://legalplace.fr': 'Written on http://legalplace.fr',
+          '': '',
+          '': '',
+          '': '',
+          '': '',
+          '': '',
+          '': '',
+          '': '',
+          '': '',
+          '': '',
           '': '',
           '': '',
           '': '',
@@ -136,6 +198,68 @@ i18n
           Other: 'Autre',
           'Maintain my Laser': 'Entretenir mon Laser',
           'Sell my Laser': 'Vendre mon Laser',
+          // Legal Notice
+          'Legal Notice': 'Mentions légales',
+          'Effective as of 03/02/2023': 'En vigueur au 03/02/2023',
+          'In accordance with the provisions of Articles 6-III and 19 of Law No. 2004-575 of June 21, 2004 on Confidence in the digital economy, known as LCEN, it is brought to the attention of users and visitors, hereinafter the':
+            'Conformément aux dispositions des Articles 6-III et 19 de la Loi n°2004-575 du 21 juin 2004 pour la Confiance dans l’économie numérique, dite L.C.E.N., il est porté à la connaissance des utilisateurs et visiteurs, ci-après l',
+
+          User: 'Utilisateur',
+          'of the site https://dermazon.fr, hereinafter the':
+            'du site https://dermazon.fr , ci-après le',
+
+          Site: 'Site',
+          'these legal notices.': 'les présentes mentions légales.',
+          'The connection and navigation on the Site by the User implies full and unreserved acceptance of these legal notices.':
+            'La connexion et la navigation sur le Site par l’Utilisateur implique acceptation intégrale et sans réserve des présentes mentions légales.',
+          'These are accessible on the Site under the heading':
+            'Ces dernières sont accessibles sur le Site à la rubrique',
+          'Legal notices': 'Mentions légales',
+          'ARTICLE 1 - THE EDITOR': "ARTICLE 1 - L'EDITEUR",
+          'The edition of the Site is provided by DERMAZON (SASU) with a capital of 5000 euros, registered in the':
+            "L'édition du Site est assurée par DERMAZON (SASU) au capital de 5000 euros,immatriculée au",
+
+          'Trade and Companies Register of 123456789 under the number 123456789 whose head office':
+            'Registre du Commerce et des Sociétés de 123456789 sous le numéro 123456789 dont le siège social',
+
+          'is located at 11 RUE DU BOIS DE PARIS 77700 CHESSY':
+            'est situé au 11 RUE DU BOIS DE PARIS 77700 CHESSY,',
+
+          'Phone number 0695120333': 'Numéro de téléphone 0695120333',
+          'Email address: contact@dermazon.fr': 'Adresse e-mail : contact@dermazon.fr',
+          'Intra-community VAT number: 123456789': 'N° de TVA intracommunautaire : 123456789',
+          'The Director of publication is Mr. RAZZAQ Burhan':
+            'Le Directeur de la publication est M RAZZAQ Burhan',
+          'below the': 'ci-après l',
+          Editor: 'Editeur',
+          'ARTICLE 2 - THE HOST': "ARTICLE 2 - L'HEBERGEUR",
+          'The host of the Site is the company OVH Cloud, whose head office is located at the registered company':
+            "L'hébergeur du Site est la société OVH Cloud, dont le siège social est situé au société immatriculée",
+          'at the Lille RCS under number 537 407 926 located at 2, rue Kellermann, 59100 Roubaix. ,before':
+            'au RCS de Lille sous le numéro 537 407 926 sise 2, rue Kellermann, 59100 Roubaix. ,av',
+          'and the': 'ec le',
+          'telephone number: 0972101007 + contact email address':
+            'numéro de téléphone : 0972101007 + adresse mail de contact',
+          'ARTICLE 3 - ACCESS TO THE SITE': 'ARTICLE 3 - ACCES AU SITE',
+          'The Site is accessible anywhere, 7 days a week, 24 hours a day, except in cases of force majeure, scheduled or unscheduled interruption and possibly resulting from a need for maintenance.':
+            'Le Site est accessible en tout endroit, 7 jours par semaine, 24 heures par jour, interruption programmée ou non et pouvant découlant d’une nécessité de maintenance',
+          'In the event of modification, interruption or suspension of the Site, the Publisher cannot be held responsible.':
+            "En cas de modification, interruption ou suspension du Site, l'Editeur ne saurait être tenu responsable.",
+          'ARTICLE 4 - DATA COLLECTION': 'ARTICLE 4 - COLLECTE DES DONNEES',
+          'The Site provides the User with the collection and processing of personal information with respect for privacy in accordance with Law No. 78-17 of January 6, 1978 relating to data processing, files and freedoms. 1 Under the Data Protection Act, dated January 6, 1978, the User has a right to access, rectify, delete and oppose his personal data. The User exercises this right: via a contact form':
+            "Le Site assure à l'Utilisateur une collecte et un traitement d'informations personnelles dans le respect de la vie privée conformément à la loi n°78-17 du 6 janvier 1978 relative à l'informatique, aux fichiers et aux libertés. 1 En vertu de la loi Informatique et Libertés, en date du 6 janvier 1978, l'Utilisateur dispose d'un droit d'accès, de rectification, de suppression et d'opposition de ses données   personnelles. L'Utilisateur exerce ce droit : · via un formulaire de contact",
+          "Any use, reproduction, distribution, marketing, modification of all or part of the Site, without the Publisher's authorization is prohibited and may result in legal action and prosecution as provided for in particular by the Intellectual Property Code and the Civil Code.":
+            'Toute utilisation, reproduction, diffusion, commercialisation, modification de toute ou partie du Site, sans autorisation de l’Editeur est prohibée et pourra entraînée des actions et poursuites judiciaires telles que notamment prévues par le Code de la propriété intellectuelle et le Code civil.',
+          'Written on http://legalplace.fr': 'Rédigé sur http://legalplace.fr',
+          '': '',
+          '': '',
+          '': '',
+          '': '',
+          '': '',
+          '': '',
+          '': '',
+          '': '',
+          '': '',
           '': '',
           '': '',
           '': '',

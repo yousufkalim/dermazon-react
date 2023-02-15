@@ -1,7 +1,9 @@
 /* eslint-disable react/no-unescaped-entities */
 import React, { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 
 function Notice() {
+  const { t } = useTranslation();
   const scrollToTop = () => {
     window.scrollTo({
       top: 11,
@@ -17,78 +19,93 @@ function Notice() {
       <div className="notices">
         <div className="notice_second">
           <div className="Notices_head">
-            <p className="Notices_title">Mentions légales</p>
-            <p className="Notices_title_p">En vigueur au 03/02/2023</p>
+            <p className="Notices_title">{t('Legal Notice')}</p>
+            <p className="Notices_title_p">{t('Effective as of 03/02/2023')}</p>
           </div>
           <p className="notices_p">
-            Conformément aux dispositions des Articles 6-III et 19 de la Loi n°2004-575 du 21 juin
-            2004 pour la Confiance dans l’économie numérique, dite L.C.E.N., il est porté à la
-            connaissance des utilisateurs et visiteurs, ci-après l""<b>Utilisateur</b>", du site
-            https://dermazon.fr , ci-après le "<b>Site</b>", les présentes mentions légales.
+            {t(
+              'In accordance with the provisions of Articles 6-III and 19 of Law No. 2004-575 of June 21, 2004 on Confidence in the digital economy, known as LCEN, it is brought to the attention of users and visitors, hereinafter the',
+            )}
+            ""<b>{t('User')}</b>", {t('of the site https://dermazon.fr, hereinafter the')}"
+            <b>{t('Site')}</b>", {t('these legal notices.')}
           </p>
           <p className="notices_p">
-            La connexion et la navigation sur le Site par l’Utilisateur implique acceptation
-            intégrale et sans réserve des présentes mentions légales.
+            {t(
+              'The connection and navigation on the Site by the User implies full and unreserved acceptance of these legal notices.',
+            )}
           </p>
           <p className="notices_p">
-            Ces dernières sont accessibles sur le Site à la rubrique « Mentions légales ».
+            {t('These are accessible on the Site under the heading')} «{t('Legal notices')}
+            ».
           </p>
           <div className="article_div">
-            <p className="art_title">ARTICLE 1 - L'EDITEUR</p>
+            <p className="art_title">{t('ARTICLE 1 - THE EDITOR')}</p>
             <p className="art_p">
-              L'édition du Site est assurée par DERMAZON (SASU) au capital de 5000 euros,
-              immatriculée au <br />
-              Registre du Commerce et des Sociétés de 123456789 sous le numéro 123456789 dont le
-              siège social <br />
-              est situé au 11 RUE DU BOIS DE PARIS 77700 CHESSY, <br />
-              Numéro de téléphone 0695120333, <br />
-              Adresse e-mail : contact@dermazon.fr. <br />
-              N° de TVA intracommunautaire : 123456789 <br />
-              Le Directeur de la publication est M RAZZAQ Burhan <br />
-              ci-après l'"<b>Editeur</b>"
+              {t(
+                'The edition of the Site is provided by DERMAZON (SASU) with a capital of 5000 euros, registered in the',
+              )}
+              <br />
+              {t(
+                'Trade and Companies Register of 123456789 under the number 123456789 whose head office',
+              )}
+              <br />
+              {t('is located at 11 RUE DU BOIS DE PARIS 77700 CHESSY')},
+              <br />
+              {t('Phone number 0695120333')}
+              <br />
+              {t('Email address: contact@dermazon.fr.')}
+              <br />
+              {t('Intra-community VAT number: 123456789')},
+              <br />
+              {t('The Director of publication is Mr. RAZZAQ Burhan')}
+              <br />
+              {t('below the')}'"<b>{t('Editor.')}</b>"
             </p>
           </div>
           <div className="article_div">
-            <p className="art_title">ARTICLE 2 - L'HEBERGEUR</p>
+            <p className="art_title">{t('ARTICLE 2 - THE HOST')}</p>
             <p className="art_p">
-              L'hébergeur du Site est la société OVH Cloud, dont le siège social est situé au
-              société immatriculée <br />
-              au RCS de Lille sous le numéro 537 407 926 sise 2, rue Kellermann, 59100 Roubaix. , av
+              {t(
+                'The host of the Site is the company OVH Cloud, whose head office is located at the registered company',
+              )}
+              <br />
+              {t(
+                'at the Lille RCS under number 537 407 926 located at 2, rue Kellermann, 59100 Roubaix. ,before',
+              )}
               <b>
-                ec le <br />
-                numéro de téléphone : 0972101007 + adresse mail de contact
+                {t('and the')}
+                <br />
+                {t('telephone number: 0972101007 + contact email address')}
               </b>
             </p>
           </div>
           <div className="article_div">
-            <p className="art_title">ARTICLE 3 - ACCES AU SITE</p>
+            <p className="art_title">{t('ARTICLE 3 - ACCESS TO THE SITE')}</p>
             <p className="art_p">
-              Le Site est accessible en tout endroit, 7j/7, 24h/24 sauf cas de force majeure,
-              interruption programmée ou non et pouvant découlant d’une nécessité de maintenance
+              {t(
+                'The Site is accessible anywhere, 7 days a week, 24 hours a day, except in cases of force majeure, scheduled or unscheduled interruption and possibly resulting from a need for maintenance.',
+              )}
               <br />
               <br />
-              En cas de modification, interruption ou suspension du Site, l'Editeur ne saurait être
-              tenu responsable.
+              {t(
+                'In the event of modification, interruption or suspension of the Site, the Publisher cannot be held responsible.',
+              )}
             </p>
           </div>
           <div className="article_div">
-            <p className="art_title">ARTICLE 4 - COLLECTE DES DONNEES</p>
+            <p className="art_title">{t('ARTICLE 4 - DATA COLLECTION')}</p>
             <p className="art_p">
-              Le Site assure à l'Utilisateur une collecte et un traitement d'informations
-              personnelles dans le respect de la vie privée conformément à la loi n°78-17 du 6
-              janvier 1978 relative à l'informatique, aux fichiers et aux libertés. 1 En vertu de la
-              loi Informatique et Libertés, en date du 6 janvier 1978, l'Utilisateur dispose d'un
-              droit d'accès, de rectification, de suppression et d'opposition de ses données
-              personnelles. L'Utilisateur exerce ce droit : · via un formulaire de contact
+              {t(
+                'The Site provides the User with the collection and processing of personal information with respect for privacy in accordance with Law No. 78-17 of January 6, 1978 relating to data processing, files and freedoms. 1 Under the Data Protection Act, dated January 6, 1978, the User has a right to access, rectify, delete and oppose his personal data. The User exercises this right: via a contact form',
+              )}
               <br />
               <br />
-              Toute utilisation, reproduction, diffusion, commercialisation, modification de toute
-              ou partie du Site, sans autorisation de l’Editeur est prohibée et pourra entraînée des
-              actions et poursuites judiciaires telles que notamment prévues par le Code de la
-              propriété intellectuelle et le Code civil.
+              {t(
+                "Any use, reproduction, distribution, marketing, modification of all or part of the Site, without the Publisher's authorization is prohibited and may result in legal action and prosecution as provided for in particular by the Intellectual Property Code and the Civil Code.",
+              )}
               <br />
               <br />
-              Rédigé sur http://legalplace.fr
+              {t('Written on http://legalplace.fr')}
             </p>
           </div>
         </div>

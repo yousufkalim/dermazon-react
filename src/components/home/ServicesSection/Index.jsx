@@ -13,11 +13,13 @@ import icon3 from '../../../assets/home/icon3.svg';
 import icon4 from '../../../assets/home/icon4.svg';
 import icon5 from '../../../assets/home/icon5.svg';
 import serviceBG from '../../../assets/home/serviceBG.svg';
-import service1 from '../../../assets/home/service1.svg';
-import service2 from '../../../assets/home/service2.svg';
+// import service1 from '../../../assets/home/service1.svg';
+// import service2 from '../../../assets/home/service2.svg';
 import SingleService3 from '../../../assets/home/LaserMachineImg.svg';
 import SingleService4 from '../../../assets/home/SingleService4.svg';
 import SingleService5 from '../../../assets/home/SingleService5.svg';
+import BuyALaser from '../../../assets/home/BuyALaser.svg';
+import SellALaser from '../../../assets/home/SellALaser.svg';
 
 export default function Index() {
   const { t } = useTranslation();
@@ -42,13 +44,13 @@ export default function Index() {
         sectionId="BuyALaser"
         bgColor="rgba(66, 85, 255, 0.1)"
         icon={icon1}
-        title={t('Buy A Pre-Owned Laser')}
+        title={t('Buy a pre-owned laser')}
         btnBg="#02225E"
         btnText={t('Buy A Laser')}
         serviceDescription={t(
           'We sell high quality and brand premium pre-owned laser, they are checked and revised by independent and experienced service engineers. Find the right laser with us and save 50% on average compared to new.',
         )}
-        image={service1}
+        image={BuyALaser}
         Path="/buy-laser"
       />
       <SingleService
@@ -56,19 +58,19 @@ export default function Index() {
         bgColor="rgba(253, 177, 51, 0.1)"
         reverse
         icon={icon2}
-        title={t('Sell Your Laser')}
+        title={t('Sell your laser')}
         btnBg="#B3881D"
         btnText={t('Contact us')}
         serviceDescription={t(
           'The process of selling your used medical laser is very easy. Fill the form below, and after review of your machine, we will either purpose you a purchase offer within 24 hours or we will list it on our marketplace and actively sell it with our partners and clients.',
         )}
-        image={service2}
+        image={SellALaser}
       />
       <SingleService
         sectionId="MaintainYourLaser"
         bgColor="rgba(117, 203, 65, 0.1)"
         icon={icon3}
-        title={t('Maintain Your Laser')}
+        title={t('Maintain your laser')}
         btnBg="#75CB41"
         btnText={t('Contact us')}
         serviceDescription={t(
@@ -81,7 +83,7 @@ export default function Index() {
         bgColor="rgba(66, 198, 255, 0.1)"
         reverse
         icon={icon4}
-        title={t('Rent a Laser')}
+        title={t('Rent a laser')}
         btnBg="#42C6FF"
         btnText={t('Contact us')}
         serviceDescription={t(
@@ -93,7 +95,7 @@ export default function Index() {
         sectionId="DeliveryAndMove"
         bgColor="rgba(253, 136, 51, 0.1)"
         icon={icon5}
-        title={t('Pick-up and Delivery')}
+        title={t('Pick-up and delivery')}
         btnBg="#FD8833"
         btnText={t('Contact us')}
         serviceDescription={t(
