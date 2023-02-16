@@ -34,8 +34,8 @@
 .contact_bottom {
   display: flex;
   padding: 4% 10%;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 17%;
+  margin-right: 17%;
   gap: 20px;
 }
 
@@ -206,6 +206,8 @@ textarea::-webkit-scrollbar-thumb {
     display: flex;
     padding: 4% 0%;
     display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
     flex-direction: column-reverse;
   }
 
