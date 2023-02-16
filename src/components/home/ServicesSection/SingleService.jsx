@@ -18,6 +18,7 @@ export default function SingleService(props) {
     Path,
     image,
     showImage,
+    setFlag,
   } = props;
   const firstWord = title.split(' ')[0];
   function removeFirstWord() {
@@ -129,7 +130,14 @@ export default function SingleService(props) {
             }}
             className="single_service_btn"
             type="button"
-            onClick={() => scroll()}
+            onClick={() => {
+              scroll();
+              if (title === 'Sell your laser') {
+                setFlag(true);
+              } else {
+                setFlag(false);
+              }
+            }}
           >
             {btnText}
           </button>
