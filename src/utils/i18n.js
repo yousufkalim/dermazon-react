@@ -110,9 +110,9 @@ i18n
             'The host of the Site is the company OVH Cloud, whose head office is located at the registered company',
           'at the Lille RCS under number 537 407 926 located at 2, rue Kellermann, 59100 Roubaix. ,before':
             'at the Lille RCS under number 537 407 926 located at 2, rue Kellermann, 59100 Roubaix. ,before',
-          'and the': 'and the',
-          'telephone number: 0972101007 + contact email address':
-            'telephone number: 0972101007 + contact email address',
+          // 'and the': 'and the',
+          'and the telephone number: 0972101007 + contact email address':
+            'and the telephone number: 0972101007 + contact email address',
           'ARTICLE 3 - ACCESS TO THE SITE': 'ARTICLE 3 - ACCESS TO THE SITE',
           'The Site is accessible anywhere, 7 days a week, 24 hours a day, except in cases of force majeure, scheduled or unscheduled interruption and possibly resulting from a need for maintenance.':
             'The Site is accessible anywhere, 7 days a week, 24 hours a day, except in cases of force majeure, scheduled or unscheduled interruption and possibly resulting from a need for maintenance.',
@@ -237,9 +237,9 @@ i18n
             "L'hébergeur du Site est la société OVH Cloud, dont le siège social est situé au société immatriculée",
           'at the Lille RCS under number 537 407 926 located at 2, rue Kellermann, 59100 Roubaix. ,before':
             'au RCS de Lille sous le numéro 537 407 926 sise 2, rue Kellermann, 59100 Roubaix. ,av',
-          'and the': 'ec le',
-          'telephone number: 0972101007 + contact email address':
-            'numéro de téléphone : 0972101007 + adresse mail de contact',
+          // 'and the': 'ec le',
+          'and the telephone number: 0972101007 + contact email address':
+            'ec le numéro de téléphone : 0972101007 + adresse mail de contact',
           'ARTICLE 3 - ACCESS TO THE SITE': 'ARTICLE 3 - ACCES AU SITE',
           'The Site is accessible anywhere, 7 days a week, 24 hours a day, except in cases of force majeure, scheduled or unscheduled interruption and possibly resulting from a need for maintenance.':
             'Le Site est accessible en tout endroit, 7 jours par semaine, 24 heures par jour, interruption programmée ou non et pouvant découlant d’une nécessité de maintenance',
@@ -267,7 +267,7 @@ i18n
         },
       },
     },
-    fallbackLng: 'fr',
+    fallbackLng: 'en',
     debug: true,
     // have a common namespace used around the full app
     ns: ['translations'],

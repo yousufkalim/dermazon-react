@@ -1,12 +1,12 @@
 .terms {
-  padding-top: 150px;
-  padding-bottom: 7%;
+  padding-top: 80px;
+  padding-bottom: 50px;
 }
 .terms_condition {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 2% 0;
+  padding-bottom: 50px;
 }
 .terms_icon {
   width: 140px;
@@ -18,7 +18,7 @@
   font-style: normal;
   font-weight: 600;
   font-size: 48px;
-  line-height: 72px;
+  line-height: 47px;
   color: #454238;
 }
 .terms_definition {
@@ -88,8 +88,9 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
-  color: #2b2926;
+  color: #02225e;
   margin-left: 20px;
+  font-weight: 400;
 }
 .terms_quiz_title2 {
   font-weight: 600;
@@ -104,8 +105,8 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  display: flex;
-  align-items: center;
+  /* display: flex;
+  align-items: center; */
   color: #2b2926;
   padding-top: 10px;
   padding-bottom: 25px;
