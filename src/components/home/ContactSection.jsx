@@ -16,9 +16,9 @@ import API from '../../api';
 
 // import icons and images
 
-import phone from '../../assets/home/phone.svg';
-import whatsApp from '../../assets/home/whatsApp.svg';
-import email from '../../assets/home/email.svg';
+// import phone from '../../assets/home/phone.svg';
+// import whatsApp from '../../assets/home/whatsApp.svg';
+// import email from '../../assets/home/email.svg';
 import attachment from '../../assets/home/attachment.svg';
 
 const useOutlinedInputStyles = makeStyles({
@@ -57,7 +57,7 @@ const BootstrapInput = styled(InputBase)(() => ({
     },
   },
 }));
-export default function ContactSection() {
+export default function ContactSection({ flag }) {
   const { t } = useTranslation();
 
   const outlinedInputStyles = useOutlinedInputStyles();
@@ -80,32 +80,34 @@ export default function ContactSection() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (input.name === '') {
-      toast.error('Please Enter Your Name');
+      toast.error(t('Please Enter Your Name'));
       return;
     }
     if (input.company === '') {
-      toast.error('Please enter your company');
+      toast.error(t('Please enter your company'));
       return;
     }
     if (input.email === '') {
-      toast.error('Please enter your email');
+      toast.error(t('Please enter your email'));
       return;
     }
     if (input.phone === '') {
-      toast.error('Please enter your phone');
+      toast.error(t('Please enter your phone'));
       return;
     }
     if (input.request === '') {
-      toast.error('Please enter your request');
+      toast.error(t('Please enter your request'));
       return;
     }
     if (input.message === '') {
-      toast.error('Please enter your message');
+      toast.error(t('Please enter your message'));
       return;
     }
-    if (attachmentfile === null) {
-      toast.error('Please select a file');
-      return;
+    if (flag) {
+      if (attachmentfile === null) {
+        toast.error(t('Please select a file'));
+        return;
+      }
     }
 
     const formdata = new FormData();
@@ -119,7 +121,7 @@ export default function ContactSection() {
 
     const res = await API('post', '/contactus', formdata);
     if (res) {
-      toast.success('Thanks For Contacting!');
+      toast.success(t('Thanks For Contacting!'));
       setInput({ name: '', company: '', email: '', phone: '', request: 'request', message: '' });
       setAttachment(null);
     }
@@ -150,7 +152,7 @@ export default function ContactSection() {
         </p>
       </div>
       <div className="contact_bottom">
-        <div className="contact_bottom_left">
+        {/* <div className="contact_bottom_left">
           <div className="contact_icons">
             <div className="contact_icon">
               <a href="tel:+33695120333" target="_blank" rel="noreferrer">
@@ -184,7 +186,7 @@ export default function ContactSection() {
               <span className="phone">contact@dermazon.fr</span>
             </div>
           </div>
-        </div>
+        </div> */}
         <form id="myform" className="contact_bottom_right">
           <Box sx={{ flexGrow: 1 }}>
             <Grid container spacing={2}>

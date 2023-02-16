@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import Header from '../components/common/Header';
 import Footer from '../components/common/Footer';
@@ -10,6 +10,7 @@ import Index from '../components/home/ServicesSection/Index';
 // Home Component
 export default function Home() {
   const { pathname } = useLocation;
+  const [flag, setFlag] = useState(false);
 
   useEffect(() => {
     window.scrollTo({
@@ -22,9 +23,9 @@ export default function Home() {
       <Header />
       <HeroSection />
       <Testimonials />
-      <Index />
+      <Index flag={flag} setFlag={setFlag} />
       <div id="about" style={{ position: 'absolute', marginTop: '-60px' }} />
-      <ContactUs />
+      <ContactUs flag={flag} />
       <Footer />
     </div>
   );

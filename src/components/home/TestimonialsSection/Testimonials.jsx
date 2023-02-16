@@ -76,7 +76,11 @@ export default function Testimonials() {
                   <img
                     src={!arrowstate ? NonActivearrow : NonActivearrow}
                     alt="arrow"
-                    style={{ margin: '0 8px 3px 8px', cursor: 'pointer' }}
+                    style={{
+                      margin: '0 8px -1px ',
+                      cursor: 'pointer',
+                      width: '46px',
+                    }}
                   />
                 </button>
                 <button onClick={handleForwardClick} type="button" className="arrowButton">

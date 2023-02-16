@@ -22,7 +22,7 @@
 }
 
 .contact_top_text_p {
-  width: 27%;
+  width: 50%;
   font-size: 20px;
   color: #fdfcfc;
   text-align: center;
@@ -417,9 +417,6 @@ textarea::-webkit-scrollbar-thumb {
   }
 }
 @media only screen and (min-width: 1000px) and (max-width: 1400px) {
-  .contact_bottom {
-    margin: 0;
-  }
   .contact_bottom_left {
     justify-content: space-evenly;
     height: 300px;

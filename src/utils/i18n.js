@@ -26,7 +26,7 @@ i18n
           'Client Testimonials': 'Client Testimonials',
           Our: 'Our',
           Services: 'Services',
-          'Buy A Pre-Owned Laser': 'Buy A Pre-Owned Laser',
+          'Buy a pre-owned laser': 'Buy a pre-owned laser',
           'We sell high quality and brand premium pre-owned laser, they are checked and revised by independent and experienced service engineers. Find the right laser with us and save 50% on average compared to new.':
             'We sell high quality and brand premium pre-owned laser, they are checked and revised by independent and experienced service engineers. Find the right laser with us and save 50% on average compared to new.',
           'Buy A Laser': 'Buy A Laser',
@@ -124,15 +124,16 @@ i18n
           "Any use, reproduction, distribution, marketing, modification of all or part of the Site, without the Publisher's authorization is prohibited and may result in legal action and prosecution as provided for in particular by the Intellectual Property Code and the Civil Code.":
             "Any use, reproduction, distribution, marketing, modification of all or part of the Site, without the Publisher's authorization is prohibited and may result in legal action and prosecution as provided for in particular by the Intellectual Property Code and the Civil Code.",
           'Written on http://legalplace.fr': 'Written on http://legalplace.fr',
-          '': '',
-          '': '',
-          '': '',
-          '': '',
-          '': '',
-          '': '',
-          '': '',
-          '': '',
-          '': '',
+
+          // toast
+          'Please Enter Your Name': 'Please Enter Your Name',
+          'Please enter your company': 'Please enter your company',
+          'Please enter your email': 'Please enter your email',
+          'Please enter your phone': 'Please enter your phone',
+          'Please enter your request': 'Please enter your request',
+          'Please enter your message': 'Please enter your message',
+          'Please select a file': 'Please select a file',
+          'Thanks For Contacting!': 'Thanks For Contacting!',
           '': '',
           '': '',
           '': '',
@@ -142,18 +143,18 @@ i18n
         translations: {
           // header
           'Follow us': 'Suivez-nous',
-          'PRE-OWNED LASERS': "LASERS D'OCCASION",
+          'PRE-OWNED LASERS': 'Les lasers d’occasion',
           Home: 'Accueil',
           'Buy A Pre-Owned Laser': "Acheter un laser d'occasion",
           // home
           DERMAZON: 'DERMAZON',
-          'is a worldwide marketplace': 'est une plateforme',
+          'is a worldwide marketplace': 'est une société',
           'Based in Paris, for the sale and purchase of pre-owned laser and energy-based devices, used in dermatology and aesthetic medicine field.':
             ' basée à Paris, spécialisé dans le rachat et la vente de lasers médical d’occasion, utilisé dans le domaine de la dermatologie et médecine esthétique.',
-          'Client Testimonials': 'Témoignages clients',
+          'Client Testimonials': 'Avis Clients',
           Our: 'Nos',
           Services: 'Services',
-          'Buy A Pre-Owned Laser': 'Acheter un laser d’occasion',
+          'Buy a pre-owned laser': 'Acheter un laser d’occasion',
           'We sell high quality and brand premium pre-owned laser, they are checked and revised by independent and experienced service engineers. Find the right laser with us and save 50% on average compared to new.':
             "Nous vendons des lasers d'occasion de qualité supérieure et de marque premium, ils sont complètement vérifiés et révisés par des ingénieurs de maintenance indépendants et expérimentés. Trouvez le bon laser avec nous et économisez en moyenne 50% comparée au neuf.",
           'Buy A Laser': 'Acheter un laser',
@@ -171,7 +172,7 @@ i18n
           'The transport of lasers requires special attention due to the optical alignment of the laser beams, which is why we take care of the transport ourselves under the right conditions. We are also available to manufacturers as a subcontractor':
             'Le transport des lasers requiert une attention spéciale en raison des alignements optiques par rapport aux faisceaux laser, c’est la raison pour laquelle nous nous occupons nous-mêmes du transport et ceci dans les règles de l’art des bonnes conditions. Nous sommes également disponibles pour les fabricants en sous-traitance.',
           // contact
-          Contact: 'Contact',
+          Contact: 'Contactez',
           Us: 'Nous',
           'Fill the form below and a technical sales representative will be happy to call you back to discuss your project with you.':
             'Remplissez le formulaire ci-dessous et un technico-commercial sera heureux de vous rappeler pour discuter de votre projet.',
@@ -179,7 +180,7 @@ i18n
           'On WhatsApp': 'Sur Whatsapp',
           Email: 'E-mail',
           Name: 'Nom',
-          'Company Name': 'Entreprise Nom',
+          'Company Name': 'Société',
           Email: 'E-mail',
           Telephone: 'Téléphone',
           'Your Request': 'Votre demande',
@@ -187,7 +188,7 @@ i18n
           'Add attachment': 'Ajoutez une pièce jointe',
           Send: 'Envoyer',
           'Legal Notice': 'Mentions légales',
-          'DERMAZON LASER': 'LASER DERMAZONE',
+          'DERMAZON LASER': 'LASER DERMAZON',
           'All Rights Reserved.': 'Tous les droits sont réservés.',
           // Buy Ad Laser
           'We are also laser hunters, you are looking for a particular laser which is not in the below list, get in touch with us and we will find it for you.':
@@ -251,13 +252,16 @@ i18n
           "Any use, reproduction, distribution, marketing, modification of all or part of the Site, without the Publisher's authorization is prohibited and may result in legal action and prosecution as provided for in particular by the Intellectual Property Code and the Civil Code.":
             'Toute utilisation, reproduction, diffusion, commercialisation, modification de toute ou partie du Site, sans autorisation de l’Editeur est prohibée et pourra entraînée des actions et poursuites judiciaires telles que notamment prévues par le Code de la propriété intellectuelle et le Code civil.',
           'Written on http://legalplace.fr': 'Rédigé sur http://legalplace.fr',
-          '': '',
-          '': '',
-          '': '',
-          '': '',
-          '': '',
-          '': '',
-          '': '',
+
+          // toast
+          'Please Enter Your Name': "S'il vous plaît entrez votre nom",
+          'Please enter your company': 'Veuillez entrer votre entreprise',
+          'Please enter your email': 'Veuillez saisir votre e-mail',
+          'Please enter your phone': 'Veuillez entrer votre téléphone',
+          'Please enter your request': 'Veuillez entrer votre demande',
+          'Please enter your message': 'Veuillez entrer votre message',
+          'Please select a file': 'Veuillez sélectionner un fichier',
+          'Thanks For Contacting!': "Merci d'avoir contacté !",
           '': '',
           '': '',
           '': '',

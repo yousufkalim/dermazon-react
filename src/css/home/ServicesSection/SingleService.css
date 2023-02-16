@@ -194,6 +194,7 @@
   .single_service_right button {
     justify-self: center;
     align-self: center;
+    margin-bottom: 20px;
   }
 
   .single_servise_controler_div {
@@ -395,5 +396,10 @@
     width: 90%;
     font-size: medium;
     /* background-color: #02225e; */
+  }
+  .link {
+    width: fit-content;
+    height: 0;
+    background-color: #919b9b;
   }
 }
