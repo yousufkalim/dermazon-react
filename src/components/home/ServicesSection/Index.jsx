@@ -59,7 +59,7 @@ export default function Index({ setFlag }) {
         bgColor="rgba(253, 177, 51, 0.1)"
         reverse
         icon={icon2}
-        title={t('Sell your laser')}
+        title={t('Sell Your Laser')}
         btnBg="#B3881D"
         btnText={t('Contact us')}
         serviceDescription={t(
@@ -72,7 +72,7 @@ export default function Index({ setFlag }) {
         sectionId="MaintainYourLaser"
         bgColor="rgba(117, 203, 65, 0.1)"
         icon={icon3}
-        title={t('Maintain your laser')}
+        title={t('Maintain Your Laser')}
         btnBg="#75CB41"
         btnText={t('Contact us')}
         serviceDescription={t(
@@ -86,7 +86,7 @@ export default function Index({ setFlag }) {
         bgColor="rgba(66, 198, 255, 0.1)"
         reverse
         icon={icon4}
-        title={t('Rent a laser')}
+        title={t('Rent a Laser')}
         btnBg="#42C6FF"
         btnText={t('Contact us')}
         serviceDescription={t(
@@ -99,7 +99,7 @@ export default function Index({ setFlag }) {
         sectionId="DeliveryAndMove"
         bgColor="rgba(253, 136, 51, 0.1)"
         icon={icon5}
-        title={t('Pick-up and delivery')}
+        title={t('Pick-up and Delivery')}
         btnBg="#FD8833"
         btnText={t('Contact us')}
         serviceDescription={t(
