@@ -124,7 +124,7 @@ i18n
           "Any use, reproduction, distribution, marketing, modification of all or part of the Site, without the Publisher's authorization is prohibited and may result in legal action and prosecution as provided for in particular by the Intellectual Property Code and the Civil Code.":
             "Any use, reproduction, distribution, marketing, modification of all or part of the Site, without the Publisher's authorization is prohibited and may result in legal action and prosecution as provided for in particular by the Intellectual Property Code and the Civil Code.",
           'Written on http://legalplace.fr': 'Written on http://legalplace.fr',
-          '': '',
+          'Follow us on social media': 'Follow us on social media',
           '': '',
           '': '',
           '': '',
@@ -251,7 +251,7 @@ i18n
           "Any use, reproduction, distribution, marketing, modification of all or part of the Site, without the Publisher's authorization is prohibited and may result in legal action and prosecution as provided for in particular by the Intellectual Property Code and the Civil Code.":
             'Toute utilisation, reproduction, diffusion, commercialisation, modification de toute ou partie du Site, sans autorisation de l’Editeur est prohibée et pourra entraînée des actions et poursuites judiciaires telles que notamment prévues par le Code de la propriété intellectuelle et le Code civil.',
           'Written on http://legalplace.fr': 'Rédigé sur http://legalplace.fr',
-          '': '',
+          'Follow us on social media': 'Suivez-nous sur les réseaux sociaux',
           '': '',
           '': '',
           '': '',

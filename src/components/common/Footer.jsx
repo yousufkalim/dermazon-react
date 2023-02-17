@@ -50,7 +50,7 @@ export default function Footer() {
             </ul>
           </div>
           <div className="footer_middle_outer">
-            <p className="social_media">Follow us on social media</p>
+            <p className="social_media">{t('Follow us on social media')}</p>
             <div className="footer_middle">
               <div className="footer-icons">
                 {/* <img src={FacebookIcon} alt="logo" /> */}
