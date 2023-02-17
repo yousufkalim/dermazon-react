@@ -21,7 +21,7 @@ import SingleService5 from '../../../assets/home/SingleService5.svg';
 import BuyALaser from '../../../assets/home/BuyALaser.svg';
 import SellALaser from '../../../assets/home/SellALaser.svg';
 
-export default function Index() {
+export default function Index({ setFlag }) {
   const { t } = useTranslation();
 
   return (
@@ -52,6 +52,7 @@ export default function Index() {
         )}
         image={BuyALaser}
         Path="/buy-laser"
+        setFlag={setFlag}
       />
       <SingleService
         sectionId="SellYourLaser"
@@ -65,6 +66,7 @@ export default function Index() {
           'The process of selling your used medical laser is very easy. Fill the form below, and after review of your machine, we will either purpose you a purchase offer within 24 hours or we will list it on our marketplace and actively sell it with our partners and clients.',
         )}
         image={SellALaser}
+        setFlag={setFlag}
       />
       <SingleService
         sectionId="MaintainYourLaser"
@@ -77,6 +79,7 @@ export default function Index() {
           'All medical laser equipment require a periodical preventive maintenance at least once a year, and this to avoid costly breakdowns and to guarantee good clinical functioning. For the moment we offer a laser repair and preventive maintenance with flashlamp change and handpieces refurbishment of certain brands. Do not hesitate to contact us for a quote or for more information',
         )}
         image={SingleService3}
+        setFlag={setFlag}
       />
       <SingleService
         sectionId="RentALaser"
@@ -90,6 +93,7 @@ export default function Index() {
           "Renting an equipment is an ideal step before buying one, it's also a way to avoid committing to an expensive investment without having visibility on your activity of aesthetic medicine. You can rent according to your needs with an option to buy. Contact us for a quote and to know the availability of the technology you are looking for.",
         )}
         image={SingleService4}
+        setFlag={setFlag}
       />
       <SingleService
         sectionId="DeliveryAndMove"
@@ -103,6 +107,7 @@ export default function Index() {
         )}
         image={SingleService5}
         showImage
+        setFlag={setFlag}
       />
     </div>
   );

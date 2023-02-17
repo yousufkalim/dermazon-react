@@ -99,7 +99,7 @@ export default function Header() {
               <Link to="/">{t('Home')}</Link>
             </li>
             <li>
-              <Link to="/buy-laser">{t('Buy A Pre-Owned Laser')}</Link>
+              <Link to="/buy-laser">{t('Buy a pre-owned laser')}</Link>
             </li>
           </ul>
         </div>
