@@ -1,5 +1,5 @@
 .terms {
-  padding-top: 80px;
+  padding-top: 180px;
   padding-bottom: 50px;
 }
 .terms_condition {
@@ -169,7 +169,7 @@
 }
 @media only screen and (max-width: 600px) {
   .terms {
-    padding-top: 100px;
+    padding-top: 150px;
   }
   .terms_title {
     font-size: 20px;

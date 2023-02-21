@@ -15,7 +15,7 @@ i18n
         translations: {
           // header
           'Follow us': 'Follow us',
-          'PRE-OWNED LASERS': 'PRE-OWNED LASERS',
+          'pre-owned-lasers': 'pre-owned-lasers',
           Home: 'Home',
           'Buy A Pre-Owned Laser': 'Buy A Pre-Owned Laser',
           // home
@@ -143,16 +143,23 @@ i18n
           'Please enter your message': 'Please enter your message',
           'Please select a file': 'Please select a file',
           'Thanks For Contacting!': 'Thanks For Contacting!',
-          '': '',
-          '': '',
-          '': '',
+
+          // title
+          'Platform for the purchase and sale of used aesthetic lasers':
+            'Platform for the purchase and sale of used aesthetic lasers',
+
+          // laser component
+          'available at Dermazon France': 'available at Dermazon France',
         },
       },
       fr: {
         translations: {
+          // laser component
+          'available at Dermazon France': 'disponible chez Dermazon France',
+
           // header
           'Follow us': 'Suivez-nous',
-          'PRE-OWNED LASERS': 'Les lasers d’occasion',
+          'pre-owned-lasers': 'Les lasers d’occasion',
           Home: 'Accueil',
           'Buy A Pre-Owned Laser': "Acheter un laser d'occasion",
           // home
@@ -263,24 +270,21 @@ i18n
           'Written on http://legalplace.fr': 'Rédigé sur http://legalplace.fr',
           'Follow us on social media': 'Suivez-nous sur les réseaux sociaux',
           '': '',
-          '': '',
-          '': '',
-          '': '',
-          '': '',
-          '': '',
 
           // toast
-          'Please Enter Your Name': "S'il vous plaît entrez votre nom",
-          'Please enter your company': 'Veuillez entrer votre entreprise',
-          'Please enter your email': 'Veuillez saisir votre e-mail',
-          'Please enter your phone': 'Veuillez entrer votre téléphone',
-          'Please enter your request': 'Veuillez entrer votre demande',
+          'Please Enter Your Name': 'Veuillez saisir votre nom',
+          'Please enter your company': 'Veuillez saisir le nom de votre société',
+          'Please enter your email': 'Veuillez saisir votre adresse e-mail',
+          'Please enter your phone': 'Veuillez saisir votre numéro de téléphone portable',
+          'Please enter your request': 'Veuillez saisir votre message',
           'Please enter your message': 'Veuillez entrer votre message',
           'Please select a file': 'Veuillez sélectionner un fichier',
           'Thanks For Contacting!': "Merci d'avoir contacté !",
           '': '',
-          '': '',
-          '': '',
+
+          // title
+          'Platform for the purchase and sale of used aesthetic lasers':
+            'Plateforme d’achat de vente de lasers médical esthetique d’occasion',
           '': '',
           '': '',
           '': '',
