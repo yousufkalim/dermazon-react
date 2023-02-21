@@ -86,7 +86,7 @@ export default function Header() {
               <img src={logo} alt="logo" />
             </Link>
           </div>
-          <p>{t('PRE-OWNED LASERS')}</p>
+          <p>{t('pre-owned-lasers')}</p>
         </div>
         <div className="menu-icon" onClick={handleShowNavbar} role="presentation">
           <MenuIcon />
@@ -99,7 +99,7 @@ export default function Header() {
               <Link to="/">{t('Home')}</Link>
             </li>
             <li>
-              <Link to="/buy-laser">{t('Buy a pre-owned laser')}</Link>
+              <Link to="/acheter-laser">{t('Buy a pre-owned laser')}</Link>
             </li>
           </ul>
         </div>

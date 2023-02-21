@@ -73,9 +73,7 @@
   font-size: 18px;
   color: #2b2926;
 }
-.footer_email {
-  display: none;
-}
+
 .footer_img {
   display: inline;
 }
@@ -121,17 +119,13 @@
 .footer_img2 {
   margin-left: 50px;
 }
-.footer_top_right {
-  display: flex !important;
-  align-items: center !important;
-}
+
 .footer_span {
   display: flex;
 }
-.footer_email {
-  display: block;
+a {
+  text-decoration: none;
 }
-
 .footer_middle {
   display: flex;
   flex-direction: column;
@@ -144,6 +138,7 @@
 }
 .footer_top_right {
   display: flex;
+  align-items: center;
   justify-content: center;
 }
 .footer_top_center_outer {

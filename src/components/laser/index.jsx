@@ -56,7 +56,7 @@ export default function LaserComponents() {
       {currentCards.map((product) => (
         <LaserItemsCard product={product} />
       ))}
-      <div style={{ display: 'flex', justifyContent: 'center', width: '90%' }}>
+      <div style={{ display: 'flex', justifyContent: 'center' }}>
         <div>
           <Pagination count={numberOfPages} page={currentPage} onChange={handleChangepage} />
         </div>

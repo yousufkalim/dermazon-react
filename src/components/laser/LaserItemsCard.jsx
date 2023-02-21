@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-
+import { useTranslation } from 'react-i18next';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
-import EuroIcon from '@mui/icons-material/Euro';
+// import EuroIcon from '@mui/icons-material/Euro';
 import moment from 'moment';
 import Collapse from '@mui/material/Collapse';
 import ShareIcon from '@mui/icons-material/Share';
@@ -11,7 +11,8 @@ import { mediaUrl } from '../../config';
 
 export default function LaserItemsCard({ product }) {
   const [expanded, setExpanded] = useState(false);
-  const url = 'https://dermazon-dev.falconweb.app/';
+  const { t } = useTranslation();
+  const url = 'https://dermazon-staging.falconweb.app/buy-laser';
   const handleExpandClick = () => {
     setExpanded(!expanded);
   };
@@ -33,10 +34,7 @@ export default function LaserItemsCard({ product }) {
           )}
         </div>
         <div className="items_card_text">
-          <div className="items_card_text_price">
-            {product?.price}&nbsp;
-            <EuroIcon fontSize="small" />
-          </div>
+          <div className="items_card_text_price">{product?.price}&nbsp;</div>
           <div className="items_card_text_heading">
             {product?.name} {product?.brand ? '-' : ''} {product?.brand}
           </div>
@@ -72,7 +70,7 @@ export default function LaserItemsCard({ product }) {
           <EmailShareButton
             url={url}
             target="_blank"
-            subject="Dermazon Product"
+            subject={`${product?.name}  ${product?.brand} ${t('available at Dermazon France')}`}
             body={product?.name}
             quote="Dermazone"
           >

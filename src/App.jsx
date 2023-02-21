@@ -1,5 +1,6 @@
 // Init
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import { ToastContainer, Flip } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -9,6 +10,12 @@ import './css/index.css';
 
 // Component
 function App() {
+  const { t } = useTranslation();
+
+  useEffect(() => {
+    document.title = t('Platform for the purchase and sale of used aesthetic lasers');
+  }, [t]);
+
   return (
     <div className="App">
       {/* toastify Container for Notification */}
