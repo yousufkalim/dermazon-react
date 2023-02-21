@@ -69,9 +69,10 @@ export default function LaserItemsCard({ product }) {
         <div className="items_card_share_icon">
           <EmailShareButton
             url={url}
+            mailto="mailto:no-reply@example.com"
             target="_blank"
             subject={`${product?.name}  ${product?.brand} ${t('available at Dermazon France')}`}
-            body={product?.name}
+            body={`${product?.name}  ${product?.brand} ${t('available at Dermazon France \n')}`}
             quote="Dermazone"
           >
             {/* <MailOutlineIcon round={true} className="socialIcons mail" /> */}
