@@ -11,7 +11,7 @@ export default function LaserComponents() {
   const [searchQuery, setSearchQuery] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
   const [cardsPerPage] = useState(10);
-  const KEYS_TO_FILTERS = ['name'];
+  const KEYS_TO_FILTERS = ['name', 'brand', 'description', 'technical_description'];
   const getProducts = async () => {
     await API('get', '/products')
       .then((res) => {
