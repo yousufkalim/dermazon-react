@@ -86,7 +86,7 @@ export default function Header() {
               <img src={logo} alt="logo" />
             </Link>
           </div>
-          <p>{t('pre-owned-lasers')}</p>
+          <p>{t('Pre-owned-lasers')}</p>
         </div>
         <div className="menu-icon" onClick={handleShowNavbar} role="presentation">
           <MenuIcon />

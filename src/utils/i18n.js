@@ -15,7 +15,7 @@ i18n
         translations: {
           // header
           'Follow us': 'Follow us',
-          'pre-owned-lasers': 'pre-owned-lasers',
+          'Pre-owned-lasers': 'Pre-owned-lasers',
           Home: 'Home',
           'Buy A Pre-Owned Laser': 'Buy A Pre-Owned Laser',
           // home
@@ -159,7 +159,7 @@ i18n
 
           // header
           'Follow us': 'Suivez-nous',
-          'pre-owned-lasers': 'Les lasers d’occasion',
+          'Pre-owned-lasers': 'Les lasers d’occasion',
           Home: 'Accueil',
           'Buy A Pre-Owned Laser': "Acheter un laser d'occasion",
           // home
@@ -277,7 +277,7 @@ i18n
           'Please enter your email': 'Veuillez saisir votre adresse e-mail',
           'Please enter your phone': 'Veuillez saisir votre numéro de téléphone portable',
           'Please enter your request': 'Veuillez saisir votre message',
-          'Please enter your message': 'Veuillez entrer votre message',
+          'Please enter your message': 'Veuillez saisir votre message',
           'Please select a file': 'Veuillez sélectionner un fichier',
           'Thanks For Contacting!': "Merci d'avoir contacté !",
           '': '',
