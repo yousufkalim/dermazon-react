@@ -51,7 +51,7 @@
   margin: 0;
   padding: 0;
   position: relative;
-  /* background-color: #6a6a6a; */
+  background-color: #6a6a6a;
 }
 .product_img {
   width: 100%;
@@ -392,9 +392,8 @@ a {
     word-wrap: break-word;
   }
   .vendu {
-    left: 20%;
     top: 40%;
-    width: 90%;
+    width: 100%;
     position: absolute;
     font-family: 'Poppins';
     font-style: normal;
@@ -411,9 +410,9 @@ a {
     padding: 10px;
     gap: 10px;
     position: absolute;
-    width: 183px;
+
     height: 70px;
-    left: calc(50% - 183px / 2);
+
     top: calc(50% - 80px / 2 + 0.5px);
 
     background: rgba(254, 0, 0, 0.1);
