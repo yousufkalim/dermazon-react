@@ -11,7 +11,8 @@ import { mediaUrl } from '../../config';
 
 export default function LaserItemsCard({ product }) {
   const [expanded, setExpanded] = useState(false);
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const { language } = i18n;
   const url = 'https://dermazon-staging.falconweb.app/buy-laser';
   const handleExpandClick = () => {
     setExpanded(!expanded);
@@ -38,8 +39,10 @@ export default function LaserItemsCard({ product }) {
           <div className="items_card_text_heading">
             {product?.name} {product?.brand ? '-' : ''} {product?.brand}
           </div>
-
-          <div className="items_card_text_description">{product?.description}</div>
+          {console.log(product, language)}
+          <div className="items_card_text_description">
+            {language === 'fr' ? product?.frenchDescription : product?.description}
+          </div>
 
           <div className="items_card_text_date">
             <div>
@@ -51,9 +54,12 @@ export default function LaserItemsCard({ product }) {
           <Collapse in={expanded} timeout="auto" unmountOnExit className="laser_collapse">
             <div className="items_card_description">
               <div>
-                {product?.technical_description
+                {language === 'fr'
+                  ? product?.frenchTechnicalDescription
+                  : product?.technical_description}
+                {/* {product?.technical_description
                   ? product?.technical_description
-                  : '2020 handpiece Perfect condition BTL emtone with afordable price 2020 handpiece Perfect condition BTL emtone with afordable price'}
+                  : '2020 handpiece Perfect condition BTL emtone with afordable price 2020 handpiece Perfect condition BTL emtone with afordable price'} */}
               </div>
 
               {/* <div className="items_card_Year">
