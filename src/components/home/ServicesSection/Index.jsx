@@ -51,7 +51,7 @@ export default function Index({ setFlag }) {
           'We sell high quality and brand premium pre-owned laser, they are checked and revised by independent and experienced service engineers. Find the right laser with us and save 50% on average compared to new.',
         )}
         image={BuyALaser}
-        Path="/buy-laser"
+        Path="/acheter-laser"
         setFlag={setFlag}
       />
       <SingleService
