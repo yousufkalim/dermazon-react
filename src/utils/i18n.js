@@ -177,7 +177,7 @@ i18n
           'Sell Your Laser': 'Vendez votre laser',
           'The process of selling your used medical laser is very easy. Fill the form below, and after review of your machine, we will either purpose you a purchase offer within 24 hours or we will list it on our marketplace and actively sell it with our partners and clients.':
             'Le processus de vente de votre laser est très simple. Remplissez le formulaire ci-dessous, et après examen de votre machine, nous allons soit vous proposer une offre d’achat dans les 24 heure, soit nous publierons une annonce sur notre plateforme et la proposerons à nos différents partenaires et clients.',
-          'Contact us': 'Contactez-nous',
+          'Contact us': 'Prenons contact',
           'Maintain Your Laser': 'Entretien et réparation de votre laser',
           'All medical laser equipment require a periodical preventive maintenance at least once a year, and this to avoid costly breakdowns and to guarantee good clinical functioning. For the moment we offer a laser repair and preventive maintenance with flashlamp change and handpieces refurbishment of certain brands. Do not hesitate to contact us for a quote or for more information':
             'Tout laser médical nécessite une maintenance préventive périodique au moins une fois par an, ceci pour garantir le bon fonctionnement clinique et éviter des pannes couteuses. Pour le moment nous proposons un service de réparation et révision des lasers avec changement de lampe flash et reconditionnement de pièces à main de certaines marques. Contactez nous pour un devis ou pour plus d’informations.',
