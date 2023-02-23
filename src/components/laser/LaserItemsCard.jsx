@@ -78,7 +78,7 @@ export default function LaserItemsCard({ product }) {
             mailto="mailto:no-reply@example.com"
             target="_blank"
             subject={`${product?.name}  ${product?.brand} ${t('available at Dermazon France')}`}
-            body={`${product?.name}  ${product?.brand} ${t('available at Dermazon France \n')}`}
+            body={`${product?.name}  ${product?.brand} ${t('available at Dermazon France')}`}
             quote="Dermazone"
           >
             {/* <MailOutlineIcon round={true} className="socialIcons mail" /> */}
