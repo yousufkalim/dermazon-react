@@ -15,7 +15,7 @@ i18n
         translations: {
           // header
           'Follow us': 'Follow us',
-          'Pre-owned-lasers': 'Pre-owned-lasers',
+          'Pre-owned-lasers': 'Pre-owned lasers',
           Home: 'Home',
           'Buy A Pre-Owned Laser': 'Buy A Pre-Owned Laser',
           // home
@@ -61,8 +61,8 @@ i18n
           'Your Message': 'Your Message',
           'Legal Notice': 'Legal Notice',
           'Your Request': 'Your Request',
-          'DERMAZON LASER': 'DERMAZON LASER',
-          'All Rights Reserved.': 'All Rights Reserved.',
+          'DERMAZON LASER': 'DERMAZON, pre-owned lasers',
+          'All Rights Reserved.': 'all right reserved.',
           // Buy Ad Laser
           'We are also laser hunters, you are looking for a particular laser which is not in the below list, get in touch with us and we will find it for you.':
             'We are also laser hunters, you are looking for a particular laser which is not in the below list, get in touch with us and we will find it for you.',
@@ -176,7 +176,7 @@ i18n
           'Buy A Laser': 'Acheter un laser',
           'Sell Your Laser': 'Vendez votre laser',
           'The process of selling your used medical laser is very easy. Fill the form below, and after review of your machine, we will either purpose you a purchase offer within 24 hours or we will list it on our marketplace and actively sell it with our partners and clients.':
-            'Le processus de vente de votre laser est très simple. Remplissez le formulaire ci-dessous, et après examen de votre machine, nous allons soit vous proposer une offre d’achat dans les 24 heure, soit nous publierons une annonce sur notre plateforme et la proposerons à nos différents partenaires et clients.',
+            'Le processus de vente de votre laser est très simple. Remplissez le formulaire ci-dessous, et après examen de votre machine, nous allons soit vous proposer une offre d’achat dans les 24 heures, soit nous publierons une annonce sur notre plateforme et la proposerons à nos différents partenaires et clients.',
           'Contact us': 'Prenons contact',
           'Maintain Your Laser': 'Entretien et réparation de votre laser',
           'All medical laser equipment require a periodical preventive maintenance at least once a year, and this to avoid costly breakdowns and to guarantee good clinical functioning. For the moment we offer a laser repair and preventive maintenance with flashlamp change and handpieces refurbishment of certain brands. Do not hesitate to contact us for a quote or for more information':
@@ -204,8 +204,8 @@ i18n
           'Add attachment': 'Ajoutez une pièce jointe',
           Send: 'Envoyer',
           'Legal Notice': 'Mentions légales',
-          'DERMAZON LASER': 'LASER DERMAZON',
-          'All Rights Reserved.': 'Tous les droits sont réservés.',
+          'DERMAZON LASER': 'DERMAZON, les lasers d’occasion',
+          'All Rights Reserved.': 'Tous droits réservés.',
           // Buy Ad Laser
           'We are also laser hunters, you are looking for a particular laser which is not in the below list, get in touch with us and we will find it for you.':
             'Nous sommes également des chasseurs de laser, vous recherchez un laser en particulier qui ne figure pas dans la liste ci-dessous, contactez-nous et nous le trouverons pour vous.',

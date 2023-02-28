@@ -39,7 +39,7 @@ export default function LaserItemsCard({ product }) {
           <div className="items_card_text_heading">
             {product?.name} {product?.brand ? '-' : ''} {product?.brand}
           </div>
-          {console.log(product, language)}
+          {/* {console.log(product, language)} */}
           <div className="items_card_text_description">
             {language === 'fr' ? product?.frenchDescription : product?.description}
           </div>
