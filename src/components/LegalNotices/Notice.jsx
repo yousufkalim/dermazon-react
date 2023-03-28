@@ -23,14 +23,15 @@ const textShow = [
     ans6: 'Intra-community VAT number: 123456789',
     ans7: 'The Director of publication is Mr. RAZZAQ Burhan',
     ans8: 'below the',
-    boldText: 'Editor.',
+    boldText: 'Editor',
   },
   {
     id: 2,
     quiz: 'ARTICLE 2 - THE HOST',
-    ans: 'The host of the Site is the company OVH Cloud, whose head office is located at the registered company',
-    ans2: 'at the Lille RCS under number 537 407 926 located at 2, rue Kellermann, 59100 Roubaix. ,before',
-    boldText: 'and the telephone number: 0972101007 + contact email address',
+    // ans: 'The host of the Site is the company OVH Cloud, whose head office is located at the registered company',
+    // ans2: 'at the Lille RCS under number 537 407 926 located at 2, rue Kellermann, 59100 Roubaix. ,before',
+    ans3: 'The Site host is Ovhcloud, whose head office is located at 2 rue Kellermann – BP 80157 59053 ROUBAIX CEDEX 1, with the telephone number: 1007',
+    // boldText: 'and the telephone number: 0972101007 + contact email address',
   },
   {
     id: 3,
@@ -44,6 +45,7 @@ const textShow = [
     ans: 'The Site provides the User with the collection and processing of personal information with respect for privacy in accordance with Law No. 78-17 of January 6, 1978 relating to data processing, files and freedoms. 1 Under the Data Protection Act, dated January 6, 1978, the User has a right to access, rectify, delete and oppose his personal data. The User exercises this right: via a contact form',
     ans2: "Any use, reproduction, distribution, marketing, modification of all or part of the Site, without the Publisher's authorization is prohibited and may result in legal action and prosecution as provided for in particular by the Intellectual Property Code and the Civil Code.",
     ans3: 'Written on http://legalplace.fr',
+    ans4: 'Any use, reproduction, distribution, marketing, modification of all or part of the Site, without authorization of the Publisher is prohibited and may result in legal action and prosecution as provided for in particular by the Intellectual Property Code and the Civil Code.',
   },
 ];
 
@@ -78,9 +80,9 @@ function Notice() {
                   {t(
                     'In accordance with the provisions of Articles 6-III and 19 of Law No. 2004-575 of June 21, 2004 on Confidence in the digital economy, known as LCEN, it is brought to the attention of users and visitors, hereinafter the',
                   )}
-                  ""<b>{t('User')}</b>", {t('of the site https://dermazon.fr, hereinafter the')}"
-                  <b>{t('Site')}</b>", {t('these legal notices.')}
+                  .
                 </p>
+
                 <p className="notices_p">
                   {t(
                     'The connection and navigation on the Site by the User implies full and unreserved acceptance of these legal notices.',
