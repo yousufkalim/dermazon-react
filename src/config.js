@@ -10,9 +10,9 @@ if (window.location.host === 'dermazon-dev.falconweb.app') {
 } else if (window.location.host === 'dermazon-staging.falconweb.app') {
   baseUrl = 'https://dermazon-api-staging.falconweb.app/api';
   mediaUrl = 'https://dermazon-api-staging.falconweb.app';
-} else if (window.location.host === 'dermazon-prod.falconweb.app/') {
-  baseUrl = 'https://dermazon-api-prod.falconweb.app/api';
-  mediaUrl = 'https://dermazon-api-prod.falconweb.app';
+} else if (window.location.host === 'dermazon.fr') {
+  baseUrl = 'https://api.dermazon.fr/api';
+  mediaUrl = 'https://api.dermazon.fr';
 }
 
 module.exports = { baseUrl, mediaUrl };
