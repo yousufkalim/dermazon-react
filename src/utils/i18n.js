@@ -100,12 +100,14 @@ i18n
 
           'Phone number 0695120333': 'Phone number 0695120333',
           'Email address: contact@dermazon.fr': 'Email address: contact@dermazon.fr',
-          'Intra-community VAT number: 123456789': 'Intra-community VAT number: 123456789',
+          'Intra-community VAT number: 123456789': 'Intra-community VAT number: FR04948720396',
           'The Director of publication is Mr. RAZZAQ Burhan':
             'The Director of publication is Mr. RAZZAQ Burhan',
           'below the': 'below the',
           Editor: 'Editor',
           'ARTICLE 2 - THE HOST': 'ARTICLE 2 - THE HOST',
+          'The Site host is Ovhcloud, whose head office is located at 2 rue Kellermann – BP 80157 59053 ROUBAIX CEDEX 1, with the telephone number: 1007':
+            'The Site host is Ovhcloud, whose head office is located at 2 rue Kellermann – BP 80157 59053 ROUBAIX CEDEX 1, with the telephone number: 1007',
           'The host of the Site is the company OVH Cloud, whose head office is located at the registered company':
             'The host of the Site is the company OVH Cloud, whose head office is located at the registered company',
           'at the Lille RCS under number 537 407 926 located at 2, rue Kellermann, 59100 Roubaix. ,before':
@@ -124,6 +126,8 @@ i18n
           "Any use, reproduction, distribution, marketing, modification of all or part of the Site, without the Publisher's authorization is prohibited and may result in legal action and prosecution as provided for in particular by the Intellectual Property Code and the Civil Code.":
             "Any use, reproduction, distribution, marketing, modification of all or part of the Site, without the Publisher's authorization is prohibited and may result in legal action and prosecution as provided for in particular by the Intellectual Property Code and the Civil Code.",
           'Written on http://legalplace.fr': 'Written on http://legalplace.fr',
+          'Any use, reproduction, distribution, marketing, modification of all or part of the Site, without authorization of the Publisher is prohibited and may result in legal action and prosecution as provided for in particular by the Intellectual Property Code and the Civil Code.':
+            'Any use, reproduction, distribution, marketing, modification of all or part of the Site, without authorization of the Publisher is prohibited and may result in legal action and prosecution as provided for in particular by the Intellectual Property Code and the Civil Code.',
           'Follow us on social media': 'Follow us on social media',
           '': '',
           '': '',
@@ -219,7 +223,7 @@ i18n
           'Legal Notice': 'Mentions légales',
           'Effective as of 03/02/2023': 'En vigueur au 03/02/2023',
           'In accordance with the provisions of Articles 6-III and 19 of Law No. 2004-575 of June 21, 2004 on Confidence in the digital economy, known as LCEN, it is brought to the attention of users and visitors, hereinafter the':
-            'Conformément aux dispositions des Articles 6-III et 19 de la Loi n°2004-575 du 21 juin 2004 pour la Confiance dans l’économie numérique, dite L.C.E.N., il est porté à la connaissance des utilisateurs et visiteurs, ci-après l',
+            'Conformément aux dispositions des Articles 6-III et 19 de la Loi n°2004-575 du 21 juin 2004 pour la Confiance dans l’économie numérique, dite L.C.E.N., il est porté à la connaissance des utilisateurs et visiteurs, ci-après l""Utilisateur", du site https://dermazon.fr , ci-après le "Site", les présentes mentions légales',
 
           User: 'Utilisateur',
           'of the site https://dermazon.fr, hereinafter the':
@@ -244,12 +248,15 @@ i18n
 
           'Phone number 0695120333': 'Numéro de téléphone 0695120333',
           'Email address: contact@dermazon.fr': 'Adresse e-mail : contact@dermazon.fr',
-          'Intra-community VAT number: 123456789': 'N° de TVA intracommunautaire : 123456789',
+          'Intra-community VAT number: 123456789': 'N° de TVA intracommunautaire : FR04948720396',
           'The Director of publication is Mr. RAZZAQ Burhan':
             'Le Directeur de la publication est M RAZZAQ Burhan',
           'below the': 'ci-après l',
           Editor: 'Editeur',
           'ARTICLE 2 - THE HOST': "ARTICLE 2 - L'HEBERGEUR",
+          'The Site host is Ovhcloud, whose head office is located at 2 rue Kellermann – BP 80157 59053 ROUBAIX CEDEX 1, with the telephone number: 1007':
+            "L'hébergeur du Site est la société Ovhcloud, dont le siège social est situé au 2 rue Kellermann – BP 80157 59053  ROUBAIX CEDEX 1 , avec le numéro de téléphone : 1007",
+
           'The host of the Site is the company OVH Cloud, whose head office is located at the registered company':
             "L'hébergeur du Site est la société OVH Cloud, dont le siège social est situé au société immatriculée",
           'at the Lille RCS under number 537 407 926 located at 2, rue Kellermann, 59100 Roubaix. ,before':
@@ -259,15 +266,17 @@ i18n
             'ec le numéro de téléphone : 0972101007 + adresse mail de contact',
           'ARTICLE 3 - ACCESS TO THE SITE': 'ARTICLE 3 - ACCES AU SITE',
           'The Site is accessible anywhere, 7 days a week, 24 hours a day, except in cases of force majeure, scheduled or unscheduled interruption and possibly resulting from a need for maintenance.':
-            'Le Site est accessible en tout endroit, 7 jours par semaine, 24 heures par jour, interruption programmée ou non et pouvant découlant d’une nécessité de maintenance',
+            'Le Site est accessible en tout endroit, 7j/7, 24h/24 sauf cas de force majeure, interruption programmée ou non et pouvant découlant d’une nécessité de maintenance.',
           'In the event of modification, interruption or suspension of the Site, the Publisher cannot be held responsible.':
             "En cas de modification, interruption ou suspension du Site, l'Editeur ne saurait être tenu responsable.",
           'ARTICLE 4 - DATA COLLECTION': 'ARTICLE 4 - COLLECTE DES DONNEES',
           'The Site provides the User with the collection and processing of personal information with respect for privacy in accordance with Law No. 78-17 of January 6, 1978 relating to data processing, files and freedoms. 1 Under the Data Protection Act, dated January 6, 1978, the User has a right to access, rectify, delete and oppose his personal data. The User exercises this right: via a contact form':
-            "Le Site assure à l'Utilisateur une collecte et un traitement d'informations personnelles dans le respect de la vie privée conformément à la loi n°78-17 du 6 janvier 1978 relative à l'informatique, aux fichiers et aux libertés. 1 En vertu de la loi Informatique et Libertés, en date du 6 janvier 1978, l'Utilisateur dispose d'un droit d'accès, de rectification, de suppression et d'opposition de ses données   personnelles. L'Utilisateur exerce ce droit : · via un formulaire de contact",
+            "Le Site assure à l'Utilisateur une collecte et un traitement d'informations personnelles dans le respect de la vie privée conformément à la loi n°78-17 du 6 janvier 1978 relative à l'informatique, aux fichiers et aux libertés. ",
           "Any use, reproduction, distribution, marketing, modification of all or part of the Site, without the Publisher's authorization is prohibited and may result in legal action and prosecution as provided for in particular by the Intellectual Property Code and the Civil Code.":
+            "En vertu de la loi Informatique et Libertés, en date du 6 janvier 1978, l'Utilisateur dispose d'un droit d'accès, de rectification, de suppression et d'opposition de ses données personnelles. L'Utilisateur exerce ce droit : ",
+          'Written on http://legalplace.fr': 'via un formulaire de contact ;',
+          'Any use, reproduction, distribution, marketing, modification of all or part of the Site, without authorization of the Publisher is prohibited and may result in legal action and prosecution as provided for in particular by the Intellectual Property Code and the Civil Code.':
             'Toute utilisation, reproduction, diffusion, commercialisation, modification de toute ou partie du Site, sans autorisation de l’Editeur est prohibée et pourra entraînée des actions et poursuites judiciaires telles que notamment prévues par le Code de la propriété intellectuelle et le Code civil.',
-          'Written on http://legalplace.fr': 'Rédigé sur http://legalplace.fr',
           'Follow us on social media': 'Suivez-nous sur les réseaux sociaux',
           '': '',
 
