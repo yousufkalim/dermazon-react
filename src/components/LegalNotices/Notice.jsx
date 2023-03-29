@@ -22,7 +22,7 @@ const textShow = [
     ans4: 'Phone number 0695120333',
     ans5: 'Email address: contact@dermazon.fr',
     ans6: 'Intra-community VAT number: 123456789',
-    ans7: 'The Director of publication is Mr. RAZZAQ Burhan',
+    ans7: 'The Director of publication is RAZZAQ Burhan',
     ans8: 'below the',
     boldText: 'Editor',
   },
@@ -70,7 +70,7 @@ function Notice() {
             <img src={TermsIcon} alt="" className="terms_icon" />
             <p className="terms_title">
               {t('Legal Notice')}
-              <p className="Notices_title_p">{t('Effective as of 03/02/2023')}</p>
+              <p className="Notices_title_p">{t('Effective as of 26-01-2023')}</p>
             </p>
           </div>
           <div className="terms_definition">

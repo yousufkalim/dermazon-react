@@ -75,6 +75,7 @@ i18n
 
           'Legal Notice': 'Legal Notice',
           'Effective as of 03/02/2023': 'Effective as of 03/02/2023',
+          'Effective as of 26-01-2023': 'Effective as of 26-01-2023',
           'In accordance with the provisions of Articles 6-III and 19 of Law No. 2004-575 of June 21, 2004 on Confidence in the digital economy, known as LCEN, it is brought to the attention of users and visitors, hereinafter the':
             'In accordance with the provisions of Articles 6-III and 19 of Law No. 2004-575 of June 21, 2004 on Confidence in the digital economy, known as LCEN, it is brought to the attention of users and visitors, hereinafter the',
 
@@ -101,8 +102,8 @@ i18n
           'Phone number 0695120333': 'Phone number 0695120333',
           'Email address: contact@dermazon.fr': 'Email address: contact@dermazon.fr',
           'Intra-community VAT number: 123456789': 'Intra-community VAT number: FR04948720396',
-          'The Director of publication is Mr. RAZZAQ Burhan':
-            'The Director of publication is Mr. RAZZAQ Burhan',
+          'The Director of publication is RAZZAQ Burhan':
+            'The Director of publication is RAZZAQ Burhan',
           'below the': 'below the',
           Editor: 'Editor',
           'The edition of the Site is provided by DERMAZON (simplified joint-stock company with a single partner) with a capital of 5000 euros, registered in the Trade and Companies Register of Meaux B 948 720 396, under number 948720396 whose head office is located at 11 rue du bois de paris 77700 Chessy.':
@@ -225,6 +226,7 @@ i18n
           // Legal Notice
           'Legal Notice': 'Mentions légales',
           'Effective as of 03/02/2023': 'En vigueur au 03/02/2023',
+          'Effective as of 26-01-2023': 'En vigueur au  26-01-2023',
           'In accordance with the provisions of Articles 6-III and 19 of Law No. 2004-575 of June 21, 2004 on Confidence in the digital economy, known as LCEN, it is brought to the attention of users and visitors, hereinafter the':
             'Conformément aux dispositions des Articles 6-III et 19 de la Loi n°2004-575 du 21 juin 2004 pour la Confiance dans l’économie numérique, dite L.C.E.N., il est porté à la connaissance des utilisateurs et visiteurs, ci-après l""Utilisateur", du site https://dermazon.fr , ci-après le "Site", les présentes mentions légales',
 
@@ -252,8 +254,8 @@ i18n
           'Phone number 0695120333': 'Numéro de téléphone 0695120333',
           'Email address: contact@dermazon.fr': 'Adresse e-mail : contact@dermazon.fr',
           'Intra-community VAT number: 123456789': 'N° de TVA intracommunautaire : FR04948720396',
-          'The Director of publication is Mr. RAZZAQ Burhan':
-            'Le Directeur de la publication est M RAZZAQ Burhan',
+          'The Director of publication is RAZZAQ Burhan':
+            'Le Directeur de la publication est RAZZAQ Burhan',
           'below the': 'ci-après l',
           Editor: 'Editeur',
           'ARTICLE 2 - THE HOST': "ARTICLE 2 - L'HEBERGEUR",
