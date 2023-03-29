@@ -294,7 +294,7 @@ i18n
           'Please enter your request': 'Veuillez saisir votre message',
           'Please enter your message': 'Veuillez saisir votre message',
           'Please select a file': 'Veuillez sélectionner un fichier',
-          'Thanks For Contacting!': 'Merci de nous avoir contacté !',
+          'Thanks For Contacting!': 'Merci de nous avoir contacté!',
           '': '',
 
           // title
