@@ -13,7 +13,7 @@ export default function LaserItemsCard({ product }) {
   const [expanded, setExpanded] = useState(false);
   const { t, i18n } = useTranslation();
   const { language } = i18n;
-  const url = 'https://dermazon.fr/';
+  const url = 'https://dermazon.fr/acheter-laser';
   const handleExpandClick = () => {
     setExpanded(!expanded);
   };
@@ -39,7 +39,6 @@ export default function LaserItemsCard({ product }) {
           <div className="items_card_text_heading">
             {product?.name} {product?.brand ? '-' : ''} {product?.brand}
           </div>
-          {/* {console.log(product, language)} */}
           <div className="items_card_text_description">
             {language === 'fr' ? product?.frenchDescription : product?.description}
           </div>
