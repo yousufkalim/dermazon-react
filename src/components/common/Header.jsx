@@ -17,6 +17,7 @@ import icons8linkedin from '../../assets/home/icons8-linkedin.svg';
 export default function Header() {
   const [showBtn, setShowBtn] = useState(false);
   const { i18n, t } = useTranslation();
+  const { language } = i18n;
   const [showNavbar, setShowNavbar] = useState(false);
   const handleShowNavbar = () => {
     setShowNavbar(!showNavbar);
@@ -103,7 +104,7 @@ export default function Header() {
             </li>
           </ul>
         </div>
-        {showBtn ? (
+        {language === 'en' ? (
           <button className="trans_btn" type="button" onClick={() => changeLanguage('fr')}>
             <img src={FrFlag} alt="Flag" />
             FR

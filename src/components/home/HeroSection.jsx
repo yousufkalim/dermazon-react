@@ -12,7 +12,6 @@ import heroSectionImg from '../../assets/home/MainHeroSectionImg.png';
 
 export default function HeroSection() {
   const { t } = useTranslation();
-
   const scr = window.innerWidth;
   return (
     <div className="home_main">
