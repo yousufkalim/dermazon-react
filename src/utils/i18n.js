@@ -105,6 +105,8 @@ i18n
             'The Director of publication is Mr. RAZZAQ Burhan',
           'below the': 'below the',
           Editor: 'Editor',
+          'The edition of the Site is provided by DERMAZON (simplified joint-stock company with a single partner) with a capital of 5000 euros, registered in the Trade and Companies Register of Meaux B 948 720 396, under number 948720396 whose head office is located at 11 rue du bois de paris 77700 Chessy.':
+            'The edition of the Site is provided by DERMAZON (simplified joint-stock company with a single partner) with a capital of 5000 euros, registered in the Trade and Companies Register of Meaux B 948 720 396, under number 948720396 whose head office is located at 11 rue du bois de paris 77700 Chessy.',
           'ARTICLE 2 - THE HOST': 'ARTICLE 2 - THE HOST',
           'The Site host is Ovhcloud, whose head office is located at 2 rue Kellermann – BP 80157 59053 ROUBAIX CEDEX 1, with the telephone number: 1007':
             'The Site host is Ovhcloud, whose head office is located at 2 rue Kellermann – BP 80157 59053 ROUBAIX CEDEX 1, with the telephone number: 1007',
@@ -256,6 +258,8 @@ i18n
           'ARTICLE 2 - THE HOST': "ARTICLE 2 - L'HEBERGEUR",
           'The Site host is Ovhcloud, whose head office is located at 2 rue Kellermann – BP 80157 59053 ROUBAIX CEDEX 1, with the telephone number: 1007':
             "L'hébergeur du Site est la société Ovhcloud, dont le siège social est situé au 2 rue Kellermann – BP 80157 59053  ROUBAIX CEDEX 1 , avec le numéro de téléphone : 1007",
+          'The edition of the Site is provided by DERMAZON (simplified joint-stock company with a single partner) with a capital of 5000 euros, registered in the Trade and Companies Register of Meaux B 948 720 396, under number 948720396 whose head office is located at 11 rue du bois de paris 77700 Chessy.':
+            "L'édition du Site est assurée par DERMAZON (Société par actions simplifiée à associé unique) au capital de 5000 euros, immatriculée au Registre du Commerce et des Sociétés de Meaux B 948 720 396, sous le numéro 948720396 dont le siège social est situé au 11 rue du bois de paris 77700 Chessy.",
 
           'The host of the Site is the company OVH Cloud, whose head office is located at the registered company':
             "L'hébergeur du Site est la société OVH Cloud, dont le siège social est situé au société immatriculée",

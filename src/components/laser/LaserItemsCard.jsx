@@ -13,7 +13,7 @@ export default function LaserItemsCard({ product }) {
   const [expanded, setExpanded] = useState(false);
   const { t, i18n } = useTranslation();
   const { language } = i18n;
-  const url = 'https://dermazon-staging.falconweb.app/acheter-laser';
+  const url = 'https://dermazon.fr/';
   const handleExpandClick = () => {
     setExpanded(!expanded);
   };
