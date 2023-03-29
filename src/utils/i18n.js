@@ -106,6 +106,8 @@ i18n
             'The Director of publication is RAZZAQ Burhan',
           'below the': 'below the',
           Editor: 'Editor',
+          'The Director of publication is RAZZAQ Burhan hereinafter | the Publisher.':
+            'The Director of publication is RAZZAQ Burhan hereinafter | the Publisher.',
           'The edition of the Site is provided by DERMAZON (simplified joint-stock company with a single partner) with a capital of 5000 euros, registered in the Trade and Companies Register of Meaux B 948 720 396, under number 948720396 whose head office is located at 11 rue du bois de paris 77700 Chessy.':
             'The edition of the Site is provided by DERMAZON (simplified joint-stock company with a single partner) with a capital of 5000 euros, registered in the Trade and Companies Register of Meaux B 948 720 396, under number 948720396 whose head office is located at 11 rue du bois de paris 77700 Chessy.',
           'ARTICLE 2 - THE HOST': 'ARTICLE 2 - THE HOST',
@@ -258,6 +260,8 @@ i18n
             'Le Directeur de la publication est RAZZAQ Burhan',
           'below the': 'ci-après l',
           Editor: 'Editeur',
+          'The Director of publication is RAZZAQ Burhan hereinafter | the Publisher.':
+            "Le Directeur de la publication est RAZZAQ Burhan ci-après |'Editeur.",
           'ARTICLE 2 - THE HOST': "ARTICLE 2 - L'HEBERGEUR",
           'The Site host is Ovhcloud, whose head office is located at 2 rue Kellermann – BP 80157 59053 ROUBAIX CEDEX 1, with the telephone number: 1007':
             "L'hébergeur du Site est la société Ovhcloud, dont le siège social est situé au 2 rue Kellermann – BP 80157 59053  ROUBAIX CEDEX 1 , avec le numéro de téléphone : 1007",

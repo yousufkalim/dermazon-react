@@ -22,9 +22,10 @@ const textShow = [
     ans4: 'Phone number 0695120333',
     ans5: 'Email address: contact@dermazon.fr',
     ans6: 'Intra-community VAT number: 123456789',
-    ans7: 'The Director of publication is RAZZAQ Burhan',
-    ans8: 'below the',
-    boldText: 'Editor',
+    // ans7: 'The Director of publication is RAZZAQ Burhan',
+    // ans8: 'below the',
+    ans8: 'The Director of publication is RAZZAQ Burhan hereinafter | the Publisher.',
+    // boldText: 'Editor',
   },
   {
     id: 2,
