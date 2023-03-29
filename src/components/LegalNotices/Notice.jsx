@@ -14,7 +14,7 @@ import TermsText from '../Terms/TermsText';
 const textShow = [
   {
     id: 1,
-    quiz: 'ARTICLE 1 - THE EDITOR',
+    quiz: 'ARTICLE 1- THE EDITOR',
     // ans: 'The edition of the Site is provided by DERMAZON (SASU) with a capital of 5000 euros, registered in the',
     // ans2: 'Trade and Companies Register of 123456789 under the number 123456789 whose head office',
     // ans3: 'is located at 11 RUE DU BOIS DE PARIS 77700 CHESSY',
@@ -22,7 +22,7 @@ const textShow = [
     ans4: 'Phone number 0695120333',
     ans5: 'Email address: contact@dermazon.fr',
     ans6: 'Intra-community VAT number: 123456789',
-    ans7: 'The Director of publication is Mr. RAZZAQ Burhan',
+    ans7: 'The Director of publication is RAZZAQ Burhan',
     ans8: 'below the',
     boldText: 'Editor',
   },
@@ -70,7 +70,7 @@ function Notice() {
             <img src={TermsIcon} alt="" className="terms_icon" />
             <p className="terms_title">
               {t('Legal Notice')}
-              <p className="Notices_title_p">{t('Effective as of 03/02/2023')}</p>
+              <p className="Notices_title_p">{t('Effective as of 26-01-2023')}</p>
             </p>
           </div>
           <div className="terms_definition">
