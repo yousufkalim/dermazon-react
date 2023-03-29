@@ -14,7 +14,7 @@ import TermsText from '../Terms/TermsText';
 const textShow = [
   {
     id: 1,
-    quiz: 'ARTICLE 1 - THE EDITOR',
+    quiz: 'ARTICLE 1- THE EDITOR',
     // ans: 'The edition of the Site is provided by DERMAZON (SASU) with a capital of 5000 euros, registered in the',
     // ans2: 'Trade and Companies Register of 123456789 under the number 123456789 whose head office',
     // ans3: 'is located at 11 RUE DU BOIS DE PARIS 77700 CHESSY',
