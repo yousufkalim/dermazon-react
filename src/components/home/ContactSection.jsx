@@ -79,6 +79,7 @@ export default function ContactSection({ flag }) {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (input.name === '') {
       toast.error(t('Please Enter Your Name'));
       return;
@@ -89,6 +90,10 @@ export default function ContactSection({ flag }) {
     }
     if (input.email === '') {
       toast.error(t('Please enter your email'));
+      return;
+    }
+    if (!emailRegex.test(input.email)) {
+      toast.error(t('Please enter a valid email'));
       return;
     }
     if (input.phone === '') {
