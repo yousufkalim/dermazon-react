@@ -20,7 +20,7 @@ const textShow = [
     // ans3: 'is located at 11 RUE DU BOIS DE PARIS 77700 CHESSY',
     ans3: 'The edition of the Site is provided by DERMAZON (simplified joint-stock company with a single partner) with a capital of 5000 euros, registered in the Trade and Companies Register of Meaux B 948 720 396, under number 948720396 whose head office is located at 11 rue du bois de paris 77700 Chessy.',
     ans4: 'Phone number 0695120333',
-    ans5: 'Email address: contact@dermazon.fr.',
+    ans5: 'Email address: contact@dermazon.fr',
     ans6: 'Intra-community VAT number: 123456789',
     ans7: 'The Director of publication is Mr. RAZZAQ Burhan',
     ans8: 'below the',
