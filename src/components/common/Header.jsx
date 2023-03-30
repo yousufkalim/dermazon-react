@@ -18,7 +18,6 @@ export default function Header() {
   const [showBtn, setShowBtn] = useState(false);
   const { i18n, t } = useTranslation();
   const { language } = i18n;
-  console.log('language header', language);
   const [showNavbar, setShowNavbar] = useState(false);
   const handleShowNavbar = () => {
     setShowNavbar(!showNavbar);
