@@ -18,6 +18,7 @@ export default function Header() {
   const [showBtn, setShowBtn] = useState(false);
   const { i18n, t } = useTranslation();
   const { language } = i18n;
+  console.log('language header', language);
   const [showNavbar, setShowNavbar] = useState(false);
   const handleShowNavbar = () => {
     setShowNavbar(!showNavbar);
@@ -104,7 +105,7 @@ export default function Header() {
             </li>
           </ul>
         </div>
-        {language === 'en' ? (
+        {language !== 'fr' ? (
           <button className="trans_btn" type="button" onClick={() => changeLanguage('fr')}>
             <img src={FrFlag} alt="Flag" />
             FR
