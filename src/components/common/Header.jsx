@@ -104,7 +104,7 @@ export default function Header() {
             </li>
           </ul>
         </div>
-        {language === 'en' ? (
+        {language !== 'fr' ? (
           <button className="trans_btn" type="button" onClick={() => changeLanguage('fr')}>
             <img src={FrFlag} alt="Flag" />
             FR
