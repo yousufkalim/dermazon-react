@@ -24,7 +24,7 @@ const textShow = [
     ans6: 'Intra-community VAT number: 123456789',
     // ans7: 'The Director of publication is RAZZAQ Burhan',
     // ans8: 'below the',
-    ans8: 'The Director of publication is RAZZAQ Burhan hereinafter | the Publisher.',
+    ans8: 'The Director of publication is RAZZAQ Burhan hereinafter the Publisher.',
     // boldText: 'Editor',
   },
   {
