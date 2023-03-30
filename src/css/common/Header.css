@@ -311,6 +311,12 @@
     padding: 4% !important;
     width: 50%;
   }
+  .CookieBanner_desp {
+    font-size: 1rem !important;
+  }
+  .CookieBanner_Link {
+    font-size: 1rem !important;
+  }
   .header_top_left {
     width: 0;
   }
