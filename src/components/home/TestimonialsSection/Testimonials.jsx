@@ -3,41 +3,43 @@
 import React, { useState, useEffect } from 'react';
 import { toast } from 'react-toastify';
 import { useTranslation } from 'react-i18next';
-import TestimonialCard from './TestimonialCard';
+// import TestimonialCard from './TestimonialCard';
 import API from '../../../api';
-import ActivArrow from '../../../assets/Union.svg';
-import NonActivearrow from '../../../assets/Union1.svg';
+// import ActivArrow from '../../../assets/Union.svg';
+// import NonActivearrow from '../../../assets/Union1.svg';
 
 // import icons and images
 
 export default function Testimonials() {
   const { t } = useTranslation();
+  console.log(t);
 
   const [testimonials, setTestimonials] = useState([]);
   const [loading, setLoading] = useState(false);
+  console.log(loading, testimonials);
 
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const [arrowstate, setarrowstate] = useState(false);
+  // const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  // const [arrowstate, setarrowstate] = useState(false);
 
-  const handleBackwardClick = () => {
-    setarrowstate(true);
+  // const handleBackwardClick = () => {
+  //   setarrowstate(true);
 
-    setCurrentImageIndex(
-      currentImageIndex === 0 && testimonials && testimonials.length > 0
-        ? testimonials.length - 1
-        : currentImageIndex - 1,
-    );
-  };
+  //   setCurrentImageIndex(
+  //     currentImageIndex === 0 && testimonials && testimonials.length > 0
+  //       ? testimonials.length - 1
+  //       : currentImageIndex - 1,
+  //   );
+  // };
 
-  const handleForwardClick = () => {
-    setarrowstate(false);
+  // const handleForwardClick = () => {
+  //   setarrowstate(false);
 
-    setCurrentImageIndex(
-      currentImageIndex === (testimonials && testimonials.length - 1) || testimonials?.length === 0
-        ? 0
-        : currentImageIndex + 1,
-    );
-  };
+  //   setCurrentImageIndex(
+  //     currentImageIndex === (testimonials && testimonials.length - 1) || testimonials?.length === 0
+  //       ? 0
+  //       : currentImageIndex + 1,
+  //   );
+  // };
 
   const getTestimonial = async () => {
     setLoading(true);
