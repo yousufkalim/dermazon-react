@@ -11,7 +11,7 @@ export default function InputSearch({ handleChange }) {
         <div className="home_btn_div_inner_img">
           <img src={herosearch} alt="Home Search Icon" />
         </div>
-        <input type="text" name="" placeholder={t('Example')} onChange={handleChange} />
+        <input type="text" name="" placeholder="Exemple" onChange={handleChange} />
       </div>
       <button className="home_btn" type="submit">
         {t('Search')}

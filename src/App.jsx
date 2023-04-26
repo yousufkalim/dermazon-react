@@ -8,9 +8,19 @@ import { Link } from 'react-router-dom';
 // Files
 import Index from './routes/index';
 import './css/index.css';
+import i18n from './utils/i18n';
 
 // Component
 function App() {
+
+  useEffect(() => {
+    const { host } = window.location;
+    if (host === 'localhost:3000') {
+      i18n.changeLanguage('fr');
+    } else {
+      i18n.changeLanguage('en');
+    }
+  }, []);
   const { t } = useTranslation();
   const [open, setOpen] = React.useState(true);
 
@@ -32,6 +42,7 @@ function App() {
     localStorage.setItem('open', true);
     setOpen(false);
   };
+
 
   return (
     <div className="App">

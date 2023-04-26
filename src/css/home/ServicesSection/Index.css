@@ -71,6 +71,220 @@
   width: 32%;
   /* background-color: #042b08; */
 }
+.LeftSectionHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  text-align: left;
+  align-items: left;
+  margin: 2% 0% 3% 0%;
+}
+.SectionHeaderDivider {
+  height: 3px;
+  background-color: #42c2ff;
+  border-radius: 4px;
+  margin: 2% 0% !important;
+}
+.SectionHeaderDesp {
+  font-size: 1rem !important;
+  font-weight: 400 !important;
+  opacity: 50%;
+  width: 75%;
+  margin-top: 1%;
+}
+.SectionHeaderMargin {
+  height: 3px;
+  background-color: #42c2ff;
+  border-radius: 4px;
+  margin: 1.5% 0% !important;
+}
+.SectionHeaderH1_WP {
+  text-transform: uppercase;
+  font-family: 'Rubik', sans-serif !important;
+  font-weight: 600 !important;
+  font-size: 1.2rem !important;
+  color: #42c2ff;
+}
+.SectionHeaderH2 {
+  font-size: 1.8rem !important;
+  text-transform: capitalize;
+  font-weight: 800 !important;
+}
+.SectionHeaderTypo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin: 5% 0 2% 0;
+}
+.SectionHeaderH1 {
+  text-transform: uppercase;
+  font-weight: 600 !important;
+  font-size: 1.2rem !important;
+  color: #42c2ff;
+}
+.SectionHeaderDivider {
+  height: 3px;
+  background-color: #42c2ff;
+  border-radius: 4px;
+  margin: 2% 0% !important;
+}
+.SectionHeaderMargin {
+  height: 3px;
+  background-color: #42c2ff;
+  border-radius: 4px;
+  margin: 1.5% 0% !important;
+}
+.SectionHeaderH2 {
+  font-size: 1.8rem !important;
+  text-transform: capitalize;
+  font-weight: 800 !important;
+}
+.SectionHeaderDesp {
+  font-size: 1rem !important;
+  font-weight: 400 !important;
+  opacity: 50%;
+  width: 75%;
+  margin-top: 1%;
+}
+.clientsFeedBackSection{
+  /* background-color: #919b9b; */
+  height: 34rem;
+}
+
+
+.clientFeedBackHeadingtxt{
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 100px;
+  /* margin-bottom: 3%; */
+  font-size: 30px;
+  font-weight: 600;
+  font-family: "Poppins";
+  line-height: 24px;
+  margin-left: 10%;
+}
+.ReviewSliderContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  margin: 2% 0;
+  height: 50vh;
+  width: 90%;
+  align-items: center;
+}
+.ReviewSectionMain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.ReviewCardSlider {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  margin: 0;
+  height: 37vh;
+  width: 100%;
+  align-items: center;
+  /* background-image: url('/public/images/Background.png'); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* background-color: #5a6a7c; */
+  /* padding-top: 200px; */
+  padding-top: 9%;
+  /* height: max-content; */
+}
+.fade-left {
+  position: absolute;
+  left: 10%;
+  top: 0;
+  height: 60%;
+  width: 20%;
+  z-index: 99;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0)
+  );
+}
+.ReviewSection_Carousel {
+  overflow-x: scroll;
+}
+.CarouselLeftArrow {
+  position: absolute !important;
+  top: 30% !important;
+  left: 5% !important;
+  z-index: 1000 !important;
+  color: #003b7e;
+  background: #f8f8f8ba !important;
+  box-shadow: none !important;
+  transition: 0.5s;
+}
+.CarouselLeftArrow:hover {
+  /* background: #003b7eba !important; */
+  color: #f8f8f8 !important;
+}
+.CarouselRightArrow {
+  position: absolute !important;
+  top: 30% !important;
+  right: 5% !important;
+  color: #003b7e;
+  background: #f8f8f8aa !important;
+  box-shadow: none !important;
+  transition: 0.5s;
+}
+.fade-right {
+  position: absolute;
+  right: 10%;
+  top: 0;
+  height: 60%;
+  width: 20%;
+  z-index: 99;
+  background-image: linear-gradient(
+    to left,
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0)
+  );
+}
+.CarouselRightArrow:hover {
+  background: #f8f8f8 !important;
+  color: #f8f8f8 !important;
+}
+.ReviewCard_Container {
+  user-select: none;
+  max-width: 400px;
+  min-width: 200px;
+  height: 560px;
+  border-radius: 15;
+}
+.ReviewCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 5% 3%;
+  border: 1px solid #fcfcfc;
+  border-radius: 5%;
+  background: #fcfcfc;
+  box-shadow: 0px 7px 20px rgba(124, 167, 250, 0.4);
+  height: 56%;
+  width: 100%;
+  transition: 0.5s ease-in-out;
+  transform: scale(0.9);
+  filter: grayscale(0.5);
+  opacity: 1;
+}
+.Selection::selection {
+  background: transparent;
+}
 @media screen and (min-width: 1200px) and (max-width: 1400px) {
   .services_section_text_p {
     width: 52%;
@@ -81,6 +295,11 @@
 
     width: 70%;
     /* background-color: #02225e; */
+  }
+  .clientFeedBackHeadingtxt{
+    margin-bottom: 140px;
+    font-size: 28px;
+    font-weight: 600;
   }
 }
 @media screen and (min-width: 1001px) and (max-width: 1199px) {
@@ -93,6 +312,11 @@
     padding: 5% 25% 0 0;
     width: 100%;
     /* background-color: #02225e; */
+  }
+  .clientFeedBackHeadingtxt{
+    margin-bottom: 140px;
+    font-size: 26px;
+    font-weight: 600;
   }
 }
 /* MEDIA QUERY FOR LARGE DEVICES */
@@ -115,7 +339,17 @@
     margin-left: 10%;
     display: none;
   }
-
+  .clientFeedBackHeadingtxt{
+    margin-bottom: 120px !important;
+    padding-top: 20px;
+    font-size: 24px;
+    font-weight: 600;
+    /* background-color: #003b7e; */
+  }
+  .ReviewCard{
+    width: 100%;
+    height: 64%;
+  }
   .services_section_text_p {
     font-weight: 400;
     font-size: 20px;
@@ -189,5 +423,11 @@
   }
   .services_section_bg_img {
     display: none;
+  }
+}
+@media screen and (max-width: 990px)
+{
+  .clientFeedBackHeadingtxt{
+    margin-bottom: 130px;
   }
 }

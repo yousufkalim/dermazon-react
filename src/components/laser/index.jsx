@@ -10,8 +10,10 @@ export default function LaserComponents() {
   const [products, setProducts] = useState([]);
   const [searchQuery, setSearchQuery] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
-  const [cardsPerPage] = useState(10);
+
+  const [cardsPerPage] = useState(5);
   const KEYS_TO_FILTERS = ['name', 'brand', 'description', 'technical_description'];
+
   const getProducts = async () => {
     await API('get', '/products')
       .then((res) => {
@@ -45,7 +47,7 @@ export default function LaserComponents() {
   };
   let numberOfPages;
   if (filteredData) {
-    numberOfPages = Math.ceil(filteredData.length / 10);
+    numberOfPages = Math.ceil(filteredData.length / 5);
   } else {
     numberOfPages = 0;
   }
@@ -56,7 +58,9 @@ export default function LaserComponents() {
       {currentCards.map((product) => (
         <LaserItemsCard product={product} />
       ))}
-      <div style={{ display: 'flex', justifyContent: 'center' }}>
+
+      <div style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
+
         <div>
           <Pagination count={numberOfPages} page={currentPage} onChange={handleChangepage} />
         </div>

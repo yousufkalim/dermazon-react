@@ -56,10 +56,10 @@ export default function Testimonials() {
   }, []);
 
   return (
-    <div className="client_testimonials">
-      <h1 className="testimonials_heading">{t('Client Testimonials')}</h1>
-      <div className="testimonials">
-        <div className="testimonials_card_container">
+    <div className="client_testimonialx">
+      {/* <h1 className="testimonials_heading">{t('Client Testimonials')}</h1> */}
+      <div className="testimonialxx">
+        {/* <div className="testimonials_card_container">
           {loading ? (
             <div className="loader">Loading</div>
           ) : (
@@ -93,7 +93,7 @@ export default function Testimonials() {
               </div>
             </>
           )}
-        </div>
+        </div> */}
       </div>
     </div>
   );

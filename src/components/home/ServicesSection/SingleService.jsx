@@ -116,32 +116,34 @@ export default function SingleService(props) {
             // <ServiceImageSlider />
           )}
         </div>
-        <Link
-          to={Path}
-          className="link"
-          style={{
-            textDecoration: 'none',
-            // margin: 'auto',
-          }}
-        >
-          <button
+        <div className="btnWrapDiv1">
+          <Link
+            to={Path}
+            className="link"
             style={{
-              background: btnBg,
-            }}
-            className="single_service_btn"
-            type="button"
-            onClick={() => {
-              scroll();
-              if (title === 'Sell your laser') {
-                setFlag(true);
-              } else {
-                setFlag(false);
-              }
+              textDecoration: 'none',
+              // margin: 'auto',
             }}
           >
-            {btnText}
-          </button>
-        </Link>
+            <button
+              style={{
+                background: btnBg,
+              }}
+              className="single_service_btn"
+              type="button"
+              onClick={() => {
+                scroll();
+                if (title === 'Sell your laser') {
+                  setFlag(true);
+                } else {
+                  setFlag(false);
+                }
+              }}
+            >
+              {btnText}
+            </button>
+          </Link>
+        </div>
       </div>
     </div>
   );

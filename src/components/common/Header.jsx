@@ -89,22 +89,30 @@ export default function Header() {
           </div>
           <p>{t('Pre-owned-lasers')}</p>
         </div>
-        <div className="menu-icon" onClick={handleShowNavbar} role="presentation">
+        {/* <div className="menu-icon" onClick={handleShowNavbar} role="presentation">
           <MenuIcon />
-        </div>
+        </div> */}
 
         {/* <div className={showNavbar ? 'header_bottom_center_button' : 'header_bottom_center'}> */}
-        <div className={`header_bottom_center ${showNavbar && 'active'}`}>
+        {/* <div className={`header_bottom_center ${showNavbar && 'active'}`}>
           <ul>
             <li>
-              <Link to="/">{t('Home')}</Link>
+              <Link to="/">Accueil</Link>
             </li>
             <li>
+
+              <Link to="/buy-laser">Acheter un laser d’occasion</Link>
+            </li>
+          </ul>
+        </div> */}
+        {/* {showBtn ? (
+
               <Link to="/acheter-laser">{t('Buy a pre-owned laser')}</Link>
             </li>
           </ul>
         </div>
         {language !== 'fr' ? (
+
           <button className="trans_btn" type="button" onClick={() => changeLanguage('fr')}>
             <img src={FrFlag} alt="Flag" />
             FR
@@ -114,7 +122,7 @@ export default function Header() {
             <img src={Flag} alt="Flag" />
             EN
           </button>
-        )}
+        )} */}
         {/* <div className="header_bottom_right">
           <div className="header_bottom_search">
             <input type="text" placeholder="Search" />

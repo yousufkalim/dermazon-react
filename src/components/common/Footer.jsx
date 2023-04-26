@@ -15,9 +15,12 @@ import whatsApp from '../../assets/home/whatsApp.svg';
 import email from '../../assets/home/email.svg';
 // import i18n from '../../utils/i18n';
 
-const handleServiceScroll = () => {
-  const section = document.querySelector('#services_sectionid');
-  section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+// const handleServiceScroll = () => {
+//   const section = document.querySelector('#services_sectionid');
+//   section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+// };
+const handleClick = () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 };
 
 export default function Footer() {
@@ -36,11 +39,15 @@ export default function Footer() {
           <div className="footer_top_center">
             <ul>
               <li>
-                <Link to="/">{t('Home')}</Link>
+                <Link to="/" onClick={handleClick}>
+                  {t('Home')}
+                </Link>
               </li>
+
               <li onClick={handleServiceScroll} role="presentation">
                 <Link to="/acheter-laser">{t('Buy A Pre-Owned Laser')}</Link>
               </li>
+
               {/* <li>
               <Link to="/terms">Terms & Conditions</Link>
             </li> */}
