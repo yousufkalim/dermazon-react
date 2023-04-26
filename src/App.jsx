@@ -17,7 +17,7 @@ function App() {
     if (host?.includes('https://dermazon-dev.falconweb.app/')) {
       i18n.changeLanguage('fr');
     } else {
-      i18n.changeLanguage('en');
+      i18n.changeLanguage('fr');
     }
   }, []);
   const { t } = useTranslation();
