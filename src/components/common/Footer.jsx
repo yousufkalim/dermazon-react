@@ -13,12 +13,12 @@ import linkedIn from '../../assets/home/icons8-linkedin.svg';
 import phone from '../../assets/home/phone.svg';
 import whatsApp from '../../assets/home/whatsApp.svg';
 import email from '../../assets/home/email.svg';
-import i18n from '../../utils/i18n';
+// import i18n from '../../utils/i18n';
 
-const handleServiceScroll = () => {
-  const section = document.querySelector('#services_sectionid');
-  section.scrollIntoView({ behavior: 'smooth', block: 'start' });
-};
+// const handleServiceScroll = () => {
+//   const section = document.querySelector('#services_sectionid');
+//   section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+// };
 const handleClick = () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 };

@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import MenuIcon from '@mui/icons-material/Menu';
+// import MenuIcon from '@mui/icons-material/Menu';
 // import SearchIcon from '@mui/icons-material/Search';
 // import icons and images
 import { useTranslation } from 'react-i18next';
@@ -10,18 +10,19 @@ import { useTranslation } from 'react-i18next';
 import logo from '../../assets/home/logo.svg';
 // import instragram from '../../assets/home/instragram.svg';
 import icons8instagram from '../../assets/home/icons8-instagram.svg';
-import Flag from '../../assets/home/flag.png';
-import FrFlag from '../../assets/home/fran_flag.png';
+// import Flag from '../../assets/home/flag.png';
+// import FrFlag from '../../assets/home/fran_flag.png';
 import icons8linkedin from '../../assets/home/icons8-linkedin.svg';
 
 export default function Header() {
-  const [showBtn, setShowBtn] = useState(false);
+  // const [showBtn, setShowBtn] = useState(false);
   const { i18n, t } = useTranslation();
   const { language } = i18n;
-  const [showNavbar, setShowNavbar] = useState(false);
-  const handleShowNavbar = () => {
-    setShowNavbar(!showNavbar);
-  };
+  console.log(language);
+  // const [showNavbar, setShowNavbar] = useState(false);
+  // const handleShowNavbar = () => {
+  //   setShowNavbar(!showNavbar);
+  // };
   const [showTopNavbar, setShowTopNavbar] = useState(false);
   const controlTopNavbar = () => {
     if (window.scrollY > 100) {
@@ -31,11 +32,11 @@ export default function Header() {
     }
   };
 
-  const changeLanguage = (lang) => {
-    i18n.changeLanguage(lang);
-    localStorage.setItem('language', lang);
-    setShowBtn(!showBtn);
-  };
+  // const changeLanguage = (lang) => {
+  //   i18n.changeLanguage(lang);
+  //   localStorage.setItem('language', lang);
+  //   setShowBtn(!showBtn);
+  // };
 
   useEffect(() => {
     window.addEventListener('scroll', controlTopNavbar);

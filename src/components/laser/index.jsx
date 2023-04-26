@@ -60,7 +60,6 @@ export default function LaserComponents() {
       ))}
 
       <div style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
-
         <div>
           <Pagination count={numberOfPages} page={currentPage} onChange={handleChangepage} />
         </div>

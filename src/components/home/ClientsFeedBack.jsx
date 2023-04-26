@@ -149,6 +149,7 @@ export default function ReviewSection() {
       work: 'SybilSoft-Web application Development for Travel Agency',
     },
   ]);
+  console.log(setFrData, setEnData);
 
   return (
     <div>
