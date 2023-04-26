@@ -16,9 +16,16 @@ i18n
           // header
           'Follow us': 'Follow us',
           'PRE-OWNED LASERS': 'PRE-OWNED LASERS',
+          'Welcome to the Dermazon website ,We are a Paris based company specialising in the trade-in and resale of used energy based devices and lasers to aesthetic medicine professionals worldwide. Our experience and technical expertise enable us to offer high quality, premium branded equipment at affordable prices.':
+            'Welcome to the Dermazon website ,We are a Paris based company specialising in the trade-in and resale of used energy based devices and lasers to aesthetic medicine professionals worldwide. Our experience and technical expertise enable us to offer high quality, premium branded equipment at affordable prices.',
           Home: 'Home',
           'Buy A Pre-Owned Laser': 'Buy A Pre-Owned Laser',
+          "Dermazon is able to offer you a selection of used medical aesthetic lasers, carefully chosen for their reliability, quality and effectiveness in specific aesthetic treatments. However, if you are looking for a particular model that is not in our list, don't hesitate to ask us, thanks to our extensive network of contacts in France and abroad, we can find the right laser that will perfectly meet your needs.":
+            "Dermazon is able to offer you a selection of used medical aesthetic lasers, carefully chosen for their reliability, quality and effectiveness in specific aesthetic treatments. However, if you are looking for a particular model that is not in our list, don't hesitate to ask us, thanks to our extensive network of contacts in France and abroad, we can find the right laser that will perfectly meet your needs.",
           // home
+          'Buy a': 'Buy a',
+          'Pre-Owned Laser': 'Pre-Owned Laser',
+
           DERMAZON: 'DERMAZON',
           'is a worldwide marketplace': 'is a worldwide marketplace',
           'Based in Paris, for the sale and purchase of pre-owned laser and energy-based devices, used in dermatology and aesthetic medicine field.':
@@ -30,14 +37,26 @@ i18n
           'We sell high quality and brand premium pre-owned laser, they are checked and revised by independent and experienced service engineers. Find the right laser with us and save 50% on average compared to new.':
             'We sell high quality and brand premium pre-owned laser, they are checked and revised by independent and experienced service engineers. Find the right laser with us and save 50% on average compared to new.',
           'Buy A Laser': 'Buy A Laser',
-          'Sell Your Laser': 'Sell Your Laser',
+          'Sell your old laser': 'Sell your old laser',
+          "Don't let your lasers gather dust, we buy a wide variety of medical aesthetic lasers, from the latest to the oldest, and help you get the best price. Our trade-in process is simple and transparent: fill in our form to get a competitive quote based on the age, condition and number of shots of your equipment.":
+            "Don't let your lasers gather dust, we buy a wide variety of medical aesthetic lasers, from the latest to the oldest, and help you get the best price. Our trade-in process is simple and transparent: fill in our form to get a competitive quote based on the age, condition and number of shots of your equipment.",
           'The process of selling your used medical laser is very easy. Fill the form below, and after review of your machine, we will either purpose you a purchase offer within 24 hours or we will list it on our marketplace and actively sell it with our partners and clients.':
             'The process of selling your used medical laser is very easy. Fill the form below, and after review of your machine, we will either purpose you a purchase offer within 24 hours or we will list it on our marketplace and actively sell it with our partners and clients.',
           'Contact us': 'Contact us',
           'Maintain Your Laser': 'Maintain Your Laser',
+          'Maintain and repair your laser': 'Maintain and repair your laser',
+          "All medical lasers require periodic maintenance at least once a year to ensure proper clinical operation, avoid costly breakdowns and extend the life of the equipment. Dermazon offers complete maintenance and repair services under contract, in accordance with the manufacturer's protocols, such as preventive visits including precise calibrations, replacement of consuming parts such as flash lamps, optics and filters, and reconditioning of laser handpieces.":
+            "All medical lasers require periodic maintenance at least once a year to ensure proper clinical operation, avoid costly breakdowns and extend the life of the equipment. Dermazon offers complete maintenance and repair services under contract, in accordance with the manufacturer's protocols, such as preventive visits including precise calibrations, replacement of consuming parts such as flash lamps, optics and filters, and reconditioning of laser handpieces.",
           'All medical laser equipment require a periodical preventive maintenance at least once a year, and this to avoid costly breakdowns and to guarantee good clinical functioning. For the moment we offer a laser repair and preventive maintenance with flashlamp change and handpieces refurbishment of certain brands. Do not hesitate to contact us for a quote or for more information':
             'All medical laser equipment require a periodical preventive maintenance at least once a year, and this to avoid costly breakdowns and to guarantee good clinical functioning. For the moment we offer a laser repair and preventive maintenance with flashlamp change and handpieces refurbishment of certain brands. Do not hesitate to contact us for a quote or for more information',
           'Rent a Laser': 'Rent a Laser',
+          Testimonials: 'Testimonials',
+          Clients: 'Clients',
+          'The transport of medical lasers requires special attention due to the optical alignment of the light beams. That is why we take care of the transport ourselves under the best possible conditions.We also work with manufacturers by offering them a delivery-installation service by a qualified and experienced service engineer, to ensure that the lasers are properly installed once they arrive at their destination.':
+            'The transport of medical lasers requires special attention due to the optical alignment of the light beams. That is why we take care of the transport ourselves under the best possible conditions.We also work with manufacturers by offering them a delivery-installation service by a qualified and experienced service engineer, to ensure that the lasers are properly installed once they arrive at their destination.',
+          'Pick-up and Delivery': 'Pick-up and Delivery',
+          'We offer flexible rental solutions to suit your needs, allowing you to grow your business without a large initial investment.By renting your equipment from us, you benefit from access to the latest technology, controlled costs including maintenance, and the option to purchase the laser during the rental period. In addition, our team of professionals is always available to assist you in the use of your equipment and answer any questions you may have.':
+            'We offer flexible rental solutions to suit your needs, allowing you to grow your business without a large initial investment.By renting your equipment from us, you benefit from access to the latest technology, controlled costs including maintenance, and the option to purchase the laser during the rental period. In addition, our team of professionals is always available to assist you in the use of your equipment and answer any questions you may have.',
           "Renting an equipment is an ideal step before buying one, it's also a way to avoid committing to an expensive investment without having visibility on your activity of aesthetic medicine. You can rent according to your needs with an option to buy. Contact us for a quote and to know the availability of the technology you are looking for.":
             "Renting an equipment is an ideal step before buying one, it's also a way to avoid committing to an expensive investment without having visibility on your activity of aesthetic medicine. You can rent according to your needs with an option to buy. Contact us for a quote and to know the availability of the technology you are looking for.",
           'Pick-up and Delivery': 'Pick-up and Delivery',
@@ -153,8 +172,14 @@ i18n
           // header
           'Follow us': 'Suivez-nous',
           'PRE-OWNED LASERS': 'Les lasers d’occasion',
+          'Welcome to the Dermazon website ,We are a Paris based company specialising in the trade-in and resale of used energy based devices and lasers to aesthetic medicine professionals worldwide. Our experience and technical expertise enable us to offer high quality, premium branded equipment at affordable prices.':
+            "Bienvenue sur le site internet deDermazon, Nous sommes une entreprise basée à Paris  spécialisée dans la reprise et larevente de dispositif à based'énergie et delaser d'occasion, destinés aux professionnels de lamédecine esthétique du monde entier. Notre expérience et notre expertise technique nous permettent de proposer des équipements de qualité supérieure et de marques premium à des prix abordables.",
           Home: 'Accueil',
           'Buy A Pre-Owned Laser': "Acheter un laser d'occasion",
+          'Buy a': 'Acheter un',
+          'Pre-Owned Laser': "laser d'occasion",
+          "Dermazon is able to offer you a selection of used medical aesthetic lasers, carefully chosen for their reliability, quality and effectiveness in specific aesthetic treatments. However, if you are looking for a particular model that is not in our list, don't hesitate to ask us, thanks to our extensive network of contacts in France and abroad, we can find the right laser that will perfectly meet your needs.":
+            "soigneusement choisie pour leur fiabilité, leur qualité et leur efficacité dans des traitements esthétiques spécifiques. Toutefois, si vous recherchez un modèle en particulier qui ne figure pas dans notre liste, n'hésitez pas à nous contacter. Grâce à notre réseau de contacts étendu en France et à l'international, nous pouvons trouver le bon laser qui répondra parfaitement à vos besoins.",
           // home
           DERMAZON: 'DERMAZON',
           'is a worldwide marketplace': 'est une société',
@@ -167,14 +192,28 @@ i18n
           'We sell high quality and brand premium pre-owned laser, they are checked and revised by independent and experienced service engineers. Find the right laser with us and save 50% on average compared to new.':
             "Nous vendons des lasers d'occasion de qualité supérieure et de marque premium, ils sont complètement vérifiés et révisés par des ingénieurs de maintenance indépendants et expérimentés. Trouvez le bon laser avec nous et économisez en moyenne 50% comparée au neuf.",
           'Buy A Laser': 'Acheter un laser',
-          'Sell Your Laser': 'Vendez votre laser',
+          'Sell your old laser': 'Vendez votre ancier laser',
+          "Don't let your lasers gather dust, we buy a wide variety of medical aesthetic lasers, from the latest to the oldest, and help you get the best price. Our trade-in process is simple and transparent: fill in our form to get a competitive quote based on the age, condition and number of shots of your equipment.":
+            'Ne laissez pas vos lasers prendre la poussière, nous achetons une grande variété de lasers médicaux esthétiques, des plus récents aux plus anciens, et vous aidons à en tirer le meilleur prix. Notre processus de reprise est simple et transparent : remplissez notre formulaire pour obtenir une offre compétitive en fonction de l’âge, de l’état et du nombre de tirs de votre équipement.',
           'The process of selling your used medical laser is very easy. Fill the form below, and after review of your machine, we will either purpose you a purchase offer within 24 hours or we will list it on our marketplace and actively sell it with our partners and clients.':
             'Le processus de vente de votre laser est très simple. Remplissez le formulaire ci-dessous, et après examen de votre machine, nous allons soit vous proposer une offre d’achat dans les 24 heure, soit nous publierons une annonce sur notre plateforme et la proposerons à nos différents partenaires et clients.',
-          'Contact us': 'Contactez-nous',
+          'Contact us': 'Prenons Contact',
           'Maintain Your Laser': 'Entretien et réparation de votre laser',
+          "All medical lasers require periodic maintenance at least once a year to ensure proper clinical operation, avoid costly breakdowns and extend the life of the equipment. Dermazon offers complete maintenance and repair services under contract, in accordance with the manufacturer's protocols, such as preventive visits including precise calibrations, replacement of consuming parts such as flash lamps, optics and filters, and reconditioning of laser handpieces.":
+            "Tout laser médical nécessite une maintenance périodique d'au moins une fois par an, afin de garantir un bon fonctionnement clinique, d'éviter des pannes coûteuses et de prolonger la durée de vie de l'équipement.Dermazon offre des services complets d'entretien et de réparation en sous traitance, conforméments aux protocoles constructeur, tels que des visites préventives incluant les calibrations précises, le remplacement des pièces d'usure comme les lampesflash, les optiques et les filtres, ainsi que le reconditionnement des pièces à main laser.",
+          'Maintain and repair your laser': 'Entretien et Réparation de votre laser',
           'All medical laser equipment require a periodical preventive maintenance at least once a year, and this to avoid costly breakdowns and to guarantee good clinical functioning. For the moment we offer a laser repair and preventive maintenance with flashlamp change and handpieces refurbishment of certain brands. Do not hesitate to contact us for a quote or for more information':
             'Tout laser médical nécessite une maintenance préventive périodique au moins une fois par an, ceci pour garantir le bon fonctionnement clinique et éviter des pannes couteuses. Pour le moment nous proposons un service de réparation et révision des lasers avec changement de lampe flash et reconditionnement de pièces à main de certaines marques. Contactez nous pour un devis ou pour plus d’informations.',
-          'Rent a Laser': 'Louer un laser',
+          'Rent a Laser': 'Location d’un laser',
+          Testimonials: 'Clients',
+          Clients: 'Témoignages',
+          'The transport of medical lasers requires special attention due to the optical alignment of the light beams. That is why we take care of the transport ourselves under the best possible conditions.We also work with manufacturers by offering them a delivery-installation service by a qualified and experienced service engineer, to ensure that the lasers are properly installed once they arrive at their destination.':
+            "Le transport des lasers médicaux nécessite une attention particulière en raison des alignements optiques par rapport aux faisceaux lumière. C'est pourquoi nous prenons en charge nousmêmes le transport dans les meilleures conditions possibles. Nous travaillons également avec les fabricants en leur proposant un service de livraison-installation par un Ingénieur service qualifié et expérimenté, afin de garantir que les lasers sont correctement mis en service une fois arrivés à destination.",
+
+          'Pick-up and Delivery': 'Enlèvement et livraison',
+          'We offer flexible rental solutions to suit your needs, allowing you to grow your business without a large initial investment.By renting your equipment from us, you benefit from access to the latest technology, controlled costs including maintenance, and the option to purchase the laser during the rental period. In addition, our team of professionals is always available to assist you in the use of your equipment and answer any questions you may have.':
+            "Nous proposons des solutions de location flexibles et adaptées à vos besoins pour vous permettre de développer votre activité sans investissement initial important.En louant votre équipement auprès de nous, vous bénéficiez d'un accès aux dernières technologies, de coûts maîtrisés incluant l'entretien, et de la possibilité d’acheter le laser en cours de location. De plus, notre équipe de professionnels est toujours à votre disposition pour vous assister dans l'utilisation de votre équipement et répondre à toutes vos questions.",
+
           "Renting an equipment is an ideal step before buying one, it's also a way to avoid committing to an expensive investment without having visibility on your activity of aesthetic medicine. You can rent according to your needs with an option to buy. Contact us for a quote and to know the availability of the technology you are looking for.":
             "Louer un équipement est une étape idéale avant d'en acheter un, c'est aussi un moyen de ne pas s'engager dans un investissement coûteux sans avoir de visibilité sur votre activité de médecine esthétique. vous pouvez louer en fonction de vos besoins avec une option achat intéressante . Contactez-nous pour un devis et pour plus d’informations sur les technologie disponible",
           'Pick-up and Delivery': 'Enlèvement et livraison',
