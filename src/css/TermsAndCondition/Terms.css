@@ -1,5 +1,5 @@
 .terms {
-  padding-top: 80px;
+  padding-top: 180px;
   padding-bottom: 50px;
 }
 .terms_condition {
@@ -136,7 +136,7 @@
     font-size: 30px;
   }
   .terms_ans {
-    padding: 0 70px;
+    padding: 0 10px;
   }
 }
 @media only screen and (max-width: 992px) {
@@ -169,18 +169,25 @@
 }
 @media only screen and (max-width: 600px) {
   .terms {
-    padding-top: 100px;
+    padding-top: 150px;
   }
   .terms_title {
     font-size: 20px;
   }
   .terms_quiz_div {
-    padding: 12px 20px;
+    padding: 12px 2px;
+  }
+  .terms_quiz_title2 {
+    font-size: 15px;
+    margin-left: 8px;
+  }
+  .terms_quiz_title {
+    margin-left: 8px;
   }
   .terms_definition {
     margin-top: 20px;
   }
   .terms_quiz_title {
-    font-size: 16px;
+    font-size: 15px;
   }
 }

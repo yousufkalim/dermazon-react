@@ -12,7 +12,6 @@ import heroSection from '../../assets/home/heroSection.svg';
 
 export default function HeroSection() {
   const { t } = useTranslation();
-
   const scr = window.innerWidth;
   return (
     <div className="home_main">

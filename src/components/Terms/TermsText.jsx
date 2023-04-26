@@ -42,7 +42,7 @@ function TermsText({ val }) {
                 <p style={{ paddingBottom: '7px' }}>{t(val.ans6)}</p>
                 <p style={{ paddingBottom: '7px' }}>{t(val.ans7)}</p>
                 <p style={{ paddingBottom: '7px' }}>
-                  {t(val.ans8)} <b style={{ display: 'inline' }}>{t(val.boldText)}</b>
+                  {t(val.ans8)} <span style={{ display: 'inline' }}>{t(val.boldText)}</span>
                 </p>
               </p>
             ) : (

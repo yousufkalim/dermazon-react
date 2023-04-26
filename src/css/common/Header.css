@@ -20,6 +20,7 @@
   text-align: center;
   font-weight: 700;
   color: #02225e;
+  margin-top: -7px;
 }
 .header_top_left p {
   align-self: center;
@@ -137,6 +138,65 @@
   margin-right: 10px;
   border-radius: 20px;
 }
+/* cookies */
+.CookieBanner_desp {
+  color: #000000;
+  font-weight: 500 !important;
+  font-size: 1.3rem !important;
+  line-height: 1 !important;
+}
+.CookieBanner_Container {
+  font-family: 'Poppines';
+  width: 100%;
+  background: #ffffff;
+  position: fixed;
+  bottom: 0;
+  padding: 3% 5%;
+  z-index: 10000;
+}
+.CookieBanner_Div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.CookieBanner_TypoDiv {
+  width: 40%;
+  padding: 5px;
+}
+.CookieBanner_Link {
+  color: #003b7e;
+  text-decoration-line: underline;
+  font-size: 1.2rem !important;
+}
+.CookieBanner_BtnDiv {
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 3%;
+}
+.CookieBanner_AgreeBtn {
+  margin-right: 2% !important;
+  width: 50%;
+  padding: 5.5% !important;
+  background: #003b7e !important;
+  color: white !important;
+  font-weight: 700 !important;
+  text-transform: capitalize !important;
+  border-radius: 10px !important;
+  cursor: pointer;
+}
+.CookieBanner_DeclineBtn {
+  padding: 5% !important;
+  width: 50%;
+  font-weight: 700 !important;
+  text-transform: capitalize !important;
+  border: 3px solid #003b7e !important;
+  color: #003b7e !important;
+  border-radius: 10px !important;
+  cursor: pointer;
+}
+
 @media screen and (min-width: 1000px) and (max-width: 1600px) {
   .logo img {
     width: 210px;
@@ -232,6 +292,31 @@
 }
 
 @media screen and (max-width: 607px) {
+  .CookieBanner_Div {
+    display: block;
+  }
+  .CookieBanner_TypoDiv {
+    width: 100%;
+  }
+  .CookieBanner_BtnDiv {
+    width: 100%;
+  }
+  .CookieBanner_AgreeBtn {
+    margin: 5px !important;
+    width: 50%;
+    padding: 4% !important;
+  }
+  .CookieBanner_DeclineBtn {
+    margin: 5px !important;
+    padding: 4% !important;
+    width: 50%;
+  }
+  .CookieBanner_desp {
+    font-size: 1rem !important;
+  }
+  .CookieBanner_Link {
+    font-size: 1rem !important;
+  }
   .header_top_left {
     width: 0;
   }

@@ -64,7 +64,7 @@ export default function Testimonials() {
             <div className="loader">Loading</div>
           ) : (
             <>
-              {testimonials[currentImageIndex] && (
+              {testimonials?.length > 0 && testimonials[currentImageIndex] && (
                 <TestimonialCard
                   description={testimonials[currentImageIndex]?.comment}
                   name={testimonials[currentImageIndex]?.userName}

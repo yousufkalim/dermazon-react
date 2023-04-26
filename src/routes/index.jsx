@@ -11,10 +11,10 @@ import ByLaserComponent from '../containers/ByLaserComponent';
 function Index() {
   return (
     <Routes>
-      <Route path="/buy-laser" element={<ByLaserComponent />} />
+      <Route path="/acheter-laser" element={<ByLaserComponent />} />
       <Route path="/" element={<Home />} />
       <Route path="/terms" element={<TermsConditions />} />
-      <Route path="/LegalNotices" element={<LegalNotices />} />
+      <Route path="/Mentions_légales" element={<LegalNotices />} />
     </Routes>
   );
 }

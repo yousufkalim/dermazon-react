@@ -15,9 +15,13 @@ i18n
         translations: {
           // header
           'Follow us': 'Follow us',
+
           'PRE-OWNED LASERS': 'PRE-OWNED LASERS',
           'Welcome to the Dermazon website ,We are a Paris based company specialising in the trade-in and resale of used energy based devices and lasers to aesthetic medicine professionals worldwide. Our experience and technical expertise enable us to offer high quality, premium branded equipment at affordable prices.':
             'Welcome to the Dermazon website ,We are a Paris based company specialising in the trade-in and resale of used energy based devices and lasers to aesthetic medicine professionals worldwide. Our experience and technical expertise enable us to offer high quality, premium branded equipment at affordable prices.',
+
+          'Pre-owned-lasers': 'Pre-owned lasers',
+
           Home: 'Home',
           'Buy A Pre-Owned Laser': 'Buy A Pre-Owned Laser',
           "Dermazon is able to offer you a selection of used medical aesthetic lasers, carefully chosen for their reliability, quality and effectiveness in specific aesthetic treatments. However, if you are looking for a particular model that is not in our list, don't hesitate to ask us, thanks to our extensive network of contacts in France and abroad, we can find the right laser that will perfectly meet your needs.":
@@ -80,8 +84,8 @@ i18n
           'Your Message': 'Your Message',
           'Legal Notice': 'Legal Notice',
           'Your Request': 'Your Request',
-          'DERMAZON LASER': 'DERMAZON LASER',
-          'All Rights Reserved.': 'All Rights Reserved.',
+          'DERMAZON LASER': 'DERMAZON, pre-owned lasers',
+          'All Rights Reserved.': 'all right reserved.',
           // Buy Ad Laser
           'We are also laser hunters, you are looking for a particular laser which is not in the below list, get in touch with us and we will find it for you.':
             'We are also laser hunters, you are looking for a particular laser which is not in the below list, get in touch with us and we will find it for you.',
@@ -91,9 +95,15 @@ i18n
           'Maintain my Laser': 'Maintain my Laser',
           'Sell my Laser': 'Sell my Laser',
           // legel notice
+          'We Use our own and third-party cookies to personalize content and to analyze web traffic.':
+            'We Use our own and third-party cookies to personalize content and to analyze web traffic.',
+          'Read more about cookies': 'Read more about cookies',
+          Agree: 'Agree',
+          Decline: 'Decline',
 
           'Legal Notice': 'Legal Notice',
           'Effective as of 03/02/2023': 'Effective as of 03/02/2023',
+          'Effective as of 26-01-2023': 'Effective as of 26-01-2023',
           'In accordance with the provisions of Articles 6-III and 19 of Law No. 2004-575 of June 21, 2004 on Confidence in the digital economy, known as LCEN, it is brought to the attention of users and visitors, hereinafter the':
             'In accordance with the provisions of Articles 6-III and 19 of Law No. 2004-575 of June 21, 2004 on Confidence in the digital economy, known as LCEN, it is brought to the attention of users and visitors, hereinafter the',
 
@@ -119,12 +129,19 @@ i18n
 
           'Phone number 0695120333': 'Phone number 0695120333',
           'Email address: contact@dermazon.fr': 'Email address: contact@dermazon.fr',
-          'Intra-community VAT number: 123456789': 'Intra-community VAT number: 123456789',
-          'The Director of publication is Mr. RAZZAQ Burhan':
-            'The Director of publication is Mr. RAZZAQ Burhan',
+          'Intra-community VAT number: 123456789': 'Intra-community VAT number: FR04948720396',
+          'The Director of publication is RAZZAQ Burhan':
+            'The Director of publication is RAZZAQ Burhan',
           'below the': 'below the',
           Editor: 'Editor',
+          'The Director of publication is RAZZAQ Burhan hereinafter the Publisher.':
+            'The Director of publication is RAZZAQ Burhan hereinafter the Publisher.',
+          'The edition of the Site is provided by DERMAZON (simplified joint-stock company with a single partner) with a capital of 5000 euros, registered in the Trade and Companies Register of Meaux B 948 720 396, under number 948720396 whose head office is located at 11 rue du bois de paris 77700 Chessy.':
+            'The edition of the Site is provided by DERMAZON (simplified joint-stock company with a single partner) with a capital of 5000 euros, registered in the Trade and Companies Register of Meaux B 948 720 396, under number 948720396 whose head office is located at 11 rue du bois de paris 77700 Chessy.',
+          'ARTICLE 1- THE EDITOR': 'ARTICLE 1- THE EDITOR',
           'ARTICLE 2 - THE HOST': 'ARTICLE 2 - THE HOST',
+          'The Site host is Ovhcloud, whose head office is located at 2 rue Kellermann – BP 80157 59053 ROUBAIX CEDEX 1, with the telephone number: 1007':
+            'The Site host is Ovhcloud, whose head office is located at 2 rue Kellermann – BP 80157 59053 ROUBAIX CEDEX 1, with the telephone number: 1007',
           'The host of the Site is the company OVH Cloud, whose head office is located at the registered company':
             'The host of the Site is the company OVH Cloud, whose head office is located at the registered company',
           'at the Lille RCS under number 537 407 926 located at 2, rue Kellermann, 59100 Roubaix. ,before':
@@ -143,6 +160,8 @@ i18n
           "Any use, reproduction, distribution, marketing, modification of all or part of the Site, without the Publisher's authorization is prohibited and may result in legal action and prosecution as provided for in particular by the Intellectual Property Code and the Civil Code.":
             "Any use, reproduction, distribution, marketing, modification of all or part of the Site, without the Publisher's authorization is prohibited and may result in legal action and prosecution as provided for in particular by the Intellectual Property Code and the Civil Code.",
           'Written on http://legalplace.fr': 'Written on http://legalplace.fr',
+          'Any use, reproduction, distribution, marketing, modification of all or part of the Site, without authorization of the Publisher is prohibited and may result in legal action and prosecution as provided for in particular by the Intellectual Property Code and the Civil Code.':
+            'Any use, reproduction, distribution, marketing, modification of all or part of the Site, without authorization of the Publisher is prohibited and may result in legal action and prosecution as provided for in particular by the Intellectual Property Code and the Civil Code.',
           'Follow us on social media': 'Follow us on social media',
           '': '',
           '': '',
@@ -157,23 +176,35 @@ i18n
           'Please Enter Your Name': 'Please Enter Your Name',
           'Please enter your company': 'Please enter your company',
           'Please enter your email': 'Please enter your email',
+          'Please enter a valid email': 'Please enter a valid email',
           'Please enter your phone': 'Please enter your phone',
           'Please enter your request': 'Please enter your request',
           'Please enter your message': 'Please enter your message',
           'Please select a file': 'Please select a file',
           'Thanks For Contacting!': 'Thanks For Contacting!',
-          '': '',
-          '': '',
-          '': '',
+
+          // title
+          'Platform for the purchase and sale of used aesthetic lasers':
+            'Platform for the purchase and sale of used aesthetic lasers',
+
+          // laser component
+          'available at Dermazon France': 'available at Dermazon France',
         },
       },
       fr: {
         translations: {
+          // laser component
+          'available at Dermazon France': 'disponible chez Dermazon France',
+
           // header
           'Follow us': 'Suivez-nous',
+
           'PRE-OWNED LASERS': 'Les lasers d’occasion',
           'Welcome to the Dermazon website ,We are a Paris based company specialising in the trade-in and resale of used energy based devices and lasers to aesthetic medicine professionals worldwide. Our experience and technical expertise enable us to offer high quality, premium branded equipment at affordable prices.':
             "Bienvenue sur le site internet deDermazon, Nous sommes une entreprise basée à Paris  spécialisée dans la reprise et larevente de dispositif à based'énergie et delaser d'occasion, destinés aux professionnels de lamédecine esthétique du monde entier. Notre expérience et notre expertise technique nous permettent de proposer des équipements de qualité supérieure et de marques premium à des prix abordables.",
+
+          'Pre-owned-lasers': 'Les lasers d’occasion',
+
           Home: 'Accueil',
           'Buy A Pre-Owned Laser': "Acheter un laser d'occasion",
           'Buy a': 'Acheter un',
@@ -196,8 +227,13 @@ i18n
           "Don't let your lasers gather dust, we buy a wide variety of medical aesthetic lasers, from the latest to the oldest, and help you get the best price. Our trade-in process is simple and transparent: fill in our form to get a competitive quote based on the age, condition and number of shots of your equipment.":
             'Ne laissez pas vos lasers prendre la poussière, nous achetons une grande variété de lasers médicaux esthétiques, des plus récents aux plus anciens, et vous aidons à en tirer le meilleur prix. Notre processus de reprise est simple et transparent : remplissez notre formulaire pour obtenir une offre compétitive en fonction de l’âge, de l’état et du nombre de tirs de votre équipement.',
           'The process of selling your used medical laser is very easy. Fill the form below, and after review of your machine, we will either purpose you a purchase offer within 24 hours or we will list it on our marketplace and actively sell it with our partners and clients.':
+
             'Le processus de vente de votre laser est très simple. Remplissez le formulaire ci-dessous, et après examen de votre machine, nous allons soit vous proposer une offre d’achat dans les 24 heure, soit nous publierons une annonce sur notre plateforme et la proposerons à nos différents partenaires et clients.',
           'Contact us': 'Prenons Contact',
+
+            'Le processus de vente de votre laser est très simple. Remplissez le formulaire ci-dessous, et après examen de votre machine, nous allons soit vous proposer une offre d’achat dans les 24 heures, soit nous publierons une annonce sur notre plateforme et la proposerons à nos différents partenaires et clients.',
+          'Contact us': 'Prenons contact',
+
           'Maintain Your Laser': 'Entretien et réparation de votre laser',
           "All medical lasers require periodic maintenance at least once a year to ensure proper clinical operation, avoid costly breakdowns and extend the life of the equipment. Dermazon offers complete maintenance and repair services under contract, in accordance with the manufacturer's protocols, such as preventive visits including precise calibrations, replacement of consuming parts such as flash lamps, optics and filters, and reconditioning of laser handpieces.":
             "Tout laser médical nécessite une maintenance périodique d'au moins une fois par an, afin de garantir un bon fonctionnement clinique, d'éviter des pannes coûteuses et de prolonger la durée de vie de l'équipement.Dermazon offre des services complets d'entretien et de réparation en sous traitance, conforméments aux protocoles constructeur, tels que des visites préventives incluant les calibrations précises, le remplacement des pièces d'usure comme les lampesflash, les optiques et les filtres, ainsi que le reconditionnement des pièces à main laser.",
@@ -236,8 +272,8 @@ i18n
           'Add attachment': 'Ajoutez une pièce jointe',
           Send: 'Envoyer',
           'Legal Notice': 'Mentions légales',
-          'DERMAZON LASER': 'LASER DERMAZON',
-          'All Rights Reserved.': 'Tous les droits sont réservés.',
+          'DERMAZON LASER': 'DERMAZON, les lasers d’occasion',
+          'All Rights Reserved.': 'Tous droits réservés.',
           // Buy Ad Laser
           'We are also laser hunters, you are looking for a particular laser which is not in the below list, get in touch with us and we will find it for you.':
             'Nous sommes également des chasseurs de laser, vous recherchez un laser en particulier qui ne figure pas dans la liste ci-dessous, contactez-nous et nous le trouverons pour vous.',
@@ -248,10 +284,16 @@ i18n
           'Maintain my Laser': 'Entretenir mon Laser',
           'Sell my Laser': 'Vendre mon Laser',
           // Legal Notice
+          'We Use our own and third-party cookies to personalize content and to analyze web traffic.':
+            'Nous utilisons nos propres cookies et ceux de tiers pour personnaliser le contenu et analyser le trafic Web.',
+          'Read more about cookies': 'En savoir plus sur les cookies',
+          Agree: 'Accepter',
+          Decline: 'Refuser',
           'Legal Notice': 'Mentions légales',
           'Effective as of 03/02/2023': 'En vigueur au 03/02/2023',
+          'Effective as of 26-01-2023': 'En vigueur au  26-01-2023',
           'In accordance with the provisions of Articles 6-III and 19 of Law No. 2004-575 of June 21, 2004 on Confidence in the digital economy, known as LCEN, it is brought to the attention of users and visitors, hereinafter the':
-            'Conformément aux dispositions des Articles 6-III et 19 de la Loi n°2004-575 du 21 juin 2004 pour la Confiance dans l’économie numérique, dite L.C.E.N., il est porté à la connaissance des utilisateurs et visiteurs, ci-après l',
+            'Conformément aux dispositions des Articles 6-III et 19 de la Loi n°2004-575 du 21 juin 2004 pour la Confiance dans l’économie numérique, dite L.C.E.N., il est porté à la connaissance des utilisateurs et visiteurs, ci-après l""Utilisateur", du site https://dermazon.fr , ci-après le "Site", les présentes mentions légales',
 
           User: 'Utilisateur',
           'of the site https://dermazon.fr, hereinafter the':
@@ -276,12 +318,20 @@ i18n
 
           'Phone number 0695120333': 'Numéro de téléphone 0695120333',
           'Email address: contact@dermazon.fr': 'Adresse e-mail : contact@dermazon.fr',
-          'Intra-community VAT number: 123456789': 'N° de TVA intracommunautaire : 123456789',
-          'The Director of publication is Mr. RAZZAQ Burhan':
-            'Le Directeur de la publication est M RAZZAQ Burhan',
+          'Intra-community VAT number: 123456789': 'N° de TVA intracommunautaire : FR04948720396',
+          'The Director of publication is RAZZAQ Burhan':
+            'Le Directeur de la publication est RAZZAQ Burhan',
           'below the': 'ci-après l',
           Editor: 'Editeur',
+          'The Director of publication is RAZZAQ Burhan hereinafter the Publisher.':
+            "Le Directeur de la publication est RAZZAQ Burhan ci-après l'Editeur.",
+          'ARTICLE 1- THE EDITOR': "ARTICLE 1 - L'EDITEUR",
           'ARTICLE 2 - THE HOST': "ARTICLE 2 - L'HEBERGEUR",
+          'The Site host is Ovhcloud, whose head office is located at 2 rue Kellermann – BP 80157 59053 ROUBAIX CEDEX 1, with the telephone number: 1007':
+            "L'hébergeur du Site est la société Ovhcloud, dont le siège social est situé au 2 rue Kellermann – BP 80157 59053  ROUBAIX CEDEX 1 , avec le numéro de téléphone : 1007",
+          'The edition of the Site is provided by DERMAZON (simplified joint-stock company with a single partner) with a capital of 5000 euros, registered in the Trade and Companies Register of Meaux B 948 720 396, under number 948720396 whose head office is located at 11 rue du bois de paris 77700 Chessy.':
+            "L'édition du Site est assurée par DERMAZON (Société par actions simplifiée à associé unique) au capital de 5000 euros, immatriculée au Registre du Commerce et des Sociétés de Meaux B 948 720 396, sous le numéro 948720396 dont le siège social est situé au 11 rue du bois de paris 77700 Chessy.",
+
           'The host of the Site is the company OVH Cloud, whose head office is located at the registered company':
             "L'hébergeur du Site est la société OVH Cloud, dont le siège social est situé au société immatriculée",
           'at the Lille RCS under number 537 407 926 located at 2, rue Kellermann, 59100 Roubaix. ,before':
@@ -291,35 +341,35 @@ i18n
             'ec le numéro de téléphone : 0972101007 + adresse mail de contact',
           'ARTICLE 3 - ACCESS TO THE SITE': 'ARTICLE 3 - ACCES AU SITE',
           'The Site is accessible anywhere, 7 days a week, 24 hours a day, except in cases of force majeure, scheduled or unscheduled interruption and possibly resulting from a need for maintenance.':
-            'Le Site est accessible en tout endroit, 7 jours par semaine, 24 heures par jour, interruption programmée ou non et pouvant découlant d’une nécessité de maintenance',
+            'Le Site est accessible en tout endroit, 7j/7, 24h/24 sauf cas de force majeure, interruption programmée ou non et pouvant découlant d’une nécessité de maintenance.',
           'In the event of modification, interruption or suspension of the Site, the Publisher cannot be held responsible.':
             "En cas de modification, interruption ou suspension du Site, l'Editeur ne saurait être tenu responsable.",
           'ARTICLE 4 - DATA COLLECTION': 'ARTICLE 4 - COLLECTE DES DONNEES',
           'The Site provides the User with the collection and processing of personal information with respect for privacy in accordance with Law No. 78-17 of January 6, 1978 relating to data processing, files and freedoms. 1 Under the Data Protection Act, dated January 6, 1978, the User has a right to access, rectify, delete and oppose his personal data. The User exercises this right: via a contact form':
-            "Le Site assure à l'Utilisateur une collecte et un traitement d'informations personnelles dans le respect de la vie privée conformément à la loi n°78-17 du 6 janvier 1978 relative à l'informatique, aux fichiers et aux libertés. 1 En vertu de la loi Informatique et Libertés, en date du 6 janvier 1978, l'Utilisateur dispose d'un droit d'accès, de rectification, de suppression et d'opposition de ses données   personnelles. L'Utilisateur exerce ce droit : · via un formulaire de contact",
+            "Le Site assure à l'Utilisateur une collecte et un traitement d'informations personnelles dans le respect de la vie privée conformément à la loi n°78-17 du 6 janvier 1978 relative à l'informatique, aux fichiers et aux libertés. ",
           "Any use, reproduction, distribution, marketing, modification of all or part of the Site, without the Publisher's authorization is prohibited and may result in legal action and prosecution as provided for in particular by the Intellectual Property Code and the Civil Code.":
+            "En vertu de la loi Informatique et Libertés, en date du 6 janvier 1978, l'Utilisateur dispose d'un droit d'accès, de rectification, de suppression et d'opposition de ses données personnelles. L'Utilisateur exerce ce droit : ",
+          'Written on http://legalplace.fr': 'via un formulaire de contact ;',
+          'Any use, reproduction, distribution, marketing, modification of all or part of the Site, without authorization of the Publisher is prohibited and may result in legal action and prosecution as provided for in particular by the Intellectual Property Code and the Civil Code.':
             'Toute utilisation, reproduction, diffusion, commercialisation, modification de toute ou partie du Site, sans autorisation de l’Editeur est prohibée et pourra entraînée des actions et poursuites judiciaires telles que notamment prévues par le Code de la propriété intellectuelle et le Code civil.',
-          'Written on http://legalplace.fr': 'Rédigé sur http://legalplace.fr',
           'Follow us on social media': 'Suivez-nous sur les réseaux sociaux',
-          '': '',
-          '': '',
-          '': '',
-          '': '',
-          '': '',
           '': '',
 
           // toast
-          'Please Enter Your Name': "S'il vous plaît entrez votre nom",
-          'Please enter your company': 'Veuillez entrer votre entreprise',
-          'Please enter your email': 'Veuillez saisir votre e-mail',
-          'Please enter your phone': 'Veuillez entrer votre téléphone',
-          'Please enter your request': 'Veuillez entrer votre demande',
-          'Please enter your message': 'Veuillez entrer votre message',
+          'Please Enter Your Name': 'Veuillez saisir votre nom',
+          'Please enter your company': 'Veuillez saisir le nom de votre société',
+          'Please enter your email': 'Veuillez saisir votre adresse e-mail',
+          'Please enter a valid email': 'Veuillez entrer un email valide',
+          'Please enter your phone': 'Veuillez saisir votre numéro de téléphone portable',
+          'Please enter your request': 'Veuillez saisir votre message',
+          'Please enter your message': 'Veuillez saisir votre message',
           'Please select a file': 'Veuillez sélectionner un fichier',
-          'Thanks For Contacting!': "Merci d'avoir contacté !",
+          'Thanks For Contacting!': 'Merci de nous avoir contacté!',
           '': '',
-          '': '',
-          '': '',
+
+          // title
+          'Platform for the purchase and sale of used aesthetic lasers':
+            'Plateforme d’achat de vente de lasers médical esthetique d’occasion',
           '': '',
           '': '',
           '': '',

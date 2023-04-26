@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-
+import { useTranslation } from 'react-i18next';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
-import EuroIcon from '@mui/icons-material/Euro';
+// import EuroIcon from '@mui/icons-material/Euro';
 import moment from 'moment';
 import Collapse from '@mui/material/Collapse';
 import ShareIcon from '@mui/icons-material/Share';
@@ -11,7 +11,9 @@ import { mediaUrl } from '../../config';
 
 export default function LaserItemsCard({ product }) {
   const [expanded, setExpanded] = useState(false);
-  const url = 'https://dermazon-dev.falconweb.app/';
+  const { t, i18n } = useTranslation();
+  const { language } = i18n;
+  const url = 'https://dermazon.fr/acheter-laser';
   const handleExpandClick = () => {
     setExpanded(!expanded);
   };
@@ -33,15 +35,13 @@ export default function LaserItemsCard({ product }) {
           )}
         </div>
         <div className="items_card_text">
-          <div className="items_card_text_price">
-            {product?.price}&nbsp;
-            <EuroIcon fontSize="small" />
-          </div>
+          <div className="items_card_text_price">{product?.price}&nbsp;</div>
           <div className="items_card_text_heading">
             {product?.name} {product?.brand ? '-' : ''} {product?.brand}
           </div>
-
-          <div className="items_card_text_description">{product?.description}</div>
+          <div className="items_card_text_description">
+            {language === 'fr' ? product?.frenchDescription : product?.description}
+          </div>
 
           <div className="items_card_text_date">
             <div>
@@ -53,9 +53,12 @@ export default function LaserItemsCard({ product }) {
           <Collapse in={expanded} timeout="auto" unmountOnExit className="laser_collapse">
             <div className="items_card_description">
               <div>
-                {product?.technical_description
+                {language === 'fr'
+                  ? product?.frenchTechnicalDescription
+                  : product?.technical_description}
+                {/* {product?.technical_description
                   ? product?.technical_description
-                  : '2020 handpiece Perfect condition BTL emtone with afordable price 2020 handpiece Perfect condition BTL emtone with afordable price'}
+                  : '2020 handpiece Perfect condition BTL emtone with afordable price 2020 handpiece Perfect condition BTL emtone with afordable price'} */}
               </div>
 
               {/* <div className="items_card_Year">
@@ -71,9 +74,10 @@ export default function LaserItemsCard({ product }) {
         <div className="items_card_share_icon">
           <EmailShareButton
             url={url}
+            mailto="mailto:no-reply@example.com"
             target="_blank"
-            subject="Dermazon Product"
-            body={product?.name}
+            subject={`${product?.name}  ${product?.brand} ${t('available at Dermazon France')}`}
+            body={`${product?.name}  ${product?.brand} ${t('available at Dermazon France')}`}
             quote="Dermazone"
           >
             {/* <MailOutlineIcon round={true} className="socialIcons mail" /> */}

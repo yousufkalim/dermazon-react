@@ -43,14 +43,16 @@ export default function Footer() {
                   {t('Home')}
                 </Link>
               </li>
-              {/* <li onClick={handleServiceScroll} role="presentation">
-                <Link to="/buy-laser">{t('Buy A Pre-Owned Laser')}</Link>
-              </li> */}
+
+              <li onClick={handleServiceScroll} role="presentation">
+                <Link to="/acheter-laser">{t('Buy A Pre-Owned Laser')}</Link>
+              </li>
+
               {/* <li>
               <Link to="/terms">Terms & Conditions</Link>
             </li> */}
               <li>
-                <Link to="/LegalNotices">{t('Legal Notice')}</Link>
+                <Link to="/Mentions_légales">{t('Legal Notice')}</Link>
               </li>
             </ul>
           </div>
@@ -94,28 +96,25 @@ export default function Footer() {
                   }}
                 >
                   <img src={phone} alt="" className="footer_img " />
+                  <span
+                    className="footer_span"
+                    style={{
+                      fontSize: '16px',
+                      fontWeight: '600',
+                      color: '#2B2926',
+                      marginLeft: '10px',
+                    }}
+                  >
+                    +33 695 12 03 33
+                  </span>
                 </span>
               </a>
-
-              <span
-                className="footer_span"
-                style={{
-                  fontSize: '16px',
-                  fontWeight: '600',
-                  color: '#2B2926',
-                  marginLeft: '10px',
-
-                  // display: 'flex',
-                }}
-              >
-                <span className="lo">{t('Contact')}:</span> +33 695 12 03 33
-              </span>
             </div>
           </div>
         </div>
 
         {/* {screenWidth < 1000 ? ( */}
-        <div className="footer_top_right footer_email">
+        <div className="footer_top_right">
           <a href="https://wa.me/+33695120333" target="_blank" rel="noreferrer">
             <span
               className="footer_span"
@@ -126,19 +125,20 @@ export default function Footer() {
               }}
             >
               <img src={whatsApp} alt="" className="footer_img " />
+              <span
+                className="footer_span"
+                style={{
+                  fontSize: '16px',
+                  fontWeight: '600',
+                  color: '#2B2926',
+                  marginLeft: '10px',
+                  textDecoration: 'none',
+                }}
+              >
+                +33 695 12 03 33
+              </span>
             </span>
           </a>
-          <span
-            className="footer_span"
-            style={{
-              fontSize: '16px',
-              fontWeight: '600',
-              color: '#2B2926',
-              marginLeft: '10px',
-            }}
-          >
-            +33 695 12 03 33
-          </span>
         </div>
         <div className="footer_top_right ">
           <a href="mailto:contact@dermazon.fr" target="_blank" rel="noreferrer">
@@ -151,19 +151,19 @@ export default function Footer() {
               }}
             >
               <img src={email} alt="" className="footer_img footer_img2 " />
+              <span
+                className="footer_span"
+                style={{
+                  fontSize: '16px',
+                  fontWeight: '600',
+                  color: '#2B2926',
+                  marginLeft: '10px',
+                }}
+              >
+                contact@dermazon.fr
+              </span>
             </span>
           </a>
-          <span
-            className="footer_span"
-            style={{
-              fontSize: '16px',
-              fontWeight: '600',
-              color: '#2B2926',
-              marginLeft: '10px',
-            }}
-          >
-            contact@dermazon.fr
-          </span>
         </div>
         {/* ) : (
           ''
