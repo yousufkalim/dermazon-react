@@ -15,7 +15,7 @@ function App() {
 
   useEffect(() => {
     const { host } = window.location;
-    if (host === 'localhost:3000') {
+    if (host?.includes('dermazon.fr')) {
       i18n.changeLanguage('fr');
     } else {
       i18n.changeLanguage('en');
