@@ -12,10 +12,9 @@ import i18n from './utils/i18n';
 
 // Component
 function App() {
-
   useEffect(() => {
     const { host } = window.location;
-    if (host?.includes('dermazon.fr')) {
+    if (host?.includes('https://dermazon-dev.falconweb.app/')) {
       i18n.changeLanguage('fr');
     } else {
       i18n.changeLanguage('en');
@@ -42,7 +41,6 @@ function App() {
     localStorage.setItem('open', true);
     setOpen(false);
   };
-
 
   return (
     <div className="App">
