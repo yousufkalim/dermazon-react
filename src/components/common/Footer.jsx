@@ -45,7 +45,7 @@ export default function Footer() {
               </li>
               {/* onClick={handleServiceScroll} role="presentation" */}
               <li>
-                <p
+                {/* <p
                   style={{
                     color: 'black',
                     fontWeight: '600',
@@ -54,7 +54,7 @@ export default function Footer() {
                   }}
                 >
                   {t('Buy A Pre-Owned Laser')}
-                </p>
+                </p> */}
               </li>
 
               {/* <li>
