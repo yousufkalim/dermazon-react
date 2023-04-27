@@ -6,7 +6,8 @@ import Tooltip from '@mui/material/Tooltip';
 export default function ReviewCard(props) {
   //   const { i18n, t } = useTranslation();
   const { data, dataIndex } = props;
-  const { name, review, country, work } = data[dataIndex];
+  const { userName, comment, companyName } = data[dataIndex];
+  console.log('userName', userName, comment, companyName);
 
   //   const [value, setValue] = React.useState(4);
 
@@ -32,7 +33,7 @@ export default function ReviewCard(props) {
             opacity: '1',
           }}
         >
-          {name}
+          {userName ? userName : ''}
         </h2>
         <h3
           className="Selection"
@@ -45,9 +46,9 @@ export default function ReviewCard(props) {
             margin: '2% 0 5% 0',
           }}
         >
-          {country}
+          {companyName}
         </h3>
-        <Tooltip title={review}>
+        <Tooltip title={comment}>
           <p
             className="Selection"
             id="h3tag"
@@ -58,7 +59,7 @@ export default function ReviewCard(props) {
               fontWeight: '400',
             }}
           >
-            {review?.length > 100 ? `${review?.slice(0, 100)}...` : review}
+            {comment?.length > 100 ? `${comment?.slice(0, 100)}...` : comment}
             {/* {review} */}
           </p>
         </Tooltip>
@@ -72,7 +73,7 @@ export default function ReviewCard(props) {
             opacity: '1',
           }}
         >
-          {work}
+          {/* {work} */}
         </h4>
       </div>
     </motion.div>
