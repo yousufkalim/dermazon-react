@@ -23,11 +23,12 @@ export default function ReviewCard(props) {
       <div className="ReviewCard">
         <h2
           className="Selection"
+          id="h1tag"
           style={{
             marginTop: '4%',
             fontWeight: 600,
-            fontSize: '1.6rem',
-            fontFamily: 'Urbanist',
+            fontSize: '1.5rem',
+            fontFamily: 'Poppins',
             opacity: '1',
           }}
         >
@@ -35,6 +36,7 @@ export default function ReviewCard(props) {
         </h2>
         <h3
           className="Selection"
+          id="h2tag"
           style={{
             // margin: '0',
             fontWeight: 400,
@@ -48,6 +50,7 @@ export default function ReviewCard(props) {
         <Tooltip title={review}>
           <p
             className="Selection"
+            id="h3tag"
             style={{
               width: '80%',
               fontSize: '1rem',

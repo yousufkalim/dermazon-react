@@ -328,6 +328,15 @@
     margin-left: 10%;
     display: none;
   }
+  #h1tag{
+    font-size: 1.4rem !important;
+  }
+  #h2tag{
+    font-size: 1.1rem !important;
+  }
+  #h3tag{
+    font-size: 0.9rem !important;
+  }
   .clientFeedBackHeadingtxt {
     margin-bottom: 120px !important;
     padding-top: 20px;

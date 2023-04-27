@@ -44,7 +44,7 @@ export default function LaserItemsCard({ product }) {
               ) : (
                 <div className="productAvailable">
                   <div className="greenDotContainer">
-                    <img className="greenDotimg" src={CircleDot} alt="dot" />
+                    <img src={CircleDot} alt="dot" />
                   </div>
                   <p className="disponsible"> {t('AVAILABLE')}</p>{' '}
                 </div>

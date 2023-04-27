@@ -15,6 +15,19 @@
   align-items: center;
   z-index: 1;
 }
+.preOwnTxtandIconRowDiv {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+}
+.preOwnIconCotainerDiv {
+  margin-right: 12px;
+  margin-left: 12px;
+  width: 67px;
+}
+.preOwnIconCotainerDiv img {
+  width: 100%;
+}
 .laser_hero_section_heading_text {
   width: 100%;
   font-family: 'Poppins';
@@ -119,7 +132,11 @@
     width: 100%;
 
     padding-top: 80px;
-
+  }
+  .preOwnIconCotainerDiv {
+    margin-right: -50px;
+    margin-left: 25px;
+    width: 50px;
   }
 
   .laser_hero_section_heading_text {

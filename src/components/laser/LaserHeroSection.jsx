@@ -1,6 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import InputSearch from '../common/InputSearch';
+import preOwnIcon from '../../assets/preOwnIcon.svg';
 
 export default function LaserHeroSection({ handleChange, searchQuery }) {
   const { t } = useTranslation();
@@ -10,11 +11,15 @@ export default function LaserHeroSection({ handleChange, searchQuery }) {
       <div className="laser_hero_section_header">
         {/* <div className="laser_hero_section_heading_text">used laser for all</div> */}
         {/* <div className="laser_hero_section_heading"> Acheter un laser d'occasion</div> */}
-        <div className="laser_hero_section_heading">
-          <span className="colortxtPartLaser">{t('Buy a')}</span>
-          <span>{t('Pre-Owned Laser')}</span>
+        <div className="preOwnTxtandIconRowDiv">
+          <div className="preOwnIconCotainerDiv">
+            <img src={preOwnIcon} alt="icon" />
+          </div>
+          <div className="laser_hero_section_heading">
+            <span className="colortxtPartLaser">{t('Buy a')}</span>
+            <span>{t('Pre-Owned Laser')}</span>
+          </div>
         </div>
-
         <div className="laser_hero_section_text_paragraph">
           {/* {t(
             'We are also laser hunters, you are looking for a particular laser which is not in the below list, get in touch with us and we will find it for you.',
