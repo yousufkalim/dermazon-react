@@ -28,7 +28,7 @@ export default function ReviewCard(props) {
             fontWeight: 600,
             fontSize: '1.6rem',
             fontFamily: 'Urbanist',
-            opacity: '.8',
+            opacity: '1',
           }}
         >
           {name}
@@ -39,7 +39,7 @@ export default function ReviewCard(props) {
             // margin: '0',
             fontWeight: 400,
             fontSize: '1.2rem',
-            opacity: '.8',
+            opacity: '1',
             margin: '2% 0 5% 0',
           }}
         >
@@ -51,7 +51,7 @@ export default function ReviewCard(props) {
             style={{
               width: '80%',
               fontSize: '1rem',
-              opacity: '.9',
+              opacity: '1',
               fontWeight: '400',
             }}
           >
@@ -66,7 +66,7 @@ export default function ReviewCard(props) {
             fontWeight: '400',
             fontSize: '.8rem',
             fontStyle: 'italic',
-            opacity: '.8',
+            opacity: '1',
           }}
         >
           {work}

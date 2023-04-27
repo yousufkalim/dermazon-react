@@ -68,30 +68,6 @@ export default function ReviewSection() {
         'Falcon Consulting did a great job. I am happy to work with them. They have great skills in MERN stack. Being not so tech savvy I had my own challenges but their Business team helped me on each step along the journey. Hope we will work very soon near future. Thank you',
       work: 'SybilSoft-Web application Development for Travel Agency',
     },
-    // {
-    //   avatar: Client_6,
-    //   name: "Maham Zahid",
-    //   review:
-    //     " It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-    // },
-    // {
-    //   avatar: Client_7,
-    //   name: "Abdullah Adil",
-    //   review:
-    //     " It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-    // },
-    // {
-    //   avatar: Client_8,
-    //   name: "Ameer Hamza",
-    //   review:
-    //     " It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-    // },
-    // {
-    //   avatar: Client_9,
-    //   name: "Amanda Nunes",
-    //   review:
-    //     " It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-    // },
   ]);
   const [frData, setFrData] = useState([
     {
