@@ -16,7 +16,7 @@ export default function Testimonials() {
 
   const [testimonials, setTestimonials] = useState([]);
   const [loading, setLoading] = useState(false);
-  console.log(loading, testimonials);
+  console.log(loading, '1111', testimonials);
 
   // const [currentImageIndex, setCurrentImageIndex] = useState(0);
   // const [arrowstate, setarrowstate] = useState(false);
