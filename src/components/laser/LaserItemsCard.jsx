@@ -7,6 +7,7 @@ import Collapse from '@mui/material/Collapse';
 import ShareIcon from '@mui/icons-material/Share';
 import { EmailShareButton } from 'react-share';
 // import vender from '../../assets/home/vender.png';
+import CircleDot from '../../assets/home/CircleDot.svg';
 import { mediaUrl } from '../../config';
 
 export default function LaserItemsCard({ product }) {
@@ -30,12 +31,26 @@ export default function LaserItemsCard({ product }) {
             // <img className="vendu" src={vender} alt="product" />
             <p className="vendu">VENDU</p>
           ) : (
-            // <p className="vendu">vendu</p>
             ''
           )}
         </div>
+
         <div className="items_card_text">
-          <div className="items_card_text_price">{product?.price}&nbsp;</div>
+          <div className="disponsibleContainerDiv">
+            <div className="items_card_text_price">{product?.price}&nbsp;</div>
+            <div>
+              {product?.availability === false ? (
+                ``
+              ) : (
+                <div className="productAvailable">
+                  <div className="greenDotContainer">
+                    <img className="greenDotimg" src={CircleDot} alt="dot" />
+                  </div>
+                  <p className="disponsible"> {t('AVAILABLE')}</p>{' '}
+                </div>
+              )}
+            </div>
+          </div>
           <div className="items_card_text_heading">
             {product?.name} {product?.brand ? '-' : ''} {product?.brand}
           </div>
@@ -56,14 +71,8 @@ export default function LaserItemsCard({ product }) {
                 {language === 'fr'
                   ? product?.frenchTechnicalDescription
                   : product?.technical_description}
-                {/* {product?.technical_description
-                  ? product?.technical_description
-                  : '2020 handpiece Perfect condition BTL emtone with afordable price 2020 handpiece Perfect condition BTL emtone with afordable price'} */}
               </div>
 
-              {/* <div className="items_card_Year">
-                Year <p>{moment(product.createdAt).format('YYYY')} </p>
-              </div> */}
               <div className="items_card_telephone">
                 {' '}
                 Telephone <p> +33 695 12 03 33</p>
@@ -80,13 +89,8 @@ export default function LaserItemsCard({ product }) {
             body={`${product?.name}  ${product?.brand} ${t('available at Dermazon France')}`}
             quote="Dermazone"
           >
-            {/* <MailOutlineIcon round={true} className="socialIcons mail" /> */}
             <ShareIcon className="items_card_share_icon_mui" />
           </EmailShareButton>
-
-          {/* <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank" rel="noreferrer">
-            
-          </a> */}
         </div>
       </div>
     </div>

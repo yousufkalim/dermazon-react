@@ -41,6 +41,7 @@ i18n
           'We sell high quality and brand premium pre-owned laser, they are checked and revised by independent and experienced service engineers. Find the right laser with us and save 50% on average compared to new.':
             'We sell high quality and brand premium pre-owned laser, they are checked and revised by independent and experienced service engineers. Find the right laser with us and save 50% on average compared to new.',
           'Buy A Laser': 'Buy A Laser',
+          AVAILABLE: 'AVAILABLE',
           'Sell your old laser': 'Sell your old laser',
           "Don't let your lasers gather dust, we buy a wide variety of medical aesthetic lasers, from the latest to the oldest, and help you get the best price. Our trade-in process is simple and transparent: fill in our form to get a competitive quote based on the age, condition and number of shots of your equipment.":
             "Don't let your lasers gather dust, we buy a wide variety of medical aesthetic lasers, from the latest to the oldest, and help you get the best price. Our trade-in process is simple and transparent: fill in our form to get a competitive quote based on the age, condition and number of shots of your equipment.",
@@ -223,6 +224,7 @@ i18n
           'We sell high quality and brand premium pre-owned laser, they are checked and revised by independent and experienced service engineers. Find the right laser with us and save 50% on average compared to new.':
             "Nous vendons des lasers d'occasion de qualité supérieure et de marque premium, ils sont complètement vérifiés et révisés par des ingénieurs de maintenance indépendants et expérimentés. Trouvez le bon laser avec nous et économisez en moyenne 50% comparée au neuf.",
           'Buy A Laser': 'Acheter un laser',
+          AVAILABLE: 'DESPONSIBLE',
           'Sell your old laser': 'Vendez votre ancier laser',
           "Don't let your lasers gather dust, we buy a wide variety of medical aesthetic lasers, from the latest to the oldest, and help you get the best price. Our trade-in process is simple and transparent: fill in our form to get a competitive quote based on the age, condition and number of shots of your equipment.":
             'Ne laissez pas vos lasers prendre la poussière, nous achetons une grande variété de lasers médicaux esthétiques, des plus récents aux plus anciens, et vous aidons à en tirer le meilleur prix. Notre processus de reprise est simple et transparent : remplissez notre formulaire pour obtenir une offre compétitive en fonction de l’âge, de l’état et du nombre de tirs de votre équipement.',
