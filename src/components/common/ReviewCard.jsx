@@ -33,7 +33,7 @@ export default function ReviewCard(props) {
             opacity: '1',
           }}
         >
-          {userName ? userName : ''}
+          {userName}
         </h2>
         <h3
           className="Selection"

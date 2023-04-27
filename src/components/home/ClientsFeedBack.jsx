@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import Fab from '@mui/material/Fab';
+import { toast } from 'react-toastify';
 import { StackedCarousel, ResponsiveContainer } from 'react-stacked-center-carousel';
 import { motion } from 'framer-motion';
 import ReviewCard from '../common/ReviewCard';
 import API from '../../api';
-import { toast } from 'react-toastify';
+
 // import SectionHeader from '../common/SectionHeader';
 
 import { ReactComponent as RightArrow } from '../../assets/right_arrow_btn.svg';
@@ -57,7 +58,7 @@ export default function ReviewSection() {
         'We had a job which needed quick expert help and right then we found Falcon Consulting, Job completed successfully with all work asked within the timeline, Kudos',
     },
   ]);
-  console.log(setFrData, setEnData, loading);
+  console.log(setFrData, setEnData, loading, frData, enData);
   const getTestimonial = async () => {
     setLoading(true);
     await API('get', '/comments')
@@ -97,39 +98,37 @@ export default function ReviewSection() {
             {loading ? (
               <>loading</>
             ) : (
-              <>
-                <ResponsiveContainer
-                  className="ReviewSection_Carousel"
-                  carouselRef={ref}
-                  render={(parentWidth, carouselRef) => {
-                    let currentVisibleSlide = 5;
-                    if (parentWidth <= 1440) currentVisibleSlide = 3;
-                    if (parentWidth <= 720) currentVisibleSlide = 1;
-                    return (
-                      <StackedCarousel
-                        autoRotate
-                        ref={carouselRef}
-                        rotationInterval={2000}
-                        data={lang === 'fr' ? testimonials : testimonials}
-                        carouselWidth={parentWidth}
-                        slideWidth={
-                          // eslint-disable-next-line no-nested-ternary
-                          currentVisibleSlide === 5
-                            ? parentWidth / 5.2
-                            : currentVisibleSlide === 3
-                            ? parentWidth / 4
-                            : parentWidth / 2
-                        }
-                        slideComponent={ReviewCard}
-                        maxVisibleSlide={5}
-                        minVisible={1}
-                        currentVisibleSlide={currentVisibleSlide}
-                        useGrabCursor
-                      />
-                    );
-                  }}
-                />
-              </>
+              <ResponsiveContainer
+                className="ReviewSection_Carousel"
+                carouselRef={ref}
+                render={(parentWidth, carouselRef) => {
+                  let currentVisibleSlide = 5;
+                  if (parentWidth <= 1440) currentVisibleSlide = 3;
+                  if (parentWidth <= 720) currentVisibleSlide = 1;
+                  return (
+                    <StackedCarousel
+                      autoRotate
+                      ref={carouselRef}
+                      rotationInterval={2000}
+                      data={lang === 'fr' ? testimonials : testimonials}
+                      carouselWidth={parentWidth}
+                      slideWidth={
+                        // eslint-disable-next-line no-nested-ternary
+                        currentVisibleSlide === 5
+                          ? parentWidth / 5.2
+                          : currentVisibleSlide === 3
+                          ? parentWidth / 4
+                          : parentWidth / 2
+                      }
+                      slideComponent={ReviewCard}
+                      maxVisibleSlide={5}
+                      minVisible={1}
+                      currentVisibleSlide={currentVisibleSlide}
+                      useGrabCursor
+                    />
+                  );
+                }}
+              />
             )}
 
             <Fab
