@@ -195,10 +195,9 @@
   justify-content: center;
   /* align-items: center; */
   margin: 0;
-  height: 37vh;
+  height: 38vh;
   width: 100%;
   align-items: center;
-
   padding-top: 2%;
 }
 .fade-left {
@@ -430,3 +429,13 @@
     margin-bottom: 130px;
   }
 }
+@media only screen and (min-width: 1400px) and (max-width: 1550px) {
+  .ReviewCardSlider {
+    height: 40vh;
+  }
+}
+/* @media only screen and (min-width: 1000px) and (max-width: 1100px) {
+  .ReviewCardSlider {
+    height: 42vh;
+  }
+} */
