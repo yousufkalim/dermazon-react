@@ -175,6 +175,14 @@
   margin-bottom: 320px;
   padding-bottom: 0px;
 }
+.noReview {
+  text-align: center;
+  opacity: 0.2;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: 'poppins';
+  text-transform: capitalize;
+}
 .ReviewSectionMain {
   display: flex;
   flex-direction: column;
@@ -328,13 +336,13 @@
     margin-left: 10%;
     display: none;
   }
-  #h1tag{
+  #h1tag {
     font-size: 1.4rem !important;
   }
-  #h2tag{
+  #h2tag {
     font-size: 1.1rem !important;
   }
-  #h3tag{
+  #h3tag {
     font-size: 0.9rem !important;
   }
   .clientFeedBackHeadingtxt {
