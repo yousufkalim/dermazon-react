@@ -74,7 +74,7 @@ export default function SingleService(props) {
             >
               <img className="service_icons_img" src={icon} alt="Service Icon" />
             </div>
-            <h1 className="single_service_title">
+            {/* <h1 className="single_service_title">
               <span
                 style={{
                   color: btnBg,
@@ -83,6 +83,23 @@ export default function SingleService(props) {
                 {`${firstWord} ${' '}`}
               </span>
               <p style={{ color: 'black', display: 'inline' }}>{removeFirstWord(title)}</p>
+            </h1> */}
+            <h1 className="single_service_title">
+              {firstWord === 'Entretien' ? (
+                <>
+                  <span style={{ color: btnBg }}>
+                    {`${firstWord} ${title.split(' ').slice(1, 3).join(' ')} `}
+                  </span>
+                  <span style={{ color: 'black' }}>{title.split(' ').slice(3).join(' ')}</span>
+                </>
+              ) : (
+                <>
+                  <span style={{ color: btnBg }}>{`${firstWord} ${' '}`}</span>
+                  <span style={{ color: 'black', display: 'inline' }}>
+                    {removeFirstWord(title)}
+                  </span>
+                </>
+              )}
             </h1>
           </div>
         </div>

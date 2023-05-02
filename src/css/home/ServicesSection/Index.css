@@ -200,6 +200,7 @@
   align-items: center;
   padding-top: 2%;
 }
+
 .fade-left {
   position: absolute;
   left: 10%;
@@ -375,6 +376,10 @@
   }
   .services_section_heading span {
     color: #02225e;
+  }
+  #demo-simple-select{
+    padding: 7px !important;
+    padding-left: 14px !important;
   }
   .services_section_span {
     font-family: 'Poppins';
