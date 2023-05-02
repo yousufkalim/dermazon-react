@@ -175,10 +175,13 @@
   .single_service_left_reverse_mobile img {
     display: flex !important;
     justify-content: center !important;
-    width: 100% !important;
+    width: 80% !important;
     height: fit-content !important;
     padding: 0;
-    margin: 0;
+    /* margin: 0; */
+    margin-right: 0% !important;
+    margin: auto;
+
   }
   .single_service_left_mobile {
     display: flex;
@@ -187,10 +190,10 @@
     padding: 0% 0%;
   }
   .single_service_left_mobile img {
-    width: 100% !important;
+    width: 70% !important;
+    margin: auto !important;
     height: fit-content !important;
     padding: 0;
-    margin: 0;
   }
 
   .single_service_container {
@@ -264,6 +267,8 @@
     justify-content: center;
     align-items: baseline;
     padding-top: 10px;
+    width: 90%;
+    margin: auto;
   }
   .single_service_icon_div {
     width: 40px;

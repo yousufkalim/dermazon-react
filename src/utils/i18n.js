@@ -19,9 +19,13 @@ i18n
           'PRE-OWNED LASERS': 'PRE-OWNED LASERS',
           'Welcome to the Dermazon website ,We are a Paris based company specialising in the trade-in and resale of used energy based devices and lasers to aesthetic medicine professionals worldwide. Our experience and technical expertise enable us to offer high quality, premium branded equipment at affordable prices.':
             'Welcome to the Dermazon website ,We are a Paris based company specialising in the trade-in and resale of used energy based devices and lasers to aesthetic medicine professionals worldwide. Our experience and technical expertise enable us to offer high quality, premium branded equipment at affordable prices.',
-
+          'Our experience and technical expertise enable us to offer high quality, premium branded equipment at affordable prices.':
+            'Our experience and technical expertise enable us to offer high quality, premium branded equipment at affordable prices.',
           'Pre-owned-lasers': 'Pre-owned lasers',
-
+          'Welcome to the Dermazon website ,We are a Paris based company specialising in the trade-in and resale of used energy based devices and lasers to aesthetic medicine professionals worldwide.':
+            'Welcome to the Dermazon website ,We are a Paris based company specialising in the trade-in and resale of used energy based devices and lasers to aesthetic medicine professionals worldwide.',
+          'Welcome to the Dermazon website ,We are a Paris based company specialising in the trade-in and resale of used energy based devices and lasers to aesthetic medicine professionals worldwide.':
+            "Bienvenue sur le site internet deDermazon, Nous sommes une entreprise basée à Paris spécialisée dans la reprise et larevente de dispositif à based'énergie et delaser d'occasion, destinés aux professionnels de lamédecine esthétique du monde entier.",
           Home: 'Home',
           'Buy A Pre-Owned Laser': 'Buy A Pre-Owned Laser',
           "Dermazon is able to offer you a selection of used medical aesthetic lasers, carefully chosen for their reliability, quality and effectiveness in specific aesthetic treatments. However, if you are looking for a particular model that is not in our list, don't hesitate to ask us, thanks to our extensive network of contacts in France and abroad, we can find the right laser that will perfectly meet your needs.":
@@ -203,7 +207,8 @@ i18n
           'PRE-OWNED LASERS': 'Les lasers d’occasion',
           'Welcome to the Dermazon website ,We are a Paris based company specialising in the trade-in and resale of used energy based devices and lasers to aesthetic medicine professionals worldwide. Our experience and technical expertise enable us to offer high quality, premium branded equipment at affordable prices.':
             "Bienvenue sur le site internet deDermazon, Nous sommes une entreprise basée à Paris  spécialisée dans la reprise et larevente de dispositif à based'énergie et delaser d'occasion, destinés aux professionnels de lamédecine esthétique du monde entier. Notre expérience et notre expertise technique nous permettent de proposer des équipements de qualité supérieure et de marques premium à des prix abordables.",
-
+          'Our experience and technical expertise enable us to offer high quality, premium branded equipment at affordable prices.':
+            'Notre expérience et notre expertise technique nous permettent de proposer des équipements de qualité supérieure et de marques premium à des prix abordables.',
           'Pre-owned-lasers': 'Les lasers d’occasion',
 
           Home: 'Accueil',

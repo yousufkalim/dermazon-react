@@ -42,7 +42,16 @@ export default function HeroSection() {
           />
           <p className="home_text_pi">
             {t(
-              'Welcome to the Dermazon website ,We are a Paris based company specialising in the trade-in and resale of used energy based devices and lasers to aesthetic medicine professionals worldwide. Our experience and technical expertise enable us to offer high quality, premium branded equipment at affordable prices.',
+              'Welcome to the Dermazon website ,We are a Paris based company specialising in the trade-in and resale of used energy based devices and lasers to aesthetic medicine professionals worldwide.',
+            )}
+            <br />
+            {/* <span>
+              {' '}
+              <br />
+            </span> */}
+            <br />
+            {t(
+              'Our experience and technical expertise enable us to offer high quality, premium branded equipment at affordable prices.',
             )}
           </p>
         </div>
