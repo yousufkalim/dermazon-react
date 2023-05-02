@@ -14,8 +14,8 @@ import i18n from './utils/i18n';
 function App() {
   useEffect(() => {
     const { host } = window.location;
-    if (host?.includes('https://dermazon-dev.falconweb.app/')) {
-      i18n.changeLanguage('fr');
+    if (host?.includes('dermazon.com')) {
+      i18n.changeLanguage('en');
     } else {
       i18n.changeLanguage('fr');
     }

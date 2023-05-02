@@ -10,7 +10,7 @@ if (window.location.host === 'dermazon-dev.falconweb.app') {
 } else if (window.location.host === 'dermazon-staging.falconweb.app') {
   baseUrl = 'https://dermazon-api-staging.falconweb.app/api';
   mediaUrl = 'https://dermazon-api-staging.falconweb.app';
-} else if (window.location.host.includes('dermazon.fr')) {
+} else if (window.location.host.includes('dermazon.')) {
   baseUrl = 'https://api.dermazon.fr/api';
   mediaUrl = 'https://api.dermazon.fr';
 }
